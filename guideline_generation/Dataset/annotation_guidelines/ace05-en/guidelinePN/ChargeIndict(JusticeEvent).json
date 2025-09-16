@@ -1,0 +1,42 @@
+{
+    "ChargeIndict(JusticeEvent)": {
+        "description": [
+            "The ChargeIndict event type refers to the formal accusation or indictment of an individual or entity by a legal authority, typically involving criminal charges. Example triggers include 'charges', 'indictment', and 'filed'.",
+            "This event type is characterized by the involvement of legal authorities such as prosecutors or adjudicators, and the presence of a defendant who is being charged or indicted. The event often takes place in a legal setting such as a court.",
+            "Unlike other JusticeEvent types like Extradite or ReleaseParole, ChargeIndict specifically involves the formal process of bringing charges against a defendant. Triggers such as 'extradition' or 'release' are indicative of Extradite and ReleaseParole events, respectively, not ChargeIndict.",
+            "The outcome of a ChargeIndict event is the formal accusation of the defendant, which may lead to a trial or other legal proceedings. This is distinct from the outcome of a DeclareBankruptcy event, which involves financial insolvency, or a Demonstrate event, which involves public protests.",
+            "Key characteristics of the ChargeIndict event include the presence of legal terminology related to charges or indictments, the involvement of legal authorities, and the identification of a defendant. The event is often reported in news articles or legal documents."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the legal authority or body responsible for overseeing the legal process of charging or indicting the defendant. This can include judges, magistrates, or juries. For example, in 'The jury indicted the defendant on multiple charges', 'jury' is the adjudicator.",
+            "The role of the adjudicator is crucial as they ensure the legal process is followed correctly. In 'The magistrate reprimanded the lawyer', 'magistrate' serves as the adjudicator.",
+            "Adjudicators are often mentioned in the context of court proceedings or legal decisions. For instance, 'The judge issued the indictment' identifies 'judge' as the adjudicator.",
+            "In some cases, the adjudicator may be a collective body, such as a grand jury. For example, 'The grand jury returned an indictment' uses 'grand jury' as the adjudicator.",
+            "Unlike the prosecutor, who brings the charges, the adjudicator's role is to oversee the legal process and ensure fairness. For example, 'The court ruled on the charges' uses 'court' as the adjudicator."
+        ],
+        "prosecutor": [
+            "The prosecutor is the legal representative who brings the charges against the defendant. This can include district attorneys, state attorneys, or other legal officials. For example, in 'The district attorney filed charges', 'district attorney' is the prosecutor.",
+            "The prosecutor's role is to present the case against the defendant and seek a conviction. In 'The state attorney indicted the suspect', 'state attorney' serves as the prosecutor.",
+            "Prosecutors are often mentioned in the context of initiating legal action. For instance, 'The justice department brought charges' identifies 'justice department' as the prosecutor.",
+            "In some cases, multiple prosecutors may be involved. For example, 'The SEC and the justice department filed charges' uses 'SEC' and 'justice department' as prosecutors.",
+            "Unlike the adjudicator, who oversees the legal process, the prosecutor's role is to actively pursue the case against the defendant. For example, 'The prosecutor presented the evidence' uses 'prosecutor' as the legal representative bringing the charges."
+        ],
+        "defendant": [
+            "The defendant is the individual or entity being charged or indicted. This can include people, organizations, or groups. For example, in 'The defendant was charged with theft', 'defendant' refers to the person being accused.",
+            "The role of the defendant is central to the ChargeIndict event, as they are the subject of the legal action. In 'The company was indicted for fraud', 'company' serves as the defendant.",
+            "Defendants are often mentioned in the context of the charges they face. For instance, 'The officials were charged with corruption' identifies 'officials' as the defendants.",
+            "In some cases, multiple defendants may be involved. For example, 'The fraternity and university were charged' uses 'fraternity' and 'university' as defendants.",
+            "Unlike the prosecutor or adjudicator, the defendant is the party being accused and must respond to the charges. For example, 'The accused pleaded not guilty' uses 'accused' as the defendant."
+        ],
+        "place": [
+            "The place refers to the location where the charges or indictment are brought or where the legal proceedings occur. This can include courts, cities, or countries. For example, in 'The charges were filed in New York', 'New York' is the place.",
+            "The place is important as it provides context for the legal action and may influence the jurisdiction. In 'The trial took place in Belgrade', 'Belgrade' serves as the place.",
+            "Places are often mentioned in the context of legal settings or jurisdictions. For instance, 'The court in Lusaka issued the indictment' identifies 'Lusaka' as the place.",
+            "In some cases, multiple places may be involved. For example, 'Charges were filed in both New York and California' uses 'New York' and 'California' as places.",
+            "Unlike the defendant or prosecutor, the place is a location and not a person or entity. For example, 'The indictment was issued in court' uses 'court' as the place."
+        ]
+    }
+}

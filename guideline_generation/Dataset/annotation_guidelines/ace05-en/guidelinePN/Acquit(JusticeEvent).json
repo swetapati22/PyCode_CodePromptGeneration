@@ -1,0 +1,35 @@
+{
+    "Acquit(JusticeEvent)": {
+        "description": [
+            "An 'Acquit' event in the context of a JusticeEvent refers to a legal decision where a defendant is formally declared not guilty of the charges against them. Example triggers include 'acquitted', 'found not guilty', and 'walk free'.",
+            "The 'Acquit' event is characterized by the involvement of a judicial authority (adjudicator) who delivers the verdict, and a defendant who is the subject of the acquittal. Unlike a 'Pardon' event, which involves forgiveness of a crime, an 'Acquit' event signifies that the defendant was not found guilty in the first place.",
+            "Key characteristics of an 'Acquit' event include the formal legal process and the outcome of the defendant being cleared of charges. This event does not imply any punishment or penalty, unlike a 'Fine' event where a monetary penalty is imposed.",
+            "Triggers such as 'acquitted' and 'found not guilty' are indicative of an 'Acquit' event, whereas triggers like 'pardoned' or 'fined' indicate different JusticeEvents. The outcome of an 'Acquit' event is the defendant's release from legal charges, contrasting with the 'Appeal' event where the legal process is ongoing.",
+            "In an 'Acquit' event, the focus is on the judicial decision that clears the defendant of charges. This is different from an 'Injure' event, which involves physical harm, or a 'Divorce' event, which pertains to the dissolution of a marriage. The 'Acquit' event is strictly related to legal exoneration."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in an 'Acquit' event is the legal authority or body that delivers the verdict of not guilty. This can be a judge, a jury, or a court. For example, in the sentence 'The court acquitted the defendant,' the 'court' is the adjudicator.",
+            "The role of the 'adjudicator' is crucial as they are responsible for evaluating the evidence and making the final decision. In the example 'The jury found him not guilty,' the 'jury' serves as the adjudicator.",
+            "In some cases, the 'adjudicator' may be a specific individual, such as a judge. For instance, 'Judge Smith acquitted the accused' identifies 'Judge Smith' as the adjudicator.",
+            "The 'adjudicator' can also be a collective body, such as a panel of judges or a supreme court. For example, 'The supreme court acquitted the defendant' uses 'supreme court' as the adjudicator.",
+            "Unlike the 'defendant', who is the subject of the acquittal, the 'adjudicator' is the entity making the decision. In the sentence 'The tribunal acquitted the suspect,' 'tribunal' is the adjudicator, not the defendant."
+        ],
+        "place": [
+            "The 'place' in an 'Acquit' event refers to the location where the legal decision is made. This can be a specific court, city, or country. For example, 'The court in New York acquitted the defendant' uses 'New York' as the place.",
+            "The 'place' provides context to the legal proceedings and can indicate the jurisdiction of the adjudicator. In the sentence 'The defendant was acquitted in Los Angeles,' 'Los Angeles' is the place.",
+            "In some cases, the 'place' may be a specific building or institution, such as 'The defendant was acquitted at the Supreme Court.' Here, 'Supreme Court' is the place.",
+            "The 'place' can also be a broader geographical location, such as a country. For example, 'The defendant was acquitted in Pakistan' uses 'Pakistan' as the place.",
+            "Unlike the 'adjudicator' or 'defendant', the 'place' is not a person or entity but a location. In the sentence 'The court in London acquitted the defendant,' 'London' is the place, providing the geographical context of the event."
+        ],
+        "defendant": [
+            "The 'defendant' in an 'Acquit' event is the individual or entity who is being cleared of the charges. For example, in the sentence 'The court acquitted John Doe,' 'John Doe' is the defendant.",
+            "The 'defendant' is the central figure in the 'Acquit' event, as the legal decision directly affects them. In the example 'The jury found the businessman not guilty,' the 'businessman' is the defendant.",
+            "In some cases, the 'defendant' may be referred to by their role or status, such as 'The accused was acquitted.' Here, 'the accused' is the defendant.",
+            "The 'defendant' can also be a group of individuals or an organization. For instance, 'The company was acquitted of all charges' uses 'company' as the defendant.",
+            "Unlike the 'adjudicator', who makes the decision, the 'defendant' is the one who benefits from the acquittal. In the sentence 'The court acquitted the suspect,' 'suspect' is the defendant, not the adjudicator."
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Marry(LifeEvent)": {
+        "description": [
+            "The 'Marry' event type, a subclass of 'LifeEvent', refers to the formal union of two individuals in matrimony. Example triggers include 'marry', 'wed', 'married', and 'marriage'.",
+            "This event type captures the act of entering into a marriage, typically involving a ceremony and legal recognition. Key characteristics include the involvement of two individuals and a specific location where the event takes place.",
+            "Unlike the 'Divorce' event type, which signifies the dissolution of a marriage, the 'Marry' event type focuses on the initiation of the marital relationship. Triggers such as 'divorce' are indicative of the 'Divorce' event type, not the 'Marry' event type.",
+            "The 'Marry' event type is distinct from the 'BeBorn' event type, which involves the birth of an individual. Triggers like 'birth' and 'born' are associated with 'BeBorn', not 'Marry'.",
+            "In the context of 'Marry', the outcomes include the establishment of a marital relationship and potential legal and social recognition. This differs from the 'Die' event type, where the outcome is the end of life. Triggers such as 'killed' and 'died' are not relevant to 'Marry'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the marriage event occurs. It is crucial for identifying the setting of the event. For example, in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24 in the ex-mayor's old home, Gracie Mansion.', 'Gracie Mansion' is the place.",
+            "The 'place' argument can refer to various types of locations, such as homes, temples, or public venues. For instance, 'temple' in 'she really needed to be married in the temple' is a valid place.",
+            "In some cases, the 'place' may be implied or not explicitly mentioned. For example, 'home' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon to marry his eldest daughter' is the place.",
+            "The 'place' argument helps contextualize the event within a specific geographical or cultural setting. For example, 'Los Angeles' in 'Hunter, 34, filed for divorce in Los Angeles Superior Court' is a place, but it is related to a 'Divorce' event, not 'Marry'.",
+            "Unlike the 'place' argument in the 'Die' event type, which indicates where the death occurred, the 'place' in 'Marry' indicates where the marriage ceremony or union took place. For example, 'houses' in 'Five Iraqi civilians were killed when their houses were hit' is a place for a 'Die' event, not 'Marry'."
+        ],
+        "person": [
+            "The 'person' argument identifies the individuals involved in the marriage event. It is essential for specifying the participants. For example, 'Rudolph Giuliani' and 'Judith Nathan' in 'Rudolph Giuliani will wed his companion, Judith Nathan' are persons.",
+            "The 'person' argument can include references to both individuals being married. For instance, 'daughter' and 'Raja Ahmad Sharir Iskandar' in 'to marry his eldest daughter, Nurul Izzah, to engineer Raja Ahmad Sharir Iskandar' are persons.",
+            "In some cases, the 'person' argument may be represented by pronouns or titles. For example, 'she' and 'fiance' in 'even though her fiance was not LDS' are persons.",
+            "The 'person' argument is crucial for distinguishing the participants in the marriage event from other individuals mentioned in the text. For example, 'Hunter' and 'star' in 'Hunter, 34, filed for divorce' are persons, but they are related to a 'Divorce' event, not 'Marry'.",
+            "Unlike the 'person' argument in the 'Die' event type, which identifies the victims, the 'person' in 'Marry' identifies the individuals entering into marriage. For example, 'civilians' and 'woman' in 'Five Iraqi civilians were killed' are persons for a 'Die' event, not 'Marry'."
+        ],
+        "time": [
+            "The 'time' argument specifies when the marriage event takes place. It is important for situating the event temporally. For example, 'May 24' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24' is the time.",
+            "The 'time' argument can include specific dates, times of day, or more general time frames. For instance, 'later in the afternoon' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon' is a time.",
+            "In some cases, the 'time' argument may be implied or not explicitly mentioned. For example, 'nearly 13 years' in 'she has been married for nearly 13 years' is a time.",
+            "The 'time' argument helps contextualize the event within a specific temporal setting. For example, 'April 2001' and 'January 14' in 'she gave birth secretly to both babies in April 2001 and January 14' are times, but they are related to a 'BeBorn' event, not 'Marry'.",
+            "Unlike the 'time' argument in the 'Die' event type, which indicates when the death occurred, the 'time' in 'Marry' indicates when the marriage ceremony or union took place. For example, 'Monday' in 'Five Iraqi civilians were killed Monday' is a time for a 'Die' event, not 'Marry'."
+        ]
+    }
+}

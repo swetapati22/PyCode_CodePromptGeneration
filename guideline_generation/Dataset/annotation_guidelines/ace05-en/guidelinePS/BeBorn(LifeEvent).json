@@ -1,0 +1,35 @@
+{
+    "BeBorn(LifeEvent)": {
+        "description": [
+            "The 'BeBorn' event type, a subclass of 'LifeEvent', refers to the occurrence of a person's birth. Example triggers include 'birth', 'born', and 'having'.",
+            "This event captures the moment when a new individual comes into existence. Key characteristics include the presence of a person being born, the location of the birth, and the time it occurred.",
+            "Unlike the 'Die' event type, which marks the end of life, the 'BeBorn' event signifies the beginning of life. For instance, 'killed' is a trigger for 'Die', not 'BeBorn'.",
+            "Triggers such as 'birth' and 'born' are indicative of the 'BeBorn' event type, whereas triggers like 'marry' or 'divorce' are related to other life events such as 'Marry' or 'Divorce'.",
+            "The 'BeBorn' event is distinct from other life events like 'Injure' or 'Marry' as it specifically deals with the birth of a person, not injuries or marital status changes."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the birth occurred. It is crucial for contextualizing the event. For example, 'home' in 'gave birth at her parents' home'.",
+            "This argument can refer to any geographical location, such as a country, city, or specific building. For instance, 'New Zealand' in 'New Zealand-born Hunter'.",
+            "In some cases, the place might be a general area rather than a specific location, like 'hospital' in 'gave birth at a Los Angeles-area hospital'.",
+            "The 'place' argument helps in understanding the environment and circumstances of the birth. For example, 'nation' in 'the blood red nation of China'.",
+            "Edge cases include ambiguous or broad locations that still provide context, such as 'home' or 'hospital'. These should be annotated as they contribute to the event's setting."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual(s) being born. This is the central focus of the 'BeBorn' event. For example, 'babies' in 'gave birth to both babies'.",
+            "This argument can refer to a single person or multiple individuals, such as 'girls' and 'boys' in 'only about 100 girls are born for every 119 boys'.",
+            "In some instances, the person might be referred to indirectly, like 'child' in 'gave birth to the couple's third child'.",
+            "The 'person' argument is essential for specifying who is being born, providing clarity on the event's subject. For example, 'Hunter' in 'New Zealand-born Hunter'.",
+            "Edge cases include references to the person by their relationship or role, such as 'one' and 'other' in 'one of unknown sex and the other, a fullterm girl'. These should still be annotated as they indicate the individuals being born."
+        ],
+        "time": [
+            "The 'time' argument specifies when the birth occurred. It provides temporal context to the event. For example, 'January 14' in 'a fullterm girl, January 14'.",
+            "This argument can refer to specific dates, times, or broader time frames, such as 'April 2001' in 'one of unknown sex in April 2001'.",
+            "In some cases, the time might be mentioned in relation to other events or periods, like '1:52 a.m.' in 'gave birth to the couple's third child at 1:52 a.m.'.",
+            "The 'time' argument helps in situating the birth event within a chronological framework, providing a clearer understanding of when it happened.",
+            "Edge cases include vague or relative time references that still provide temporal context, such as '20-year-old policy' in 'curb the effects of a devastating 20-year-old policy'. These should be annotated as they contribute to the event's timing."
+        ]
+    }
+}

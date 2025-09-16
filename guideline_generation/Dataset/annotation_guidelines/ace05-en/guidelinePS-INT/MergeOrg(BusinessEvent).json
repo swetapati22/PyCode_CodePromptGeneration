@@ -1,0 +1,9 @@
+{
+    "MergeOrg(BusinessEvent)": {
+        "description": "A MergeOrg event involves the combination of two or more organizations into a single entity, characterized by the integration of their resources, operations, and management structures. This event is triggered by terms such as 'merged', 'merger', 'combine', 'unite', and 'consolidate'. Unlike EndOrg events, which signify the dissolution of an organization, MergeOrg events result in the creation of a new or larger organization through mutual agreement and integration, distinct from acquisitions or hostile takeovers.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "Org": "The 'Org' argument identifies the organizations involved in the merger, which are combining to form a new or larger entity. This can include various types of organizations such as companies, departments, startups, or industries. The 'Org' argument is crucial for specifying the entities merging, even if they are implied rather than explicitly named. It should not be confused with entities involved in acquisitions or takeovers, which do not result in a unified organization."
+        }
+    }
+}

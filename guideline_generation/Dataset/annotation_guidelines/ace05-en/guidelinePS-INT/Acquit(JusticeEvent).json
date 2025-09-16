@@ -1,0 +1,11 @@
+{
+    "Acquit(JusticeEvent)": {
+        "description": "The 'Acquit' event type, a subclass of 'JusticeEvent', refers to the formal legal process where a defendant is declared not guilty of the charges against them. This event involves a judicial decision, often following a trial or legal proceeding, where the defendant is cleared of criminal charges. Key characteristics include the involvement of a legal adjudicator and the defendant being the subject of the acquittal. Example triggers include 'acquitted', 'found not guilty', and 'walk free'. The 'Acquit' event is distinct from other justice-related events such as 'Convict', 'Fine', and 'ChargeIndict', which involve different outcomes and triggers.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The 'adjudicator' argument refers to the legal authority or body responsible for delivering the acquittal verdict. This can include judges, juries, or courts. For example, in 'The court acquitted the defendant', 'court' is the adjudicator. The adjudicator is essential for the legitimacy of the acquittal and can sometimes involve multiple adjudicators, such as a panel of judges.",
+            "place": "The 'place' argument specifies the location where the acquittal occurs, such as a courtroom, city, or country. For example, 'The defendant was acquitted in New York' identifies 'New York' as the place. The place provides context for the legal proceedings and is important for understanding the jurisdiction of the acquittal.",
+            "defendant": "The 'defendant' argument refers to the individual or entity being acquitted of charges. For example, in 'The court acquitted John Doe', 'John Doe' is the defendant. The defendant is the central figure who benefits from the acquittal and can sometimes involve multiple defendants, such as a group of activists."
+        }
+    }
+}

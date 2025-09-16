@@ -1,0 +1,13 @@
+{
+    "EndPosition(PersonnelEvent)": {
+        "description": "The EndPosition event type, a subclass of PersonnelEvent, refers to the conclusion of an individual's role or position within an organization or entity. This event is typically triggered by terms indicating the end of a tenure, such as 'former', 'previously', 'dismissed', 'retired', 'resigned', 'stepped down', and 'left'. Unlike the StartPosition event, which marks the beginning of a role, the EndPosition event specifically denotes the cessation of a role. It is characterized by the presence of a person who has ended their role, the position they held, the entity or organization they were part of, and optionally, the time and place of this event. Example: 'John Doe, who was previously the CEO of XYZ Corp, retired last month.' Triggers such as 'retired', 'quit', and 'no longer' are indicative of the EndPosition event type, which is strictly about professional role changes.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "time": "The 'time' argument specifies when the EndPosition event occurred, providing temporal context. It can be a specific date, period, or relative term. Examples include 'last month', 'in 2020', 'recently', 'January 1st', and 'a few years ago'.",
+            "entity": "The 'entity' argument refers to the organization, company, or institution where the person held their position. It helps identify the context of the position and can include specific departments or multiple entities. Examples include 'Google', 'United Nations', 'marketing department of ABC Corp', 'Microsoft and Apple', and 'local grocery store'.",
+            "position": "The 'position' argument specifies the role or title that the person held, which is essential for understanding the nature of the role that ended. It can be specific or general, and sometimes implied. Examples include 'CEO', 'Director of Marketing', 'senior engineer', 'executive role', and 'team leader'.",
+            "place": "The 'place' argument indicates the geographical location associated with the EndPosition event, providing spatial context. It can be a specific city, country, building, or broader region. Examples include 'New York', 'London', 'San Francisco', 'Asia-Pacific region', and 'remote job based out of Chicago'.",
+            "person": "The 'person' argument identifies the individual whose position has ended. It can be referred to by name, title, pronoun, or in relation to their role. Examples include 'John Doe', 'She', 'Mr. Smith', 'CEO', and collective references like 'employees'."
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Demonstrate(ConflictEvent)": {
+        "description": [
+            "A 'Demonstrate' event involves a group of people gathering publicly to express their opinions, often in protest or support of a cause. Example triggers include 'gathered', 'rally', 'protests', and 'campaign'.",
+            "This event type is characterized by collective action, typically involving a significant number of participants. Unlike 'Attack' events, 'Demonstrate' events are primarily non-violent, although they can sometimes lead to clashes with authorities.",
+            "Key characteristics of a 'Demonstrate' event include the presence of a cause or issue being addressed, a public setting, and the involvement of multiple participants. Triggers such as 'protests' and 'rally' are indicative of this event type.",
+            "The scope of a 'Demonstrate' event can range from small local gatherings to large-scale national or international protests. Unlike 'Riot' events, 'Demonstrate' events do not inherently involve violence or property damage, although these can occur.",
+            "Outcomes of 'Demonstrate' events can include media coverage, public awareness, and sometimes policy changes. Triggers like 'gathered' and 'campaign' are specific to 'Demonstrate' events and differ from 'Attack' events, which involve direct physical aggression."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the demonstration took place. It is crucial for understanding the context and relevance of the event. Example: 'yesterday' in 'students stage antiwar protests on campuses yesterday'.",
+            "This argument helps in situating the event within a specific temporal framework, which can be important for historical analysis. Example: 'Saturday' in '70 people were arrested Saturday'.",
+            "In some cases, the 'time' argument can be implicit, inferred from the context rather than explicitly stated. Example: 'in the past two days' in '1,600 people were arrested in the past two days'.",
+            "The 'time' argument can also indicate the duration of the demonstration, providing insights into the scale and intensity of the event. Example: '10 hours' in 'Liana Owen drove 10 hours from Pennsylvania'.",
+            "Edge cases include events where the exact time is not specified but can be deduced from related information. Example: 'from coast-to-coast' implies a nationwide event occurring simultaneously."
+        ],
+        "entity": [
+            "The 'entity' argument identifies the participants in the demonstration. This is essential for understanding who is involved and their potential motivations. Example: 'Protesters' in 'Protesters also gathered in their thousands'.",
+            "Entities can include individuals, groups, or organizations. Example: 'students' in 'tens of thousands of college and high school students stage antiwar protests'.",
+            "The 'entity' argument can also specify subgroups within the larger demonstration. Example: 'Liana Owen' and 'parents' in 'Liana Owen drove 10 hours from Pennsylvania to attend the rally'.",
+            "In some cases, the 'entity' argument may include both the primary participants and secondary participants. Example: 'protesters' and 'police' in 'demonstrators clashed with police'.",
+            "Edge cases include situations where the entity is implied rather than explicitly stated. Example: 'people' in '70 people were arrested' implies demonstrators."
+        ],
+        "place": [
+            "The 'place' argument specifies the location of the demonstration. This is crucial for understanding the geographical context and potential impact. Example: 'Halifax, Calgary, Edmonton and Vancouver' in 'Protesters also gathered in their thousands'.",
+            "Locations can range from specific sites to broader areas. Example: 'Manhattan' in 'attend the rally in Manhattan'.",
+            "The 'place' argument can also include multiple locations, indicating a widespread event. Example: 'plazas and streets of San Francisco' in 'protesters thronged the plazas and streets'.",
+            "In some cases, the 'place' argument may be more general, indicating a region or country. Example: 'across the United States and Canada' in '200,000 anti-war protesters took to the streets'.",
+            "Edge cases include events where the exact location is not specified but can be inferred from context. Example: 'here' in 'demonstrators clashed with police at the end of a major peace rally here'."
+        ],
+        "police": [
+            "The 'police' argument identifies the involvement of law enforcement in the demonstration. This is important for understanding the dynamics and potential conflicts of the event. Example: 'police' in 'demonstrators clashed with police'.",
+            "This argument can indicate the presence of law enforcement, their actions, and their interactions with demonstrators. Example: 'arrested' in '70 people were arrested'.",
+            "The 'police' argument can also highlight the scale of law enforcement involvement. Example: 'more than 1,600 people were arrested' in 'San Francisco'.",
+            "In some cases, the 'police' argument may be implicit, inferred from the context of the event. Example: 'civil disobedience campaign' implies potential police involvement.",
+            "Edge cases include situations where law enforcement is mentioned indirectly or through related terms. Example: 'clashed' in 'demonstrators clashed with police' implies police presence."
+        ]
+    }
+}

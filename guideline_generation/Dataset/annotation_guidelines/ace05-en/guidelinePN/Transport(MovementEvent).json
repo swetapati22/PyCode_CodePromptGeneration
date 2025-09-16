@@ -1,0 +1,70 @@
+{
+    "Transport(MovementEvent)": {
+        "description": [
+            "The Transport event, a subtype of MovementEvent, involves the movement of entities (people, objects, etc.) from one location to another. Example triggers include 'transport', 'deploying', 'cross', 'tours', and 'back'.",
+            "This event type captures scenarios where an entity is physically moved from an origin to a destination, often involving a vehicle or agent facilitating the movement. Key characteristics include the presence of an origin, destination, and the entity being moved.",
+            "Unlike other MovementEvent subtypes, Transport specifically requires the movement to be facilitated by an agent or vehicle. For instance, 'deploying' troops involves an agent (e.g., a country) and a destination (e.g., a region).",
+            "Triggers such as 'acquitted' or 'sentences' are indicative of JusticeEvent types and not Transport. Transport events focus on physical relocation rather than legal or financial transactions.",
+            "The outcome of a Transport event is the successful relocation of the entity from the origin to the destination. This differs from events like TransferMoney, where the outcome is a financial transaction rather than physical movement."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "origin": [
+            "The origin is the starting point of the transport event. It indicates where the entity was located before the movement. For example, in 'trains running to and from southern Sudan', 'southern Sudan' is the origin.",
+            "The origin is crucial for understanding the full context of the movement. It helps to establish the initial location of the entity. For instance, 'from Malaysia' in 'cross the border between Malaysia and Singapore'.",
+            "In some cases, the origin may be implied rather than explicitly stated. For example, 'deploying some of Iraq's exiles' implies that the origin is Iraq.",
+            "The origin can be a specific place, country, or region. For example, 'from Egypt' in 'suspended tours to Egypt and Turkey'.",
+            "Unlike the destination, the origin is where the movement begins. For example, 'from the country' in 'deploying some of Iraq's exiles around the country'."
+        ],
+        "victim": [
+            "The victim in a Transport event refers to the entity being moved, often under duress or without consent. For example, 'abducted women and children' in 'used to transport abducted women and children'.",
+            "The victim is important for identifying the affected parties in the event. For instance, 'who' in 'Mr. Chalabi, who was assisted by U.S. forces in getting back into Iraq'.",
+            "In some contexts, the victim may be a group of people or individuals. For example, 'people' in 'about 90,000 people cross the border'.",
+            "The victim can also be an entity that is indirectly affected by the transport. For example, 'dissidents' in 'deploying some of Iraq's exiles and internal dissidents'.",
+            "Unlike the agent, the victim is the entity being moved rather than the one facilitating the movement. For example, 'tourists' in 'suspended tours to Egypt and Turkey for Chinese tourists'."
+        ],
+        "vehicle": [
+            "The vehicle is the means of transportation used in the event. It can be any mode of transport such as trains, cars, planes, etc. For example, 'trains' in 'trains running to and from southern Sudan'.",
+            "The vehicle is essential for understanding how the transport is facilitated. For instance, 'trains' in 'used to transport abducted women and children'.",
+            "In some cases, the vehicle may be implied rather than explicitly stated. For example, 'deploying' implies the use of military vehicles or aircraft.",
+            "The vehicle can also be a service or organization facilitating the transport. For example, 'agencies' in 'major travel agencies have temporarily suspended tours'.",
+            "Unlike the agent, the vehicle is the physical means of transport rather than the entity organizing the movement. For example, 'trains' in 'trains running to and from southern Sudan'."
+        ],
+        "time": [
+            "The time indicates when the transport event occurs. It provides temporal context to the movement. For example, 'last year' in 'In last year's trial'.",
+            "The time is important for situating the event within a specific timeframe. For instance, 'temporarily' in 'have temporarily suspended tours'.",
+            "In some cases, the time may be implied rather than explicitly stated. For example, 'each day' in 'Each day about 90,000 people cross the border'.",
+            "The time can also refer to a specific period or duration. For example, 'in December' in 'was the first world leader to go to Beijing to meet him in December'.",
+            "Unlike the origin or destination, the time provides a temporal rather than spatial context. For example, 'last year' in 'In last year's trial'."
+        ],
+        "artifact": [
+            "The artifact refers to the entity being transported. It can be people, objects, or any movable entity. For example, 'women and children' in 'used to transport abducted women and children'.",
+            "The artifact is crucial for identifying what is being moved in the event. For instance, 'tourists' in 'suspended tours to Egypt and Turkey for Chinese tourists'.",
+            "In some contexts, the artifact may be a group of people or individuals. For example, 'people' in 'about 90,000 people cross the border'.",
+            "The artifact can also be an entity that is indirectly affected by the transport. For example, 'dissidents' in 'deploying some of Iraq's exiles and internal dissidents'.",
+            "Unlike the vehicle, the artifact is the entity being moved rather than the means of transport. For example, 'tourists' in 'suspended tours to Egypt and Turkey for Chinese tourists'."
+        ],
+        "destination": [
+            "The destination is the endpoint of the transport event. It indicates where the entity is being moved to. For example, 'Sudan' in 'trains running to and from southern Sudan'.",
+            "The destination is crucial for understanding the full context of the movement. It helps to establish the final location of the entity. For instance, 'to Egypt and Turkey' in 'suspended tours to Egypt and Turkey'.",
+            "In some cases, the destination may be implied rather than explicitly stated. For example, 'around the country' in 'deploying some of Iraq's exiles around the country'.",
+            "The destination can be a specific place, country, or region. For example, 'to Beijing' in 'was the first world leader to go to Beijing'.",
+            "Unlike the origin, the destination is where the movement ends. For example, 'to and from southern Sudan' in 'trains running to and from southern Sudan'."
+        ],
+        "place": [
+            "The place refers to the general location where the transport event occurs. It provides spatial context to the movement. For example, 'Iraq' in 'Mr. Chalabi, who was assisted by U.S. forces in getting back into Iraq'.",
+            "The place is important for situating the event within a specific geographical context. For instance, 'Iraq' in 'deploying some of Iraq's exiles'.",
+            "In some cases, the place may be implied rather than explicitly stated. For example, 'the country' in 'deploying some of Iraq's exiles around the country'.",
+            "The place can also refer to a broader region or area. For example, 'between Malaysia and Singapore' in 'cross the border between Malaysia and Singapore'.",
+            "Unlike the origin or destination, the place provides a general rather than specific spatial context. For example, 'Iraq' in 'Mr. Chalabi, who was assisted by U.S. forces in getting back into Iraq'."
+        ],
+        "agent": [
+            "The agent is the entity facilitating the transport event. It can be an individual, organization, or group. For example, 'forces' in 'Mr. Chalabi, who was assisted by U.S. forces'.",
+            "The agent is crucial for identifying who is responsible for the movement. For instance, 'agencies' in 'major travel agencies have temporarily suspended tours'.",
+            "In some contexts, the agent may be a country or government. For example, 'United States' in 'The United States is deploying some of Iraq's exiles'.",
+            "The agent can also be a service or organization facilitating the transport. For example, 'China International Travel Service' in 'major travel agencies, including the China International Travel Service'.",
+            "Unlike the artifact, the agent is the entity organizing the movement rather than the one being moved. For example, 'forces' in 'Mr. Chalabi, who was assisted by U.S. forces'."
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "TrialHearing(JusticeEvent)": {
+        "description": "A TrialHearing event involves a formal judicial examination of evidence and arguments to determine the guilt or innocence of a defendant. It is characterized by the presence of an adjudicator (e.g., judge or court), a prosecutor, a defendant, and a specific location where the trial occurs. Unlike ChargeIndict events, which focus on formal accusations, TrialHearing events center on the judicial process leading to a verdict. Triggers include terms like 'hearing', 'trial', and 'tried'. The scope encompasses the entire judicial process from evidence presentation to the final verdict, excluding arrest or release events.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "Adjudicator": "The adjudicator is the judicial authority presiding over the trial or hearing, such as a judge or court. They ensure the trial is conducted fairly and make the final decision based on the evidence. Examples include 'judge' in 'an oklahoma city judge has ruled' and 'court' in 'The Belgrade district court said'. The adjudicator is neutral and their decision is final and binding.",
+            "Prosecutor": "The prosecutor is the legal representative presenting the case against the defendant, aiming to prove guilt beyond a reasonable doubt. They advocate for the state or public, seeking a conviction. Examples include 'prosecutors' in 'prosecutors presented enough evidence' and 'FL prosecutors' in 'All the FL prosecutors have to do is ask'.",
+            "Defendant": "The defendant is the individual or entity accused of a crime and standing trial. They respond to charges and present a defense. Examples include 'nichols' in 'to try nichols on murder charges' and 'Markovic' in 'Markovic will be tried'. The defendant is the subject of the trial and seeks to avoid conviction.",
+            "Place": "The place is the location where the trial or hearing occurs, essential for jurisdictional purposes. It can be a city, state, or country. Examples include 'oklahoma city' in 'an oklahoma city judge has ruled' and 'Belgrade' in 'The Belgrade district court said'. Identifying the place is crucial for understanding the legal context of the trial."
+        }
+    }
+}

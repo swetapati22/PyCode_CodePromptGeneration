@@ -1,0 +1,12 @@
+{
+    "ChargeIndict(JusticeEvent)": {
+        "description": "The ChargeIndict event type involves the formal accusation or indictment of an individual or entity by a legal authority, typically involving criminal charges. This event is characterized by the involvement of legal authorities such as prosecutors or adjudicators, and the presence of a defendant. It takes place in a legal setting, such as a court, and results in a formal accusation that may lead to a trial or other legal proceedings. Key triggers include terms like 'charges', 'indictment', and 'filed'. This event is distinct from other JusticeEvent types like Extradite or ReleaseParole, which involve different legal processes and outcomes.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the legal authority or body responsible for overseeing the legal process of charging or indicting the defendant. This can include judges, magistrates, or juries. For example, 'The jury indicted the defendant on multiple charges' identifies 'jury' as the adjudicator. The adjudicator ensures the legal process is followed correctly and may be a collective body, such as a grand jury.",
+            "prosecutor": "The prosecutor is the legal representative who brings the charges against the defendant. This can include district attorneys, state attorneys, or other legal officials. For example, 'The district attorney filed charges' identifies 'district attorney' as the prosecutor. The prosecutor's role is to present the case against the defendant and seek a conviction.",
+            "defendant": "The defendant is the individual or entity being charged or indicted. This can include people, organizations, or groups. For example, 'The defendant was charged with theft' identifies 'defendant' as the person being accused. The defendant is central to the ChargeIndict event and must respond to the charges.",
+            "place": "The place refers to the location where the charges or indictment are brought or where the legal proceedings occur. This can include courts, cities, or countries. For example, 'The charges were filed in New York' identifies 'New York' as the place. The place provides context for the legal action and may influence the jurisdiction."
+        }
+    }
+}

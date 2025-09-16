@@ -1,0 +1,1336 @@
+{
+  "Acquit(JusticeEvent)": {
+    "description": [
+      "The 'Acquit' event type, a subclass of 'JusticeEvent', refers to the formal legal process where a defendant is declared not guilty of the charges against them. Example triggers include 'acquitted', 'found not guilty', and 'walk free'.",
+      "An 'Acquit' event involves a judicial decision where the defendant is cleared of criminal charges, often following a trial or legal proceeding. Key characteristics include the involvement of a legal adjudicator and the defendant being the subject of the acquittal.",
+      "Unlike the 'Convict' event type, which results in a guilty verdict, the 'Acquit' event results in the defendant being declared innocent. Triggers such as 'convicted' or 'found guilty' are indicative of the 'Convict' event type, not 'Acquit'.",
+      "The 'Acquit' event is distinct from the 'Fine' event type, which involves a monetary penalty. Triggers like 'fined' or 'penalized' are associated with the 'Fine' event type, whereas 'acquitted' or 'cleared of charges' are specific to 'Acquit'.",
+      "In the context of 'Acquit', the outcome is the defendant's release from legal charges, contrasting with 'ChargeIndict', where the defendant is formally accused of a crime. Triggers such as 'charged' or 'indicted' are not relevant to 'Acquit'."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The 'adjudicator' argument refers to the legal authority or body responsible for delivering the acquittal verdict. This can include judges, juries, or courts. For example, in 'The court acquitted the defendant', 'court' is the adjudicator.",
+        "In the 'Acquit' event, the adjudicator plays a crucial role in determining the outcome of the case. For instance, 'The jury found the defendant not guilty' identifies 'jury' as the adjudicator.",
+        "The adjudicator is essential for the legitimacy of the acquittal. In 'The judge declared the defendant innocent', 'judge' serves as the adjudicator.",
+        "Edge cases may involve multiple adjudicators, such as 'The panel of judges acquitted the defendant', where 'panel of judges' is the adjudicator.",
+        "Unlike the 'Prosecutor' in 'ChargeIndict' events, who brings charges against the defendant, the 'adjudicator' in 'Acquit' events delivers the verdict. For example, 'The magistrate acquitted the accused' identifies 'magistrate' as the adjudicator."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the acquittal occurs. This can be a courtroom, city, or country. For example, 'The defendant was acquitted in New York' identifies 'New York' as the place.",
+        "In 'Acquit' events, the place provides context for the legal proceedings. For instance, 'The court in Los Angeles acquitted the defendant' uses 'Los Angeles' as the place.",
+        "The place is important for understanding the jurisdiction of the acquittal. For example, 'The defendant was found not guilty in the federal court' identifies 'federal court' as the place.",
+        "Edge cases may involve broader locations, such as 'The international tribunal acquitted the defendant', where 'international tribunal' is the place.",
+        "Unlike 'Origin' or 'Destination' in 'Extradite' events, which refer to the movement of individuals, the 'place' in 'Acquit' events is where the legal decision is made. For example, 'The defendant was acquitted in the Supreme Court' identifies 'Supreme Court' as the place."
+      ],
+      "defendant": [
+        "The 'defendant' argument refers to the individual or entity being acquitted of charges. For example, in 'The court acquitted John Doe', 'John Doe' is the defendant.",
+        "In 'Acquit' events, the defendant is the central figure who benefits from the acquittal. For instance, 'The jury found the businessman not guilty' identifies 'businessman' as the defendant.",
+        "The defendant is crucial for identifying who is being cleared of charges. For example, 'The judge acquitted the accused' uses 'accused' as the defendant.",
+        "Edge cases may involve multiple defendants, such as 'The court acquitted the group of activists', where 'group of activists' is the defendant.",
+        "Unlike the 'Person' in 'Execute' events, who is subject to capital punishment, the 'defendant' in 'Acquit' events is cleared of charges. For example, 'The defendant was acquitted by the jury' identifies 'defendant' as the individual being acquitted."
+      ]
+    }
+  },
+  "Appeal(JusticeEvent)": {
+    "description": [
+      "An 'Appeal' event in the context of justice refers to a formal request made to a higher court to review and change the decision of a lower court. Example triggers include 'appeal', 'appealed', 'appealing'.",
+      "The 'Appeal' event involves a plaintiff who is dissatisfied with a court's decision and seeks a review from a higher authority. Key characteristics include the involvement of a higher court (adjudicator) and the original court's decision being contested.",
+      "Unlike the 'Sue' event, which involves initiating a legal action, the 'Appeal' event is a continuation of an existing legal process where the plaintiff seeks a different outcome from a higher court.",
+      "Triggers such as 'filed a lawsuit' or 'sued' are indicative of the 'Sue' event type, not the 'Appeal' event type. The 'Appeal' event specifically involves seeking a review of a prior decision.",
+      "The outcome of an 'Appeal' event can result in the original decision being upheld, reversed, or modified. This is distinct from events like 'Pardon' or 'ReleaseParole', which involve clemency or conditional release rather than a judicial review."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The 'adjudicator' in an 'Appeal' event refers to the higher court or judicial body that reviews the appeal. For example, in 'appealed to the Supreme Court', 'Supreme Court' is the adjudicator.",
+        "The role of the adjudicator is crucial as it is the authority that has the power to uphold, reverse, or modify the original decision. For instance, 'Federal Court' in 'appeal again with the Federal Court' is the adjudicator.",
+        "In some cases, the adjudicator can be a specific judge or panel of judges within a higher court. For example, 'the panel of judges' in 'the appeal was heard by the panel of judges' is the adjudicator.",
+        "The adjudicator must be a higher authority than the original court that made the decision. For example, 'Court of Appeals' in 'appealed to the Court of Appeals' is the adjudicator.",
+        "Unlike the 'Defendant' or 'Plaintiff', the adjudicator is not a party to the case but rather the authority reviewing the case. For example, 'High Court' in 'appealed to the High Court' is the adjudicator."
+      ],
+      "plaintiff": [
+        "The 'plaintiff' in an 'Appeal' event is the individual or entity that initiates the appeal, seeking a review of the original court's decision. For example, 'Anwar Ibrahim' in 'Anwar Ibrahim appealed' is the plaintiff.",
+        "The plaintiff is typically the party that is dissatisfied with the original decision and believes that a higher court will provide a more favorable outcome. For instance, 'five' in 'five of them appealed' is the plaintiff.",
+        "In some cases, the plaintiff can be a group or organization. For example, 'school districts' in 'school districts appealed' is the plaintiff.",
+        "The plaintiff must have standing in the original case to file an appeal. For example, 'Chiluba' in 'Chiluba's lawyer said he would appeal' is the plaintiff.",
+        "Unlike the 'Defendant', who is the party against whom the appeal is filed, the plaintiff is the one seeking the review. For example, 'districts' in 'districts involved in the initial cases appealed' is the plaintiff."
+      ],
+      "prosecutor": [
+        "The 'prosecutor' in an 'Appeal' event is the legal representative who argues against the appeal, typically representing the state or the original decision. For example, 'prosecutors' in 'prosecutors said Thursday' is the prosecutor.",
+        "The role of the prosecutor is to defend the original decision and argue why it should be upheld. For instance, 'the prosecution' in 'following an agreement with the prosecution' is the prosecutor.",
+        "In some cases, the prosecutor may also file an appeal if they are dissatisfied with the original decision. For example, 'the state' in 'the state appealed the decision' is the prosecutor.",
+        "The prosecutor is typically a government attorney or a representative of the state. For example, 'district attorney' in 'the district attorney appealed' is the prosecutor.",
+        "Unlike the 'Plaintiff', who seeks to overturn the decision, the prosecutor aims to maintain the original ruling. For example, 'the government' in 'the government appealed the acquittal' is the prosecutor."
+      ],
+      "defendant": [
+        "The 'defendant' in an 'Appeal' event is the party against whom the appeal is filed. For example, 'the school districts' in 'the school districts appealed' are the defendants.",
+        "The defendant is typically the party that won the original case and now must defend that decision in a higher court. For instance, 'the state' in 'the state is the defendant in the appeal' is the defendant.",
+        "In some cases, the defendant can be an individual or an organization. For example, 'the company' in 'the company is the defendant in the appeal' is the defendant.",
+        "The defendant must respond to the appeal and provide arguments to support the original decision. For example, 'the corporation' in 'the corporation is defending the appeal' is the defendant.",
+        "Unlike the 'Plaintiff', who initiates the appeal, the defendant is the party that must respond to it. For example, 'the government' in 'the government is the defendant in the appeal' is the defendant."
+      ],
+      "place": [
+        "The 'place' in an 'Appeal' event refers to the location where the appeal is filed or heard. For example, 'Indonesia' in 'appealed to the Supreme Court in Indonesia' is the place.",
+        "The place can be a specific court or a broader geographical location. For instance, 'court' in 'appealed to the court' is the place.",
+        "In some cases, the place can be a city or country where the higher court is located. For example, 'Malaysia' in 'appealed in Malaysia' is the place.",
+        "The place is important as it determines the jurisdiction of the higher court. For example, 'Washington' in 'appealed to the U.S. Supreme Court in Washington' is the place.",
+        "Unlike the 'Adjudicator', which is the authority reviewing the case, the place is the physical or geographical location of the appeal. For example, 'Federal Court' in 'appealed to the Federal Court in Malaysia' is the place."
+      ]
+    }
+  },
+  "ArrestJail(JusticeEvent)": {
+    "description": [
+      "The ArrestJail event type refers to the act of detaining an individual by law enforcement or other authorities, typically in response to a suspected crime. Example triggers include 'arrested', 'detained', and 'taken into custody'.",
+      "This event involves the physical apprehension and restriction of an individual's freedom, often leading to their placement in a jail or similar facility. Key characteristics include the involvement of an authority figure (agent) and a specific location (place).",
+      "Unlike the Extradite event, which involves transferring a person from one jurisdiction to another, the ArrestJail event focuses on the initial act of detaining an individual. Triggers such as 'extradition' are indicative of the Extradite event, not the ArrestJail event.",
+      "The outcome of an ArrestJail event is the individual's loss of freedom and potential legal proceedings. This differs from the Acquit event, where the outcome is the individual being declared not guilty and released.",
+      "In the context of justice events, the ArrestJail event is a precursor to other events such as Convict or Sentence, where legal judgments are made. The trigger 'convicted' indicates a Convict event, not an ArrestJail event."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "crime": [
+        "The 'crime' argument specifies the offense or illegal activity that led to the arrest. It is crucial for understanding the context of the arrest. For example, 'arrested for theft' indicates the crime is theft.",
+        "This argument helps to clarify the reason behind the arrest, distinguishing it from other justice events. For instance, 'arrested for vandalism' provides a clear reason for the detainment.",
+        "In some cases, the crime may not be explicitly stated but can be inferred from the context. For example, 'arrested after a robbery' implies the crime is robbery.",
+        "The 'crime' argument is not always present in the text but is essential when available to provide a complete picture of the event. For example, 'arrested for drug possession' clearly states the crime.",
+        "Edge cases include situations where the crime is described in vague terms, such as 'arrested for suspicious activity'. Here, the exact nature of the crime may not be clear but still provides context."
+      ],
+      "time": [
+        "The 'time' argument indicates when the arrest took place. It helps to situate the event in a temporal context. For example, 'arrested on Saturday' specifies the day of the week.",
+        "This argument can include specific dates, times of day, or relative time expressions. For instance, 'arrested at 3 PM' or 'arrested last night' provide clear temporal markers.",
+        "In some cases, the time may be inferred from the context rather than explicitly stated. For example, 'arrested during the protest' implies a specific time frame.",
+        "The 'time' argument is important for understanding the sequence of events, especially in narratives involving multiple justice events. For example, 'arrested after the meeting' provides a relative time frame.",
+        "Edge cases include vague time references such as 'arrested recently'. While not specific, these still provide some temporal context."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the arrest occurred. It is crucial for understanding the geographical context of the event. For example, 'arrested in New York' indicates the city.",
+        "This argument can include specific addresses, landmarks, or general areas. For instance, 'arrested at the courthouse' or 'arrested downtown' provide clear location markers.",
+        "In some cases, the place may be described in broader terms, such as 'arrested in the city'. While less specific, it still provides geographical context.",
+        "The 'place' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple locations. For example, 'arrested at the border' provides a specific context.",
+        "Edge cases include vague location references such as 'arrested nearby'. While not specific, these still provide some geographical context."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual who is being arrested. It is essential for understanding who is the subject of the ArrestJail event. For example, 'arrested John' specifies the person.",
+        "This argument can include names, descriptions, or roles. For instance, 'arrested the suspect' or 'arrested the man' provide clear identification.",
+        "In some cases, the person may be described in broader terms, such as 'arrested several people'. While less specific, it still identifies the subjects of the event.",
+        "The 'person' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple individuals. For example, 'arrested the protesters' provides a specific group.",
+        "Edge cases include vague person references such as 'arrested someone'. While not specific, these still provide some identification."
+      ],
+      "agent": [
+        "The 'agent' argument identifies the authority figure or entity responsible for making the arrest. It is crucial for understanding who is carrying out the ArrestJail event. For example, 'arrested by the police' specifies the agent.",
+        "This argument can include specific organizations, roles, or descriptions. For instance, 'arrested by the FBI' or 'arrested by security' provide clear identification.",
+        "In some cases, the agent may be described in broader terms, such as 'arrested by authorities'. While less specific, it still identifies the responsible entity.",
+        "The 'agent' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple agents. For example, 'arrested by the military' provides a specific context.",
+        "Edge cases include vague agent references such as 'arrested by officials'. While not specific, these still provide some identification."
+      ]
+    }
+  },
+  "Attack(ConflictEvent)": {
+    "description": [
+      "An 'Attack' event, a subtype of 'ConflictEvent', involves an aggressive action aimed at causing harm or damage to a target. Example triggers include 'ambush', 'bombardment', 'take out', 'clashing', and 'raping and drugging'.",
+      "The 'Attack' event is characterized by the presence of an attacker, a target, and often an instrument used to carry out the attack. The scope includes physical, verbal, and cyber attacks.",
+      "Unlike 'Demonstrate' events, which involve peaceful or non-violent gatherings, 'Attack' events are marked by violence or the intent to cause harm. For instance, 'gathered' is a trigger for 'Demonstrate', not 'Attack'.",
+      "Triggers for 'Attack' events often imply direct confrontation or harm, such as 'ambush' or 'bombardment', whereas 'Demonstrate' events use triggers like 'gathered' that do not imply violence.",
+      "Outcomes of 'Attack' events typically include injury, damage, or death, distinguishing them from other conflict events where the primary outcome may be protest or demonstration without direct harm."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "target": [
+        "The 'target' is the entity or entities that the attack is directed against. In Example 1, 'avs' and 'tanks' are the targets of the ambush.",
+        "The 'target' can be individuals, groups, or objects. For instance, in Example 4, 'President', 'Senators', and 'congressmen' are targets.",
+        "In some cases, the 'target' may be a location, such as 'baghdad' in Example 3, where the bombardment is directed.",
+        "The 'target' is crucial for understanding the focus of the attack and the intended harm. It helps in identifying the scope and impact of the event.",
+        "Edge cases include situations where the 'target' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+      ],
+      "victim": [
+        "The 'victim' is the entity that suffers harm or damage as a result of the attack. In Example 2, 'women' are the victims of 'raping and drugging'.",
+        "The 'victim' can be individuals or groups who experience the negative consequences of the attack.",
+        "In some cases, the 'victim' may overlap with the 'target', especially when the attack is directed at people. For example, 'President' and 'Senators' in Example 4.",
+        "The 'victim' is essential for understanding the human impact of the attack, highlighting the severity and consequences of the event.",
+        "Edge cases include situations where the 'victim' is not explicitly mentioned but can be inferred from the context, such as 'protesters' and 'police' in Example 5."
+      ],
+      "attacker": [
+        "The 'attacker' is the entity that initiates and carries out the attack. In Example 1, 'groups' are the attackers in the ambush.",
+        "The 'attacker' can be individuals, groups, or organizations responsible for the aggressive action.",
+        "In some cases, the 'attacker' may be a collective entity, such as 'forces' and 'u.s. army' in Example 3.",
+        "The 'attacker' is crucial for identifying the source of the aggression and understanding the dynamics of the conflict.",
+        "Edge cases include situations where the 'attacker' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+      ],
+      "time": [
+        "The 'time' argument specifies when the attack took place. It provides temporal context for the event.",
+        "The 'time' can be a specific date, time of day, or a broader time frame, such as 'tonight' in Example 3.",
+        "In some cases, the 'time' may be implied rather than explicitly stated, requiring inference from the surrounding text.",
+        "The 'time' is important for situating the event within a timeline and understanding its sequence relative to other events.",
+        "Edge cases include situations where the 'time' is not explicitly mentioned but can be inferred from context, such as 'for a week now' in Example 5."
+      ],
+      "instrument": [
+        "The 'instrument' is the tool or means used to carry out the attack. In Example 1, 'ak-47s' and 'rpgs' are instruments used in the ambush.",
+        "The 'instrument' can be weapons, tools, or other means that facilitate the attack. For example, 'weapons' in Example 4.",
+        "In some cases, the 'instrument' may be implied rather than explicitly stated, requiring inference from the context.",
+        "The 'instrument' is crucial for understanding the method and severity of the attack, highlighting the means by which harm is inflicted.",
+        "Edge cases include situations where the 'instrument' is not explicitly mentioned but can be inferred from context, such as 'explosions' in Example 3."
+      ],
+      "place": [
+        "The 'place' is the location where the attack occurs. In Example 1, 'area' is the place of the ambush.",
+        "The 'place' can be a specific location, city, or broader region. For instance, 'baghdad' in Example 3.",
+        "In some cases, the 'place' may be implied rather than explicitly stated, requiring inference from the surrounding text.",
+        "The 'place' is important for situating the event geographically and understanding its spatial context.",
+        "Edge cases include situations where the 'place' is not explicitly mentioned but can be inferred from context, such as 'tehran' in Example 5."
+      ],
+      "agent": [
+        "The 'agent' is the entity responsible for initiating the attack. In Example 2, 'luster' is the agent of 'raping and drugging'.",
+        "The 'agent' can be individuals, groups, or organizations that plan and execute the attack.",
+        "In some cases, the 'agent' may overlap with the 'attacker', especially when the attack is carried out by a single entity. For example, 'forces' in Example 3.",
+        "The 'agent' is crucial for identifying the source of the aggression and understanding the dynamics of the conflict.",
+        "Edge cases include situations where the 'agent' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+      ]
+    }
+  },
+  "BeBorn(LifeEvent)": {
+    "description": [
+      "The 'BeBorn' event type, a subclass of 'LifeEvent', refers to the occurrence of a person's birth. Example triggers include 'birth', 'born', and 'having'.",
+      "This event captures the moment when a new individual comes into existence. Key characteristics include the presence of a person being born, the location of the birth, and the time it occurred.",
+      "Unlike the 'Die' event type, which marks the end of life, the 'BeBorn' event signifies the beginning of life. For instance, 'killed' is a trigger for 'Die', not 'BeBorn'.",
+      "Triggers such as 'birth' and 'born' are indicative of the 'BeBorn' event type, whereas triggers like 'marry' or 'divorce' are related to other life events such as 'Marry' or 'Divorce'.",
+      "The 'BeBorn' event is distinct from other life events like 'Injure' or 'Marry' as it specifically deals with the birth of a person, not injuries or marital status changes."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "place": [
+        "The 'place' argument specifies the location where the birth occurred. It is crucial for contextualizing the event. For example, 'home' in 'gave birth at her parents' home'.",
+        "This argument can refer to any geographical location, such as a country, city, or specific building. For instance, 'New Zealand' in 'New Zealand-born Hunter'.",
+        "In some cases, the place might be a general area rather than a specific location, like 'hospital' in 'gave birth at a Los Angeles-area hospital'.",
+        "The 'place' argument helps in understanding the environment and circumstances of the birth. For example, 'nation' in 'the blood red nation of China'.",
+        "Edge cases include ambiguous or broad locations that still provide context, such as 'home' or 'hospital'. These should be annotated as they contribute to the event's setting."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual(s) being born. This is the central focus of the 'BeBorn' event. For example, 'babies' in 'gave birth to both babies'.",
+        "This argument can refer to a single person or multiple individuals, such as 'girls' and 'boys' in 'only about 100 girls are born for every 119 boys'.",
+        "In some instances, the person might be referred to indirectly, like 'child' in 'gave birth to the couple's third child'.",
+        "The 'person' argument is essential for specifying who is being born, providing clarity on the event's subject. For example, 'Hunter' in 'New Zealand-born Hunter'.",
+        "Edge cases include references to the person by their relationship or role, such as 'one' and 'other' in 'one of unknown sex and the other, a fullterm girl'. These should still be annotated as they indicate the individuals being born."
+      ],
+      "time": [
+        "The 'time' argument specifies when the birth occurred. It provides temporal context to the event. For example, 'January 14' in 'a fullterm girl, January 14'.",
+        "This argument can refer to specific dates, times, or broader time frames, such as 'April 2001' in 'one of unknown sex in April 2001'.",
+        "In some cases, the time might be mentioned in relation to other events or periods, like '1:52 a.m.' in 'gave birth to the couple's third child at 1:52 a.m.'.",
+        "The 'time' argument helps in situating the birth event within a chronological framework, providing a clearer understanding of when it happened.",
+        "Edge cases include vague or relative time references that still provide temporal context, such as '20-year-old policy' in 'curb the effects of a devastating 20-year-old policy'. These should be annotated as they contribute to the event's timing."
+      ]
+    }
+  },
+  "ChargeIndict(JusticeEvent)": {
+    "description": [
+      "The ChargeIndict event type refers to the formal accusation or indictment of an individual or entity by a legal authority, typically involving criminal charges. Example triggers include 'charges', 'indictment', and 'filed'.",
+      "This event type is characterized by the involvement of legal authorities such as prosecutors or adjudicators, and the presence of a defendant who is being accused. The scope includes any formal legal action that initiates criminal proceedings.",
+      "Unlike the ArrestJail event, which involves the physical apprehension of a suspect, the ChargeIndict event focuses on the formal legal process of accusing someone of a crime. Triggers like 'arrested' are indicative of ArrestJail, not ChargeIndict.",
+      "The ChargeIndict event differs from the Convict event, which involves a legal determination of guilt. While ChargeIndict involves the initiation of charges, Convict involves the conclusion of a trial with a guilty verdict. Triggers like 'convicted' are indicative of Convict, not ChargeIndict.",
+      "In comparison to the Sentence event, which involves the imposition of a penalty following a conviction, the ChargeIndict event is concerned with the initial accusation. Triggers like 'sentenced' are indicative of Sentence, not ChargeIndict."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The adjudicator is the legal authority or body responsible for overseeing the legal process of charging or indicting the defendant. This can include judges, magistrates, or juries. For example, in 'The jury indicted the defendant', 'jury' is the adjudicator.",
+        "Adjudicators play a crucial role in ensuring that the legal process is followed correctly and that the charges are formally presented. For instance, 'The magistrate issued the charges' identifies 'magistrate' as the adjudicator.",
+        "In some cases, the adjudicator may be a collective body, such as a grand jury. For example, 'The grand jury handed down the indictment' uses 'grand jury' as the adjudicator.",
+        "Unlike prosecutors, who actively pursue the charges, adjudicators are responsible for the legal oversight and formal declaration of charges. For example, 'The judge read the charges' identifies 'judge' as the adjudicator.",
+        "Adjudicators are distinct from defendants and prosecutors, as they are neutral parties in the legal process. For example, 'The court issued the indictment' uses 'court' as the adjudicator."
+      ],
+      "prosecutor": [
+        "The prosecutor is the legal representative who brings the charges against the defendant. This can include district attorneys, state attorneys, or federal prosecutors. For example, in 'The district attorney filed the charges', 'district attorney' is the prosecutor.",
+        "Prosecutors are responsible for presenting the case against the defendant and seeking a formal indictment. For instance, 'The state attorney pursued the charges' identifies 'state attorney' as the prosecutor.",
+        "In some cases, multiple prosecutors may be involved in bringing the charges. For example, 'The justice department and the SEC filed charges' uses 'justice department' and 'SEC' as prosecutors.",
+        "Unlike adjudicators, who oversee the legal process, prosecutors actively work to establish the case against the defendant. For example, 'The prosecutor presented the evidence' identifies 'prosecutor' as the prosecutor.",
+        "Prosecutors are distinct from defendants and adjudicators, as they are advocates for the state or government in the legal process. For example, 'The federal prosecutor indicted the suspect' uses 'federal prosecutor' as the prosecutor."
+      ],
+      "defendant": [
+        "The defendant is the individual or entity that is being formally accused or indicted in the legal process. For example, in 'The defendant was charged with theft', 'defendant' is the person being accused.",
+        "Defendants are the primary subjects of the ChargeIndict event, as they are the ones facing the legal accusations. For instance, 'The company was indicted for fraud' identifies 'company' as the defendant.",
+        "In some cases, there may be multiple defendants involved in the charges. For example, 'The officials were charged with corruption' uses 'officials' as the defendants.",
+        "Unlike prosecutors and adjudicators, defendants are the ones who must respond to the charges and defend themselves in court. For example, 'The accused pleaded not guilty' identifies 'accused' as the defendant.",
+        "Defendants are distinct from prosecutors and adjudicators, as they are the ones being accused rather than the ones bringing or overseeing the charges. For example, 'The suspect was indicted' uses 'suspect' as the defendant."
+      ],
+      "place": [
+        "The place refers to the location where the charges or indictment are filed or where the legal proceedings take place. For example, in 'The charges were filed in New York', 'New York' is the place.",
+        "Places are important in the ChargeIndict event as they provide context for the jurisdiction and venue of the legal proceedings. For instance, 'The indictment was issued in the federal court' identifies 'federal court' as the place.",
+        "In some cases, the place may refer to a specific court or legal institution. For example, 'The charges were brought in the district court' uses 'district court' as the place.",
+        "Unlike the defendant, prosecutor, and adjudicator, the place is a location rather than a person or entity involved in the legal process. For example, 'The trial will be held in Los Angeles' identifies 'Los Angeles' as the place.",
+        "Places are distinct from other arguments as they provide geographical and jurisdictional context for the ChargeIndict event. For example, 'The indictment was filed in the Supreme Court' uses 'Supreme Court' as the place."
+      ]
+    }
+  },
+  "Convict(JusticeEvent)": {
+    "description": [
+      "A Convict event involves a formal declaration by an adjudicator that a defendant is guilty of a criminal offense. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+      "This event type is characterized by the presence of a legal authority (adjudicator) who makes the judgment, a defendant who is being judged, and a place where the judgment occurs.",
+      "Unlike the Sentence event, which focuses on the punishment given to a defendant, the Convict event focuses on the determination of guilt. For example, 'sentenced to five years' is indicative of a Sentence event, not a Convict event.",
+      "Triggers such as 'extradition' or 'arrested' are indicative of Extradite and ArrestJail events, respectively, and not Convict events. The Convict event specifically involves the legal determination of guilt.",
+      "The outcome of a Convict event is the formal recognition of the defendant's guilt, which may lead to subsequent events like sentencing. For instance, 'convicted of fraud' indicates a Convict event, while 'sentenced to prison' indicates a Sentence event."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The adjudicator is the legal authority or body that declares the defendant guilty. This can be a judge, jury, or court. For example, in 'The jury convicted him of theft', the jury is the adjudicator.",
+        "The role of the adjudicator is crucial as they are responsible for the legal judgment. In 'Judge Smith found her guilty', Judge Smith is the adjudicator.",
+        "In some cases, the adjudicator may be a collective body, such as a panel of judges or a jury. For instance, 'The panel of judges convicted the defendant' involves a collective adjudicator.",
+        "The adjudicator must be a recognized legal authority. Unlike a witness or prosecutor, the adjudicator has the power to make a legal judgment. For example, 'The prosecutor accused him' does not indicate an adjudicator.",
+        "Edge cases may involve non-traditional adjudicators, such as a tribunal or a special commission. For example, 'The tribunal found the defendant guilty' involves a tribunal as the adjudicator."
+      ],
+      "place": [
+        "The place refers to the location where the conviction occurs. This can be a city, court, or country. For example, in 'He was convicted in New York', New York is the place.",
+        "The place is important as it provides context for the legal jurisdiction. In 'The court in Los Angeles convicted her', Los Angeles is the place.",
+        "In some cases, the place may be a specific building or institution, such as a courthouse. For instance, 'The conviction took place at the district court' involves a specific place.",
+        "Unlike the origin or destination in an Extradite event, the place in a Convict event is where the legal judgment is made. For example, 'He was extradited from France' does not indicate a Convict event place.",
+        "Edge cases may involve broader locations, such as a country or region. For example, 'He was convicted in the United States' involves a country as the place."
+      ],
+      "defendant": [
+        "The defendant is the individual or entity being judged and found guilty. For example, in 'The court convicted John Doe', John Doe is the defendant.",
+        "The role of the defendant is central to the Convict event as they are the subject of the legal judgment. In 'She was found guilty', 'she' is the defendant.",
+        "In some cases, the defendant may be a group of individuals or an organization. For instance, 'The company was convicted of fraud' involves a company as the defendant.",
+        "Unlike the person in an ArrestJail event, the defendant in a Convict event is specifically being judged for guilt. For example, 'The police arrested him' does not indicate a Convict event defendant.",
+        "Edge cases may involve defendants who are not physically present, such as in absentia convictions. For example, 'He was convicted in absentia' involves a defendant who is not present."
+      ]
+    }
+  },
+  "DeclareBankruptcy(BusinessEvent)": {
+    "description": [
+      "The DeclareBankruptcy event refers to a situation where an organization formally declares its inability to meet its financial obligations and seeks legal protection from creditors. Example triggers include 'bankruptcy', 'bankrupt', and 'file for bankruptcy'.",
+      "This event type is characterized by the involvement of an organization (Org) that is undergoing financial distress and a legal process to manage its debts. Unlike other BusinessEvent types, DeclareBankruptcy specifically involves legal proceedings related to insolvency.",
+      "Key characteristics of the DeclareBankruptcy event include the formal declaration of insolvency, legal proceedings, and the involvement of creditors. Triggers such as 'bankruptcy' and 'bankrupt' are indicative of this event type.",
+      "Unlike the MergeOrg event, which involves the combination of two or more organizations, the DeclareBankruptcy event focuses on a single organization's financial failure. Triggers like 'merged' are not relevant to this event type.",
+      "The outcomes of a DeclareBankruptcy event typically include legal protection from creditors, restructuring of debts, or liquidation of assets. This is distinct from the StartOrg event, which involves the creation of a new organization, and the EndOrg event, which involves the dissolution of an organization without the specific context of financial insolvency."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "org": [
+        "The 'Org' argument refers to the organization that is declaring bankruptcy. This is a crucial element as it identifies the entity undergoing financial distress. For example, in the sentence 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states,' 'worldcom' is the organization declaring bankruptcy.",
+        "The 'Org' argument is important because it specifies the entity involved in the bankruptcy event. In the sentence 'Bankrupt energy giant Enron Corp is considering bringing legal action against its own bankers,' 'Enron Corp' is the organization in question.",
+        "In the context of the DeclareBankruptcy event, the 'Org' argument helps to pinpoint the specific company or entity that is experiencing financial failure. For instance, 'united' in 'despite operating under bankruptcy laws, united posted the best on time performance' is the organization.",
+        "The 'Org' argument can include various types of organizations, such as corporations, companies, or other business entities. For example, 'amr' in 'if they don't ratify these agreements, amr will have to file for bankruptcy' is the organization.",
+        "Edge cases for the 'Org' argument might include situations where the organization is not explicitly named but can be inferred from context. For example, 'usairways is flying its way out of bankruptcy' clearly indicates 'usairways' as the organization."
+      ],
+      "place": [
+        "The 'Place' argument refers to the geographical location associated with the bankruptcy event. This can be the country, state, or city where the bankruptcy is declared. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states,' 'united states' is the place.",
+        "The 'Place' argument is important as it provides context about the jurisdiction and legal environment in which the bankruptcy is taking place. For instance, 'united states' in the previous example indicates the location.",
+        "In some cases, the 'Place' argument may not be explicitly mentioned but can be inferred from the context. For example, if a well-known company based in a specific country declares bankruptcy, the place can be inferred.",
+        "The 'Place' argument helps to understand the legal and economic environment surrounding the bankruptcy event. Different countries have different bankruptcy laws, which can affect the proceedings. For example, 'united states' in the context of 'worldcom' provides this information.",
+        "Edge cases for the 'Place' argument might include situations where the location is not directly related to the legal proceedings but is mentioned in the context. For example, 'the largest corporate bankruptcy in the united states' clearly indicates 'united states' as the place."
+      ]
+    }
+  },
+  "Demonstrate(ConflictEvent)": {
+    "description": [
+      "A 'Demonstrate' event involves a group of people gathering publicly to express their opinions, often in protest or support of a cause. Example triggers include 'gathered', 'rally', 'protests', and 'campaign'.",
+      "This event type is characterized by collective action, typically involving a significant number of participants. Unlike 'Attack' events, 'Demonstrate' events are primarily non-violent, although they can sometimes lead to clashes with authorities.",
+      "Key characteristics of a 'Demonstrate' event include the presence of a cause or issue being addressed, a public setting, and the involvement of multiple participants. Triggers such as 'protests' and 'rally' are indicative of this event type.",
+      "The scope of a 'Demonstrate' event can range from small local gatherings to large-scale national or international protests. Unlike 'Riot' events, 'Demonstrate' events do not inherently involve violence or property damage, although these can occur.",
+      "Outcomes of 'Demonstrate' events can include media coverage, public awareness, and sometimes policy changes. Triggers like 'gathered' and 'campaign' are specific to 'Demonstrate' events and differ from 'Attack' events, which involve direct physical aggression."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "time": [
+        "The 'time' argument specifies when the demonstration took place. It is crucial for understanding the context and relevance of the event. Example: 'yesterday' in 'students stage antiwar protests on campuses yesterday'.",
+        "This argument helps in situating the event within a specific temporal framework, which can be important for historical analysis. Example: 'Saturday' in '70 people were arrested Saturday'.",
+        "In some cases, the 'time' argument can be implicit, inferred from the context rather than explicitly stated. Example: 'in the past two days' in '1,600 people were arrested in the past two days'.",
+        "The 'time' argument can also indicate the duration of the demonstration, providing insights into the scale and intensity of the event. Example: '10 hours' in 'Liana Owen drove 10 hours from Pennsylvania'.",
+        "Edge cases include events where the exact time is not specified but can be deduced from related information. Example: 'from coast-to-coast' implies a nationwide event occurring simultaneously."
+      ],
+      "entity": [
+        "The 'entity' argument identifies the participants in the demonstration. This is essential for understanding who is involved and their potential motivations. Example: 'Protesters' in 'Protesters also gathered in their thousands'.",
+        "Entities can include individuals, groups, or organizations. Example: 'students' in 'tens of thousands of college and high school students stage antiwar protests'.",
+        "The 'entity' argument can also specify subgroups within the larger demonstration. Example: 'Liana Owen' and 'parents' in 'Liana Owen drove 10 hours from Pennsylvania to attend the rally'.",
+        "In some cases, the 'entity' argument may include both the primary participants and secondary participants. Example: 'protesters' and 'police' in 'demonstrators clashed with police'.",
+        "Edge cases include situations where the entity is implied rather than explicitly stated. Example: 'people' in '70 people were arrested' implies demonstrators."
+      ],
+      "place": [
+        "The 'place' argument specifies the location of the demonstration. This is crucial for understanding the geographical context and potential impact. Example: 'Halifax, Calgary, Edmonton and Vancouver' in 'Protesters also gathered in their thousands'.",
+        "Locations can range from specific sites to broader areas. Example: 'Manhattan' in 'attend the rally in Manhattan'.",
+        "The 'place' argument can also include multiple locations, indicating a widespread event. Example: 'plazas and streets of San Francisco' in 'protesters thronged the plazas and streets'.",
+        "In some cases, the 'place' argument may be more general, indicating a region or country. Example: 'across the United States and Canada' in '200,000 anti-war protesters took to the streets'.",
+        "Edge cases include events where the exact location is not specified but can be inferred from context. Example: 'here' in 'demonstrators clashed with police at the end of a major peace rally here'."
+      ],
+      "police": [
+        "The 'police' argument identifies the involvement of law enforcement in the demonstration. This is important for understanding the dynamics and potential conflicts of the event. Example: 'police' in 'demonstrators clashed with police'.",
+        "This argument can indicate the presence of law enforcement, their actions, and their interactions with demonstrators. Example: 'arrested' in '70 people were arrested'.",
+        "The 'police' argument can also highlight the scale of law enforcement involvement. Example: 'more than 1,600 people were arrested' in 'San Francisco'.",
+        "In some cases, the 'police' argument may be implicit, inferred from the context of the event. Example: 'civil disobedience campaign' implies potential police involvement.",
+        "Edge cases include situations where law enforcement is mentioned indirectly or through related terms. Example: 'clashed' in 'demonstrators clashed with police' implies police presence."
+      ]
+    }
+  },
+  "Die(LifeEvent)": {
+    "description": [
+      "The 'Die' event type, a subclass of 'LifeEvent', refers to the cessation of life of one or more individuals. Example triggers include 'killed', 'died', 'fallen', and 'dead'.",
+      "This event type captures scenarios where death occurs due to various causes, including violence, accidents, or natural causes. Key characteristics include the presence of a victim and often an agent or instrument causing the death.",
+      "Unlike the 'Injure' event type, which involves harm but not necessarily death, the 'Die' event type specifically denotes the end of life. For instance, 'wounding' is indicative of 'Injure', not 'Die'.",
+      "Triggers such as 'divorce', 'birth', and 'marry' are indicative of other 'LifeEvent' types and do not pertain to the 'Die' event type. These events involve significant life changes but not the end of life.",
+      "The scope of the 'Die' event type includes various contexts such as warfare, accidents, and natural disasters. The outcome is always the death of the victim(s), distinguishing it from events where individuals survive or are merely injured."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "time": [
+        "The 'time' argument specifies when the death occurred. It is crucial for understanding the temporal context of the event. Example: 'Monday' in 'were killed Monday'.",
+        "This argument helps in situating the event within a timeline, which can be important for historical records or ongoing investigations. Example: 'at least four dead' indicates a specific time frame.",
+        "In some cases, the exact time may not be explicitly mentioned but inferred from the context. Example: 'died' in 'died, another case' implies a recent event.",
+        "The 'time' argument can also include relative time expressions such as 'yesterday', 'last week', or 'recently'. Example: 'recently killed' provides a temporal context.",
+        "Edge cases include ambiguous time references that require contextual interpretation. Example: 'fallen comrades' may imply a past event without a specific date."
+      ],
+      "place": [
+        "The 'place' argument identifies the location where the death occurred. It provides spatial context to the event. Example: 'houses' in 'were killed Monday when their houses were hit'.",
+        "This argument is essential for understanding the geographical context and potential implications of the event. Example: 'Persian Gulf' in 'over the Persian Gulf'.",
+        "In some instances, the place may be a broader region rather than a specific location. Example: 'south Baghdad' in 'operation center for 2nd brigade 3rd infantry zrigs south Baghdad'.",
+        "The 'place' argument can also include specific buildings or structures. Example: 'hotel' in 'At a nearby hotel, two other journalists...died'.",
+        "Edge cases include events where the place is not explicitly mentioned but can be inferred from the context. Example: 'center' in 'operation center' implies a specific location."
+      ],
+      "instrument": [
+        "The 'instrument' argument specifies the means or tool used to cause the death. It highlights the method of the event. Example: 'missile' in 'hit by a missile'.",
+        "This argument is crucial for understanding the cause or mechanism of death. Example: 'helicopters' in 'collision of two Royal Navy helicopters'.",
+        "In some cases, the instrument may be a weapon or object used in the event. Example: 'explosives' in 'detonated explosives'.",
+        "The 'instrument' argument can also include natural causes or environmental factors. Example: 'fire' in 'returning fire' implies the use of firearms.",
+        "Edge cases include events where the instrument is not explicitly mentioned but can be inferred. Example: 'operation center' implies military equipment or actions."
+      ],
+      "victim": [
+        "The 'victim' argument identifies the individual(s) who died in the event. It is a central component of the 'Die' event type. Example: 'civilians' and 'woman' in 'Five Iraqi civilians, including a woman, were killed'.",
+        "This argument is essential for understanding who was affected by the event. Example: 'journalists' and 'soldiers' in 'at least four dead, two soldiers and two journalists'.",
+        "In some cases, the victim may be a group or collective entity. Example: 'comrades' in 'fallen comrades'.",
+        "The 'victim' argument can also include specific individuals or roles. Example: 'photographer' in 'a photographer from Reuters'.",
+        "Edge cases include events where the victim is not explicitly mentioned but can be inferred from the context. Example: 'members' in 'all six British crew members'."
+      ],
+      "person": [
+        "The 'person' argument identifies individuals related to the event but not necessarily the victims. It provides additional context. Example: 'comrades' in 'fallen comrades'.",
+        "This argument is important for understanding the broader impact and relationships involved in the event. Example: 'comrades' implies a military context.",
+        "In some cases, the person may be a witness or someone reporting the event. Example: 'witnesses' in 'witnesses said'.",
+        "The 'person' argument can also include individuals who are indirectly affected by the event. Example: 'family members' in 'family members mourned the loss'.",
+        "Edge cases include events where the person is not directly involved but mentioned for context. Example: 'reporter' in 'a reporter from the scene'."
+      ],
+      "agent": [
+        "The 'agent' argument identifies the entity responsible for causing the death. It highlights the perpetrator or cause. Example: 'coalition' in 'fired by the US-led coalition warplanes'.",
+        "This argument is crucial for understanding who or what caused the event. Example: 'forces' in 'CENTCOM says, of coalition forces returning fire'.",
+        "In some cases, the agent may be a group or organization. Example: 'bomber' in 'A suicide bomber detonated explosives'.",
+        "The 'agent' argument can also include natural forces or accidents. Example: 'collision' in 'collision of two Royal Navy helicopters'.",
+        "Edge cases include events where the agent is not explicitly mentioned but can be inferred. Example: 'operation center' implies military actions."
+      ]
+    }
+  },
+  "Divorce(LifeEvent)": {
+    "description": [
+      "A Divorce event, a subtype of LifeEvent, refers to the legal dissolution of a marriage between two individuals. Example triggers include 'divorce', 'filed for divorce', and 'sued for divorce'.",
+      "This event is characterized by the formal ending of a marital relationship, often involving legal proceedings. Key characteristics include the involvement of legal terms and the mention of marital dissolution.",
+      "Unlike the Marry event, which signifies the beginning of a marital relationship, the Divorce event marks its end. Triggers such as 'married' or 'wedding' are indicative of the Marry event, not the Divorce event.",
+      "The Divorce event often involves legal actions and can include references to court proceedings, legal filings, and terms like 'irreconcilable differences'.",
+      "Outcomes of a Divorce event typically include the separation of the individuals involved, legal settlements, and changes in marital status. This is distinct from events like Injure or Die, which involve physical harm or death."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "place": [
+        "The 'place' argument specifies the location where the divorce proceedings or related events occur. This can include cities, courts, or any relevant geographical location. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+        "The 'place' argument is crucial for understanding the jurisdiction and legal context of the divorce. It helps in identifying the legal environment and potential legal implications.",
+        "In some cases, the 'place' might be implied rather than explicitly stated. For instance, 'filed for divorce in the local court' implies a specific but unnamed location.",
+        "Unlike the 'place' argument in events like Injure, which might refer to the site of an incident, the 'place' in a Divorce event is typically a legal or administrative location.",
+        "Edge cases might include mentions of multiple locations, such as 'filed for divorce in both New York and Los Angeles'. In such cases, both locations should be annotated."
+      ],
+      "person": [
+        "The 'person' argument identifies the individuals involved in the divorce. This includes both parties seeking the divorce. For example, 'Hunter' and 'star' in 'Hunter filed for divorce from the star'.",
+        "The 'person' argument is essential for understanding who is directly affected by the divorce. It provides clarity on the relationship dynamics and the individuals' roles.",
+        "In some texts, the 'person' might be referred to indirectly, such as 'his wife' or 'her husband'. These references should still be annotated as they indicate the involved parties.",
+        "Unlike the 'person' argument in events like Die, which might refer to victims or agents, the 'person' in a Divorce event specifically refers to the spouses involved in the marital dissolution.",
+        "Edge cases might include mentions of additional individuals, such as lawyers or children, but the primary focus should remain on the divorcing parties."
+      ],
+      "time": [
+        "The 'time' argument specifies when the divorce proceedings or related events occur. This can include specific dates, months, or general time frames. For example, 'in September' in 'sued for divorce in September'.",
+        "The 'time' argument is important for establishing the timeline of the divorce process. It helps in understanding the sequence of events and the duration of the proceedings.",
+        "In some cases, the 'time' might be implied rather than explicitly stated. For instance, 'filed for divorce last year' implies a specific but unnamed time frame.",
+        "Unlike the 'time' argument in events like BeBorn, which might refer to birth dates, the 'time' in a Divorce event typically refers to the period of legal actions or marital dissolution.",
+        "Edge cases might include mentions of multiple time frames, such as 'filed for divorce in both January and March'. In such cases, both time frames should be annotated."
+      ]
+    }
+  },
+  "Elect(PersonnelEvent)": {
+    "description": [
+      "The 'Elect' event type, a subclass of 'PersonnelEvent', refers to the process of selecting a person for a position or office through a voting mechanism. Example triggers include 'elected', 'won', and 'winning'.",
+      "This event type is characterized by the formal selection of an individual to a role, typically within a governmental or organizational context. It involves a competitive process where multiple candidates may be considered.",
+      "Unlike the 'Nominate' event, which involves proposing a candidate for a position, the 'Elect' event signifies the final decision and selection of the candidate. For instance, 'name' is a trigger for 'Nominate', not 'Elect'.",
+      "The 'Elect' event often results in the individual assuming a new role or office, distinguishing it from 'EndPosition' or 'StartPosition' events, which mark the beginning or end of a tenure. For example, 'former' is a trigger for 'EndPosition', not 'Elect'.",
+      "Key characteristics of the 'Elect' event include the involvement of a voting process, the presence of a selected individual (Person), and often a specific location (Place) or entity (Entity) associated with the election. Negative examples include 'becoming', which is a trigger for 'StartPosition', not 'Elect'."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "entity": [
+        "The 'entity' argument refers to the organization, body, or group that conducts the election or is associated with the elected position. For example, in 'Beatriz Marinello was elected USCF President', 'USCF' is the entity.",
+        "This argument is crucial as it provides context about the scope and authority of the election. It helps identify the organizational framework within which the election occurs.",
+        "In cases where the entity is a country or a large organization, it indicates the level of significance and impact of the election. For instance, 'Zambia' in 'Chiluba was Zambia's first democratically elected president' is the entity.",
+        "The entity can sometimes be implicit or inferred from the context, especially in well-known elections. For example, 'government' in 'Jordan's first female lawmaker' implies the Jordanian government.",
+        "Edge cases include elections within smaller or less formal groups, where the entity might not be explicitly mentioned but can be deduced from the context. For example, 'school board' in a local election context."
+      ],
+      "place": [
+        "The 'place' argument specifies the geographical location where the election takes place or where the elected position is relevant. For example, 'Los Angeles' in 'Beatriz Marinello was elected USCF President in Los Angeles'.",
+        "This argument is important for understanding the regional or local context of the election, which can influence the significance and implications of the event.",
+        "In some cases, multiple places may be involved, indicating a broader scope of the election. For instance, 'Ohio' and 'Florida' in 'Kerry won decisively not only in Ohio and Florida'.",
+        "The place can also refer to the jurisdiction or area of influence of the elected position, such as 'Zambia' in 'Chiluba was Zambia's first democratically elected president'.",
+        "Edge cases include virtual or online elections where the physical place might not be explicitly mentioned but can be inferred from the context, such as 'global' in an international organization's election."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual who is elected to the position. For example, 'Beatriz Marinello' in 'Beatriz Marinello was elected USCF President'.",
+        "This argument is central to the event as it specifies the subject of the election, providing clarity on who has been selected for the role.",
+        "In cases where multiple individuals are elected, each person should be identified separately. For instance, 'Americans' and 'Douglas Wilder' in 'African Americans aren't just winning elected office, as former Gov. Douglas Wilder did'.",
+        "The person can sometimes be referred to by their role or title, especially in formal contexts. For example, 'lawmaker' in 'Jordan's first female lawmaker'.",
+        "Edge cases include situations where the person is not explicitly named but can be inferred from the context, such as 'the president' in a well-known election scenario."
+      ],
+      "agent": [
+        "The 'agent' argument refers to the entity or individual responsible for conducting the election or facilitating the process. This argument is not always present but is crucial when it appears.",
+        "For example, in 'the pope will reportedly name a new head of the troubled boston archdiocese', 'pope' is the agent responsible for the nomination process.",
+        "This argument helps identify the authority or body overseeing the election, providing context about the legitimacy and procedural aspects of the event.",
+        "In some cases, the agent might be an organization or a group rather than an individual. For instance, 'the government' in a state-run election.",
+        "Edge cases include informal or less structured elections where the agent might not be explicitly mentioned but can be inferred from the context, such as 'the committee' in a club election."
+      ]
+    }
+  },
+  "EndOrg(BusinessEvent)": {
+    "description": [
+      "The EndOrg event type, a subclass of BusinessEvent, refers to the termination, closure, or dissolution of an organization or its operations. Example triggers include 'is no more', 'closing', 'shutting down', and 'dissolving'.",
+      "This event type captures scenarios where an organization ceases to exist or operate in a specific capacity or location. Key characteristics include the finality of the organization's status and the cessation of its activities.",
+      "Unlike the StartOrg event type, which involves the creation or initiation of an organization, the EndOrg event type focuses on the conclusion or termination of an organization's existence or operations.",
+      "Triggers such as 'bankruptcy' are indicative of the DeclareBankruptcy event type, not the EndOrg event type. The EndOrg event is specifically about the end of an organization's operations, not its financial status.",
+      "The outcomes of the EndOrg event type include the complete cessation of the organization's activities, often leading to the reallocation of resources or personnel. This is distinct from the MergeOrg event type, where organizations combine rather than cease to exist."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "org": [
+        "The 'org' argument refers to the organization that is ending its operations. This can include companies, governmental bodies, or other formal groups. For example, in 'Hewlett Packard is shutting down its plant', 'Hewlett Packard' is the 'org'.",
+        "The 'org' argument is crucial as it identifies the entity undergoing termination. In 'the emergency rooms are closing', 'emergency rooms' is the 'org'.",
+        "In cases where multiple organizations are mentioned, the 'org' argument should focus on the one explicitly ending. For instance, 'the ruling party is dissolving itself' identifies 'ruling party' as the 'org'.",
+        "The 'org' argument can also include informal or colloquial references to organizations, such as 'rej geemg' in 'saddam hussein's rej geemg is no more'.",
+        "Edge cases include scenarios where the organization is implied rather than explicitly stated. For example, 'the plant in Eugene is shutting down' implies 'Hewlett Packard' as the 'org'."
+      ],
+      "place": [
+        "The 'place' argument refers to the location where the organization is ending its operations. This can be a city, country, or specific facility. For example, in 'Hewlett Packard is shutting down its plant in Eugene', 'Eugene' is the 'place'.",
+        "The 'place' argument is important for contextualizing the event geographically. In 'the coalition's role in Iraq will have to change', 'Iraq' is the 'place'.",
+        "In cases where the location is a specific facility, such as 'embassy' in 'Australia will keep open its embassy in Saudi Arabia', the 'place' argument should capture the facility and its broader location.",
+        "The 'place' argument can also include broader regions or countries, as seen in 'decisions by the United States, Britain and Germany to close their diplomatic outposts in the country'.",
+        "Edge cases include scenarios where the location is implied rather than explicitly stated. For example, 'the emergency rooms are closing' implies a specific hospital or medical facility as the 'place'."
+      ]
+    }
+  },
+  "EndPosition(PersonnelEvent)": {
+    "description": [
+      "The EndPosition event type, a subclass of PersonnelEvent, refers to the conclusion of an individual's role or position within an organization or entity. Example triggers include 'former', 'previously', 'dismissed', and 'retired'.",
+      "This event type captures scenarios where a person no longer holds a specific position, often indicated by past-tense verbs or adjectives. Key characteristics include the identification of the person, the position they held, and the entity or place associated with the position.",
+      "Unlike the StartPosition event, which marks the beginning of a role, the EndPosition event signifies the end. For instance, 'appointed' would trigger a StartPosition event, whereas 'resigned' would trigger an EndPosition event.",
+      "Triggers such as 'elected' or 'nominated' are indicative of Elect or Nominate events, not EndPosition. The focus of EndPosition is on the cessation of a role rather than the initiation or selection for a role.",
+      "The outcome of an EndPosition event is the vacancy of a position previously held by the person. This event is often accompanied by context indicating the person's past association with the role, such as 'former CEO' or 'previously a manager'."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "time": [
+        "The 'time' argument specifies when the position ended. It is crucial for understanding the temporal context of the event. For example, 'in 1988' in 'dismissed in 1988' provides the time frame for the end of the position.",
+        "This argument helps to place the event within a specific period, which can be important for historical or chronological analysis. For instance, 'last year' in 'retired last year' indicates the time of retirement.",
+        "In some cases, the time may be implicit or relative, such as 'recently' or 'previously'. These terms still provide a temporal context even if not exact.",
+        "The 'time' argument can also include more specific dates or periods, such as 'on August 11, 2003' in 'elected on August 11, 2003', though this example pertains to an Elect event.",
+        "Edge cases include vague or unspecified times, which may require additional context to interpret accurately. For example, 'a few years ago' in 'left the company a few years ago' provides a relative time frame."
+      ],
+      "entity": [
+        "The 'entity' argument identifies the organization, company, or institution associated with the position. For example, 'Barclays Bank' in 'previously holding senior positions at Barclays Bank'.",
+        "This argument is essential for linking the person to the specific entity where they held the position. It provides context about the professional environment.",
+        "Entities can range from companies and government bodies to non-profits and educational institutions. For instance, 'Department of Trade and Industry' in 'a top civil servant at the Department of Trade and Industry'.",
+        "In some cases, multiple entities may be involved, such as 'BZW and Kleinwort Benson' in 'previously holding senior positions at Barclays Bank, BZW and Kleinwort Benson'.",
+        "Edge cases include generic or less specific entities, which may require additional context to clarify. For example, 'a factory' in 'dismissed from her job at a factory'."
+      ],
+      "position": [
+        "The 'position' argument specifies the role or title that the person held. For example, 'president' in 'former Chinese president'.",
+        "This argument is crucial for understanding the specific responsibilities and status associated with the person's role. It provides insight into their professional identity.",
+        "Positions can vary widely, from high-ranking titles like 'CEO' or 'Governor' to more general roles like 'manager' or 'team leader'.",
+        "In some cases, the position may be implied rather than explicitly stated, requiring interpretation from the context. For example, 'a top civil servant' implies a high-ranking government position.",
+        "Edge cases include ambiguous or less formal titles, which may need additional context to interpret accurately. For example, 'team leader' in 'the team leader for Landmark Education programs'."
+      ],
+      "place": [
+        "The 'place' argument identifies the geographical location associated with the position. For example, 'Shanghai' in 'dismissed from her job at a Shanghai soap factory'.",
+        "This argument helps to contextualize the event within a specific physical location, which can be important for understanding regional or local dynamics.",
+        "Places can range from cities and countries to specific institutions or buildings. For instance, 'Tucson' in 'team leader for Landmark Education programs in Tucson'.",
+        "In some cases, the place may be implied or less specific, such as 'Chinese' in 'former Chinese president', which indicates a national context.",
+        "Edge cases include vague or unspecified places, which may require additional context to interpret accurately. For example, 'a soap factory' in 'dismissed from her job at a soap factory'."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual whose position has ended. For example, 'McCarthy' in 'McCarthy was formerly a top civil servant'.",
+        "This argument is essential for linking the event to a specific individual, providing a personal dimension to the professional context.",
+        "Persons can be identified by their names, titles, or pronouns. For instance, 'she' in 'she most recently has been the team leader'.",
+        "In some cases, the person may be referred to by their role or relationship, such as 'president' in 'former Chinese president'.",
+        "Edge cases include ambiguous or less specific references, which may need additional context to interpret accurately. For example, 'her' in 'dismissed from her job'."
+      ]
+    }
+  },
+  "Execute(JusticeEvent)": {
+    "description": [
+      "The Execute event type refers to the act of carrying out a death sentence on an individual as a form of legal punishment. Example triggers include 'executed', 'put to death', and 'execution'.",
+      "This event type involves the final act of enforcing a death penalty, typically following a legal process. Key characteristics include the involvement of a person being executed, an agent responsible for the execution, and the place where the execution occurs.",
+      "Unlike other JusticeEvent types such as 'Sentence' or 'Convict', the Execute event specifically denotes the act of ending a person's life as a legal penalty. For instance, 'sentences' and 'convicted' indicate judicial decisions but do not imply the carrying out of a death sentence.",
+      "Triggers such as 'executed' and 'put to death' are indicative of the Execute event type, whereas triggers like 'sentences' or 'convicted' are related to judicial decisions and not the act of execution.",
+      "The outcome of the Execute event is the death of the person who has been sentenced, distinguishing it from events like 'Acquit' or 'ChargeIndict', which involve legal judgments but do not result in the immediate death of the individual involved."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "place": [
+        "The 'place' argument specifies the location where the execution is carried out. It is crucial for understanding the jurisdiction and context of the event. For example, in 'executed in Texas', 'Texas' is the place.",
+        "This argument helps to identify the geographical context of the execution, which can be important for legal and historical records. For instance, 'Indonesia' in 'execution in Indonesia' serves as the place.",
+        "In some cases, the place might be a specific facility or region within a country. For example, 'state' in 'executed in the state' indicates a broader location within a country.",
+        "The place argument can also highlight differences in legal practices across regions. For example, 'in Texas' in 'put to death in Texas' shows a specific state's legal practice.",
+        "Unlike the 'Adjudicator' argument in events like 'Sentence', which refers to the entity making the legal decision, the 'place' argument in the Execute event refers to the physical location where the execution occurs."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual who is being executed. This is a central element of the event, as it specifies the subject of the execution. For example, 'he' and 'killer' in 'he'd be the 11th killer put to death'.",
+        "This argument is essential for understanding who is affected by the execution. For instance, 'convicts' in 'execution of six convicts' specifies the individuals being executed.",
+        "The person argument can include multiple individuals if the execution involves more than one person. For example, 'men' in 'execution of two men' indicates multiple individuals.",
+        "In some cases, the person might be referred to by their role or status, such as 'killer' or 'convicts'. This helps to provide context about the individual's background or the reason for their execution.",
+        "Unlike the 'Defendant' argument in events like 'ChargeIndict', which refers to someone facing legal charges, the 'person' argument in the Execute event specifically refers to someone who is being put to death."
+      ],
+      "agent": [
+        "The 'agent' argument identifies the entity responsible for carrying out the execution. This could be a government, state, or specific authority. For example, 'Indonesia' in 'Indonesia will delay the execution'.",
+        "This argument is important for understanding who is enforcing the death penalty. For instance, 'we' in 'If we execute them' indicates the entity responsible for the execution.",
+        "The agent can be a specific country, state, or legal authority. For example, 'texas' in 'executed in the state since 1982' shows the state as the executing agent.",
+        "In some cases, the agent might be implied through context rather than explicitly stated. For example, 'prosecutors' in 'prosecutors said Thursday' implies the legal authority involved.",
+        "Unlike the 'Prosecutor' argument in events like 'ChargeIndict', which refers to the entity bringing charges, the 'agent' argument in the Execute event refers to the entity carrying out the death sentence."
+      ]
+    }
+  },
+  "Extradite(JusticeEvent)": {
+    "description": [
+      "An Extradite event involves the formal process of transferring a person from one jurisdiction to another for the purpose of facing legal proceedings or serving a sentence. Example triggers include 'extradite', 'extradition', and 'extradited'.",
+      "The key characteristics of an Extradite event include the involvement of a person being transferred, the origin and destination jurisdictions, and an agent facilitating the transfer. This event is typically initiated by legal or governmental authorities.",
+      "Unlike a ReleaseParole event, which involves the conditional release of a person from custody, an Extradite event involves the transfer of a person to another jurisdiction for legal proceedings. Triggers such as 'release' are indicative of ReleaseParole, not Extradite.",
+      "In contrast to a ChargeIndict event, which involves formally accusing someone of a crime, an Extradite event focuses on the physical transfer of the accused or convicted person. Triggers like 'charges' are related to ChargeIndict, not Extradite.",
+      "The outcome of an Extradite event is the relocation of the person to the destination jurisdiction where they will face legal proceedings or serve a sentence. This differs from an Execute event, where the outcome is the carrying out of a death sentence. Triggers such as 'executed' are indicative of Execute, not Extradite."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "origin": [
+        "The 'origin' argument refers to the location from which the person is being extradited. This is the starting point of the extradition process. For example, in 'extradited from France', 'France' is the origin.",
+        "The origin is crucial as it indicates the jurisdiction that is relinquishing custody of the person. In 'extradition from the state of Texas', 'state of Texas' is the origin.",
+        "In cases where the origin is not explicitly mentioned, it can often be inferred from the context. For instance, 'extradited back to the U.S.' implies the origin is a foreign country.",
+        "The origin can be a country, state, or any legal jurisdiction. For example, 'extradited from the county jail' indicates 'county jail' as the origin.",
+        "Edge cases include situations where the origin is a non-traditional jurisdiction, such as 'extradited from an international waters vessel'. Here, 'international waters vessel' is the origin."
+      ],
+      "destination": [
+        "The 'destination' argument refers to the location to which the person is being extradited. This is the endpoint of the extradition process. For example, in 'extradited to the U.S.', 'U.S.' is the destination.",
+        "The destination is important as it indicates where the person will face legal proceedings or serve a sentence. In 'extradited to New York', 'New York' is the destination.",
+        "In some cases, the destination may be a specific institution or facility, such as 'extradited to the federal prison'. Here, 'federal prison' is the destination.",
+        "The destination can be a country, state, or any legal jurisdiction. For example, 'extradited to the Hague' indicates 'the Hague' as the destination.",
+        "Edge cases include situations where the destination is a non-traditional jurisdiction, such as 'extradited to a military tribunal'. Here, 'military tribunal' is the destination."
+      ],
+      "person": [
+        "The 'person' argument refers to the individual who is being extradited. This is the subject of the extradition process. For example, in 'extradited him', 'him' is the person.",
+        "The person is central to the event as they are the one being transferred between jurisdictions. In 'extradited the suspect', 'the suspect' is the person.",
+        "In some cases, the person may be referred to by their role or status, such as 'extradited the fugitive'. Here, 'the fugitive' is the person.",
+        "The person can be identified by name, role, or pronoun. For example, 'extradited John Doe' indicates 'John Doe' as the person.",
+        "Edge cases include situations where the person is a group or collective, such as 'extradited the group of criminals'. Here, 'group of criminals' is the person."
+      ],
+      "agent": [
+        "The 'agent' argument refers to the entity that is facilitating the extradition. This is typically a legal or governmental authority. For example, in 'extradited by the government', 'government' is the agent.",
+        "The agent is important as it indicates who is responsible for carrying out the extradition. In 'extradited by the police', 'police' is the agent.",
+        "In some cases, the agent may be a specific organization or institution, such as 'extradited by the U.N. tribunal'. Here, 'U.N. tribunal' is the agent.",
+        "The agent can be a country, state, organization, or any legal authority. For example, 'extradited by the court' indicates 'court' as the agent.",
+        "Edge cases include situations where the agent is a non-traditional entity, such as 'extradited by a private security firm'. Here, 'private security firm' is the agent."
+      ]
+    }
+  },
+  "Fine(JusticeEvent)": {
+    "description": [
+      "A Fine event involves the imposition of a monetary penalty on an entity by an adjudicator as a result of a legal or regulatory violation. Example triggers include 'fine', 'fines', 'pay a fine', and 'slapped fines'.",
+      "This event type is characterized by the presence of an adjudicator who imposes the fine and an entity that is required to pay the fine. The fine is typically a result of a legal judgment or regulatory action.",
+      "Unlike other JusticeEvent types such as Convict or Acquit, the Fine event specifically involves a financial penalty rather than a determination of guilt or innocence. For example, 'convicted' is indicative of a Convict event, not a Fine event.",
+      "Triggers such as 'release' or 'pardoned' are indicative of ReleaseParole or Pardon events, respectively, and do not involve the imposition of a monetary penalty, distinguishing them from Fine events.",
+      "The outcome of a Fine event is the payment of a specified amount of money by the entity to the adjudicator or a designated authority, unlike Appeal events where the outcome is a request for a review of a decision."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The adjudicator is the authority or individual who imposes the fine. This can be a judge, a regulatory body, or any official entity with the power to levy fines. For example, in 'the judge ordered a fine', the judge is the adjudicator.",
+        "The role of the adjudicator is crucial as they are the ones who determine the amount and the imposition of the fine. For instance, 'the SEC fined the company' identifies the SEC as the adjudicator.",
+        "In some cases, the adjudicator may be a collective body, such as a court or a regulatory commission. For example, 'the court imposed a fine' indicates the court as the adjudicator.",
+        "The adjudicator must have legal or regulatory authority to impose fines. Unlike a plaintiff in an Appeal event, the adjudicator in a Fine event has the power to enforce the penalty. For example, 'the regulatory commission fined the firm' shows the commission as the adjudicator.",
+        "Edge cases may include situations where the adjudicator is implied rather than explicitly stated. For example, 'the company was fined' implies an adjudicator even if not directly mentioned."
+      ],
+      "entity": [
+        "The entity is the individual, organization, or group that is required to pay the fine. This can be a person, a company, or any other legal entity. For example, in 'the company was fined', the company is the entity.",
+        "The entity is the recipient of the penalty and is responsible for the payment. For instance, 'Ranjha was ordered to pay a fine' identifies Ranjha as the entity.",
+        "Entities can vary widely, from individuals to large corporations. For example, 'the brokerages were fined' indicates multiple entities.",
+        "Unlike the defendant in a Convict event, the entity in a Fine event is specifically penalized financially. For example, 'the firm was fined' shows the firm as the entity, not a defendant.",
+        "Edge cases may include situations where the entity is part of a larger group or organization. For example, 'the department was fined' implies the entity is a specific department within a larger organization."
+      ],
+      "place": [
+        "The place is the location where the fine is imposed or where the entity is required to pay the fine. This can be a city, a country, or a specific venue. For example, in 'fined in Los Angeles', Los Angeles is the place.",
+        "The place provides context for the jurisdiction or the setting of the fine. For instance, 'the fine was imposed in the company's offices' identifies the offices as the place.",
+        "Places can be specific or general, ranging from exact addresses to broader regions. For example, 'fined in South Florida' indicates a general region.",
+        "Unlike the place in an Acquit event, which is where the acquittal occurs, the place in a Fine event is where the financial penalty is enforced. For example, 'fined in Miami' shows Miami as the place of enforcement.",
+        "Edge cases may include virtual or non-physical locations, such as online platforms where fines are imposed. For example, 'fined on the online marketplace' indicates the place as the online platform."
+      ]
+    }
+  },
+  "Injure(LifeEvent)": {
+    "description": [
+      "The 'Injure' event type, a subclass of 'LifeEvent', refers to incidents where individuals sustain physical harm or damage. Example triggers include 'wounding', 'injured', and 'hurting'.",
+      "This event type captures scenarios where the physical well-being of one or more individuals is compromised due to an external action or event. Key characteristics include the presence of a victim and often an agent or instrument causing the injury.",
+      "Unlike the 'Die' event type, which results in the death of individuals, the 'Injure' event type focuses on non-fatal harm. For instance, 'killed' is a trigger for 'Die', not 'Injure'.",
+      "Triggers such as 'injured' and 'wounded' are indicative of the 'Injure' event type, highlighting the occurrence of physical harm without necessarily leading to death.",
+      "The scope of the 'Injure' event type includes various forms of physical harm, whether accidental or intentional, and can involve multiple victims and agents. It does not cover events where the primary outcome is death or other life events like birth or marriage."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "victim": [
+        "The 'victim' argument identifies the individual(s) who sustained injuries. For example, in '20 people were wounded', '20 people' is the victim.",
+        "Victims are the recipients of the physical harm in the event. They can be singular or plural, such as 'a woman' or 'several children'.",
+        "In cases where multiple groups are injured, each group is considered a separate victim, e.g., 'women, children, and civilians'.",
+        "The victim can be explicitly mentioned or implied within the context, such as 'the injured' referring to those harmed.",
+        "Edge cases include scenarios where the victim is a collective entity, like 'the crowd' or 'the team', indicating a group of individuals."
+      ],
+      "time": [
+        "The 'time' argument specifies when the injury event occurred. For example, 'on Monday' in 'injured on Monday'.",
+        "Time can be expressed in various formats, including specific dates, days of the week, or relative time expressions like 'yesterday'.",
+        "In some contexts, time may be implied rather than explicitly stated, such as 'earlier today' or 'last night'.",
+        "Edge cases include vague time references like 'recently' or 'in the past few days', which still provide a temporal context.",
+        "The time argument helps situate the event within a chronological framework, aiding in understanding the sequence of events."
+      ],
+      "instrument": [
+        "The 'instrument' argument identifies the object or means used to cause the injury. For example, 'explosives' in 'injured by explosives'.",
+        "Instruments can be tangible objects like 'knife', 'gun', or 'bomb', or intangible means like 'poison' or 'fire'.",
+        "In some cases, the instrument may be a natural element, such as 'falling debris' or 'wild animal'.",
+        "Edge cases include scenarios where the instrument is a condition or situation, like 'smoke inhalation' or 'chemical exposure'.",
+        "The instrument provides insight into the method of injury, distinguishing between different causes and mechanisms of harm."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the injury event occurred. For example, 'in the mall' in 'injured in the mall'.",
+        "Places can range from specific locations like 'Gaza Strip' or 'city of Hebron' to more general areas like 'park' or 'building'.",
+        "In some contexts, the place may be described in terms of its function or significance, such as 'hospital' or 'school'.",
+        "Edge cases include vague or broad locations like 'in the area' or 'nearby', which still provide a spatial context.",
+        "The place argument helps contextualize the event geographically, aiding in understanding the environment and potential witnesses or additional victims."
+      ],
+      "agent": [
+        "The 'agent' argument identifies the individual or entity responsible for causing the injury. For example, 'bomber' in 'injured by bomber'.",
+        "Agents can be specific individuals, groups, or organizations, such as 'attacker', 'police', or 'military'.",
+        "In some cases, the agent may be an abstract or collective entity, like 'terrorists' or 'security forces'.",
+        "Edge cases include scenarios where the agent is an indirect cause, such as 'accidentally' or 'unintentionally' causing harm.",
+        "The agent provides insight into the perpetrator or cause of the injury, distinguishing between intentional and accidental events."
+      ]
+    }
+  },
+  "Marry(LifeEvent)": {
+    "description": [
+      "The 'Marry' event type, a subclass of 'LifeEvent', refers to the formal union of two individuals in matrimony. Example triggers include 'marry', 'wed', 'married', and 'marriage'.",
+      "This event type captures the act of entering into a marriage, typically involving a ceremony and legal recognition. Key characteristics include the involvement of two individuals and a specific location where the event takes place.",
+      "Unlike the 'Divorce' event type, which signifies the dissolution of a marriage, the 'Marry' event type focuses on the initiation of the marital relationship. Triggers such as 'divorce' are indicative of the 'Divorce' event type, not the 'Marry' event type.",
+      "The 'Marry' event type is distinct from the 'BeBorn' event type, which involves the birth of an individual. Triggers like 'birth' and 'born' are associated with 'BeBorn', not 'Marry'.",
+      "In the context of 'Marry', the outcomes include the establishment of a marital relationship and potential legal and social recognition. This differs from the 'Die' event type, where the outcome is the end of life. Triggers such as 'killed' and 'died' are not relevant to 'Marry'."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "place": [
+        "The 'place' argument specifies the location where the marriage event occurs. It is crucial for identifying the setting of the event. For example, in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24 in the ex-mayor's old home, Gracie Mansion.', 'Gracie Mansion' is the place.",
+        "The 'place' argument can refer to various types of locations, such as homes, temples, or public venues. For instance, 'temple' in 'she really needed to be married in the temple' is a valid place.",
+        "In some cases, the 'place' may be implied or not explicitly mentioned. For example, 'home' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon to marry his eldest daughter' is the place.",
+        "The 'place' argument helps contextualize the event within a specific geographical or cultural setting. For example, 'Los Angeles' in 'Hunter, 34, filed for divorce in Los Angeles Superior Court' is a place, but it is related to a 'Divorce' event, not 'Marry'.",
+        "Unlike the 'place' argument in the 'Die' event type, which indicates where the death occurred, the 'place' in 'Marry' indicates where the marriage ceremony or union took place. For example, 'houses' in 'Five Iraqi civilians were killed when their houses were hit' is a place for a 'Die' event, not 'Marry'."
+      ],
+      "person": [
+        "The 'person' argument identifies the individuals involved in the marriage event. It is essential for specifying the participants. For example, 'Rudolph Giuliani' and 'Judith Nathan' in 'Rudolph Giuliani will wed his companion, Judith Nathan' are persons.",
+        "The 'person' argument can include references to both individuals being married. For instance, 'daughter' and 'Raja Ahmad Sharir Iskandar' in 'to marry his eldest daughter, Nurul Izzah, to engineer Raja Ahmad Sharir Iskandar' are persons.",
+        "In some cases, the 'person' argument may be represented by pronouns or titles. For example, 'she' and 'fiance' in 'even though her fiance was not LDS' are persons.",
+        "The 'person' argument is crucial for distinguishing the participants in the marriage event from other individuals mentioned in the text. For example, 'Hunter' and 'star' in 'Hunter, 34, filed for divorce' are persons, but they are related to a 'Divorce' event, not 'Marry'.",
+        "Unlike the 'person' argument in the 'Die' event type, which identifies the victims, the 'person' in 'Marry' identifies the individuals entering into marriage. For example, 'civilians' and 'woman' in 'Five Iraqi civilians were killed' are persons for a 'Die' event, not 'Marry'."
+      ],
+      "time": [
+        "The 'time' argument specifies when the marriage event takes place. It is important for situating the event temporally. For example, 'May 24' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24' is the time.",
+        "The 'time' argument can include specific dates, times of day, or more general time frames. For instance, 'later in the afternoon' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon' is a time.",
+        "In some cases, the 'time' argument may be implied or not explicitly mentioned. For example, 'nearly 13 years' in 'she has been married for nearly 13 years' is a time.",
+        "The 'time' argument helps contextualize the event within a specific temporal setting. For example, 'April 2001' and 'January 14' in 'she gave birth secretly to both babies in April 2001 and January 14' are times, but they are related to a 'BeBorn' event, not 'Marry'.",
+        "Unlike the 'time' argument in the 'Die' event type, which indicates when the death occurred, the 'time' in 'Marry' indicates when the marriage ceremony or union took place. For example, 'Monday' in 'Five Iraqi civilians were killed Monday' is a time for a 'Die' event, not 'Marry'."
+      ]
+    }
+  },
+  "Meet(ContactEvent)": {
+    "description": [
+      "A 'Meet' event, a subtype of 'ContactEvent', involves two or more entities coming together at a specific place and time for a discussion, negotiation, or other forms of interaction. Example triggers include 'talks', 'meetings', 'gathering', and 'reunited'.",
+      "The 'Meet' event is characterized by the physical or virtual presence of entities at a designated location and time. Unlike 'PhoneWrite' events, which involve communication through writing or phone calls, 'Meet' events require the entities to be in the same place or connected through a meeting platform.",
+      "Triggers for 'Meet' events often include words like 'conference', 'summit', 'session', and 'assembly'. These events are typically formal and involve discussions or negotiations. For instance, 'conference' indicates a formal meeting for discussion, while 'summit' refers to a high-level meeting between leaders.",
+      "In 'Meet' events, the outcome is usually a decision, agreement, or exchange of information. This is different from 'PhoneWrite' events, where the outcome is typically the transmission of information through written or spoken communication.",
+      "Unlike 'Visit' events, which focus on the act of going to a place, 'Meet' events emphasize the interaction between entities at a specific place and time. For example, 'meeting' implies a planned interaction, whereas 'visit' implies going to see a place or person without necessarily involving a formal interaction."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "entity": [
+        "The 'entity' argument refers to the individuals or groups participating in the 'Meet' event. These can be people, organizations, or other entities. For example, in 'Shalom was to fly on to London for talks with British Prime Minister Tony Blair and Foreign Secretary Jack Straw', the entities are 'Shalom', 'Tony Blair', and 'Jack Straw'.",
+        "Entities are crucial in 'Meet' events as they are the participants engaging in the interaction. In the sentence 'Vivendi also is holding talks with Viacom, MGM and other buyers', the entities are 'Vivendi', 'Viacom', 'MGM', and 'buyers'.",
+        "Entities can be explicitly named individuals or groups, or they can be referred to by their roles or titles. For instance, 'Egyptian envoys have been holding meetings in Gaza and Damascus with leaders of the militant groups' includes 'envoys' and 'leaders' as entities.",
+        "In some cases, entities may be implied or referred to collectively. For example, 'they're the crew of the 'uss harry s. truman.' they have reunited with their families and friends' includes 'crew', 'families', and 'friends' as entities.",
+        "Entities are not limited to human participants; they can also include organizations or other collective groups. For example, 'at a white house gathering of aids activists and lawmakers from around the world' includes 'activists' and 'lawmakers' as entities."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the 'Meet' event occurs. This can be a city, building, or any other geographical location. For example, in 'Shalom was to fly on to London for talks', the place is 'London'.",
+        "Places are important in 'Meet' events as they provide the context for where the interaction takes place. In 'Vivendi also is holding talks with Viacom, MGM and other buyers', the place is not explicitly mentioned, but it is implied to be a location where these entities can meet.",
+        "The place can be a specific venue or a broader geographical area. For instance, 'Egyptian envoys have been holding meetings in Gaza and Damascus' includes 'Gaza' and 'Damascus' as places.",
+        "In some cases, the place may be a well-known location associated with the event. For example, 'at a white house gathering of aids activists and lawmakers' includes 'white house' as the place.",
+        "Places can also be implied through context. For example, 'they have reunited with their families and friends, at the aircraft carrier's home port in norfolk, virginia' includes 'port' as the place, with 'norfolk, virginia' providing additional context."
+      ],
+      "time": [
+        "The 'time' argument specifies when the 'Meet' event takes place. This can be a specific date, time of day, or a more general time frame. For example, 'in recent days' in 'Egyptian envoys have been holding meetings in Gaza and Damascus in recent days' indicates the time.",
+        "Time is crucial in 'Meet' events as it provides the temporal context for the interaction. In 'at a white house gathering of aids activists and lawmakers from around the world, the president said hir plan could prevent 7 million new hiv infections -- and treat at least 2 million people over the next decade', the time is implied to be the present or near future.",
+        "The time can be explicitly stated or implied through context. For instance, 'they have reunited with their families and friends, at the aircraft carrier's home port in norfolk, virginia' implies the time is recent or current.",
+        "In some cases, the time may be a specific event or period. For example, 'Shalom was to fly on to London for talks' implies the time is in the near future when Shalom arrives in London.",
+        "Time can also be indicated by phrases that describe the duration or frequency of the event. For example, 'Vivendi also is holding talks with Viacom, MGM and other buyers' implies an ongoing or repeated event."
+      ]
+    }
+  },
+  "MergeOrg(BusinessEvent)": {
+    "description": [
+      "A MergeOrg event refers to the combination of two or more organizations into a single entity. This event is characterized by the integration of resources, operations, and management structures of the involved organizations.",
+      "Triggers for a MergeOrg event include terms like 'merged', 'merger', 'combine', 'unite', and 'consolidate'. These terms indicate the process of merging organizations.",
+      "Unlike the EndOrg event, which signifies the dissolution or termination of an organization, the MergeOrg event focuses on the unification of organizations to form a new or larger entity.",
+      "The outcome of a MergeOrg event is the creation of a single, often larger, organization from the merging entities. This is different from acquisition events where one organization takes over another without necessarily merging operations.",
+      "In a MergeOrg event, the key characteristic is the mutual agreement and integration of the involved organizations, as opposed to hostile takeovers or simple partnerships which do not result in a single unified entity."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "org": [
+        "The 'Org' argument represents the organizations involved in the merger. These are the entities that are combining to form a new or larger organization.",
+        "In the context of a MergeOrg event, the 'Org' argument is crucial as it identifies the specific organizations that are merging. For example, in the sentence 'The merger of Company A and Company B was finalized', 'Company A' and 'Company B' are the 'Org' arguments.",
+        "The 'Org' argument can include various types of organizations such as companies, departments, startups, or industries. For instance, 'Department of Minority Business Enterprise' and 'Department of Business Assistance' in the example provided.",
+        "Edge cases for the 'Org' argument include scenarios where the organizations are not explicitly named but are implied. For example, 'The two leading tech firms decided to merge' implies two organizations without naming them.",
+        "The 'Org' argument is not to be confused with entities that are not merging. For example, in the sentence 'The company acquired its competitor', 'company' and 'competitor' are not merging but rather one is taking over the other, which would not be a MergeOrg event."
+      ]
+    }
+  },
+  "Nominate(PersonnelEvent)": {
+    "description": [
+      "The 'Nominate' event type refers to the act of officially suggesting or appointing a person for a position, role, or task. Example triggers include 'name', 'nominating', and 'designated'.",
+      "This event type involves an agent (the nominator) who proposes a person (the nominee) for a specific role or task. The nomination can be formal or informal.",
+      "Key characteristics of the 'Nominate' event include the presence of an agent making the nomination and a person being nominated. The event often implies a future role or responsibility for the nominee.",
+      "Unlike the 'Elect' event type, which involves a selection process typically through voting, the 'Nominate' event focuses on the proposal or suggestion phase without necessarily involving a selection process.",
+      "Triggers such as 'elected' or 'appointed' are indicative of 'Elect' or 'StartPosition' events, not 'Nominate'. The 'Nominate' event is specifically about the act of proposing or suggesting a candidate."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "place": [
+        "The 'place' argument refers to the location where the nomination is made or where the nominee is expected to serve. It is not always present in every 'Nominate' event.",
+        "For example, in the sentence 'He was nominated as the head of the department in New York,' 'New York' is the place argument.",
+        "The 'place' argument helps provide context to the nomination, indicating where the nominee will perform their duties or where the nomination was announced.",
+        "In cases where the location is not explicitly mentioned, the 'place' argument can be omitted.",
+        "Unlike the 'Elect' event, where the place might indicate where the election took place, in the 'Nominate' event, the place is more about the context of the nomination or the future role location."
+      ],
+      "person": [
+        "The 'person' argument refers to the individual who is being nominated for a position or role. This is a crucial element of the 'Nominate' event.",
+        "For example, in the sentence 'The committee nominated John as the new chairperson,' 'John' is the person argument.",
+        "The 'person' argument identifies the nominee and is essential for understanding who is being proposed for the role.",
+        "In some cases, the 'person' argument might be a pronoun or a placeholder like 'who' in questions or hypothetical scenarios.",
+        "Unlike the 'Agent' argument, which refers to the nominator, the 'person' argument specifically identifies the nominee."
+      ],
+      "agent": [
+        "The 'agent' argument refers to the entity or individual making the nomination. This could be a person, group, or organization.",
+        "For example, in the sentence 'The president nominated her for the position,' 'The president' is the agent argument.",
+        "The 'agent' argument is important as it provides context on who is responsible for the nomination.",
+        "In some cases, the 'agent' might be implied or not explicitly mentioned, but it is usually clear from the context who the nominator is.",
+        "Unlike the 'person' argument, which identifies the nominee, the 'agent' argument identifies the nominator, highlighting the source of the nomination."
+      ]
+    }
+  },
+  "Pardon(JusticeEvent)": {
+    "description": [
+      "A Pardon event involves an official decision to forgive or excuse a person from the legal consequences of a crime or offense. Example triggers include 'pardoned', 'forgave', and 'excused'.",
+      "This event type is characterized by the involvement of an adjudicator who grants the pardon, a defendant who receives the pardon, and often a specific place where the pardon is issued. Unlike a Convict event, a Pardon event results in the removal or reduction of legal penalties rather than the imposition of them.",
+      "Key characteristics of a Pardon event include the formal nature of the decision, typically involving high-ranking officials or legal authorities. The outcome is the alleviation of legal consequences for the defendant. Triggers such as 'pardoned' and 'forgave' are indicative of this event type.",
+      "In contrast to an Appeal event, which involves a request for a review of a legal decision, a Pardon event involves a final decision to forgive or excuse the defendant. The adjudicator in a Pardon event has the authority to nullify the legal consequences of the defendant's actions.",
+      "A Pardon event is distinct from an Extradite event, where the focus is on transferring a person from one jurisdiction to another for legal proceedings. In a Pardon event, the focus is on the cessation of legal penalties within the current jurisdiction."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The adjudicator is the person or authority who grants the pardon. This role is crucial as it signifies the official capacity in which the pardon is given. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'King Abdullah II' is the adjudicator.",
+        "The adjudicator is often a high-ranking official or legal authority, such as a president, governor, or monarch. Their decision is final and authoritative. For instance, 'The governor pardoned the prisoner' identifies 'governor' as the adjudicator.",
+        "In some cases, the adjudicator may be a judicial body or a committee with the power to grant pardons. For example, 'The parole board pardoned the inmate' identifies 'parole board' as the adjudicator.",
+        "The adjudicator's role is to exercise their legal authority to forgive the defendant's offense, often as an act of clemency or mercy. For instance, 'The president issued a pardon to the activist' identifies 'president' as the adjudicator.",
+        "Unlike the adjudicator in a Convict event, who imposes a sentence, the adjudicator in a Pardon event removes or reduces the legal penalties. For example, 'The king forgave the rebel' identifies 'king' as the adjudicator."
+      ],
+      "place": [
+        "The place refers to the location where the pardon is issued or takes effect. This is important for understanding the jurisdiction and context of the pardon. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'Jordan' is the place.",
+        "The place can be a country, state, city, or any specific location relevant to the legal authority of the adjudicator. For instance, 'The governor of California pardoned the inmate' identifies 'California' as the place.",
+        "In some cases, the place may refer to the institution or facility where the pardon is granted. For example, 'The pardon was issued at the state capitol' identifies 'state capitol' as the place.",
+        "The place helps to contextualize the legal and political environment in which the pardon occurs. For instance, 'The president pardoned the soldier in Washington, D.C.' identifies 'Washington, D.C.' as the place.",
+        "Unlike the place in an Extradite event, which involves the origin and destination of a transfer, the place in a Pardon event is where the legal authority to pardon is exercised. For example, 'The mayor pardoned the offender in New York City' identifies 'New York City' as the place."
+      ],
+      "defendant": [
+        "The defendant is the person who receives the pardon. This role is central to the event as it identifies the individual whose legal penalties are being forgiven. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'legislator' is the defendant.",
+        "The defendant is typically someone who has been convicted of a crime or offense and is now being excused from the legal consequences. For instance, 'The governor pardoned the prisoner' identifies 'prisoner' as the defendant.",
+        "In some cases, the defendant may be a group of individuals or an organization. For example, 'The president pardoned the activists' identifies 'activists' as the defendant.",
+        "The defendant's role is to be the recipient of the adjudicator's clemency, resulting in the removal or reduction of their legal penalties. For instance, 'The king forgave the rebel' identifies 'rebel' as the defendant.",
+        "Unlike the defendant in a Convict event, who is being sentenced, the defendant in a Pardon event is being relieved of their sentence. For example, 'The parole board pardoned the inmate' identifies 'inmate' as the defendant."
+      ]
+    }
+  },
+  "PhoneWrite(ContactEvent)": {
+    "description": [
+      "PhoneWrite is a subtype of ContactEvent that involves written or spoken communication through phone or written correspondence such as letters or emails.",
+      "Triggers for PhoneWrite include words like 'correspondence', 'letters', 'spoke', 'calling', and 'sent'. These indicate an exchange of information between entities.",
+      "Key characteristics of PhoneWrite include the presence of an entity initiating the communication, an entity receiving the communication, and often a place where the communication occurs.",
+      "Unlike Meet events, which involve physical presence and face-to-face interaction, PhoneWrite events are characterized by remote communication, either through phone or written mediums.",
+      "Triggers such as 'meeting' or 'talks' are indicative of Meet events, not PhoneWrite. PhoneWrite focuses on non-physical, remote exchanges of information."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "entity": [
+        "The 'entity' argument refers to the individuals or groups involved in the communication. This can include the sender and the receiver of the message.",
+        "In the example 'Welch specifically is seeking performance evaluations, correspondence between his estranged wife and partners', 'wife' and 'partners' are the entities involved in the correspondence.",
+        "The 'entity' argument is crucial as it identifies the participants in the communication, providing context to the event.",
+        "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'private' and 'parents' are the entities involved in the phone conversation.",
+        "Unlike the 'place' argument, which specifies the location, the 'entity' argument focuses on the participants in the communication."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the communication takes place or is directed to.",
+        "In the example 'I -- I'm calling you from New York City, Paul, it's a pleasure to meet you', 'New York City' is the place where the call is made from.",
+        "The 'place' argument helps to provide geographical context to the communication event.",
+        "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'hospital' is the place where the phone conversation occurs.",
+        "Unlike the 'entity' argument, which identifies the participants, the 'place' argument focuses on the geographical location of the communication."
+      ],
+      "time": [
+        "The 'time' argument specifies when the communication event takes place.",
+        "In the example 'He sent several letters to the police and the media during that time', 'during that time' indicates the period when the letters were sent.",
+        "The 'time' argument is important as it provides temporal context to the communication event.",
+        "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'yesterday' specifies the time of the phone conversation.",
+        "Unlike the 'entity' and 'place' arguments, which identify participants and location, the 'time' argument focuses on the temporal aspect of the communication event."
+      ]
+    }
+  },
+  "ReleaseParole(JusticeEvent)": {
+    "description": [
+      "The ReleaseParole event involves the conditional release of a person from detention or imprisonment before the completion of their sentence, typically under specific conditions or supervision. Example triggers include 'release' and 'released'.",
+      "This event is characterized by the involvement of a person being released, an entity or authority making the decision, and sometimes the place where the release occurs. Unlike the Pardon event, ReleaseParole does not imply forgiveness of the crime but rather a conditional freedom.",
+      "Key characteristics of the ReleaseParole event include the decision-making authority (e.g., parole boards, judges), the person being released, and the conditions under which the release is granted. Triggers such as 'release' and 'parole' are indicative of this event type.",
+      "Unlike the Extradite event, which involves transferring a person from one jurisdiction to another, ReleaseParole focuses on the conditional release of a person within the same jurisdiction. The outcomes differ as ReleaseParole results in conditional freedom, whereas Extradite results in a transfer for legal proceedings.",
+      "The scope of the ReleaseParole event includes the decision-making process, the conditions of release, and the entities involved. Negative examples such as 'extradition' and 'pardon' help clarify that ReleaseParole is specifically about conditional release rather than transfer or forgiveness."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "entity": [
+        "The 'entity' argument refers to the organization or authority responsible for making the parole decision. This could be a parole board, a judge, or a similar institution. For example, in 'the parole board decided to release him', 'parole board' is the entity.",
+        "Entities play a crucial role in the ReleaseParole event as they hold the authority to grant or deny parole. In 'the judge released the prisoner', 'judge' is the entity.",
+        "In some cases, multiple entities may be involved in the decision-making process. For instance, 'the parole board and the facility agreed to release him' includes both 'parole board' and 'facility' as entities.",
+        "Entities are distinct from agents in that they are the decision-making bodies rather than individuals carrying out the release. For example, 'the institution made the final decision' identifies 'institution' as the entity.",
+        "Edge cases may include informal or less formalized entities, such as 'the committee decided to release him'. Here, 'committee' functions as the entity."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the person is being released from or to. For example, in 'he was released from the detention center', 'detention center' is the place.",
+        "Places are important in the context of ReleaseParole as they provide the setting for the event. In 'the prisoner was released from the facility', 'facility' is the place.",
+        "The place can also refer to the broader geographical location, such as a city or country. For instance, 'he was released in Maryland' uses 'Maryland' as the place.",
+        "Unlike the Extradite event, where 'place' might refer to origin and destination, in ReleaseParole, it typically refers to the location of release. For example, 'released from prison' focuses on the place of release.",
+        "Edge cases might include less specific locations, such as 'he was released from a secure location'. Here, 'secure location' serves as the place."
+      ],
+      "person": [
+        "The 'person' argument identifies the individual being released on parole. For example, in 'the judge released him', 'him' is the person.",
+        "Persons are central to the ReleaseParole event as they are the subjects of the conditional release. In 'the parole board released the prisoner', 'prisoner' is the person.",
+        "The person can be identified by name or by a pronoun. For instance, 'Michael was released' uses 'Michael' as the person.",
+        "Unlike the Pardon event, where the person is forgiven for their crime, in ReleaseParole, the person is conditionally released. For example, 'the prisoner was released on parole' focuses on conditional release.",
+        "Edge cases might include groups of individuals, such as 'a thousand prisoners were released'. Here, 'prisoners' serves as the person."
+      ],
+      "agent": [
+        "The 'agent' argument refers to the individual or group facilitating the release. This could be a negotiator, a lawyer, or another intermediary. For example, in 'the negotiators secured his release', 'negotiators' is the agent.",
+        "Agents play a supportive role in the ReleaseParole event, often working on behalf of the person being released. In 'the lawyer got him released', 'lawyer' is the agent.",
+        "The agent is distinct from the entity in that the agent acts on behalf of the person, while the entity makes the decision. For instance, 'the lawyer and the judge worked together to release him' identifies 'lawyer' as the agent and 'judge' as the entity.",
+        "Unlike the ArrestJail event, where the agent is typically law enforcement, in ReleaseParole, the agent is often an advocate or intermediary. For example, 'the advocate helped secure his release' focuses on the supportive role of the agent.",
+        "Edge cases might include less formal agents, such as 'his family worked to get him released'. Here, 'family' functions as the agent."
+      ]
+    }
+  },
+  "Sentence(JusticeEvent)": {
+    "description": [
+      "A 'Sentence' event in the context of JusticeEvent refers to the formal declaration of punishment decided by a legal authority for a defendant found guilty of a crime. Example triggers include 'sentenced', 'sentence', and 'handed out sentences'.",
+      "The 'Sentence' event is characterized by the involvement of an adjudicator (e.g., court, judge), a defendant (the person being sentenced), and often a specific place where the sentencing occurs. For instance, 'The court sentenced the defendant to five years in prison.'",
+      "Unlike the 'Execute' event, which involves carrying out a death penalty, the 'Sentence' event focuses on the declaration of the punishment rather than its execution. For example, 'The court sentenced him to life imprisonment' is a 'Sentence' event, whereas 'He was executed' is an 'Execute' event.",
+      "Triggers such as 'sentenced' and 'sentence' are indicative of the 'Sentence' event type, not events like 'ChargeIndict' or 'Appeal'. For example, 'He was sentenced to ten years' is a 'Sentence' event, while 'He was charged with theft' is a 'ChargeIndict' event.",
+      "The outcome of a 'Sentence' event is the formal declaration of a punishment, which can range from fines to imprisonment or even death. This is distinct from the 'Pardon' event, where the outcome is the forgiveness of the punishment. For example, 'The court sentenced him to death' is a 'Sentence' event, whereas 'He was pardoned by the president' is a 'Pardon' event."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The 'adjudicator' in a 'Sentence' event refers to the legal authority or body that issues the sentence. This can be a court, judge, or any official legal entity. For example, in 'The court sentenced him to five years', 'court' is the adjudicator.",
+        "The role of the adjudicator is crucial as it represents the authority behind the sentencing decision. For instance, 'Judge Smith sentenced the defendant to life imprisonment' identifies 'Judge Smith' as the adjudicator.",
+        "In some cases, the adjudicator may be implied rather than explicitly stated. For example, 'He was sentenced to ten years' implies a legal authority as the adjudicator.",
+        "Unlike the 'Prosecutor' in a 'ChargeIndict' event, who brings charges against the defendant, the 'adjudicator' in a 'Sentence' event is the one who decides the punishment. For example, 'The prosecutor charged him with theft' vs. 'The judge sentenced him to five years'.",
+        "Edge cases may include situations where multiple adjudicators are involved, such as a panel of judges. For example, 'The panel sentenced the defendant to death' identifies 'panel' as the adjudicator."
+      ],
+      "place": [
+        "The 'place' in a 'Sentence' event refers to the location where the sentencing occurs. This can be a specific court, city, or country. For example, in 'The New York court sentenced him to five years', 'New York' is the place.",
+        "The place provides context and jurisdiction for the sentencing event. For instance, 'A court in Texas sentenced him to life imprisonment' identifies 'Texas' as the place.",
+        "In some cases, the place may be broader, such as a country or region. For example, 'Indonesian courts have increasingly handed out severe sentences' identifies 'Indonesian' as the place.",
+        "Unlike the 'Place' in an 'Execute' event, which refers to where the execution occurs, the 'place' in a 'Sentence' event is where the sentencing decision is made. For example, 'He was executed in the prison' vs. 'He was sentenced in the court'.",
+        "Edge cases may include virtual or remote sentencing, where the physical location is less clear. For example, 'The court sentenced him via a virtual hearing' may imply a broader jurisdiction."
+      ],
+      "defendant": [
+        "The 'defendant' in a 'Sentence' event refers to the individual or individuals who are being sentenced. For example, in 'The court sentenced John to five years', 'John' is the defendant.",
+        "The defendant is the central figure in the sentencing event, as they are the ones receiving the punishment. For instance, 'The judge sentenced the man to life imprisonment' identifies 'the man' as the defendant.",
+        "In some cases, there may be multiple defendants. For example, 'The court sentenced the group of smugglers to various terms' identifies 'group of smugglers' as the defendants.",
+        "Unlike the 'Plaintiff' in an 'Appeal' event, who is seeking a review of a decision, the 'defendant' in a 'Sentence' event is the one being punished. For example, 'The plaintiff appealed the decision' vs. 'The defendant was sentenced'.",
+        "Edge cases may include situations where the defendant is a minor or has special circumstances. For example, 'The juvenile court sentenced the teenager to probation' identifies 'teenager' as the defendant."
+      ]
+    }
+  },
+  "StartOrg(BusinessEvent)": {
+    "description": [
+      "The StartOrg event type refers to the initiation or establishment of a new organization or entity. This can include the creation of a new business, government body, or any other formal group.",
+      "Triggers for the StartOrg event type include verbs such as 'create', 'build', 'open', 'launch', and 'establish'. These verbs indicate the beginning of a new organizational entity.",
+      "Key characteristics of the StartOrg event include the presence of an agent (the entity or entities responsible for the creation), the organization being created, and the place where the organization is being established.",
+      "Unlike the MergeOrg event type, which involves the combination of existing organizations, the StartOrg event focuses on the creation of a new, standalone entity.",
+      "Triggers such as 'merge' or 'acquire' are indicative of the MergeOrg event type, not the StartOrg event type. Similarly, 'bankruptcy' or 'dissolve' are indicative of the EndOrg or DeclareBankruptcy event types, respectively, and not the StartOrg event type."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "org": [
+        "The 'org' argument refers to the organization or entity that is being created or established. This is the primary focus of the StartOrg event.",
+        "Examples of 'org' include 'government', 'Disneyland', 'monster', and 'insurer'. These terms represent the new entities being formed.",
+        "The 'org' argument is crucial as it identifies the new entity that is the result of the StartOrg event. Without this argument, the event cannot be properly classified as StartOrg.",
+        "In cases where the organization is not explicitly named, descriptive terms or roles (e.g., 'a new department', 'a new branch') can serve as the 'org' argument.",
+        "Unlike the 'org' argument in the MergeOrg event, which involves existing entities, the 'org' argument in the StartOrg event refers to a newly created entity."
+      ],
+      "place": [
+        "The 'place' argument specifies the location where the new organization is being established. This provides context for the geographical or physical setting of the event.",
+        "Examples of 'place' include 'Iraq', 'here', 'Sydney', and 'Japan'. These locations indicate where the new organization is being set up.",
+        "The 'place' argument is important as it situates the event in a specific location, which can be critical for understanding the scope and impact of the new organization.",
+        "In some cases, the 'place' may be implied or broadly defined (e.g., 'in the city', 'locally'), but it should still provide a clear indication of the event's setting.",
+        "Unlike the 'place' argument in the EndOrg event, which may indicate where an organization is ceasing operations, the 'place' argument in the StartOrg event indicates where an organization is beginning operations."
+      ],
+      "agent": [
+        "The 'agent' argument refers to the entity or entities responsible for creating or establishing the new organization. This can include individuals, groups, or other organizations.",
+        "Examples of 'agent' include 'U.S', 'leaders', 'Daily Planet Ltd', 'we', and 'AIG'. These agents are the driving force behind the creation of the new organization.",
+        "The 'agent' argument is essential as it identifies who is initiating the StartOrg event. This can provide insight into the motivations and resources behind the new organization.",
+        "In some cases, the 'agent' may be a collective or anonymous group (e.g., 'the community', 'a consortium'), but it should still clearly indicate the initiators of the event.",
+        "Unlike the 'agent' argument in the MergeOrg event, which involves entities combining forces, the 'agent' in the StartOrg event is focused on the creation of a new, independent entity."
+      ]
+    }
+  },
+  "StartPosition(PersonnelEvent)": {
+    "description": [
+      "The StartPosition event type refers to the commencement of a role or position by an individual or group. This event is characterized by a person or entity beginning a new job, role, or position within an organization or location.",
+      "Triggers for the StartPosition event include verbs such as 'becoming', 'return', 'replace', 'head', and 'was'. These triggers indicate the start of a new role or position.",
+      "Key characteristics of the StartPosition event include the presence of a person or entity, the new position or role they are starting, and often the location or organization where this role is being undertaken.",
+      "Unlike the Elect event, which involves a formal selection process, the StartPosition event focuses on the actual commencement of the role. For example, 'elected' is a trigger for Elect, not StartPosition.",
+      "The StartPosition event is distinct from the EndPosition event, which marks the conclusion of a role. Triggers like 'former' indicate EndPosition, not StartPosition. The focus of StartPosition is on the beginning of a new role, not the end of an old one."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "time": [
+        "The 'time' argument specifies when the person or entity starts their new position. This can include specific dates, months, years, or relative time expressions.",
+        "For example, in the sentence 'He started his new role in January 2021', 'January 2021' is the time argument.",
+        "The 'time' argument is crucial for understanding the temporal context of the event. It helps to place the event within a specific timeframe.",
+        "In cases where the time is not explicitly mentioned, it can sometimes be inferred from the context. For instance, 'He began his role last month' implies a recent start date.",
+        "Edge cases include vague time references like 'soon' or 'immediately', which may require additional context to determine the exact timeframe."
+      ],
+      "entity": [
+        "The 'entity' argument refers to the organization, company, or group where the person is starting their new position.",
+        "For example, in 'He became the CEO of TechCorp', 'TechCorp' is the entity argument.",
+        "This argument is important as it provides context about the organization or group associated with the new role.",
+        "In some cases, the entity may be a broader category, such as 'government' or 'university', rather than a specific organization.",
+        "Edge cases include situations where the entity is implied but not explicitly stated, such as 'He started as a professor' (implying a university or academic institution)."
+      ],
+      "position": [
+        "The 'position' argument specifies the role or job title that the person or entity is starting.",
+        "For example, in 'She was appointed as the new marketing director', 'marketing director' is the position argument.",
+        "This argument is essential for understanding the specific role or responsibilities associated with the event.",
+        "In some cases, the position may be described in more general terms, such as 'leader' or 'manager', rather than a specific title.",
+        "Edge cases include roles that are not formally titled but are understood from context, such as 'He took over the project' (implying a leadership role)."
+      ],
+      "place": [
+        "The 'place' argument indicates the location where the person or entity is starting their new position.",
+        "For example, in 'He started his new job in New York', 'New York' is the place argument.",
+        "This argument helps to provide geographical context for the event, indicating where the new role is being undertaken.",
+        "In some cases, the place may be a specific building or office, such as 'headquarters' or 'branch office'.",
+        "Edge cases include virtual or remote positions where the physical location is less relevant, such as 'He started his new role remotely'."
+      ],
+      "person": [
+        "The 'person' argument refers to the individual or group of individuals starting the new position.",
+        "For example, in 'John became the new CEO', 'John' is the person argument.",
+        "This argument is crucial for identifying who is involved in the event and starting the new role.",
+        "In some cases, the person may be a group or collective, such as 'the board members' or 'the team'.",
+        "Edge cases include situations where the person is implied but not explicitly mentioned, such as 'The new CEO started today' (implying a specific individual)."
+      ]
+    }
+  },
+  "Sue(JusticeEvent)": {
+    "description": [
+      "The 'Sue' event type, a subclass of 'JusticeEvent', involves a legal action where one party (the plaintiff) initiates a lawsuit against another party (the defendant) in a court of law. Example triggers include 'lawsuit', 'sued', and 'pursue'.",
+      "This event type is characterized by the formal process of bringing a legal claim to court, typically involving an adjudicator (e.g., judge) who oversees the case. Unlike 'ChargeIndict', which involves formal accusations by a prosecutor, 'Sue' focuses on civil disputes initiated by private parties.",
+      "Key characteristics of the 'Sue' event include the presence of a plaintiff and a defendant, and often a specific place where the lawsuit is filed. Unlike 'Extradite', which involves transferring a person across jurisdictions, 'Sue' is confined to the legal proceedings within a jurisdiction.",
+      "Triggers such as 'lawsuit' and 'sued' are indicative of the 'Sue' event type, whereas triggers like 'extradition' or 'release' are indicative of other JusticeEvent types such as 'Extradite' or 'ReleaseParole'.",
+      "The outcome of a 'Sue' event typically involves a legal judgment or settlement, distinguishing it from events like 'Execute', which result in the carrying out of a sentence, or 'Fine', which involves monetary penalties imposed by an adjudicator."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The 'adjudicator' in a 'Sue' event refers to the individual or body responsible for overseeing the legal proceedings, such as a judge or a court. For example, in 'the settlement approved by the judge', the judge is the adjudicator.",
+        "The role of the adjudicator is crucial as they ensure the legal process is followed and make rulings on the case. Unlike the 'Prosecutor' in a 'ChargeIndict' event, the adjudicator remains neutral and does not represent either party.",
+        "In some cases, the adjudicator may be a panel or a specific court, as seen in 'the case was heard in the Supreme Court'. Here, 'Supreme Court' serves as the adjudicator.",
+        "The adjudicator's decisions can significantly impact the outcome of the lawsuit, such as approving settlements or dismissing cases. For instance, 'the judge dismissed the case due to lack of evidence'.",
+        "Edge cases include scenarios where the adjudicator is not explicitly mentioned but implied, such as 'the lawsuit was filed in federal court', where 'federal court' implies the presence of an adjudicator."
+      ],
+      "plaintiff": [
+        "The 'plaintiff' in a 'Sue' event is the party that initiates the lawsuit, seeking legal remedy for a grievance. For example, in 'the shareholders sued the company', 'shareholders' are the plaintiffs.",
+        "The plaintiff is essential as they bring the case to court, alleging harm or seeking enforcement of a right. Unlike the 'Defendant', who responds to the lawsuit, the plaintiff actively pursues the legal action.",
+        "Examples include individuals, groups, or organizations, such as 'the victims' families filed a lawsuit against the manufacturer'. Here, 'victims' families' are the plaintiffs.",
+        "In some cases, multiple plaintiffs may be involved, as seen in 'the employees and their union sued the corporation'. Both 'employees' and 'union' are plaintiffs.",
+        "Edge cases include scenarios where the plaintiff is not explicitly named but can be inferred, such as 'a class action lawsuit was filed', where the 'class' represents the plaintiffs."
+      ],
+      "defendant": [
+        "The 'defendant' in a 'Sue' event is the party against whom the lawsuit is filed. For example, in 'the company was sued by its employees', 'company' is the defendant.",
+        "The defendant's role is to respond to the allegations made by the plaintiff, often defending against the claims. Unlike the 'Plaintiff', the defendant is on the receiving end of the legal action.",
+        "Examples include individuals, companies, or entities, such as 'the government was sued by the citizens'. Here, 'government' is the defendant.",
+        "In some cases, multiple defendants may be involved, as seen in 'the lawsuit named several executives and the corporation as defendants'. Both 'executives' and 'corporation' are defendants.",
+        "Edge cases include scenarios where the defendant is not explicitly named but can be inferred, such as 'a lawsuit was filed against the organization', where 'organization' is the defendant."
+      ],
+      "place": [
+        "The 'place' in a 'Sue' event refers to the location where the lawsuit is filed or the court proceedings take place. For example, in 'the lawsuit was filed in Washington', 'Washington' is the place.",
+        "The place is significant as it determines the jurisdiction and legal framework under which the case is heard. Unlike 'Origin' or 'Destination' in an 'Extradite' event, 'place' in a 'Sue' event is where the legal action occurs.",
+        "Examples include cities, states, or specific courts, such as 'the case was heard in New York Supreme Court'. Here, 'New York Supreme Court' is the place.",
+        "In some cases, the place may be a broader region, as seen in 'the lawsuit was filed in federal court'. 'Federal court' indicates the place within the federal jurisdiction.",
+        "Edge cases include scenarios where the place is not explicitly mentioned but can be inferred, such as 'the lawsuit was filed', where the place is implied to be the relevant court or jurisdiction."
+      ]
+    }
+  },
+  "TransferMoney(TransactionEvent)": {
+    "description": [
+      "The TransferMoney event involves the movement of money from one entity (the giver) to another (the recipient). This event is characterized by a financial transaction where the giver transfers a specified amount of money to the recipient, often with a specific purpose or beneficiary in mind.",
+      "Triggers for the TransferMoney event include verbs such as 'give', 'pay', 'send', 'transfer', and 'donate'. These triggers indicate the action of moving money from one party to another.",
+      "Unlike the TransferOwnership event, which involves the transfer of ownership of physical or intangible assets, the TransferMoney event specifically deals with the transfer of monetary value. For example, 'providing an apartment' is a TransferOwnership event, not a TransferMoney event.",
+      "The scope of the TransferMoney event includes various contexts such as personal transactions, business payments, donations, and financial settlements. The outcome of this event is the successful transfer of money from the giver to the recipient.",
+      "Negative examples for the TransferMoney event include actions that do not involve the transfer of money, such as 'providing services' or 'transferring ownership of property'. These actions do not fall under the TransferMoney event type."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "giver": [
+        "The giver is the entity that initiates the transfer of money. This can be an individual, organization, or any other entity that provides the funds. For example, in 'Planned Parenthood gives money to Democrats', 'Planned Parenthood' is the giver.",
+        "The giver is crucial in identifying the source of the funds being transferred. In the sentence 'The girls paid $900', 'girls' is the giver.",
+        "In cases where multiple entities are involved, all entities contributing to the transfer are considered givers. For instance, 'doctors, insurers, chains, HMOs, and chains' are all givers in the sentence 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers'.",
+        "The giver can also be an abstract entity, such as an organization or a government body. For example, 'the Palestinian Authority' is the giver in 'the Palestinian Authority sent Suha $200,000'.",
+        "In some contexts, the giver may not be explicitly mentioned but can be inferred from the context. For example, in 'Sotheby's and Christie's agreed to pay $40 million', both 'Sotheby's' and 'Christie's' are givers."
+      ],
+      "recipient": [
+        "The recipient is the entity that receives the money being transferred. This can be an individual, organization, or any other entity that benefits from the transfer. For example, in 'Planned Parenthood gives money to Democrats', 'Democrats' is the recipient.",
+        "The recipient is essential in identifying the target of the financial transaction. In the sentence 'The girls paid $900 to the neighbor', 'neighbor' is the recipient.",
+        "In cases where the recipient is not explicitly mentioned, it can often be inferred from the context. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', 'members of Congress' is the recipient.",
+        "The recipient can also be an abstract entity, such as a department or a fund. For example, 'Suha' is the recipient in 'the Palestinian Authority sent Suha $200,000'.",
+        "In some contexts, the recipient may be a group of entities. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the recipient could be inferred as the parties involved in the settlement."
+      ],
+      "money": [
+        "The money argument specifies the amount of money being transferred. This can be a specific monetary value or a general reference to funds. For example, in 'Planned Parenthood gives a lot of money to Democrats', 'a lot of money' is the money argument.",
+        "The money argument is crucial in quantifying the financial transaction. In the sentence 'The girls paid $900', '$900' is the money argument.",
+        "In some cases, the money argument may be implied rather than explicitly stated. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', the exact amount is not specified but the transfer of money is implied.",
+        "The money argument can also include references to currency types, such as dollars, euros, or other monetary units. For example, in 'Sotheby's and Christie's agreed to pay $40 million', '$40 million' is the money argument.",
+        "In some contexts, the money argument may be part of a larger financial context, such as a budget or a fund. For example, in 'the Palestinian Authority sent Suha $200,000 a month out of the budget', '$200,000 a month' is the money argument."
+      ],
+      "time": [
+        "The time argument specifies when the transfer of money takes place. This can be a specific date, time, or a general time frame. For example, in 'The girls paid $900 last week', 'last week' is the time argument.",
+        "The time argument is important for understanding the temporal context of the financial transaction. In the sentence 'The Palestinian Authority sent Suha $200,000 a month', 'a month' is the time argument.",
+        "In some cases, the time argument may be implied rather than explicitly stated. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the exact time of the payment is not specified but can be inferred from the context.",
+        "The time argument can also include references to recurring payments or installments. For example, in 'the Palestinian Authority sent Suha $200,000 a month', 'a month' indicates a recurring time frame.",
+        "In some contexts, the time argument may be part of a larger temporal context, such as a financial quarter or fiscal year. For example, in 'the girls paid $900 for the distress caused last year', 'last year' is the time argument."
+      ],
+      "beneficiary": [
+        "The beneficiary is the entity that ultimately benefits from the transfer of money. This can be different from the recipient if the money is intended for a specific purpose. For example, in 'Planned Parenthood gives money to Democrats', 'Democrats' is the beneficiary.",
+        "The beneficiary is important for understanding the intended purpose of the financial transaction. In the sentence 'The girls paid $900 for the neighbor's distress', 'neighbor' is the beneficiary.",
+        "In some cases, the beneficiary may be implied rather than explicitly stated. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', the ultimate beneficiaries are the members of Congress.",
+        "The beneficiary can also be an abstract entity, such as a cause or a project. For example, in 'the Palestinian Authority sent Suha $200,000 for the Office of the President', 'Office of the President' is the beneficiary.",
+        "In some contexts, the beneficiary may be a group of entities. For example, in 'Sotheby's and Christie's agreed to pay $40 million to settle an international price-fixing scam', the beneficiaries could be the parties affected by the scam."
+      ],
+      "place": [
+        "The place argument specifies the location where the transfer of money takes place. This can be a specific location or a general area. For example, in 'The girls paid $900 in Colorado', 'Colorado' is the place argument.",
+        "The place argument is important for understanding the geographical context of the financial transaction. In the sentence 'The Palestinian Authority sent Suha $200,000 from the Office of the President', 'Office of the President' is the place argument.",
+        "In some cases, the place argument may be implied rather than explicitly stated. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the exact location of the payment is not specified but can be inferred from the context.",
+        "The place argument can also include references to virtual or online locations. For example, in 'the girls paid $900 through an online platform', 'online platform' is the place argument.",
+        "In some contexts, the place argument may be part of a larger geographical context, such as a country or a region. For example, in 'the girls paid $900 for the distress caused in Colorado', 'Colorado' is the place argument."
+      ]
+    }
+  },
+  "TransferOwnership(TransactionEvent)": {
+    "description": [
+      "TransferOwnership events involve the transfer of ownership of an item or asset from one entity to another. Example triggers include 'sell', 'buy', 'acquire', 'provide', and 'export'.",
+      "This event type is characterized by the presence of a giver (or seller), a recipient (or buyer), and the item or asset being transferred. The transaction may also include details such as time, place, and price.",
+      "Unlike TransferMoney events, which focus on the transfer of monetary funds, TransferOwnership events specifically involve the transfer of tangible or intangible assets. For example, 'selling a car' is a TransferOwnership event, whereas 'transferring $100' is a TransferMoney event.",
+      "Triggers such as 'donate' or 'gift' may indicate a TransferOwnership event if they involve the transfer of an asset. However, if the focus is on the monetary value being transferred, it would be a TransferMoney event.",
+      "The outcome of a TransferOwnership event is the change in ownership of the specified asset. This differs from other transaction events where the primary focus might be on the exchange of services or monetary funds without a change in ownership of a specific item."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "giver": [
+        "The giver is the entity that transfers ownership of the asset. For example, in 'John sold his car to Mary', John is the giver.",
+        "The giver can be an individual, organization, or country. For instance, 'North Korea exported missiles' identifies North Korea as the giver.",
+        "In cases where the giver is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the company is the giver.",
+        "The giver is crucial in establishing the source of the asset being transferred. For example, 'Vivendi wants to sell Universal Studios' identifies Vivendi as the giver.",
+        "Edge cases include scenarios where the giver is implied rather than stated. For example, 'The apartment was given to the nanny' implies the giver is the owner of the apartment."
+      ],
+      "thing": [
+        "The thing is the asset or item being transferred. For example, in 'John sold his car to Mary', the car is the thing.",
+        "The thing can be tangible (e.g., car, house) or intangible (e.g., rights, shares). For instance, 'Vivendi sold its entertainment companies' identifies the companies as the thing.",
+        "In some cases, the thing may be a collection of items. For example, 'Vivendi wants to sell Universal Studios, its theme parks, and television production company' lists multiple things.",
+        "The thing is essential in defining what is being transferred in the event. For example, 'North Korea exported missiles' identifies missiles as the thing.",
+        "Edge cases include scenarios where the thing is implied. For example, 'The assets were transferred to the new owner' implies the thing is the assets."
+      ],
+      "recipient": [
+        "The recipient is the entity that receives ownership of the asset. For example, in 'John sold his car to Mary', Mary is the recipient.",
+        "The recipient can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the recipient.",
+        "In cases where the recipient is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the recipients.",
+        "The recipient is crucial in establishing the new owner of the asset being transferred. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the recipient.",
+        "Edge cases include scenarios where the recipient is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the recipient."
+      ],
+      "time": [
+        "The time indicates when the transfer of ownership occurred. For example, in 'John sold his car to Mary last week', 'last week' is the time.",
+        "Time can be specific (e.g., 'on January 1st') or relative (e.g., 'last year'). For instance, 'North Korea exported missiles in 2001' identifies 2001 as the time.",
+        "In some cases, the time may be implied by the context. For example, 'The company provided laptops to employees during the pandemic' implies the time is during the pandemic.",
+        "The time helps establish the temporal context of the event. For example, 'Vivendi sold its entertainment companies last month' identifies last month as the time.",
+        "Edge cases include scenarios where the time is not explicitly mentioned but can be inferred. For example, 'The assets were transferred recently' implies a recent time frame."
+      ],
+      "price": [
+        "The price indicates the monetary value associated with the transfer of ownership. For example, in 'John sold his car to Mary for $5000', '$5000' is the price.",
+        "Price can be specific (e.g., '$1000') or relative (e.g., 'a large sum'). For instance, 'North Korea exported missiles worth $580 million' identifies $580 million as the price.",
+        "In some cases, the price may be implied by the context. For example, 'The company sold its shares at a high price' implies a high price.",
+        "The price helps establish the financial aspect of the event. For example, 'Vivendi sold its entertainment companies for billions' identifies billions as the price.",
+        "Edge cases include scenarios where the price is not explicitly mentioned but can be inferred. For example, 'The assets were sold at a premium' implies a high price."
+      ],
+      "artifact": [
+        "The artifact is the specific item or asset being transferred. For example, in 'John sold his car to Mary', the car is the artifact.",
+        "Artifacts can be tangible (e.g., car, house) or intangible (e.g., rights, shares). For instance, 'Vivendi sold its entertainment companies' identifies the companies as the artifact.",
+        "In some cases, the artifact may be a collection of items. For example, 'Vivendi wants to sell Universal Studios, its theme parks, and television production company' lists multiple artifacts.",
+        "The artifact is essential in defining what is being transferred in the event. For example, 'North Korea exported missiles' identifies missiles as the artifact.",
+        "Edge cases include scenarios where the artifact is implied. For example, 'The assets were transferred to the new owner' implies the artifact is the assets."
+      ],
+      "beneficiary": [
+        "The beneficiary is the entity that benefits from the transfer of ownership. For example, in 'John sold his car to Mary', Mary is the beneficiary.",
+        "The beneficiary can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the beneficiary.",
+        "In cases where the beneficiary is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the beneficiaries.",
+        "The beneficiary is crucial in establishing who gains from the transfer of the asset. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the beneficiary.",
+        "Edge cases include scenarios where the beneficiary is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the beneficiary."
+      ],
+      "buyer": [
+        "The buyer is the entity that purchases the asset. For example, in 'John sold his car to Mary', Mary is the buyer.",
+        "The buyer can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the buyer.",
+        "In cases where the buyer is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the buyers.",
+        "The buyer is crucial in establishing the new owner of the asset being transferred. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the buyer.",
+        "Edge cases include scenarios where the buyer is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the buyer."
+      ],
+      "place": [
+        "The place indicates where the transfer of ownership occurred. For example, in 'John sold his car to Mary in New York', 'New York' is the place.",
+        "Place can be specific (e.g., 'New York') or general (e.g., 'in the city'). For instance, 'North Korea exported missiles to Iran' identifies Iran as the place.",
+        "In some cases, the place may be implied by the context. For example, 'The company provided laptops to employees at the office' implies the office as the place.",
+        "The place helps establish the spatial context of the event. For example, 'Vivendi sold its entertainment companies in Los Angeles' identifies Los Angeles as the place.",
+        "Edge cases include scenarios where the place is not explicitly mentioned but can be inferred. For example, 'The assets were transferred locally' implies a local place."
+      ],
+      "seller": [
+        "The seller is the entity that sells the asset. For example, in 'John sold his car to Mary', John is the seller.",
+        "The seller can be an individual, organization, or country. For instance, 'North Korea exported missiles' identifies North Korea as the seller.",
+        "In cases where the seller is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the company is the seller.",
+        "The seller is crucial in establishing the source of the asset being transferred. For example, 'Vivendi wants to sell Universal Studios' identifies Vivendi as the seller.",
+        "Edge cases include scenarios where the seller is implied rather than stated. For example, 'The apartment was given to the nanny' implies the seller is the owner of the apartment."
+      ]
+    }
+  },
+  "Transport(MovementEvent)": {
+    "description": [
+      "The Transport event type, a subclass of MovementEvent, involves the movement of entities (people, objects, etc.) from one location to another. Example triggers include 'transport', 'deploying', 'cross', 'tours', and 'back'.",
+      "This event type is characterized by the involvement of an agent or vehicle facilitating the movement, and it often includes specific origin and destination locations. For instance, 'trains running to and from southern Sudan were used to transport abducted women and children'.",
+      "Unlike other MovementEvent types, Transport specifically focuses on the conveyance of entities, often with a clear start and end point. For example, 'The United States is deploying some of Iraq's exiles and internal dissidents around the country'.",
+      "Triggers such as 'travel', 'move', and 'shift' may indicate related events but are not specific to the Transport event type unless they clearly involve the conveyance of entities. For instance, 'Each day about 90,000 people cross the border between Malaysia and Singapore'.",
+      "The outcome of a Transport event is the successful relocation of the entities involved, distinguishing it from events like 'Evacuation' or 'Migration', which may imply urgency or mass movement without specific conveyance means."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "origin": [
+        "The origin argument specifies the starting point of the transport event. For example, in 'trains running to and from southern Sudan', 'southern Sudan' is the origin.",
+        "It is crucial to identify the origin to understand the full scope of the movement. For instance, 'deploying some of Iraq's exiles around the country' implies the origin is within Iraq.",
+        "In cases where the origin is not explicitly mentioned, context clues can help infer it. For example, 'cross the border between Malaysia and Singapore' implies both countries as potential origins.",
+        "The origin can be a specific location, a broader region, or even a conceptual starting point. For example, 'tours to Egypt and Turkey' implies the origin is where the tours start, likely China.",
+        "Unlike the destination, the origin is where the movement begins, not where it ends. For instance, 'back into Iraq' implies the origin is outside Iraq."
+      ],
+      "victim": [
+        "The victim argument refers to the entity being transported, often used when the entity is a person or group of people. For example, 'who was assisted by U.S. forces in getting back into Iraq' identifies 'who' as the victim.",
+        "This argument is essential to understand who or what is being moved. For instance, 'abducted women and children' in 'trains running to and from southern Sudan' are the victims.",
+        "In some contexts, the victim may not be explicitly labeled as such but can be inferred. For example, 'people cross the border' implies 'people' as the victims.",
+        "The victim can be an individual or a group, and it is important to distinguish them from the agent or vehicle. For instance, 'tourists' in 'tours to Egypt and Turkey' are the victims.",
+        "Unlike the agent, the victim is the entity being moved, not the one facilitating the movement. For example, 'dissidents' in 'deploying some of Iraq's exiles' are the victims."
+      ],
+      "vehicle": [
+        "The vehicle argument specifies the means of transport used in the event. For example, 'trains' in 'trains running to and from southern Sudan' are the vehicles.",
+        "Identifying the vehicle helps understand the mode of transport. For instance, 'U.S. forces' in 'assisted by U.S. forces in getting back into Iraq' can be considered a vehicle.",
+        "In some cases, the vehicle may be implied rather than explicitly stated. For example, 'cross the border' might imply walking or driving as the vehicle.",
+        "The vehicle can be a physical object, a group, or an abstract means of transport. For instance, 'agencies' in 'tours to Egypt and Turkey' can be seen as vehicles.",
+        "Unlike the agent, the vehicle is the means by which the transport occurs, not the entity facilitating it. For example, 'trains' in 'trains running to and from southern Sudan' are the vehicles."
+      ],
+      "time": [
+        "The time argument specifies when the transport event occurs. For example, 'In last year's trial' provides a temporal context for the event.",
+        "Understanding the time helps place the event in a chronological context. For instance, 'temporarily suspended tours' implies a specific time frame.",
+        "Time can be explicitly stated or inferred from context. For example, 'each day' in 'each day about 90,000 people cross the border' provides a recurring time frame.",
+        "The time argument can include specific dates, durations, or relative time expressions. For instance, 'deploying some of Iraq's exiles' might imply an ongoing or future time frame.",
+        "Unlike other arguments, time provides the temporal context rather than the spatial or participant details. For example, 'last year's trial' sets the time for the transport event."
+      ],
+      "artifact": [
+        "The artifact argument refers to the objects or entities being transported. For example, 'women and children' in 'trains running to and from southern Sudan' are the artifacts.",
+        "Identifying the artifact helps understand what is being moved. For instance, 'tourists' in 'tours to Egypt and Turkey' are the artifacts.",
+        "Artifacts can be tangible objects or abstract entities. For example, 'dissidents' in 'deploying some of Iraq's exiles' are the artifacts.",
+        "In some contexts, the artifact may be implied rather than explicitly stated. For example, 'people' in 'each day about 90,000 people cross the border' are the artifacts.",
+        "Unlike the victim, the artifact can include non-human entities. For example, 'elements' in 'deploying some of Iraq's exiles and internal dissidents' are artifacts."
+      ],
+      "destination": [
+        "The destination argument specifies the endpoint of the transport event. For example, 'Sudan' in 'trains running to and from southern Sudan' is the destination.",
+        "Identifying the destination helps understand where the movement ends. For instance, 'Iraq' in 'getting back into Iraq' is the destination.",
+        "The destination can be a specific location, a broader region, or even a conceptual endpoint. For example, 'Egypt and Turkey' in 'tours to Egypt and Turkey' are the destinations.",
+        "In some contexts, the destination may be implied rather than explicitly stated. For example, 'cross the border' implies the destination is the other side of the border.",
+        "Unlike the origin, the destination is where the movement ends, not where it begins. For instance, 'Singapore' in 'cross the border between Malaysia and Singapore' is the destination."
+      ],
+      "place": [
+        "The place argument specifies the general location where the transport event occurs. For example, 'Iraq' in 'getting back into Iraq' is the place.",
+        "Identifying the place helps understand the broader context of the movement. For instance, 'country' in 'deploying some of Iraq's exiles around the country' is the place.",
+        "The place can be a specific location, a broader region, or even a conceptual area. For example, 'border' in 'cross the border between Malaysia and Singapore' is the place.",
+        "In some contexts, the place may be implied rather than explicitly stated. For example, 'tours to Egypt and Turkey' implies the place is where the tours start, likely China.",
+        "Unlike the origin or destination, the place provides a general context rather than a specific start or end point. For instance, 'Iraq' in 'getting back into Iraq' is the place."
+      ],
+      "agent": [
+        "The agent argument refers to the entity facilitating the transport event. For example, 'U.S. forces' in 'assisted by U.S. forces in getting back into Iraq' are the agents.",
+        "Identifying the agent helps understand who or what is facilitating the movement. For instance, 'agencies' in 'tours to Egypt and Turkey' are the agents.",
+        "Agents can be individuals, groups, organizations, or abstract entities. For example, 'United States' in 'deploying some of Iraq's exiles' is the agent.",
+        "In some contexts, the agent may be implied rather than explicitly stated. For example, 'cross the border' might imply border control as the agent.",
+        "Unlike the vehicle, the agent is the entity facilitating the movement, not the means by which it occurs. For instance, 'agencies' in 'tours to Egypt and Turkey' are the agents."
+      ]
+    }
+  },
+  "TrialHearing(JusticeEvent)": {
+    "description": [
+      "A TrialHearing event involves a formal examination of evidence and arguments by a judicial authority to determine the guilt or innocence of a defendant. Example triggers include 'hearing', 'trial', and 'tried'.",
+      "This event type is characterized by the presence of an adjudicator (e.g., judge or court), a prosecutor, a defendant, and a specific place where the trial or hearing occurs.",
+      "Unlike the ChargeIndict event, which focuses on the formal accusation of a crime, the TrialHearing event centers on the judicial process of examining evidence and arguments to reach a verdict.",
+      "Triggers such as 'charges' and 'lawsuit' are indicative of ChargeIndict and Sue events, respectively, not TrialHearing events. The outcome of a TrialHearing is a judicial decision, whereas the outcome of a ChargeIndict is an indictment, and the outcome of a Sue event is a legal claim.",
+      "The scope of a TrialHearing event includes the entire judicial process from the presentation of evidence to the final verdict. It does not include the arrest or release of individuals, which are covered by ArrestJail and ReleaseParole events, respectively."
+    ],
+    "attributes": {
+      "mention": "The text span that triggers the event.",
+      "adjudicator": [
+        "The adjudicator is the judicial authority presiding over the trial or hearing. This can be a judge, a court, or a panel of judges. For example, in 'an oklahoma city judge has ruled', the adjudicator is 'judge'.",
+        "The role of the adjudicator is to ensure the trial is conducted fairly and to make a final decision based on the evidence presented. In 'The Belgrade district court said', the adjudicator is 'court'.",
+        "Unlike the prosecutor or defendant, the adjudicator is neutral and does not advocate for either side. For instance, 'a court said Thursday' identifies 'court' as the adjudicator.",
+        "In some cases, the adjudicator may be referred to by their title or the institution they represent, such as 'judge' or 'court'. For example, 'an oklahoma judge has ruled' identifies 'judge' as the adjudicator.",
+        "The adjudicator's decision is final and binding, distinguishing their role from that of other participants in the trial. For example, 'a judge's worst nightmare' refers to the adjudicator as 'judge'."
+      ],
+      "prosecutor": [
+        "The prosecutor is the legal representative who presents the case against the defendant. For example, in 'prosecutors presented enough evidence', the prosecutor is 'prosecutors'.",
+        "The role of the prosecutor is to prove the defendant's guilt beyond a reasonable doubt. In 'All the FL prosecutors have to do is ask', the prosecutor is 'prosecutors'.",
+        "Unlike the adjudicator, the prosecutor is an advocate for the state or the public and seeks to secure a conviction. For instance, 'prosecutors presented enough evidence' identifies 'prosecutors' as the prosecutor.",
+        "The prosecutor may be referred to by their title or the office they represent, such as 'district attorney' or 'state prosecutor'. For example, 'FL prosecutors' identifies 'prosecutors' as the prosecutor.",
+        "The prosecutor's arguments and evidence are critical to the trial's outcome, distinguishing their role from that of the defense. For example, 'prosecutors presented enough evidence' refers to the prosecutor as 'prosecutors'."
+      ],
+      "defendant": [
+        "The defendant is the individual or entity accused of a crime and standing trial. For example, in 'to try nichols on murder charges', the defendant is 'nichols'.",
+        "The role of the defendant is to respond to the charges and present a defense against the prosecution's case. In 'Markovic will be tried', the defendant is 'Markovic'.",
+        "Unlike the prosecutor, the defendant is the subject of the trial and seeks to avoid conviction. For instance, 'terry nichols will indeed stand trial' identifies 'terry nichols' as the defendant.",
+        "The defendant may be referred to by name, title, or a pronoun, such as 'he', 'she', or 'they'. For example, 'her serving time' identifies 'her' as the defendant.",
+        "The defendant's presence and participation in the trial are essential, distinguishing their role from other participants. For example, 'Slobodan Milosevic's wife will go on trial' refers to the defendant as 'wife'."
+      ],
+      "place": [
+        "The place is the location where the trial or hearing takes place. For example, in 'an oklahoma city judge has ruled', the place is 'oklahoma city'.",
+        "The role of the place is to provide the physical setting for the judicial process. In 'The Belgrade district court said', the place is 'Belgrade'.",
+        "Unlike other arguments, the place is a specific geographic location and is essential for jurisdictional purposes. For instance, 'in that state court' identifies 'state' as the place.",
+        "The place may be referred to by the name of the city, state, or country where the trial occurs. For example, 'FL for trial' identifies 'FL' as the place.",
+        "The place's identification is crucial for understanding the legal context and jurisdiction of the trial. For example, 'a court said Thursday' refers to the place as 'court'."
+      ]
+    }
+  }
+}

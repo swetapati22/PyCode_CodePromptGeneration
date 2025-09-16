@@ -1,0 +1,49 @@
+{
+    "EndPosition(PersonnelEvent)": {
+        "description": [
+            "The EndPosition event type, a subclass of PersonnelEvent, refers to the conclusion of an individual's role or position within an organization or entity. Example triggers include 'former', 'previously', 'dismissed', and 'retired'.",
+            "This event type captures scenarios where a person no longer holds a specific position, often indicated by past-tense verbs or adjectives. Key characteristics include the identification of the person, the position they held, and the entity or place associated with the position.",
+            "Unlike the StartPosition event, which marks the beginning of a role, the EndPosition event signifies the end. For instance, 'appointed' would trigger a StartPosition event, whereas 'resigned' would trigger an EndPosition event.",
+            "Triggers such as 'elected' or 'nominated' are indicative of Elect or Nominate events, not EndPosition. The focus of EndPosition is on the cessation of a role rather than the initiation or selection for a role.",
+            "The outcome of an EndPosition event is the vacancy of a position previously held by the person. This event is often accompanied by context indicating the person's past association with the role, such as 'former CEO' or 'previously a manager'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the position ended. It is crucial for understanding the temporal context of the event. For example, 'in 1988' in 'dismissed in 1988' provides the time frame for the end of the position.",
+            "This argument helps to place the event within a specific period, which can be important for historical or chronological analysis. For instance, 'last year' in 'retired last year' indicates the time of retirement.",
+            "In some cases, the time may be implicit or relative, such as 'recently' or 'previously'. These terms still provide a temporal context even if not exact.",
+            "The 'time' argument can also include more specific dates or periods, such as 'on August 11, 2003' in 'elected on August 11, 2003', though this example pertains to an Elect event.",
+            "Edge cases include vague or unspecified times, which may require additional context to interpret accurately. For example, 'a few years ago' in 'left the company a few years ago' provides a relative time frame."
+        ],
+        "entity": [
+            "The 'entity' argument identifies the organization, company, or institution associated with the position. For example, 'Barclays Bank' in 'previously holding senior positions at Barclays Bank'.",
+            "This argument is essential for linking the person to the specific entity where they held the position. It provides context about the professional environment.",
+            "Entities can range from companies and government bodies to non-profits and educational institutions. For instance, 'Department of Trade and Industry' in 'a top civil servant at the Department of Trade and Industry'.",
+            "In some cases, multiple entities may be involved, such as 'BZW and Kleinwort Benson' in 'previously holding senior positions at Barclays Bank, BZW and Kleinwort Benson'.",
+            "Edge cases include generic or less specific entities, which may require additional context to clarify. For example, 'a factory' in 'dismissed from her job at a factory'."
+        ],
+        "position": [
+            "The 'position' argument specifies the role or title that the person held. For example, 'president' in 'former Chinese president'.",
+            "This argument is crucial for understanding the specific responsibilities and status associated with the person's role. It provides insight into their professional identity.",
+            "Positions can vary widely, from high-ranking titles like 'CEO' or 'Governor' to more general roles like 'manager' or 'team leader'.",
+            "In some cases, the position may be implied rather than explicitly stated, requiring interpretation from the context. For example, 'a top civil servant' implies a high-ranking government position.",
+            "Edge cases include ambiguous or less formal titles, which may need additional context to interpret accurately. For example, 'team leader' in 'the team leader for Landmark Education programs'."
+        ],
+        "place": [
+            "The 'place' argument identifies the geographical location associated with the position. For example, 'Shanghai' in 'dismissed from her job at a Shanghai soap factory'.",
+            "This argument helps to contextualize the event within a specific physical location, which can be important for understanding regional or local dynamics.",
+            "Places can range from cities and countries to specific institutions or buildings. For instance, 'Tucson' in 'team leader for Landmark Education programs in Tucson'.",
+            "In some cases, the place may be implied or less specific, such as 'Chinese' in 'former Chinese president', which indicates a national context.",
+            "Edge cases include vague or unspecified places, which may require additional context to interpret accurately. For example, 'a soap factory' in 'dismissed from her job at a soap factory'."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual whose position has ended. For example, 'McCarthy' in 'McCarthy was formerly a top civil servant'.",
+            "This argument is essential for linking the event to a specific individual, providing a personal dimension to the professional context.",
+            "Persons can be identified by their names, titles, or pronouns. For instance, 'she' in 'she most recently has been the team leader'.",
+            "In some cases, the person may be referred to by their role or relationship, such as 'president' in 'former Chinese president'.",
+            "Edge cases include ambiguous or less specific references, which may need additional context to interpret accurately. For example, 'her' in 'dismissed from her job'."
+        ]
+    }
+}

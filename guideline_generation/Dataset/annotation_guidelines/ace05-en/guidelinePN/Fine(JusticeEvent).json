@@ -1,0 +1,35 @@
+{
+    "Fine(JusticeEvent)": {
+        "description": [
+            "A Fine event involves the imposition of a monetary penalty on an entity by an adjudicator, typically as a result of a legal or regulatory violation. Example triggers include 'fine', 'fines', 'pay a fine', and 'imposed a fine'.",
+            "This event type is characterized by the presence of an adjudicator who imposes the fine and an entity that is required to pay the fine. The place where the fine is imposed or where the entity is located may also be relevant.",
+            "Unlike other JusticeEvent types such as 'Arrest' or 'Trial', a Fine event specifically involves a financial penalty rather than physical detention or legal proceedings. For instance, 'arrested' would indicate an Arrest event, not a Fine event.",
+            "Triggers such as 'fined', 'penalized', and 'ordered to pay' are indicative of a Fine event. The outcome of this event is the payment of a specified amount of money by the entity to the adjudicator or a designated authority.",
+            "A Fine event does not involve physical actions like 'detained' or 'imprisoned', which are associated with other JusticeEvent types. Instead, it focuses on the financial aspect of justice enforcement."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the authority or individual who imposes the fine. This could be a judge, a regulatory body, or any official entity responsible for enforcing the fine. For example, in 'The judge ordered a fine', 'judge' is the adjudicator.",
+            "The role of the adjudicator is crucial as they are the ones who determine the fine and ensure its enforcement. In 'The SEC imposed a fine', 'SEC' is the adjudicator.",
+            "In some cases, the adjudicator may be a collective body or organization, such as 'the court' or 'the regulatory commission'. For instance, 'The court fined the company' identifies 'court' as the adjudicator.",
+            "The adjudicator must have the legal authority to impose the fine. For example, 'The city council imposed a fine' indicates 'city council' as the adjudicator.",
+            "Edge cases may include situations where the adjudicator is implied rather than explicitly stated. For example, 'A fine was imposed' implies an adjudicator, even if not directly mentioned."
+        ],
+        "entity": [
+            "The entity is the individual, organization, or group that is required to pay the fine. This could be a person, a company, or any other legal entity. For example, in 'The company was fined', 'company' is the entity.",
+            "The entity is the recipient of the penalty and is responsible for making the payment. In 'John was fined $500', 'John' is the entity.",
+            "Entities can vary widely, from individuals to large corporations. For instance, 'The corporation was fined' identifies 'corporation' as the entity.",
+            "The entity must be the one who committed the violation or is held responsible for it. For example, 'The driver was fined for speeding' indicates 'driver' as the entity.",
+            "Edge cases may include situations where the entity is a group or collective, such as 'The team was fined'. Here, 'team' is the entity."
+        ],
+        "place": [
+            "The place is the location where the fine is imposed or where the entity is located. This could be a city, a building, or any specific location. For example, in 'The fine was imposed in New York', 'New York' is the place.",
+            "The place provides context for where the event occurred, which can be important for understanding jurisdiction and enforcement. In 'The fine was issued at the courthouse', 'courthouse' is the place.",
+            "Places can range from specific buildings to broader geographic areas. For instance, 'The fine was imposed in California' identifies 'California' as the place.",
+            "The place must be relevant to the event, either as the location of the adjudicator or the entity. For example, 'The fine was issued in the company's headquarters' indicates 'headquarters' as the place.",
+            "Edge cases may include virtual or non-physical locations, such as 'The fine was imposed online'. Here, 'online' is the place."
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Pardon(JusticeEvent)": {
+        "description": [
+            "A Pardon event involves an official decision to forgive or excuse a person from the legal consequences of a crime or offense. This event typically includes an adjudicator who grants the pardon, a defendant who receives the pardon, and sometimes a specific place where the pardon is issued.",
+            "The Pardon event is characterized by the act of officially forgiving a person for a crime, often resulting in the removal of penalties or legal consequences. The event is usually triggered by terms like 'pardon', 'forgive', or 'excuse'.",
+            "In a Pardon event, an authority figure (adjudicator) grants clemency to an individual (defendant), absolving them from the legal repercussions of their actions. This event can occur in various legal and political contexts.",
+            "A Pardon event signifies the formal act of releasing an individual from the punishment or legal consequences of a crime. It involves an adjudicator who has the power to grant the pardon and a defendant who benefits from it.",
+            "The Pardon event is a legal action where an individual is officially forgiven for a crime, often resulting in the annulment of penalties. Key elements include the adjudicator who grants the pardon, the defendant who receives it, and sometimes the location where it occurs."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator in a Pardon event is the authority figure or official who has the power to grant the pardon. This could be a head of state, a governor, or any other official with the legal authority to forgive a crime. For example, in the sentence 'The governor pardoned the prisoner', the governor is the adjudicator.",
+            "An adjudicator is the person or entity that has the legal authority to issue a pardon. This role is crucial as it signifies the source of the pardon. For instance, 'President Lincoln pardoned the soldier' identifies President Lincoln as the adjudicator.",
+            "In the context of a Pardon event, the adjudicator is the individual or body that officially forgives the defendant. This could be a judge, a monarch, or a governmental official. For example, 'The king granted a pardon to the rebel' shows the king as the adjudicator.",
+            "The adjudicator is the person or institution that grants the pardon in a Pardon event. This role is essential as it denotes the authority behind the act of pardoning. For example, 'The board of pardons decided to forgive the convict' identifies the board of pardons as the adjudicator.",
+            "An adjudicator in a Pardon event refers to the official or authority who has the power to pardon the defendant. This could be a political leader, a judicial figure, or a designated committee. For instance, 'The president issued a pardon to the whistleblower' indicates the president as the adjudicator."
+        ],
+        "place": [
+            "The place in a Pardon event refers to the location where the pardon is issued or where the defendant is located when the pardon is granted. This could be a country, state, city, or specific institution. For example, 'The pardon was issued in Washington D.C.' identifies Washington D.C. as the place.",
+            "In a Pardon event, the place denotes the geographical or institutional location associated with the act of pardoning. This could be the country or city where the adjudicator resides or where the legal proceedings occur. For instance, 'The governor of California pardoned the inmate' indicates California as the place.",
+            "The place in the context of a Pardon event is the specific location tied to the issuance of the pardon. This could be the jurisdiction of the adjudicator or the location of the defendant. For example, 'The royal pardon was announced in London' identifies London as the place.",
+            "A place in a Pardon event refers to the physical or administrative location where the pardon is granted. This could be a courthouse, a government office, or a broader geographical area. For instance, 'The pardon was granted in the state of Texas' indicates Texas as the place.",
+            "In a Pardon event, the place is the location relevant to the act of pardoning, which could be where the adjudicator is based or where the defendant is imprisoned. For example, 'The president issued the pardon from the White House' identifies the White House as the place."
+        ],
+        "defendant": [
+            "The defendant in a Pardon event is the individual who receives the pardon. This person is typically someone who has been convicted of a crime or offense and is being forgiven by the adjudicator. For example, in the sentence 'The governor pardoned the prisoner', the prisoner is the defendant.",
+            "In a Pardon event, the defendant is the person who benefits from the pardon, having their legal penalties or consequences removed. This individual is often the subject of the adjudicator's clemency. For instance, 'The president pardoned the whistleblower' identifies the whistleblower as the defendant.",
+            "The defendant in the context of a Pardon event is the individual who is officially forgiven for their crime by the adjudicator. This person is the recipient of the pardon. For example, 'The king granted a pardon to the rebel' shows the rebel as the defendant.",
+            "A defendant in a Pardon event refers to the person who is being pardoned by the adjudicator. This individual is typically someone who has been legally convicted and is now being absolved of their penalties. For instance, 'The board of pardons decided to forgive the convict' identifies the convict as the defendant.",
+            "In a Pardon event, the defendant is the person who is granted clemency by the adjudicator, effectively nullifying their legal consequences. This person is the main beneficiary of the pardon. For example, 'The president issued a pardon to the whistleblower' indicates the whistleblower as the defendant."
+        ]
+    }
+}

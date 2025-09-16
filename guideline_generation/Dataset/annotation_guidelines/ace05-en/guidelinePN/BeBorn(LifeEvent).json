@@ -1,0 +1,35 @@
+{
+    "BeBorn(LifeEvent)": {
+        "description": [
+            "The 'BeBorn' event type, a subclass of 'LifeEvent', refers to the occurrence of a person's birth. Example triggers include 'birth', 'born', and 'having'.",
+            "This event type captures the moment when a new individual comes into existence. Key characteristics include the presence of a person being born, the location of the birth, and the time it occurred.",
+            "Unlike the 'Die' event type, which marks the end of life, the 'BeBorn' event signifies the beginning of life. Triggers such as 'killed' or 'died' are indicative of the 'Die' event type, not 'BeBorn'.",
+            "The 'BeBorn' event is distinct from other 'LifeEvent' types like 'Marriage' or 'Divorce', which involve changes in marital status rather than the commencement of life.",
+            "In the context of 'BeBorn', the outcomes are the introduction of a new individual into the world, whereas similar event types like 'Adopt' involve the legal process of becoming a parent to an existing child."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the birth occurred. It is crucial for contextualizing the event. For example, 'home', 'hospital', or 'New Zealand'.",
+            "This argument helps in identifying the geographical context of the birth event. For instance, 'Byrds Creek, Richland County' in the example 'Kristin Scott gave birth at her parents' home in Byrds Creek, Richland County'.",
+            "In cases where the birth location is not explicitly mentioned, the argument may be inferred from the context. For example, 'nation' in 'The blood red nation of China'.",
+            "The 'place' argument can vary in specificity, ranging from a specific building like 'hospital' to a broader location like 'country'.",
+            "Unlike the 'Place' argument in events like 'Demonstrate', which indicates where a protest occurs, the 'place' in 'BeBorn' specifically refers to the birth location."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual(s) being born. This is the central focus of the 'BeBorn' event. Examples include 'babies', 'Hunter', and 'child'.",
+            "This argument is essential for understanding who the new individual is. For instance, 'girls' and 'boys' in 'only about 100 girls are born for every 119 boys'.",
+            "In some cases, the 'person' argument may refer to multiple individuals, such as 'babies' or 'children'.",
+            "The 'person' argument can also include pronouns or general terms when specific names are not provided, such as 'one' and 'other' in 'one of unknown sex in April 2001 and the other, a fullterm girl, January 14'.",
+            "Unlike the 'Victim' argument in the 'Die' event type, which refers to individuals who have died, the 'person' argument in 'BeBorn' refers to those who are newly born."
+        ],
+        "time": [
+            "The 'time' argument specifies when the birth occurred. This can include exact dates, times, or general time frames. For example, 'January 14' or '1:52 a.m.'.",
+            "This argument provides temporal context to the birth event, helping to situate it within a specific period. For instance, 'April 2001' in 'one of unknown sex in April 2001'.",
+            "In some cases, the 'time' argument may be inferred from the context if not explicitly mentioned. For example, '20-year-old policy' in 'a devastating 20-year-old policy'.",
+            "The 'time' argument can vary in precision, from specific times like '1:52 a.m.' to broader periods like 'January 14'.",
+            "Unlike the 'time' argument in events like 'Sentence', which indicates when a legal judgment is made, the 'time' in 'BeBorn' specifically refers to the moment of birth."
+        ]
+    }
+}

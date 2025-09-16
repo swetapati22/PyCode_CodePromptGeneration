@@ -1,0 +1,12 @@
+{
+    "Demonstrate(ConflictEvent)": {
+        "description": "A 'Demonstrate' event involves a public gathering of people to express opinions, often in protest or support of a cause. These events are characterized by collective action, typically non-violent, and can range from small local gatherings to large-scale national or international protests. Key triggers include terms like 'gathered', 'rally', 'protests', and 'campaign'. Outcomes may include media coverage, public awareness, and policy changes, distinguishing them from 'Attack' events which involve direct physical aggression.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "time": "The 'time' argument specifies when the demonstration took place, providing context and relevance. It can be explicit, such as 'yesterday' or 'Saturday', or implicit, inferred from context. It may also indicate the duration of the event, such as '10 hours'.",
+            "entity": "The 'entity' argument identifies the participants in the demonstration, including individuals, groups, or organizations. It can specify primary and secondary participants, such as 'protesters' and 'police', and may sometimes be implied rather than explicitly stated.",
+            "place": "The 'place' argument specifies the location of the demonstration, ranging from specific sites to broader areas. It can indicate multiple locations for widespread events and may sometimes be inferred from context.",
+            "police": "The 'police' argument identifies the involvement of law enforcement, highlighting their presence, actions, and interactions with demonstrators. It can be explicit, such as 'police' or 'arrested', or implicit, inferred from the context of the event."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Fine(JusticeEvent)": {
+        "description": [
+            "A Fine event involves the imposition of a monetary penalty on an entity by an adjudicator as a result of a legal or regulatory violation. Example triggers include 'fine', 'fines', 'pay a fine', and 'slapped fines'.",
+            "This event type is characterized by the presence of an adjudicator who imposes the fine and an entity that is required to pay the fine. The fine is typically a result of a legal judgment or regulatory action.",
+            "Unlike other JusticeEvent types such as Convict or Acquit, the Fine event specifically involves a financial penalty rather than a determination of guilt or innocence. For example, 'convicted' is indicative of a Convict event, not a Fine event.",
+            "Triggers such as 'release' or 'pardoned' are indicative of ReleaseParole or Pardon events, respectively, and do not involve the imposition of a monetary penalty, distinguishing them from Fine events.",
+            "The outcome of a Fine event is the payment of a specified amount of money by the entity to the adjudicator or a designated authority, unlike Appeal events where the outcome is a request for a review of a decision."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the authority or individual who imposes the fine. This can be a judge, a regulatory body, or any official entity with the power to levy fines. For example, in 'the judge ordered a fine', the judge is the adjudicator.",
+            "The role of the adjudicator is crucial as they are the ones who determine the amount and the imposition of the fine. For instance, 'the SEC fined the company' identifies the SEC as the adjudicator.",
+            "In some cases, the adjudicator may be a collective body, such as a court or a regulatory commission. For example, 'the court imposed a fine' indicates the court as the adjudicator.",
+            "The adjudicator must have legal or regulatory authority to impose fines. Unlike a plaintiff in an Appeal event, the adjudicator in a Fine event has the power to enforce the penalty. For example, 'the regulatory commission fined the firm' shows the commission as the adjudicator.",
+            "Edge cases may include situations where the adjudicator is implied rather than explicitly stated. For example, 'the company was fined' implies an adjudicator even if not directly mentioned."
+        ],
+        "entity": [
+            "The entity is the individual, organization, or group that is required to pay the fine. This can be a person, a company, or any other legal entity. For example, in 'the company was fined', the company is the entity.",
+            "The entity is the recipient of the penalty and is responsible for the payment. For instance, 'Ranjha was ordered to pay a fine' identifies Ranjha as the entity.",
+            "Entities can vary widely, from individuals to large corporations. For example, 'the brokerages were fined' indicates multiple entities.",
+            "Unlike the defendant in a Convict event, the entity in a Fine event is specifically penalized financially. For example, 'the firm was fined' shows the firm as the entity, not a defendant.",
+            "Edge cases may include situations where the entity is part of a larger group or organization. For example, 'the department was fined' implies the entity is a specific department within a larger organization."
+        ],
+        "place": [
+            "The place is the location where the fine is imposed or where the entity is required to pay the fine. This can be a city, a country, or a specific venue. For example, in 'fined in Los Angeles', Los Angeles is the place.",
+            "The place provides context for the jurisdiction or the setting of the fine. For instance, 'the fine was imposed in the company's offices' identifies the offices as the place.",
+            "Places can be specific or general, ranging from exact addresses to broader regions. For example, 'fined in South Florida' indicates a general region.",
+            "Unlike the place in an Acquit event, which is where the acquittal occurs, the place in a Fine event is where the financial penalty is enforced. For example, 'fined in Miami' shows Miami as the place of enforcement.",
+            "Edge cases may include virtual or non-physical locations, such as online platforms where fines are imposed. For example, 'fined on the online marketplace' indicates the place as the online platform."
+        ]
+    }
+}

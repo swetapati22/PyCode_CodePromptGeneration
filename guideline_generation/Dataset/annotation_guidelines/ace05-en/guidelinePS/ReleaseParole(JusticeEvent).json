@@ -1,0 +1,42 @@
+{
+    "ReleaseParole(JusticeEvent)": {
+        "description": [
+            "The ReleaseParole event involves the conditional release of a person from detention or imprisonment before the completion of their sentence, typically under specific conditions or supervision. Example triggers include 'release' and 'released'.",
+            "This event is characterized by the involvement of a person being released, an entity or authority making the decision, and sometimes the place where the release occurs. Unlike the Pardon event, ReleaseParole does not imply forgiveness of the crime but rather a conditional freedom.",
+            "Key characteristics of the ReleaseParole event include the decision-making authority (e.g., parole boards, judges), the person being released, and the conditions under which the release is granted. Triggers such as 'release' and 'parole' are indicative of this event type.",
+            "Unlike the Extradite event, which involves transferring a person from one jurisdiction to another, ReleaseParole focuses on the conditional release of a person within the same jurisdiction. The outcomes differ as ReleaseParole results in conditional freedom, whereas Extradite results in a transfer for legal proceedings.",
+            "The scope of the ReleaseParole event includes the decision-making process, the conditions of release, and the entities involved. Negative examples such as 'extradition' and 'pardon' help clarify that ReleaseParole is specifically about conditional release rather than transfer or forgiveness."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the organization or authority responsible for making the parole decision. This could be a parole board, a judge, or a similar institution. For example, in 'the parole board decided to release him', 'parole board' is the entity.",
+            "Entities play a crucial role in the ReleaseParole event as they hold the authority to grant or deny parole. In 'the judge released the prisoner', 'judge' is the entity.",
+            "In some cases, multiple entities may be involved in the decision-making process. For instance, 'the parole board and the facility agreed to release him' includes both 'parole board' and 'facility' as entities.",
+            "Entities are distinct from agents in that they are the decision-making bodies rather than individuals carrying out the release. For example, 'the institution made the final decision' identifies 'institution' as the entity.",
+            "Edge cases may include informal or less formalized entities, such as 'the committee decided to release him'. Here, 'committee' functions as the entity."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the person is being released from or to. For example, in 'he was released from the detention center', 'detention center' is the place.",
+            "Places are important in the context of ReleaseParole as they provide the setting for the event. In 'the prisoner was released from the facility', 'facility' is the place.",
+            "The place can also refer to the broader geographical location, such as a city or country. For instance, 'he was released in Maryland' uses 'Maryland' as the place.",
+            "Unlike the Extradite event, where 'place' might refer to origin and destination, in ReleaseParole, it typically refers to the location of release. For example, 'released from prison' focuses on the place of release.",
+            "Edge cases might include less specific locations, such as 'he was released from a secure location'. Here, 'secure location' serves as the place."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual being released on parole. For example, in 'the judge released him', 'him' is the person.",
+            "Persons are central to the ReleaseParole event as they are the subjects of the conditional release. In 'the parole board released the prisoner', 'prisoner' is the person.",
+            "The person can be identified by name or by a pronoun. For instance, 'Michael was released' uses 'Michael' as the person.",
+            "Unlike the Pardon event, where the person is forgiven for their crime, in ReleaseParole, the person is conditionally released. For example, 'the prisoner was released on parole' focuses on conditional release.",
+            "Edge cases might include groups of individuals, such as 'a thousand prisoners were released'. Here, 'prisoners' serves as the person."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the individual or group facilitating the release. This could be a negotiator, a lawyer, or another intermediary. For example, in 'the negotiators secured his release', 'negotiators' is the agent.",
+            "Agents play a supportive role in the ReleaseParole event, often working on behalf of the person being released. In 'the lawyer got him released', 'lawyer' is the agent.",
+            "The agent is distinct from the entity in that the agent acts on behalf of the person, while the entity makes the decision. For instance, 'the lawyer and the judge worked together to release him' identifies 'lawyer' as the agent and 'judge' as the entity.",
+            "Unlike the ArrestJail event, where the agent is typically law enforcement, in ReleaseParole, the agent is often an advocate or intermediary. For example, 'the advocate helped secure his release' focuses on the supportive role of the agent.",
+            "Edge cases might include less formal agents, such as 'his family worked to get him released'. Here, 'family' functions as the agent."
+        ]
+    }
+}

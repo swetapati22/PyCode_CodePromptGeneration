@@ -1,0 +1,84 @@
+{
+    "TransferOwnership(TransactionEvent)": {
+        "description": [
+            "The TransferOwnership event involves the transfer of ownership of an item or asset from one entity to another. Example triggers include 'sell', 'buy', 'acquire', 'provide', and 'export'.",
+            "This event type is characterized by the presence of a giver (or seller), a recipient (or buyer), and the item or asset being transferred. The transaction may also include details such as time, place, and price.",
+            "Unlike the TransferMoney event, which focuses on the transfer of monetary funds, the TransferOwnership event specifically involves the transfer of tangible or intangible assets.",
+            "Triggers such as 'sell' and 'buy' are indicative of the TransferOwnership event, whereas triggers like 'donate' or 'gift' may indicate a different type of event, such as a DonationEvent.",
+            "The outcome of a TransferOwnership event is the change in ownership of the specified item or asset, distinguishing it from events like DeclareBankruptcy or Sue, which do not involve the transfer of ownership."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that transfers ownership of the item or asset. For example, in 'Vivendi wants to sell Universal Studios', 'Vivendi' is the giver.",
+            "The giver can be an individual or an organization. For instance, 'Mirjana Markovic' in the example 'Mirjana Markovic is accused of providing an apartment' is the giver.",
+            "In cases where the giver is not explicitly mentioned, context clues can help identify the entity. For example, 'North Korea' in 'North Korea exported missiles' is the giver.",
+            "The giver is crucial in identifying the source of the item or asset being transferred. For example, 'Vivendi' in 'Vivendi is holding talks with buyers' is the giver.",
+            "Unlike the buyer, the giver is the original owner of the item or asset. For example, 'unit' in 'Diller is interested in the unit's assets' is the giver."
+        ],
+        "thing": [
+            "The thing refers to the item or asset being transferred. For example, 'apartment' in 'providing an apartment' is the thing.",
+            "The thing can be tangible, like 'missiles' in 'exported missiles', or intangible, like 'rights' in 'sold the rights'.",
+            "In some cases, the thing may be a collection of items, such as 'Universal Studios, parks, and company' in 'sell Universal Studios, parks, and company'.",
+            "The thing is the central focus of the transfer, distinguishing it from other elements like price or time. For example, 'assets' in 'interested in the unit's assets' is the thing.",
+            "Unlike the giver or recipient, the thing is the object of the transaction. For example, 'film studio' in 'bid for the film studio' is the thing."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives ownership of the item or asset. For example, 'nanny' in 'providing their grandson's nanny with an apartment' is the recipient.",
+            "The recipient can be an individual or an organization. For instance, 'Iran, Pakistan, Libya' in 'exported missiles to Iran, Pakistan, Libya' are recipients.",
+            "In cases where the recipient is not explicitly mentioned, context clues can help identify the entity. For example, 'buyers' in 'holding talks with buyers' are the recipients.",
+            "The recipient is crucial in identifying the new owner of the item or asset. For example, 'Diller' in 'Diller is interested in the unit's assets' is the recipient.",
+            "Unlike the giver, the recipient is the new owner of the item or asset. For example, 'Viacom, MGM' in 'talks with Viacom, MGM' are the recipients."
+        ],
+        "time": [
+            "The time refers to when the transfer of ownership takes place. For example, 'in 2000' in 'providing an apartment in 2000' is the time.",
+            "The time can be a specific date, year, or a more general time frame. For instance, 'Tuesday' in 'said Tuesday' is the time.",
+            "In some cases, the time may be implied rather than explicitly stated. For example, 'last year' in 'acquitted last year' is the time.",
+            "The time helps contextualize the event, distinguishing it from similar events that may occur at different times. For example, 'in 2001' in 'exported missiles in 2001' is the time.",
+            "Unlike the place or price, the time specifies when the transfer occurs. For example, 'March 26 and March 28' in 'served a subpoena on March 26 and March 28' is the time."
+        ],
+        "price": [
+            "The price refers to the monetary value exchanged for the item or asset. For example, 'US$580 million' in 'exported US$580 million worth of missiles' is the price.",
+            "The price can be a specific amount or a range. For instance, 'a lot of money' in 'gives a lot of money' is the price.",
+            "In some cases, the price may be implied rather than explicitly stated. For example, 'bid' in 'interested in his own bid' implies a price.",
+            "The price helps quantify the value of the transaction, distinguishing it from non-monetary transfers. For example, '1.5 billion' in 'filed a $1.5 billion lawsuit' is the price.",
+            "Unlike the thing or recipient, the price specifies the monetary aspect of the transfer. For example, 'worth of missiles' in 'exported US$580 million worth of missiles' is the price."
+        ],
+        "artifact": [
+            "The artifact refers to the specific item or asset being transferred. For example, 'apartment' in 'providing an apartment' is the artifact.",
+            "The artifact can be tangible, like 'missiles' in 'exported missiles', or intangible, like 'rights' in 'sold the rights'.",
+            "In some cases, the artifact may be a collection of items, such as 'Universal Studios, parks, and company' in 'sell Universal Studios, parks, and company'.",
+            "The artifact is the central focus of the transfer, distinguishing it from other elements like price or time. For example, 'assets' in 'interested in the unit's assets' is the artifact.",
+            "Unlike the giver or recipient, the artifact is the object of the transaction. For example, 'film studio' in 'bid for the film studio' is the artifact."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that benefits from the transfer, even if they are not the direct recipient. For example, 'nanny' in 'providing their grandson's nanny with an apartment' is the beneficiary.",
+            "The beneficiary can be an individual or an organization. For instance, 'Democrats' in 'gives a lot of money to Democrats' are beneficiaries.",
+            "In some cases, the beneficiary may be implied rather than explicitly stated. For example, 'relatives' in 'filed a lawsuit on behalf of relatives' are beneficiaries.",
+            "The beneficiary helps identify who gains from the transfer, distinguishing it from the direct recipient. For example, 'survivors' in 'represent 14 survivors' are beneficiaries.",
+            "Unlike the giver or recipient, the beneficiary is the entity that gains from the transfer. For example, 'Democrats' in 'gives a lot of money to Democrats' are beneficiaries."
+        ],
+        "buyer": [
+            "The buyer is the entity that purchases the item or asset. For example, 'Iran, Pakistan, Libya' in 'exported missiles to Iran, Pakistan, Libya' are buyers.",
+            "The buyer can be an individual or an organization. For instance, 'Viacom, MGM' in 'holding talks with Viacom, MGM' are buyers.",
+            "In cases where the buyer is not explicitly mentioned, context clues can help identify the entity. For example, 'buyers' in 'holding talks with buyers' are buyers.",
+            "The buyer is crucial in identifying the new owner of the item or asset. For example, 'Diller' in 'Diller is interested in the unit's assets' is the buyer.",
+            "Unlike the giver, the buyer is the new owner of the item or asset. For example, 'Viacom, MGM' in 'talks with Viacom, MGM' are buyers."
+        ],
+        "place": [
+            "The place refers to the location where the transfer of ownership takes place. For example, 'Belgrade' in 'providing an apartment in Belgrade' is the place.",
+            "The place can be a specific city, country, or a more general location. For instance, 'United States' in 'largest corporate bankruptcy in the United States' is the place.",
+            "In some cases, the place may be implied rather than explicitly stated. For example, 'Washington' in 'filed a lawsuit in Washington' is the place.",
+            "The place helps contextualize the event, distinguishing it from similar events that may occur in different locations. For example, 'Seoul' in 'a U.S. military official in Seoul' is the place.",
+            "Unlike the time or price, the place specifies where the transfer occurs. For example, 'state' in 'executed in the state' is the place."
+        ],
+        "seller": [
+            "The seller is the entity that sells the item or asset. For example, 'Vivendi' in 'Vivendi wants to sell Universal Studios' is the seller.",
+            "The seller can be an individual or an organization. For instance, 'North Korea' in 'exported missiles to Iran' is the seller.",
+            "In cases where the seller is not explicitly mentioned, context clues can help identify the entity. For example, 'unit' in 'interested in the unit's assets' is the seller.",
+            "The seller is crucial in identifying the source of the item or asset being transferred. For example, 'Vivendi' in 'holding talks with buyers' is the seller.",
+            "Unlike the buyer, the seller is the original owner of the item or asset. For example, 'unit' in 'Diller is interested in the unit's assets' is the seller."
+        ]
+    }
+}

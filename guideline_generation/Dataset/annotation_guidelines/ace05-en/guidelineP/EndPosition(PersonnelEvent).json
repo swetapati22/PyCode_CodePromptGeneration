@@ -1,0 +1,49 @@
+{
+    "EndPosition(PersonnelEvent)": {
+        "description": [
+            "The EndPosition event refers to the conclusion of an individual's role or position within an organization or entity. This event is characterized by the cessation of duties or responsibilities associated with a specific position.",
+            "EndPosition events are triggered by terms indicating the end of a role, such as 'former', 'previously', 'dismissed', or 'retired'. These triggers signal that the person no longer holds the specified position.",
+            "This event type captures the transition out of a role, often providing context about the previous position held and the entity or organization involved. It is important to note the temporal aspect, indicating when the position ended.",
+            "EndPosition events are part of the broader PersonnelEvent category, focusing specifically on the termination of employment or roles. The event can occur in various contexts, including voluntary resignation, retirement, or involuntary dismissal.",
+            "Key characteristics of EndPosition events include the identification of the person who held the position, the entity or organization where the position was held, the specific position, and any relevant time or place details. These elements help to provide a comprehensive understanding of the event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the EndPosition event occurred. This can include specific dates, months, years, or relative time expressions such as 'recently' or 'last year'.",
+            "In the context of EndPosition events, 'time' helps to situate the event within a temporal framework, providing clarity on when the position ended.",
+            "Examples of 'time' include 'in December', '1988', 'last month', 'recently', and 'previously'. These expressions help to anchor the event in time.",
+            "The 'time' argument is crucial for understanding the sequence of events and the duration of the person's tenure in the position. It can also indicate the recency or historical nature of the event.",
+            "Edge cases for 'time' might include vague expressions like 'a while ago' or 'some time back'. In such cases, additional context from the text may be needed to infer a more precise time frame."
+        ],
+        "entity": [
+            "The 'entity' argument refers to the organization, company, or institution where the person held the position. This could be a business, government body, non-profit organization, or any other formal entity.",
+            "In EndPosition events, the 'entity' provides context about the organizational setting of the position. It helps to identify the scope and nature of the role that ended.",
+            "Examples of 'entity' include 'Barclays Bank', 'Department of Trade and Industry', 'Landmark Education', and 'Shanghai soap factory'. These entities indicate where the person was employed or held a position.",
+            "The 'entity' argument is important for understanding the professional or organizational context of the EndPosition event. It can also provide insights into the industry or sector involved.",
+            "Edge cases for 'entity' might include informal or less well-defined organizations, such as 'a local business' or 'a community group'. In such cases, additional context may be needed to clarify the entity."
+        ],
+        "position": [
+            "The 'position' argument specifies the role or job title that the person held and subsequently ended. This could be any formal title or designation within the entity.",
+            "In EndPosition events, the 'position' helps to identify the specific duties or responsibilities that the person no longer holds. It provides clarity on the nature of the role.",
+            "Examples of 'position' include 'president', 'team leader', 'top civil servant', and 'Governor'. These titles indicate the specific role that ended.",
+            "The 'position' argument is crucial for understanding the hierarchical or functional level of the role within the entity. It can also provide insights into the person's career trajectory.",
+            "Edge cases for 'position' might include vague or non-standard titles, such as 'a senior role' or 'a managerial position'. In such cases, additional context may be needed to specify the position more clearly."
+        ],
+        "place": [
+            "The 'place' argument specifies the geographical location associated with the EndPosition event. This could be a city, state, country, or any other relevant location.",
+            "In EndPosition events, the 'place' helps to situate the event within a geographical context, providing clarity on where the position was held or where the person was based.",
+            "Examples of 'place' include 'Chinese', 'Shanghai', 'Tucson', and 'Arkansas'. These locations indicate where the person was employed or where the entity is based.",
+            "The 'place' argument is important for understanding the geographical context of the EndPosition event. It can also provide insights into regional or local factors that may have influenced the event.",
+            "Edge cases for 'place' might include vague or broad locations, such as 'a foreign country' or 'a major city'. In such cases, additional context may be needed to specify the place more clearly."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who held the position and whose role has ended. This could be any named individual or a pronoun referring to the person.",
+            "In EndPosition events, the 'person' is the central figure whose position has ended. Identifying the person is crucial for understanding the event.",
+            "Examples of 'person' include 'president', 'McCarthy', 'her', 'she', and 'Dale Bumpers'. These references indicate the individual whose role ended.",
+            "The 'person' argument is important for personalizing the EndPosition event and providing clarity on who was affected by the event. It can also provide insights into the person's career and background.",
+            "Edge cases for 'person' might include vague or ambiguous references, such as 'an employee' or 'a manager'. In such cases, additional context may be needed to identify the person more clearly."
+        ]
+    }
+}

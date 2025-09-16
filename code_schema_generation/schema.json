@@ -1,0 +1,205 @@
+{
+    "Meet(ContactEvent)": [
+        "mention",
+        "place",
+        "entity"
+    ],
+    "Attack(ConflictEvent)": [
+        "instrument",
+        "mention",
+        "agent",
+        "victim",
+        "attacker",
+        "target",
+        "place"
+    ],
+    "Transport(MovementEvent)": [
+        "vehicle",
+        "origin",
+        "mention",
+        "artifact",
+        "agent",
+        "destination",
+        "victim",
+        "place"
+    ],
+    "Demonstrate(ConflictEvent)": [
+        "mention",
+        "place",
+        "entity"
+    ],
+    "Die(LifeEvent)": [
+        "instrument",
+        "mention",
+        "agent",
+        "victim",
+        "person",
+        "place"
+    ],
+    "Injure(LifeEvent)": [
+        "instrument",
+        "mention",
+        "agent",
+        "victim",
+        "place"
+    ],
+    "EndPosition(PersonnelEvent)": [
+        "mention",
+        "person",
+        "place",
+        "entity"
+    ],
+    "StartPosition(PersonnelEvent)": [
+        "place",
+        "mention",
+        "person",
+        "entity"
+    ],
+    "StartOrg(BusinessEvent)": [
+        "mention",
+        "org",
+        "agent",
+        "place"
+    ],
+    "Elect(PersonnelEvent)": [
+        "mention",
+        "person",
+        "place",
+        "entity"
+    ],
+    "TransferMoney(TransactionEvent)": [
+        "recipient",
+        "mention",
+        "giver",
+        "beneficiary",
+        "place"
+    ],
+    "Convict(JusticeEvent)": [
+        "defendant",
+        "mention",
+        "place",
+        "adjudicator"
+    ],
+    "Appeal(JusticeEvent)": [
+        "mention",
+        "adjudicator",
+        "plaintiff",
+        "place"
+    ],
+    "TrialHearing(JusticeEvent)": [
+        "adjudicator",
+        "mention",
+        "defendant",
+        "prosecutor",
+        "place"
+    ],
+    "Sentence(JusticeEvent)": [
+        "place",
+        "mention",
+        "adjudicator",
+        "defendant"
+    ],
+    "PhoneWrite(ContactEvent)": [
+        "place",
+        "mention",
+        "entity"
+    ],
+    "ArrestJail(JusticeEvent)": [
+        "mention",
+        "person",
+        "agent",
+        "place"
+    ],
+    "Acquit(JusticeEvent)": [
+        "defendant",
+        "mention",
+        "adjudicator"
+    ],
+    "ChargeIndict(JusticeEvent)": [
+        "adjudicator",
+        "mention",
+        "defendant",
+        "prosecutor",
+        "place"
+    ],
+    "Nominate(PersonnelEvent)": [
+        "mention",
+        "person",
+        "agent"
+    ],
+    "Fine(JusticeEvent)": [
+        "place",
+        "mention",
+        "adjudicator",
+        "entity"
+    ],
+    "DeclareBankruptcy(BusinessEvent)": [
+        "mention",
+        "org",
+        "place"
+    ],
+    "TransferOwnership(TransactionEvent)": [
+        "buyer",
+        "mention",
+        "artifact",
+        "seller",
+        "beneficiary",
+        "place"
+    ],
+    "EndOrg(BusinessEvent)": [
+        "mention",
+        "org",
+        "place"
+    ],
+    "Execute(JusticeEvent)": [
+        "mention",
+        "person",
+        "agent",
+        "place"
+    ],
+    "ReleaseParole(JusticeEvent)": [
+        "mention",
+        "person",
+        "place",
+        "entity"
+    ],
+    "MergeOrg(BusinessEvent)": [
+        "mention",
+        "org"
+    ],
+    "Marry(LifeEvent)": [
+        "mention",
+        "person",
+        "place"
+    ],
+    "Divorce(LifeEvent)": [
+        "mention",
+        "person",
+        "place"
+    ],
+    "Sue(JusticeEvent)": [
+        "adjudicator",
+        "mention",
+        "plaintiff",
+        "defendant",
+        "place"
+    ],
+    "Pardon(JusticeEvent)": [
+        "defendant",
+        "mention",
+        "place",
+        "adjudicator"
+    ],
+    "BeBorn(LifeEvent)": [
+        "mention",
+        "person",
+        "place"
+    ],
+    "Extradite(JusticeEvent)": [
+        "origin",
+        "mention",
+        "agent",
+        "destination",
+        "person"
+    ]
+}

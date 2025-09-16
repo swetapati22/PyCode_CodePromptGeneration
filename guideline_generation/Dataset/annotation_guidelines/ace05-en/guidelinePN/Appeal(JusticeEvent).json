@@ -1,0 +1,49 @@
+{
+    "Appeal(JusticeEvent)": {
+        "description": [
+            "An 'Appeal' event in the context of justice refers to a formal request made to a higher court to review and change the decision of a lower court. Example triggers include 'appeal', 'appealed', 'appealing'.",
+            "The 'Appeal' event is characterized by the involvement of a higher judicial authority (adjudicator) and typically follows a prior judgment or decision. It is distinct from initial trials or hearings.",
+            "Unlike a 'Convict' event, which focuses on the outcome of a trial (i.e., the conviction of a defendant), an 'Appeal' event centers on the process of challenging that outcome.",
+            "Triggers such as 'convicted' or 'sentenced' are indicative of 'Convict' or 'Sentence' events, not 'Appeal' events. An 'Appeal' event specifically involves the act of seeking a review of a decision.",
+            "The outcome of an 'Appeal' event can vary, including the upholding, overturning, or modification of the original decision. This is different from a 'TrialHearing' event, which focuses on the presentation of evidence and arguments in a judicial setting."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in an 'Appeal' event refers to the higher court or judicial authority that reviews the appeal. For example, 'Supreme Court' or 'Federal Court'.",
+            "The role of the 'adjudicator' is crucial as they have the authority to uphold, overturn, or modify the original decision. Example: 'The Supreme Court reviewed the appeal.'",
+            "In some cases, the 'adjudicator' may be a specific judge or panel of judges within the higher court. Example: 'Judge Smith of the appellate court.'",
+            "Unlike the 'adjudicator' in a 'TrialHearing' event, who presides over the presentation of evidence, the 'adjudicator' in an 'Appeal' event focuses on reviewing the legal basis of the prior decision.",
+            "Edge cases include situations where the 'adjudicator' is a special tribunal or an international court. Example: 'The International Court of Justice reviewed the appeal.'"
+        ],
+        "plaintiff": [
+            "The 'plaintiff' in an 'Appeal' event is the party who initiates the appeal, seeking a review of the lower court's decision. Example: 'Anwar Ibrahim appealed the decision.'",
+            "The 'plaintiff' is typically the party dissatisfied with the original judgment, which could be an individual, organization, or government entity. Example: 'The school districts appealed the ruling.'",
+            "In some cases, the 'plaintiff' may be referred to as the 'appellant'. Example: 'The appellant argued that the lower court erred in its judgment.'",
+            "Unlike the 'defendant' in a 'Convict' event, who is the party being judged, the 'plaintiff' in an 'Appeal' event is the one challenging the judgment.",
+            "Edge cases include situations where multiple parties jointly file an appeal. Example: 'Five convicts appealed to the Supreme Court.'"
+        ],
+        "prosecutor": [
+            "The 'prosecutor' in an 'Appeal' event is the legal representative who argues against the appeal, typically representing the state or the original plaintiff. Example: 'The prosecutor argued to uphold the conviction.'",
+            "The role of the 'prosecutor' is to defend the original decision and provide reasons why the appeal should be denied. Example: 'The prosecutor presented evidence to support the lower court's ruling.'",
+            "In some cases, the 'prosecutor' may be a team of legal representatives. Example: 'The prosecution team argued against the appeal.'",
+            "Unlike the 'prosecutor' in a 'TrialHearing' event, who presents the case against the defendant, the 'prosecutor' in an 'Appeal' event focuses on defending the prior judgment.",
+            "Edge cases include situations where the 'prosecutor' is a special counsel or an international legal representative. Example: 'The special prosecutor argued before the appellate court.'"
+        ],
+        "defendant": [
+            "The 'defendant' in an 'Appeal' event is the party against whom the appeal is filed, often the party who won the original case. Example: 'The defendant responded to the appeal.'",
+            "The 'defendant' may be an individual, organization, or government entity that seeks to maintain the original judgment. Example: 'The government was the defendant in the appeal.'",
+            "In some cases, the 'defendant' may be referred to as the 'respondent'. Example: 'The respondent argued that the lower court's decision was correct.'",
+            "Unlike the 'defendant' in a 'Convict' event, who is the party being judged, the 'defendant' in an 'Appeal' event is the one defending the judgment.",
+            "Edge cases include situations where multiple parties are named as defendants in the appeal. Example: 'Several companies were defendants in the appeal.'"
+        ],
+        "place": [
+            "The 'place' in an 'Appeal' event refers to the location where the appeal is filed or heard, typically a higher court. Example: 'The appeal was filed in Washington.'",
+            "The 'place' is important as it indicates the jurisdiction and the specific court handling the appeal. Example: 'The appeal was heard in the Federal Court in Malaysia.'",
+            "In some cases, the 'place' may refer to the broader geographical location relevant to the appeal. Example: 'The appeal was considered in Indonesia.'",
+            "Unlike the 'place' in a 'TrialHearing' event, which is the location of the initial trial, the 'place' in an 'Appeal' event is the location of the appellate court.",
+            "Edge cases include situations where the 'place' is an international court or tribunal. Example: 'The appeal was heard at the International Court of Justice.'"
+        ]
+    }
+}

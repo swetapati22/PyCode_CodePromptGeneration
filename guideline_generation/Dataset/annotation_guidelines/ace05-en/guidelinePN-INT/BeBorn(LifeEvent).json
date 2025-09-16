@@ -1,0 +1,11 @@
+{
+    "BeBorn(LifeEvent)": {
+        "description": "The 'BeBorn' event type, a subclass of 'LifeEvent', refers to the occurrence of a person's birth. It captures the moment when a new individual comes into existence, highlighting the person being born, the location, and the time of birth. This event signifies the beginning of life, distinct from events like 'Die', 'Marriage', or 'Divorce'. Example triggers include 'birth', 'born', and 'having'. The outcome is the introduction of a new individual into the world, unlike events such as 'Adopt', which involve legal processes related to existing children.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "place": "The 'place' argument specifies the location where the birth occurred, providing geographical context. It can range from specific buildings like 'hospital' to broader locations like 'country'. Examples include 'home', 'hospital', or 'New Zealand'. Inferred locations from context are also valid.",
+            "person": "The 'person' argument identifies the individual(s) being born, the central focus of the 'BeBorn' event. This can include specific names, pronouns, or general terms like 'babies', 'Hunter', or 'child'. It may refer to multiple individuals and is distinct from the 'Victim' argument in the 'Die' event type.",
+            "time": "The 'time' argument specifies when the birth occurred, providing temporal context. It can include exact dates, times, or general time frames, such as 'January 14' or '1:52 a.m.'. Inferred times from context are also valid. This argument is distinct from the 'time' argument in events like 'Sentence', which refers to legal judgments."
+        }
+    }
+}

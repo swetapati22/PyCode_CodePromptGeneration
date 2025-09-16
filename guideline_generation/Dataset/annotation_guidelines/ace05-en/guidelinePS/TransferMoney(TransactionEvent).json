@@ -1,0 +1,56 @@
+{
+    "TransferMoney(TransactionEvent)": {
+        "description": [
+            "The TransferMoney event involves the movement of money from one entity (the giver) to another (the recipient). This event is characterized by a financial transaction where the giver transfers a specified amount of money to the recipient, often with a specific purpose or beneficiary in mind.",
+            "Triggers for the TransferMoney event include verbs such as 'give', 'pay', 'send', 'transfer', and 'donate'. These triggers indicate the action of moving money from one party to another.",
+            "Unlike the TransferOwnership event, which involves the transfer of ownership of physical or intangible assets, the TransferMoney event specifically deals with the transfer of monetary value. For example, 'providing an apartment' is a TransferOwnership event, not a TransferMoney event.",
+            "The scope of the TransferMoney event includes various contexts such as personal transactions, business payments, donations, and financial settlements. The outcome of this event is the successful transfer of money from the giver to the recipient.",
+            "Negative examples for the TransferMoney event include actions that do not involve the transfer of money, such as 'providing services' or 'transferring ownership of property'. These actions do not fall under the TransferMoney event type."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that initiates the transfer of money. This can be an individual, organization, or any other entity that provides the funds. For example, in 'Planned Parenthood gives money to Democrats', 'Planned Parenthood' is the giver.",
+            "The giver is crucial in identifying the source of the funds being transferred. In the sentence 'The girls paid $900', 'girls' is the giver.",
+            "In cases where multiple entities are involved, all entities contributing to the transfer are considered givers. For instance, 'doctors, insurers, chains, HMOs, and chains' are all givers in the sentence 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers'.",
+            "The giver can also be an abstract entity, such as an organization or a government body. For example, 'the Palestinian Authority' is the giver in 'the Palestinian Authority sent Suha $200,000'.",
+            "In some contexts, the giver may not be explicitly mentioned but can be inferred from the context. For example, in 'Sotheby's and Christie's agreed to pay $40 million', both 'Sotheby's' and 'Christie's' are givers."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives the money being transferred. This can be an individual, organization, or any other entity that benefits from the transfer. For example, in 'Planned Parenthood gives money to Democrats', 'Democrats' is the recipient.",
+            "The recipient is essential in identifying the target of the financial transaction. In the sentence 'The girls paid $900 to the neighbor', 'neighbor' is the recipient.",
+            "In cases where the recipient is not explicitly mentioned, it can often be inferred from the context. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', 'members of Congress' is the recipient.",
+            "The recipient can also be an abstract entity, such as a department or a fund. For example, 'Suha' is the recipient in 'the Palestinian Authority sent Suha $200,000'.",
+            "In some contexts, the recipient may be a group of entities. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the recipient could be inferred as the parties involved in the settlement."
+        ],
+        "money": [
+            "The money argument specifies the amount of money being transferred. This can be a specific monetary value or a general reference to funds. For example, in 'Planned Parenthood gives a lot of money to Democrats', 'a lot of money' is the money argument.",
+            "The money argument is crucial in quantifying the financial transaction. In the sentence 'The girls paid $900', '$900' is the money argument.",
+            "In some cases, the money argument may be implied rather than explicitly stated. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', the exact amount is not specified but the transfer of money is implied.",
+            "The money argument can also include references to currency types, such as dollars, euros, or other monetary units. For example, in 'Sotheby's and Christie's agreed to pay $40 million', '$40 million' is the money argument.",
+            "In some contexts, the money argument may be part of a larger financial context, such as a budget or a fund. For example, in 'the Palestinian Authority sent Suha $200,000 a month out of the budget', '$200,000 a month' is the money argument."
+        ],
+        "time": [
+            "The time argument specifies when the transfer of money takes place. This can be a specific date, time, or a general time frame. For example, in 'The girls paid $900 last week', 'last week' is the time argument.",
+            "The time argument is important for understanding the temporal context of the financial transaction. In the sentence 'The Palestinian Authority sent Suha $200,000 a month', 'a month' is the time argument.",
+            "In some cases, the time argument may be implied rather than explicitly stated. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the exact time of the payment is not specified but can be inferred from the context.",
+            "The time argument can also include references to recurring payments or installments. For example, in 'the Palestinian Authority sent Suha $200,000 a month', 'a month' indicates a recurring time frame.",
+            "In some contexts, the time argument may be part of a larger temporal context, such as a financial quarter or fiscal year. For example, in 'the girls paid $900 for the distress caused last year', 'last year' is the time argument."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that ultimately benefits from the transfer of money. This can be different from the recipient if the money is intended for a specific purpose. For example, in 'Planned Parenthood gives money to Democrats', 'Democrats' is the beneficiary.",
+            "The beneficiary is important for understanding the intended purpose of the financial transaction. In the sentence 'The girls paid $900 for the neighbor's distress', 'neighbor' is the beneficiary.",
+            "In some cases, the beneficiary may be implied rather than explicitly stated. For example, in 'doctors, insurers, chains, HMOs, and chains have poured money into members of Congress' coffers', the ultimate beneficiaries are the members of Congress.",
+            "The beneficiary can also be an abstract entity, such as a cause or a project. For example, in 'the Palestinian Authority sent Suha $200,000 for the Office of the President', 'Office of the President' is the beneficiary.",
+            "In some contexts, the beneficiary may be a group of entities. For example, in 'Sotheby's and Christie's agreed to pay $40 million to settle an international price-fixing scam', the beneficiaries could be the parties affected by the scam."
+        ],
+        "place": [
+            "The place argument specifies the location where the transfer of money takes place. This can be a specific location or a general area. For example, in 'The girls paid $900 in Colorado', 'Colorado' is the place argument.",
+            "The place argument is important for understanding the geographical context of the financial transaction. In the sentence 'The Palestinian Authority sent Suha $200,000 from the Office of the President', 'Office of the President' is the place argument.",
+            "In some cases, the place argument may be implied rather than explicitly stated. For example, in 'Sotheby's and Christie's agreed to pay $40 million', the exact location of the payment is not specified but can be inferred from the context.",
+            "The place argument can also include references to virtual or online locations. For example, in 'the girls paid $900 through an online platform', 'online platform' is the place argument.",
+            "In some contexts, the place argument may be part of a larger geographical context, such as a country or a region. For example, in 'the girls paid $900 for the distress caused in Colorado', 'Colorado' is the place argument."
+        ]
+    }
+}

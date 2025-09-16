@@ -1,0 +1,49 @@
+{
+    "Injure(LifeEvent)": {
+        "description": [
+            "The 'Injure' event type, a subclass of 'LifeEvent', refers to incidents where individuals suffer physical harm or damage. Example triggers include 'wounding', 'injured', and 'hurting'.",
+            "This event type captures scenarios where the physical well-being of one or more individuals is compromised due to an external action or accident. Key characteristics include the presence of a victim and often an agent or instrument causing the injury.",
+            "Unlike 'Attack' events, which focus on the aggressive action and its target, 'Injure' events emphasize the resulting harm to the victim. For instance, 'ambush' is indicative of an 'Attack' event, not an 'Injure' event.",
+            "Triggers such as 'killed' can be ambiguous; however, in the context of 'Injure' events, it should be clear that the focus is on the injured parties rather than fatalities.",
+            "The scope of 'Injure' events includes both intentional and accidental harm. For example, 'injured' in 'accidentally detonating explosives' is an 'Injure' event, whereas 'extradition' is not related to physical harm and thus not an 'Injure' event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "victim": [
+            "The 'victim' argument identifies the individual(s) who suffer physical harm in the event. For example, in 'wounding 20', the 'victim' is '20'.",
+            "Victims can be specified as groups or individuals, such as 'women', 'children', 'civilians', or 'Iraqis'.",
+            "In cases where multiple victims are mentioned, each should be annotated, e.g., 'people', 'attackers', 'Americans', 'Britons'.",
+            "The 'victim' is crucial for understanding the impact of the event. For instance, 'soldiers' in 'injuring three soldiers' are the victims.",
+            "Edge cases include indirect references to victims, such as 'those injured' or 'the wounded'. These should still be annotated as 'victim'."
+        ],
+        "time": [
+            "The 'time' argument specifies when the injury event occurred. For example, 'Monday' in 'injured Tuesday' indicates the time.",
+            "Time can be expressed in various formats, including specific dates, days of the week, or relative time expressions like 'earlier today'.",
+            "In some cases, the time may be implied rather than explicitly stated, such as 'during the attack'.",
+            "The 'time' argument helps contextualize the event within a timeline, which is essential for understanding the sequence of events.",
+            "Edge cases include vague time references like 'recently' or 'in the past'. These should be annotated if they provide relevant temporal context."
+        ],
+        "instrument": [
+            "The 'instrument' argument identifies the tool or means used to cause the injury. For example, 'explosives' in 'detonating explosives'.",
+            "Instruments can be weapons, objects, or substances that directly cause harm, such as 'bomb', 'knife', or 'poison'.",
+            "The 'instrument' is important for understanding the method of injury. For instance, 'bomb' in 'detonated a bomb' is the instrument.",
+            "In some cases, the instrument may be implied rather than explicitly stated, such as 'shot' implying a gun.",
+            "Edge cases include indirect references to instruments, such as 'the device' or 'the weapon'. These should still be annotated as 'instrument'."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the injury event occurred. For example, 'mall' in 'at the entrance to a crowded mall'.",
+            "Places can be specific locations, cities, or regions, such as 'Gaza Strip', 'city', or 'Baghdad'.",
+            "The 'place' is crucial for situating the event geographically, which helps in understanding the context and potential impact area.",
+            "In some cases, the place may be implied rather than explicitly stated, such as 'near the military base'.",
+            "Edge cases include vague place references like 'the area' or 'the site'. These should be annotated if they provide relevant locational context."
+        ],
+        "agent": [
+            "The 'agent' argument identifies the individual or entity responsible for causing the injury. For example, 'bomber' in 'a suicide bomber'.",
+            "Agents can be individuals, groups, or organizations, such as 'attackers', 'Palestinian', or 'terrorists'.",
+            "The 'agent' is important for understanding who or what caused the injury. For instance, 'Palestinian' in 'a 19-year-old Palestinian' is the agent.",
+            "In some cases, the agent may be implied rather than explicitly stated, such as 'the assailant' or 'the perpetrator'.",
+            "Edge cases include indirect references to agents, such as 'the responsible party' or 'the attacker'. These should still be annotated as 'agent'."
+        ]
+    }
+}

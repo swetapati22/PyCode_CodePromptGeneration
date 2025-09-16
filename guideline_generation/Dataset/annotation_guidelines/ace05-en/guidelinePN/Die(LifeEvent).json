@@ -1,0 +1,56 @@
+{
+    "Die(LifeEvent)": {
+        "description": [
+            "The 'Die' event type, a subclass of 'LifeEvent', refers to the cessation of life of one or more individuals. Example triggers include 'killed', 'died', 'fallen', and 'dead'.",
+            "This event type captures scenarios where a person or group of people lose their lives due to various causes such as violence, accidents, or natural causes. Key characteristics include the presence of a victim and often an agent or instrument causing the death.",
+            "Unlike other life events such as 'Injure' or 'Birth', the 'Die' event specifically denotes the end of life. For instance, 'injured' indicates harm but not death, whereas 'born' indicates the beginning of life.",
+            "Triggers like 'killed' and 'died' are indicative of the 'Die' event type, whereas triggers like 'injured' or 'hurt' are not. The outcome of a 'Die' event is always the death of the victim(s).",
+            "The 'Die' event can be distinguished from events like 'MergeOrg' or 'TransferOwnership' by its focus on the end of life. For example, 'merged' in a business context does not imply death, and 'providing' in a transaction context refers to the transfer of ownership, not the cessation of life."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the death occurred. It is crucial for understanding the temporal context of the event. Example: 'Monday' in 'were killed Monday'.",
+            "This argument helps in situating the event within a specific timeframe, which can be important for historical or investigative purposes. Example: 'at least four dead' indicates a past event.",
+            "In some cases, the exact time may not be explicitly mentioned but can be inferred from the context. Example: 'fallen comrades' implies a past event.",
+            "The 'time' argument can also include relative time expressions such as 'yesterday', 'last week', or 'recently'. Example: 'died recently' indicates a recent event.",
+            "Edge cases include ambiguous time references that require contextual interpretation. Example: 'died during the night' requires understanding the broader context to pinpoint the exact time."
+        ],
+        "place": [
+            "The 'place' argument identifies the location where the death occurred. It provides spatial context to the event. Example: 'houses' in 'were killed Monday when their houses were hit'.",
+            "This argument is important for understanding the geographical context and can be critical for legal or investigative purposes. Example: 'Persian Gulf' in 'killed over the Persian Gulf'.",
+            "The 'place' can be a specific location like a building, city, or country. Example: 'hotel' in 'died at a nearby hotel'.",
+            "In some cases, the place may be described in broader terms such as 'battlefield' or 'war zone'. Example: 'operation center' in 'hit operation center'.",
+            "Edge cases include vague or multiple locations that require additional context to clarify. Example: 'south Baghdad' in 'hit operation center for 2nd brigade 3rd infantry zrigs south Baghdad'."
+        ],
+        "instrument": [
+            "The 'instrument' argument specifies the means or tool used to cause the death. It highlights the method of the event. Example: 'missile' in 'hit by a missile'.",
+            "This argument is crucial for understanding the cause or mechanism of death, which can be important for forensic or investigative purposes. Example: 'helicopters' in 'collision of two Royal Navy helicopters'.",
+            "The 'instrument' can be a weapon, vehicle, or any object that directly causes the death. Example: 'missile' in 'Iraqi missile hit operation center'.",
+            "In some cases, the instrument may be implied rather than explicitly stated. Example: 'fire' in 'coalition forces returning fire' implies the use of firearms.",
+            "Edge cases include indirect instruments or complex scenarios where multiple instruments are involved. Example: 'collision' in 'collision of two Royal Navy helicopters'."
+        ],
+        "victim": [
+            "The 'victim' argument identifies the individual(s) who died in the event. It is central to the 'Die' event type. Example: 'civilians' and 'woman' in 'Five Iraqi civilians, including a woman, were killed'.",
+            "This argument is crucial for understanding who was affected by the event. Example: 'journalists' in 'two other journalists, a photographer from Reuters and another from Tele 5 Spain died'.",
+            "The 'victim' can be a single person or a group of people. Example: 'members' and 'American' in 'all six British crew members and one American were killed'.",
+            "In some cases, the victim may be described in general terms such as 'comrades' or 'soldiers'. Example: 'comrades' in 'bodies of fallen comrades'.",
+            "Edge cases include ambiguous or collective references to victims that require additional context to clarify. Example: 'four' in 'at least four dead, two soldiers and two journalists'."
+        ],
+        "person": [
+            "The 'person' argument identifies individuals related to the event but not necessarily the victims. It provides additional context. Example: 'comrades' in 'bodies of fallen comrades'.",
+            "This argument helps in understanding the broader impact of the event on related individuals. Example: 'comrades' indicates a relationship to the deceased.",
+            "The 'person' can be anyone mentioned in relation to the event, such as witnesses, relatives, or colleagues. Example: 'comrades' in 'ask any American marine and they'll tell you they'll do anything possible to recover the bodies of fallen comrades'.",
+            "In some cases, the person may be indirectly related to the event, such as those involved in the aftermath. Example: 'American marine' in 'ask any American marine'.",
+            "Edge cases include vague or collective references to persons that require additional context to clarify. Example: 'comrades' in 'bodies of fallen comrades'."
+        ],
+        "agent": [
+            "The 'agent' argument identifies the entity responsible for causing the death. It highlights the perpetrator of the event. Example: 'coalition' in 'missile fired by the US-led coalition warplanes'.",
+            "This argument is crucial for understanding who or what caused the death, which can be important for legal or investigative purposes. Example: 'forces' in 'CENTCOM says, of coalition forces returning fire'.",
+            "The 'agent' can be an individual, group, or organization. Example: 'coalition' in 'missile fired by the US-led coalition warplanes'.",
+            "In some cases, the agent may be implied rather than explicitly stated. Example: 'forces' in 'coalition forces returning fire' implies military personnel.",
+            "Edge cases include indirect agents or complex scenarios where multiple agents are involved. Example: 'forces' in 'CENTCOM says, of coalition forces returning fire'."
+        ]
+    }
+}

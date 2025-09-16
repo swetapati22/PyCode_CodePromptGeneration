@@ -1,0 +1,11 @@
+{
+    "StartOrg(BusinessEvent)": {
+        "description": "The StartOrg event type refers to the initiation or establishment of a new organization or entity, such as a business, government body, or any other formal group. It is triggered by verbs like 'create', 'build', 'open', 'launch', and 'establish', indicating the beginning of a new organizational entity. Key characteristics include the presence of an agent responsible for the creation, the organization being created, and the location where the organization is established. This event type is distinct from MergeOrg, which involves combining existing organizations, and from EndOrg or DeclareBankruptcy, which involve the dissolution or financial failure of an organization.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "org": "The 'org' argument refers to the organization or entity being created or established, such as 'government', 'Disneyland', 'monster', or 'insurer'. This argument is crucial for identifying the new entity resulting from the StartOrg event. Descriptive terms or roles (e.g., 'a new department', 'a new branch') can also serve as the 'org' argument when the organization is not explicitly named.",
+            "place": "The 'place' argument specifies the location where the new organization is being established, providing context for the geographical or physical setting of the event. Examples include 'Iraq', 'here', 'Sydney', and 'Japan'. This argument is important for understanding the scope and impact of the new organization and should provide a clear indication of the event's setting, even if broadly defined (e.g., 'in the city', 'locally').",
+            "agent": "The 'agent' argument refers to the entity or entities responsible for creating or establishing the new organization, such as 'U.S', 'leaders', 'Daily Planet Ltd', 'we', or 'AIG'. This argument is essential for identifying who is initiating the StartOrg event, providing insight into the motivations and resources behind the new organization. The 'agent' may be a collective or anonymous group (e.g., 'the community', 'a consortium'), but should clearly indicate the initiators of the event."
+        }
+    }
+}

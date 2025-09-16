@@ -1,0 +1,35 @@
+{
+    "Meet(ContactEvent)": {
+        "description": [
+            "A 'Meet' event involves an interaction where two or more entities come together at a specific place and time. Example triggers include 'talks', 'meetings', 'gathering', 'reunited', and 'conference'.",
+            "The 'Meet' event is characterized by entities engaging in a face-to-face or virtual interaction. This can include formal meetings, casual gatherings, or reunions. Example triggers include 'discussion', 'summit', 'assembly', 'session', and 'conference'.",
+            "In a 'Meet' event, the focus is on the act of coming together, which can be for various purposes such as negotiations, celebrations, or collaborations. Example triggers include 'convened', 'assembled', 'gathered', 'met', and 'reunited'.",
+            "A 'Meet' event typically involves a planned or spontaneous interaction between entities at a designated place and time. Example triggers include 'conference', 'meeting', 'summit', 'gathering', and 'reunion'.",
+            "The 'Meet' event encompasses any scenario where entities come together for a specific purpose, whether it be professional, social, or personal. Example triggers include 'talks', 'meetings', 'gathering', 'reunited', and 'conference'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the individuals or groups participating in the meeting. This can include people, organizations, or any identifiable groups. For example, in 'Shalom was to fly on to London for talks with British Prime Minister Tony Blair and Foreign Secretary Jack Straw', the entities are 'Shalom', 'Tony Blair', and 'Jack Straw'.",
+            "Entities are the participants in the 'Meet' event. They can be named individuals, groups, or organizations. For instance, in 'Vivendi also is holding talks with Viacom, MGM and other buyers', the entities are 'Vivendi', 'Viacom', 'MGM', and 'buyers'.",
+            "The 'entity' argument captures all participants involved in the meeting. This includes any named or unnamed individuals or groups. For example, in 'Egyptian envoys have been holding meetings in Gaza and Damascus with leaders of the militant groups', the entities are 'envoys' and 'leaders'.",
+            "Entities in a 'Meet' event are the main participants who come together for the interaction. This can include people, organizations, or groups. For example, in 'at a white house gathering of aids activists and lawmakers from around the world', the entities are 'activists', 'lawmakers', and 'president'.",
+            "The 'entity' argument identifies all participants in the meeting, whether they are individuals, groups, or organizations. For example, in 'they have reunited with their families and friends, at the aircraft carrier's home port', the entities are 'they', 'families', and 'friends'."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the meeting takes place. This can be a city, building, or any identifiable location. For example, in 'Shalom was to fly on to London for talks', the place is 'London'.",
+            "Place refers to the physical or virtual location of the 'Meet' event. It can be a city, country, building, or any specific location. For instance, in 'Vivendi also is holding talks with Viacom, MGM', the place is not explicitly mentioned but could be inferred from context.",
+            "The 'place' argument denotes the venue of the meeting. This can be a geographical location or a specific venue. For example, in 'Egyptian envoys have been holding meetings in Gaza and Damascus', the places are 'Gaza' and 'Damascus'.",
+            "Place in a 'Meet' event is the location where the interaction occurs. This can be a specific building, city, or country. For example, in 'at a white house gathering', the place is 'white house'.",
+            "The 'place' argument identifies the location of the meeting, which can be a specific venue or a broader geographical area. For example, in 'they have reunited at the aircraft carrier's home port', the place is 'port'."
+        ],
+        "time": [
+            "The 'time' argument specifies when the meeting takes place. This can include specific dates, times, or relative time expressions. For example, 'in recent days' indicates a relative time frame.",
+            "Time refers to the temporal aspect of the 'Meet' event. It can be a specific date, time, or a relative time period. For instance, 'afterwards' in 'Afterwards Shalom was to fly on to London' indicates a relative time.",
+            "The 'time' argument captures the temporal context of the meeting. This can be an exact date, a time of day, or a relative time expression. For example, 'in recent days' provides a relative time frame for the event.",
+            "Time in a 'Meet' event denotes when the interaction occurs. This can be a specific point in time or a relative period. For example, 'in recent days' indicates a relative time frame for the meetings.",
+            "The 'time' argument identifies the temporal setting of the meeting, which can be a specific date, time, or a relative period. For example, 'in recent days' provides a relative time context for the meetings."
+        ]
+    }
+}

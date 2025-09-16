@@ -1,0 +1,10 @@
+{
+    "EndOrg(BusinessEvent)": {
+        "description": "The EndOrg event type, a subclass of BusinessEvent, refers to the termination, closure, or dissolution of an organization or its operations. This event captures scenarios where an organization ceases to exist or operate in a specific capacity or location, characterized by the finality of its status and the cessation of its activities. Unlike the StartOrg event type, which involves the creation or initiation of an organization, EndOrg focuses on the conclusion or termination of an organization's existence or operations. Example triggers include 'is no more', 'closing', 'shutting down', and 'dissolving'. It is distinct from the DeclareBankruptcy event type, which pertains to financial status, and the MergeOrg event type, where organizations combine rather than cease to exist. Outcomes of the EndOrg event often include the reallocation of resources or personnel.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "org": "The 'org' argument refers to the organization that is ending its operations, which can include companies, governmental bodies, or other formal groups. For example, in 'Hewlett Packard is shutting down its plant', 'Hewlett Packard' is the 'org'. This argument is crucial as it identifies the entity undergoing termination. In cases where multiple organizations are mentioned, the 'org' argument should focus on the one explicitly ending. It can also include informal or colloquial references to organizations, and in edge cases, the organization may be implied rather than explicitly stated.",
+            "place": "The 'place' argument refers to the location where the organization is ending its operations, which can be a city, country, or specific facility. For example, in 'Hewlett Packard is shutting down its plant in Eugene', 'Eugene' is the 'place'. This argument is important for contextualizing the event geographically. It can include broader regions or countries and, in edge cases, the location may be implied rather than explicitly stated."
+        }
+    }
+}

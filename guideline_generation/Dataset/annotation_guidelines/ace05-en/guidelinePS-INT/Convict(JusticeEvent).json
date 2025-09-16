@@ -1,0 +1,11 @@
+{
+    "Convict(JusticeEvent)": {
+        "description": "A Convict event involves a formal declaration by a legal authority that a defendant is guilty of a criminal offense. This event is characterized by the presence of an adjudicator, a defendant, and a specific location where the judgment occurs. Unlike a Sentence event, which focuses on the punishment, the Convict event focuses on the determination of guilt. Example triggers include 'convicted', 'found guilty', and 'conviction'. The outcome is the formal recognition of the defendant's guilt, potentially leading to subsequent events like sentencing.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the legal authority or body, such as a judge, jury, or court, that declares the defendant guilty. For example, in 'The jury convicted him of theft', the jury is the adjudicator. The adjudicator must be a recognized legal authority with the power to make a legal judgment, unlike a witness or prosecutor.",
+            "place": "The place refers to the location where the conviction occurs, such as a city, court, or country. For example, in 'He was convicted in New York', New York is the place. The place provides context for the legal jurisdiction and can be a specific building or institution, like a courthouse.",
+            "defendant": "The defendant is the individual or entity being judged and found guilty. For example, in 'The court convicted John Doe', John Doe is the defendant. The defendant can be a person, a group, or an organization, and is central to the Convict event as the subject of the legal judgment."
+        }
+    }
+}

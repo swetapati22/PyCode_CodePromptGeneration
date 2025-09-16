@@ -1,0 +1,35 @@
+{
+    "BeBorn(LifeEvent)": {
+        "description": [
+            "The BeBorn event refers to the occurrence of a person being born. This event is a subset of the broader LifeEvent category. Example triggers include 'birth', 'born', and 'having'.",
+            "A BeBorn event captures the moment when a new individual comes into existence. It is characterized by the presence of a person being born, the place of birth, and the time of birth.",
+            "The BeBorn event is used to annotate instances where a birth is mentioned. Key characteristics include identifying the newborn, the location of the birth, and the specific time if available.",
+            "In the context of event extraction, a BeBorn event marks the birth of a person. Triggers for this event can be words like 'birth', 'born', and 'having'. The event should capture details about the person, place, and time of birth.",
+            "The BeBorn event is an annotation for instances of birth within a text. It involves identifying the person being born, the location where the birth took place, and the time of the birth. Common triggers include 'birth', 'born', and 'having'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the birth occurred. This can be a city, country, hospital, or any other specific place. For example, in 'She gave birth at a Los Angeles hospital', 'Los Angeles hospital' is the place.",
+            "The 'place' argument is crucial for identifying the geographical context of the birth. It can range from broad locations like countries to specific places like homes or hospitals. For instance, 'New Zealand' in 'New Zealand-born Hunter' is the place.",
+            "In a BeBorn event, the 'place' argument denotes where the birth took place. This helps in understanding the setting of the event. For example, 'home' in 'she gave birth at her parents' home' is the place.",
+            "The 'place' argument captures the physical location of the birth event. It can be a general area or a specific site. For example, 'Richland County' in 'at her parents' home in Richland County' is the place.",
+            "The 'place' argument provides the location details of the birth. This can include any identifiable place where the birth happened. For example, 'hospital' in 'gave birth at a Los Angeles-area hospital' is the place."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual who is being born. This can be a specific name or a general term like 'child', 'baby', or 'newborn'. For example, 'babies' in 'she gave birth to both babies' is the person.",
+            "In a BeBorn event, the 'person' argument refers to the newborn. It is essential to specify who is being born. For instance, 'Hunter' in 'New Zealand-born Hunter' is the person.",
+            "The 'person' argument captures the entity that is born in the event. This can be a specific individual or a general term. For example, 'girls' and 'boys' in 'only about 100 girls are born for every 119 boys' are the persons.",
+            "The 'person' argument is used to denote the individual who is born. This can include terms like 'child', 'baby', or specific names. For example, 'child' in 'gave birth to the couple's third child' is the person.",
+            "In the context of a BeBorn event, the 'person' argument identifies the newborn. This can be a general term or a specific name. For example, 'child' in 'having more than one child' is the person."
+        ],
+        "time": [
+            "The 'time' argument specifies when the birth occurred. This can be a specific date, time of day, or a general time period. For example, 'January 14' in 'a fullterm girl, January 14' is the time.",
+            "In a BeBorn event, the 'time' argument provides the temporal context of the birth. It can include exact dates or general time frames. For instance, 'April 2001' in 'one of unknown sex in April 2001' is the time.",
+            "The 'time' argument captures the moment of birth. This can be detailed with specific times or more general periods. For example, '1:52 a.m.' in 'at 1:52 a.m. at a Los Angeles-area hospital' is the time.",
+            "The 'time' argument is used to denote when the birth took place. This can be a precise time or a broader period. For example, '20-year-old policy' in 'effects of a devastating 20-year-old policy' indirectly indicates a time frame.",
+            "In the context of a BeBorn event, the 'time' argument specifies the birth's timing. This can range from exact times to general periods. For example, 'January 14' in 'a fullterm girl, January 14' is the time."
+        ]
+    }
+}

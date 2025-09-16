@@ -1,0 +1,35 @@
+{
+    "Sentence(JusticeEvent)": {
+        "description": [
+            "A 'Sentence' event in the context of justice refers to the formal declaration by a legal authority (adjudicator) regarding the punishment assigned to a defendant for a crime. Example triggers include 'sentenced', 'sentence', and 'handed out sentences'.",
+            "The 'Sentence' event involves a judicial decision where a defendant is given a specific punishment, which can range from fines to imprisonment or even death. Key characteristics include the presence of an adjudicator, a defendant, and often a specified place where the sentence is declared.",
+            "In legal terms, a 'Sentence' event is the outcome of a judicial process where the adjudicator determines the consequences for the defendant's actions. Triggers for this event can be words like 'sentenced', 'imposed a sentence', or 'handed down a sentence'.",
+            "A 'Sentence' event is a judicial action where a court or legal authority assigns a penalty to a defendant. This event is characterized by the involvement of an adjudicator, the defendant, and the location of the court. Example triggers include 'sentenced', 'sentence', and 'imposed'.",
+            "The 'Sentence' event represents the final decision in a legal case where the adjudicator declares the punishment for the defendant. This event is marked by the presence of a legal authority, the individual being sentenced, and the place of the court. Common triggers include 'sentenced', 'sentence', and 'handed out sentences'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in a 'Sentence' event refers to the legal authority or court that issues the sentence. This can be a judge, a panel of judges, or a specific court. For example, in 'The court sentenced the defendant to five years in prison', 'court' is the adjudicator.",
+            "An 'adjudicator' is the entity responsible for delivering the sentence in a legal proceeding. This could be a judge, a tribunal, or any official legal body. For instance, 'Judge Smith sentenced the defendant to community service' identifies 'Judge Smith' as the adjudicator.",
+            "In the context of a 'Sentence' event, the 'adjudicator' is the person or body that makes the final decision on the punishment. This includes judges, courts, or judicial panels. For example, 'The Supreme Court upheld the sentence' uses 'Supreme Court' as the adjudicator.",
+            "The term 'adjudicator' refers to the authority that imposes the sentence in a judicial context. This can be a single judge, a group of judges, or a specific court. For example, 'The district court sentenced the individual to probation' identifies 'district court' as the adjudicator.",
+            "An 'adjudicator' in a 'Sentence' event is the official or body that declares the punishment for the defendant. This includes any legal authority such as a judge or a court. For example, 'The magistrate sentenced the defendant to a fine' uses 'magistrate' as the adjudicator."
+        ],
+        "place": [
+            "The 'place' in a 'Sentence' event refers to the location where the sentence is declared. This is typically the jurisdiction or the specific court where the legal proceedings occur. For example, 'The New York court sentenced the defendant' uses 'New York' as the place.",
+            "In a 'Sentence' event, the 'place' denotes the geographical location of the court or legal authority issuing the sentence. This can be a city, state, or country. For instance, 'A court in California sentenced the defendant' identifies 'California' as the place.",
+            "The 'place' argument in a 'Sentence' event specifies where the sentencing occurs. This is usually the location of the court or legal body. For example, 'The London court handed down the sentence' uses 'London' as the place.",
+            "In the context of a 'Sentence' event, 'place' refers to the specific location where the adjudicator issues the sentence. This can be a region, city, or specific court. For example, 'The court in Texas sentenced the defendant' identifies 'Texas' as the place.",
+            "The 'place' in a 'Sentence' event is the location where the legal decision is made. This typically refers to the court's location or the jurisdiction. For example, 'The provincial court in Ontario sentenced the defendant' uses 'Ontario' as the place."
+        ],
+        "defendant": [
+            "The 'defendant' in a 'Sentence' event is the individual or group being sentenced by the adjudicator. This is the person who has been found guilty of a crime. For example, 'The court sentenced the defendant to five years in prison' identifies 'defendant' as the person being sentenced.",
+            "In a 'Sentence' event, the 'defendant' is the party receiving the punishment. This can be an individual or a group. For instance, 'The judge sentenced the man to community service' uses 'man' as the defendant.",
+            "The 'defendant' argument in a 'Sentence' event refers to the person or entity that the adjudicator is sentencing. This is the individual who has been convicted of a crime. For example, 'The court sentenced the company to pay a fine' identifies 'company' as the defendant.",
+            "In the context of a 'Sentence' event, the 'defendant' is the person or group that the legal authority is punishing. This includes individuals, organizations, or entities. For example, 'The tribunal sentenced the officials to imprisonment' uses 'officials' as the defendant.",
+            "The 'defendant' in a 'Sentence' event is the subject of the sentencing decision. This is the person or group that has been judged and is receiving the sentence. For example, 'The magistrate sentenced the teenager to probation' identifies 'teenager' as the defendant."
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "StartPosition(PersonnelEvent)": {
+        "description": [
+            "The StartPosition event refers to the beginning of a role or position by an individual or group within an organization or location. This event is characterized by a person or entity assuming a new role or title.",
+            "Triggers for the StartPosition event include verbs such as 'becoming', 'replace', 'head', 'appointed', 'named', and 'start'. These triggers indicate the commencement of a new position or role.",
+            "The scope of the StartPosition event includes any scenario where an individual or group starts a new job, role, or position, whether it is within a company, organization, or geographical location.",
+            "Key characteristics of the StartPosition event include the identification of the person or entity starting the position, the role or title being assumed, the location where the position is held, and the time when the position starts.",
+            "The StartPosition event is a subtype of PersonnelEvent, focusing specifically on the initiation of a new role or position by a person or entity. It is important to capture all relevant details such as the person, position, place, entity, and time to provide a complete understanding of the event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the person or entity starts the new position. This can be a specific date, a range of dates, or a relative time expression.",
+            "Examples of 'time' include 'in 1999', 'since early 2001', 'from 1989 to 1998', and 'next month'.",
+            "The 'time' argument is crucial for understanding the temporal context of the StartPosition event, indicating when the transition into the new role occurs.",
+            "In cases where the exact time is not mentioned, relative expressions like 'recently', 'soon', or 'immediately' can be used to infer the timing of the event.",
+            "Edge cases for the 'time' argument include ambiguous time expressions that need to be interpreted based on the surrounding context, such as 'early next year' or 'by the end of the quarter'."
+        ],
+        "entity": [
+            "The 'entity' argument refers to the organization, company, or group that the person or entity is associated with in their new position.",
+            "Examples of 'entity' include 'United Nations', 'U.N.', 'administration', and 'unit'.",
+            "The 'entity' argument helps to identify the larger body or organization within which the new position is held, providing context to the role.",
+            "In some cases, the 'entity' may be implied rather than explicitly stated, requiring inference from the text, such as 'the company' or 'the organization'.",
+            "Edge cases for the 'entity' argument include situations where multiple entities are mentioned, and it is necessary to determine which one is relevant to the new position."
+        ],
+        "position": [
+            "The 'position' argument specifies the title or role that the person or entity is starting. This can include job titles, ranks, or specific roles within an organization.",
+            "Examples of 'position' include 'diplomat', 'chairman', 'chief executive', and 'head'.",
+            "The 'position' argument is essential for understanding the specific role or responsibility being assumed by the person or entity.",
+            "In some cases, the 'position' may be described in general terms, such as 'a new role' or 'a senior position', requiring further context to clarify.",
+            "Edge cases for the 'position' argument include titles that are not standard or widely recognized, requiring interpretation based on the organizational context."
+        ],
+        "place": [
+            "The 'place' argument indicates the geographical location where the new position is held. This can be a city, country, or specific location within an organization.",
+            "Examples of 'place' include 'United Nations', 'headquarters', 'Paris', and 'Iraq'.",
+            "The 'place' argument provides spatial context to the StartPosition event, indicating where the person or entity will be performing their new role.",
+            "In some cases, the 'place' may be implied or broadly defined, such as 'in the region' or 'at the main office', requiring interpretation based on the text.",
+            "Edge cases for the 'place' argument include locations that are not explicitly named but can be inferred from the context, such as 'the capital' or 'the central office'."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual or group starting the new position. This can include names, titles, or groups of people.",
+            "Examples of 'person' include 'Al-Douri', 'Jean-Rene Fourtou', 'Jay Garner', and 'Ba'athists'.",
+            "The 'person' argument is crucial for identifying who is assuming the new role or position, providing clarity on the subject of the event.",
+            "In some cases, the 'person' may be referred to by a pronoun or a general term, such as 'he', 'she', or 'the team', requiring context to identify the specific individual or group.",
+            "Edge cases for the 'person' argument include situations where multiple individuals are mentioned, and it is necessary to determine which one is relevant to the new position."
+        ]
+    }
+}

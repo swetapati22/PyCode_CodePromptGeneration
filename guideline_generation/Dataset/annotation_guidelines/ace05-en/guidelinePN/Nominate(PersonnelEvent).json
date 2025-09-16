@@ -1,0 +1,35 @@
+{
+    "Nominate(PersonnelEvent)": {
+        "description": [
+            "The 'Nominate' event type, a subclass of 'PersonnelEvent', involves the formal or official selection of a person for a position, role, or task. Example triggers include 'name', 'nominating', and 'designated'.",
+            "This event type is characterized by an agent (the nominator) selecting a person (the nominee) for a specific role or task. The nomination is often formal and may involve an official announcement or designation.",
+            "Unlike the 'StartPosition' event, which focuses on the commencement of a role, the 'Nominate' event centers on the selection process itself. For instance, 'becoming' is a trigger for 'StartPosition', not 'Nominate'.",
+            "Triggers such as 'appoint' or 'elect' are indicative of related but distinct events like 'Appoint' or 'Elect', which involve the finalization of a role rather than the nomination process.",
+            "The outcome of a 'Nominate' event is the identification of a candidate for a role, but it does not necessarily imply that the nominee has assumed the position. This distinguishes it from events where the role is already being performed."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the nomination occurs or is relevant. For example, 'Boston' in 'the pope will reportedly name a new head of the troubled Boston archdiocese'.",
+            "This argument is important for contextualizing the nomination within a specific geographical or organizational setting. For instance, 'Guangdong Province' in 'designated representatives to visit neighboring Guangdong Province'.",
+            "In some cases, the 'place' may refer to an institution or organization rather than a physical location. For example, 'the company' in 'nominating his own board'.",
+            "Edge cases include virtual or non-physical locations, such as 'online' or 'in the media'. For example, 'named director of the SARS task force by the government' does not specify a physical place but implies an organizational context.",
+            "Unlike the 'Place' argument in 'TransferOwnership' events, which indicates where the transfer occurs, the 'place' in 'Nominate' events provides context for the nomination process itself."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual being nominated. For example, 'head' in 'name a new head of the troubled Boston archdiocese'.",
+            "This argument is crucial as it specifies the nominee, the central figure in the nomination process. For instance, 'Chui Sai On' in 'named director of the SARS task force'.",
+            "In some cases, the 'person' may be a group or collective entity, such as 'board' in 'nominating his own board'.",
+            "Edge cases include ambiguous or unspecified nominees, such as 'who' in 'So any thoughts on who you uh you would name?'.",
+            "Unlike the 'Person' argument in 'ArrestJail' events, which identifies the individual being detained, the 'person' in 'Nominate' events is the individual being selected for a role."
+        ],
+        "agent": [
+            "The 'agent' argument identifies the entity or individual making the nomination. For example, 'pope' in 'the pope will reportedly name a new head'.",
+            "This argument is important as it specifies the nominator, the entity responsible for the selection. For instance, 'government' in 'named director of the SARS task force by the government'.",
+            "In some cases, the 'agent' may be an organization or collective entity, such as 'he' in 'nominating his own board'.",
+            "Edge cases include implicit or unspecified nominators, such as 'you' in 'So any thoughts on who you uh you would name?'.",
+            "Unlike the 'Agent' argument in 'ArrestJail' events, which identifies the entity performing the arrest, the 'agent' in 'Nominate' events is the entity making the selection."
+        ]
+    }
+}

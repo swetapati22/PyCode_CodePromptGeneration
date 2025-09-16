@@ -1,0 +1,12 @@
+{
+    "ChargeIndict(JusticeEvent)": {
+        "description": "The ChargeIndict event type involves the formal accusation or indictment of an individual or entity by a legal authority, typically involving criminal charges. This event is characterized by the involvement of legal authorities such as prosecutors or adjudicators and the presence of a defendant who is being accused. It focuses on the formal legal process of initiating criminal proceedings, distinct from events like ArrestJail, Convict, and Sentence, which involve physical apprehension, determination of guilt, and imposition of penalties, respectively. Example triggers include 'charges', 'indictment', and 'filed'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the legal authority or body responsible for overseeing the legal process of charging or indicting the defendant. This can include judges, magistrates, or juries. Adjudicators ensure the legal process is followed correctly and that charges are formally presented. They are distinct from prosecutors and defendants, serving as neutral parties in the legal process. Examples include 'jury', 'magistrate', 'grand jury', 'judge', and 'court'.",
+            "prosecutor": "The prosecutor is the legal representative who brings the charges against the defendant, such as district attorneys, state attorneys, or federal prosecutors. Prosecutors present the case against the defendant and seek a formal indictment. They are advocates for the state or government, distinct from adjudicators and defendants. Examples include 'district attorney', 'state attorney', 'justice department', and 'federal prosecutor'.",
+            "defendant": "The defendant is the individual or entity formally accused or indicted in the legal process. Defendants are the primary subjects of the ChargeIndict event and must respond to the charges in court. They are distinct from prosecutors and adjudicators. Examples include 'defendant', 'company', 'officials', 'accused', and 'suspect'.",
+            "place": "The place refers to the location where the charges or indictment are filed or where the legal proceedings take place. It provides context for the jurisdiction and venue of the legal proceedings. Places are distinct from other arguments as they provide geographical and jurisdictional context. Examples include 'New York', 'federal court', 'district court', 'Los Angeles', and 'Supreme Court'."
+        }
+    }
+}

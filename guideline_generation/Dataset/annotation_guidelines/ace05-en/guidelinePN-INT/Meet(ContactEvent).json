@@ -1,0 +1,11 @@
+{
+    "Meet(ContactEvent)": {
+        "description": "A 'Meet' event, a subtype of 'ContactEvent', involves two or more entities coming together at a specific place and time for a discussion, negotiation, or other forms of interaction. This event is characterized by the physical or virtual presence of multiple entities at a designated location and time, focusing on the interaction between them. Triggers include terms like 'talks', 'meetings', 'gathering', and 'reunited'. The scope includes formal and informal gatherings, such as diplomatic talks, business meetings, and social reunions, and typically results in an exchange of ideas, decisions, or agreements.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "entity": "The 'entity' argument refers to the individuals or groups participating in the 'Meet' event. These can be people, organizations, or other identifiable groups, such as 'Tony Blair' and 'Jack Straw' in 'talks with British Prime Minister Tony Blair and Foreign Secretary Jack Straw'. Entities are crucial as they are the primary participants in the meeting and can be explicitly named or referred to by their roles or titles, such as 'envoys' and 'leaders'. In some cases, entities may be groups or collectives, like 'activists' and 'lawmakers'.",
+            "place": "The 'place' argument specifies the location where the 'Meet' event occurs. This can be a city, building, or any identifiable location, such as 'London' in 'Shalom was to fly on to London for talks'. Places provide context and setting for the meeting and can be specific buildings or venues, like 'white house' in 'a white house gathering of aids activists and lawmakers', or general locations, like 'port' in 'reunited with their families and friends, at the aircraft carrier's home port'.",
+            "time": "The 'time' argument indicates when the 'Meet' event takes place. This can be a specific date, time of day, or a more general time frame, such as 'in recent days' in 'meetings in Gaza and Damascus in recent days'. Time provides temporal context for the event, helping to situate it within a timeline. It can be specific, like 'Monday' in 'were killed Monday when their houses were hit by a missile', or implied, like 'afterwards' in 'Afterwards Shalom was to fly on to London for talks'."
+        }
+    }
+}

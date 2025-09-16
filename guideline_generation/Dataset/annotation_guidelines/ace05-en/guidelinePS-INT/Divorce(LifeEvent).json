@@ -1,0 +1,11 @@
+{
+    "Divorce(LifeEvent)": {
+        "description": "A Divorce event, a subtype of LifeEvent, refers to the legal dissolution of a marriage between two individuals. It is characterized by the formal ending of a marital relationship, often involving legal proceedings and terms like 'irreconcilable differences'. Example triggers include 'divorce', 'filed for divorce', and 'sued for divorce'. Unlike the Marry event, which signifies the beginning of a marital relationship, the Divorce event marks its end and often involves legal actions, court proceedings, and legal settlements. Outcomes typically include the separation of the individuals involved and changes in marital status.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "place": "The 'place' argument specifies the location where the divorce proceedings or related events occur, such as cities, courts, or any relevant geographical location. It is crucial for understanding the jurisdiction and legal context of the divorce. The place might be explicitly stated or implied, and in cases of multiple locations, all should be annotated.",
+            "person": "The 'person' argument identifies the individuals involved in the divorce, including both parties seeking the divorce. It provides clarity on the relationship dynamics and the individuals' roles. Indirect references like 'his wife' or 'her husband' should also be annotated. The primary focus should remain on the divorcing parties, even if additional individuals like lawyers or children are mentioned.",
+            "time": "The 'time' argument specifies when the divorce proceedings or related events occur, including specific dates, months, or general time frames. It is important for establishing the timeline of the divorce process. The time might be explicitly stated or implied, and in cases of multiple time frames, all should be annotated."
+        }
+    }
+}

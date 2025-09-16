@@ -1,0 +1,21 @@
+{
+    "MergeOrg(BusinessEvent)": {
+        "description": [
+            "A MergeOrg event refers to the combination of two or more organizations into a single entity. This event is characterized by the integration of resources, operations, and management structures of the involved organizations.",
+            "Triggers for a MergeOrg event include terms like 'merged', 'merger', 'combine', 'unite', and 'consolidate'. These terms indicate the process of merging organizations.",
+            "Unlike the EndOrg event, which signifies the dissolution or termination of an organization, the MergeOrg event focuses on the unification of organizations to form a new or larger entity.",
+            "The outcome of a MergeOrg event is the creation of a single, often larger, organization from the merging entities. This is different from acquisition events where one organization takes over another without necessarily merging operations.",
+            "In a MergeOrg event, the key characteristic is the mutual agreement and integration of the involved organizations, as opposed to hostile takeovers or simple partnerships which do not result in a single unified entity."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "Org": [
+            "The 'Org' argument represents the organizations involved in the merger. These are the entities that are combining to form a new or larger organization.",
+            "In the context of a MergeOrg event, the 'Org' argument is crucial as it identifies the specific organizations that are merging. For example, in the sentence 'The merger of Company A and Company B was finalized', 'Company A' and 'Company B' are the 'Org' arguments.",
+            "The 'Org' argument can include various types of organizations such as companies, departments, startups, or industries. For instance, 'Department of Minority Business Enterprise' and 'Department of Business Assistance' in the example provided.",
+            "Edge cases for the 'Org' argument include scenarios where the organizations are not explicitly named but are implied. For example, 'The two leading tech firms decided to merge' implies two organizations without naming them.",
+            "The 'Org' argument is not to be confused with entities that are not merging. For example, in the sentence 'The company acquired its competitor', 'company' and 'competitor' are not merging but rather one is taking over the other, which would not be a MergeOrg event."
+        ]
+    }
+}

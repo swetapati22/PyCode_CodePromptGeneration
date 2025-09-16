@@ -1,0 +1,11 @@
+{
+    "Divorce(LifeEvent)": {
+        "description": "A Divorce event, a subtype of LifeEvent, refers to the legal dissolution of a marriage between two individuals. It involves formal legal proceedings and has significant personal and legal ramifications, such as custody battles, division of assets, and emotional impacts. Unlike other LifeEvents like 'Marriage' or 'Birth', Divorce specifically denotes the termination of a marital relationship. Common triggers include terms like 'divorce', 'filed for divorce', 'sued for divorce', and 'ex-wife'. It is distinct from 'Separation', which indicates a temporary split, and 'Annulment', which declares a marriage null and void.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "place": "The 'place' argument refers to the geographical location where the divorce proceedings are taking place or have taken place, such as a city, state, or country. This location often determines the legal jurisdiction and applicable laws. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'. In some cases, the place might be implied rather than explicitly stated, such as 'filed for divorce in the local court'.",
+            "person": "The 'person' argument refers to the individuals involved in the divorce, including both parties in the marriage. This can include direct mentions like 'Hunter' and 'star' in 'Hunter filed for divorce from the star', or indirect references like 'his wife' or 'her husband'. It identifies the individuals whose marital relationship is being legally dissolved.",
+            "time": "The 'time' argument refers to when the divorce proceedings are taking place or have taken place. This can be a specific date, such as 'in September' in 'sued for divorce in September', or a relative time frame, such as 'four years after the couple separated'. It provides context and a timeline for the divorce proceedings."
+        }
+    }
+}

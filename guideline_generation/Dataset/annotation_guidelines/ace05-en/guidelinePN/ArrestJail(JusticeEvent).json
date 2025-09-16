@@ -1,0 +1,49 @@
+{
+    "ArrestJail(JusticeEvent)": {
+        "description": [
+            "The ArrestJail event type involves the apprehension and detention of an individual by law enforcement or other authorities. Example triggers include 'arrested', 'detained', and 'taken into custody'.",
+            "This event type is characterized by the involvement of a person being taken into custody, typically due to suspected involvement in a crime. The key elements include the person being arrested, the agent performing the arrest, the location, and the time of the event.",
+            "Unlike the TrialHearing event, which focuses on judicial proceedings, the ArrestJail event centers on the act of apprehending an individual. Triggers such as 'hearing' or 'trial' are indicative of TrialHearing, not ArrestJail.",
+            "The outcome of an ArrestJail event is the physical custody of the person by the authorities, which differs from the ReleaseParole event where the person is released from custody. Triggers like 'released' or 'paroled' are not associated with ArrestJail.",
+            "In comparison to the Extradite event, which involves transferring a person from one jurisdiction to another, the ArrestJail event is confined to the initial act of taking someone into custody. Triggers such as 'extradition' or 'transferred' are indicative of Extradite, not ArrestJail."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "crime": [
+            "The crime argument specifies the offense for which the person is being arrested. It is crucial for understanding the context of the arrest. For example, 'arrested for robbery' indicates the crime is robbery.",
+            "This argument helps to clarify the reason behind the arrest, distinguishing it from other types of detentions. For instance, 'arrested on suspicion of fraud' specifies fraud as the crime.",
+            "In some cases, the crime may not be explicitly mentioned but can be inferred from the context. For example, 'arrested after a high-speed chase' implies a crime related to traffic violations or evasion.",
+            "The crime argument is important for legal and procedural documentation, ensuring that the arrest is justified. For example, 'arrested for possession of illegal substances' clearly states the crime.",
+            "Edge cases include situations where the crime is not directly stated but implied through related actions or investigations. For example, 'arrested during a drug raid' implies drug-related offenses."
+        ],
+        "time": [
+            "The time argument indicates when the arrest took place. It provides temporal context to the event. For example, 'arrested on Saturday' specifies the day of the week.",
+            "This argument helps to establish a timeline of events, which can be crucial for legal proceedings. For instance, 'arrested at 3 PM' provides a specific time.",
+            "In some cases, the time may be relative rather than specific. For example, 'arrested last night' gives a general idea of the timing.",
+            "The time argument can also include dates or periods. For example, 'arrested on June 2' or 'arrested during the protest' provide different levels of temporal detail.",
+            "Edge cases include situations where the time is not explicitly mentioned but can be inferred from the context. For example, 'arrested after the meeting' implies a time frame related to the meeting."
+        ],
+        "place": [
+            "The place argument specifies the location where the arrest occurred. It is essential for understanding the geographical context of the event. For example, 'arrested in Abilene, Texas' provides a specific location.",
+            "This argument helps to identify the jurisdiction and potential legal implications of the arrest. For instance, 'arrested at the courthouse' indicates a legal setting.",
+            "In some cases, the place may be described in more general terms. For example, 'arrested outside the mall' gives a general idea of the location.",
+            "The place argument can also include more detailed descriptions. For example, 'arrested at his home on Elm Street' provides a specific address.",
+            "Edge cases include situations where the place is not explicitly mentioned but can be inferred from the context. For example, 'arrested during the raid' implies a location related to the raid."
+        ],
+        "person": [
+            "The person argument identifies the individual who is being arrested. It is crucial for understanding who is the subject of the arrest. For example, 'arrested her' specifies the person as 'her'.",
+            "This argument helps to distinguish between different individuals involved in the event. For instance, 'arrested the terrorist' clearly identifies the person as a terrorist.",
+            "In some cases, the person may be described in more general terms. For example, 'arrested a man' gives a general idea of the person.",
+            "The person argument can also include more detailed descriptions. For example, 'arrested John Doe' provides a specific name.",
+            "Edge cases include situations where the person is not explicitly mentioned but can be inferred from the context. For example, 'arrested the suspect' implies a person involved in a crime."
+        ],
+        "agent": [
+            "The agent argument identifies the entity performing the arrest. It is essential for understanding who is responsible for the arrest. For example, 'arrested by police' specifies the agent as 'police'.",
+            "This argument helps to clarify the authority behind the arrest. For instance, 'arrested by coalition forces' indicates a military or international context.",
+            "In some cases, the agent may be described in more general terms. For example, 'arrested by authorities' gives a general idea of the agent.",
+            "The agent argument can also include more detailed descriptions. For example, 'arrested by Detective Smith' provides a specific name and role.",
+            "Edge cases include situations where the agent is not explicitly mentioned but can be inferred from the context. For example, 'arrested during the operation' implies an organized group or authority."
+        ]
+    }
+}

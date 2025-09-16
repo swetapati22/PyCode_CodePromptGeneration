@@ -1,0 +1,35 @@
+{
+    "Convict(JusticeEvent)": {
+        "description": [
+            "A Convict event, a subtype of JusticeEvent, occurs when a legal authority formally declares an individual guilty of a crime. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+            "The Convict event involves a legal adjudicator, such as a judge or jury, who delivers the verdict. The event is characterized by the formal declaration of guilt and often results in sentencing.",
+            "Unlike the Sue event, which involves initiating legal action, the Convict event signifies the conclusion of a legal process with a guilty verdict. Triggers like 'lawsuit' are indicative of the Sue event, not the Convict event.",
+            "The Convict event is distinct from the Fine event, where the focus is on imposing a monetary penalty. In contrast, the Convict event centers on the declaration of guilt. Triggers like 'fine' are indicative of the Fine event, not the Convict event.",
+            "In the Convict event, the outcome is a formal guilty verdict, which may lead to sentencing. This differs from the Extradite event, where the focus is on transferring a person between jurisdictions. Triggers like 'extradition' are indicative of the Extradite event, not the Convict event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator in a Convict event is the legal authority responsible for delivering the guilty verdict. This can be a judge, jury, or court. For example, in 'Judge Shahid Rafiq found Ranjha Masih guilty', 'Judge Shahid Rafiq' is the adjudicator.",
+            "The adjudicator plays a crucial role in the Convict event by evaluating evidence and making a legal determination of guilt. For instance, 'a Manhattan jury convicted Alfred Taubman' identifies 'Manhattan jury' as the adjudicator.",
+            "In some cases, the adjudicator may be a collective body, such as a jury or a panel of judges. For example, 'the court convicted Anwar Ibrahim' uses 'court' as the adjudicator.",
+            "The adjudicator is distinct from other legal roles, such as prosecutors or defense attorneys, who do not deliver the verdict. For example, 'the judge convicted Ayub Masih' clearly identifies 'judge' as the adjudicator.",
+            "In edge cases, the adjudicator may be implied rather than explicitly stated. For example, 'convicted of defiling Koranic verses' implies a legal authority made the decision, even if not directly mentioned."
+        ],
+        "place": [
+            "The place in a Convict event refers to the location where the guilty verdict is delivered. This can be a city, court, or country. For example, 'in the industrial city of Faisalabad' identifies 'Faisalabad' as the place.",
+            "The place provides context for the legal proceedings and can indicate the jurisdiction of the adjudicator. For instance, 'a court in Sahiwal district' uses 'Sahiwal district' as the place.",
+            "In some cases, the place may be a broader region or country, such as 'Malaysia' in 'Malaysia's second highest court convicted Anwar Ibrahim'.",
+            "The place is distinct from the location of the crime or other related events. For example, 'convicted in Manhattan' specifies the place of the verdict, not where the crime occurred.",
+            "In edge cases, the place may be implied through context. For example, 'convicted under the law in 1998' implies a legal setting without explicitly naming the place."
+        ],
+        "defendant": [
+            "The defendant in a Convict event is the individual or entity declared guilty of a crime. For example, 'Alfred Taubman' in 'a Manhattan jury convicted Alfred Taubman' is the defendant.",
+            "The defendant is the primary subject of the Convict event, whose guilt is determined by the adjudicator. For instance, 'Ranjha Masih' in 'Judge Shahid Rafiq found Ranjha Masih guilty' is the defendant.",
+            "In some cases, the defendant may be a group of individuals, such as 'offenders' in 'convicted drug offenders'.",
+            "The defendant is distinct from other roles, such as witnesses or victims, who are not the focus of the guilty verdict. For example, 'Anwar Ibrahim' in 'convicted Anwar Ibrahim' is the defendant, not a witness or victim.",
+            "In edge cases, the defendant may be referred to by a role or title rather than a personal name. For example, 'the former chairman' in 'convicted the former chairman' implies the defendant's identity."
+        ]
+    }
+}

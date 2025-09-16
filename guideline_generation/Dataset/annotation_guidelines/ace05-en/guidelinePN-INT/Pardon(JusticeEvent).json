@@ -1,0 +1,11 @@
+{
+    "Pardon(JusticeEvent)": {
+        "description": "A Pardon event involves an official decision by an adjudicator to forgive or excuse a defendant from a legal penalty or punishment. This formal act of clemency, often carried out by a high-ranking official such as a head of state or governor, results in the mitigation or elimination of the defendant's punishment. Unlike an Acquit event, which determines innocence, a Pardon event does not imply the defendant was found not guilty but rather forgives their actions. Example triggers include 'pardoned', 'forgave', and 'excused'. The outcome distinguishes it from other JusticeEvents like Appeal or Acquit.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the authority figure or official who grants the pardon, such as a head of state, governor, or a collective body like a parole board. This role is crucial as they possess the legal power to forgive the defendant. For example, 'The President pardoned the prisoner' identifies the President as the adjudicator. In some cases, the adjudicator's identity may be implied but not explicitly stated.",
+            "place": "The place refers to the location where the pardon is granted or where the defendant is located, providing context about the jurisdiction or legal authority. For example, 'The governor of California pardoned the inmate' identifies California as the place. It can also be a specific institution like a prison. The place may sometimes be inferred from context.",
+            "defendant": "The defendant is the individual who receives the pardon, typically someone convicted of a crime or serving a sentence. For example, 'The governor pardoned the prisoner' identifies the prisoner as the defendant. The defendant can also be a group, such as 'The President pardoned all the political prisoners'. The identity of the defendant may sometimes be implied."
+        }
+    }
+}

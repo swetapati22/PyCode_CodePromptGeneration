@@ -1,0 +1,13 @@
+{
+    "Appeal(JusticeEvent)": {
+        "description": "An 'Appeal' event in the context of justice refers to a formal request made to a higher court to review and potentially change the decision of a lower court. This event involves a higher judicial authority and follows a prior judgment, focusing on the process of challenging that outcome. Unlike 'Convict' or 'Sentence' events, which deal with the trial's outcome, an 'Appeal' event specifically involves seeking a review of a decision. The outcome can include upholding, overturning, or modifying the original decision. Example triggers include 'appeal', 'appealed', and 'appealing'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The 'adjudicator' in an 'Appeal' event is the higher court or judicial authority reviewing the appeal, such as the 'Supreme Court' or 'Federal Court'. This role is crucial as they have the authority to uphold, overturn, or modify the original decision. In some cases, the 'adjudicator' may be a specific judge or panel of judges. Edge cases include special tribunals or international courts.",
+            "plaintiff": "The 'plaintiff' in an 'Appeal' event is the party initiating the appeal, seeking a review of the lower court's decision. This party, often dissatisfied with the original judgment, could be an individual, organization, or government entity. The 'plaintiff' may also be referred to as the 'appellant'. Edge cases include multiple parties jointly filing an appeal.",
+            "prosecutor": "The 'prosecutor' in an 'Appeal' event is the legal representative arguing against the appeal, typically representing the state or the original plaintiff. Their role is to defend the original decision and provide reasons why the appeal should be denied. In some cases, the 'prosecutor' may be a team of legal representatives. Edge cases include special counsels or international legal representatives.",
+            "defendant": "The 'defendant' in an 'Appeal' event is the party against whom the appeal is filed, often the party who won the original case. This party seeks to maintain the original judgment and may be referred to as the 'respondent'. Edge cases include multiple parties named as defendants in the appeal.",
+            "place": "The 'place' in an 'Appeal' event refers to the location where the appeal is filed or heard, typically a higher court. This indicates the jurisdiction and the specific court handling the appeal. In some cases, it may refer to the broader geographical location relevant to the appeal. Edge cases include international courts or tribunals."
+        }
+    }
+}

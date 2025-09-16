@@ -1,0 +1,28 @@
+{
+    "EndOrg(BusinessEvent)": {
+        "description": [
+            "The EndOrg event type, a subclass of BusinessEvent, refers to the termination or cessation of an organization or its operations. This can include the closing, shutting down, or dissolving of an entity such as a company, plant, or department.",
+            "Triggers for the EndOrg event type include phrases like 'is no more', 'closing', 'shutting down', and 'dissolving'. These indicate the end of an organization's existence or its operational activities.",
+            "Key characteristics of the EndOrg event include the identification of the organization that is ending and the location where this event is taking place. The focus is on the cessation of business activities or the disbanding of the organization.",
+            "Unlike related events such as 'StartOrg' which indicate the beginning or establishment of an organization, EndOrg specifically deals with the conclusion or termination of an organization's operations.",
+            "Triggers such as 'opening' or 'launching' are indicative of events like 'StartOrg' or 'LaunchProduct', not EndOrg. The outcome of an EndOrg event is the cessation of activities, whereas related events might result in the initiation or continuation of activities."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument identifies the organization that is ending. This can be a company, department, plant, or any other business entity. For example, in 'Hewlett Packard is shutting down its plant', 'plant' is the 'org'.",
+            "The role of the 'org' argument is crucial as it specifies the entity that is ceasing operations. This helps in understanding the scope and impact of the event. For instance, 'rej geemg' in 'Saddam Hussein's rej geemg is no more' is the organization ending.",
+            "In cases where multiple organizations are mentioned, the 'org' argument should focus on the one that is explicitly ending. For example, 'emergency rooms' and 'trauma centers' in 'emergency rooms are closing, trauma centers are closing' are both valid 'org' arguments.",
+            "The 'org' argument can sometimes be implicit or inferred from context. For example, 'the embassy in Saudi Arabia' implies the diplomatic outpost as the organization ending.",
+            "Edge cases include scenarios where the organization is part of a larger entity. For example, 'Hewlett Packard's plant' specifies a part of the larger Hewlett Packard organization, but the 'plant' is the 'org' ending."
+        ],
+        "place": [
+            "The 'place' argument identifies the location where the organization is ending. This can be a city, country, or specific site. For example, 'Eugene' in 'Hewlett Packard is shutting down its plant in Eugene' is the place.",
+            "The role of the 'place' argument is to provide geographical context to the EndOrg event. This helps in understanding the regional impact of the organization's cessation. For instance, 'Iraq' in 'Saddam Hussein's rej geemg is no more' is the place.",
+            "In cases where the place is not explicitly mentioned, it can sometimes be inferred from the context. For example, 'the embassy in Saudi Arabia' implies 'Saudi Arabia' as the place.",
+            "The 'place' argument can also refer to specific sites within a larger location. For example, 'emergency rooms' and 'trauma centers' in 'emergency rooms are closing, trauma centers are closing' are specific places where the organizations are ending.",
+            "Edge cases include scenarios where the place is part of a larger region. For example, 'the embassy in Saudi Arabia' specifies a location within the country of Saudi Arabia, but 'Saudi Arabia' is the broader place."
+        ]
+    }
+}

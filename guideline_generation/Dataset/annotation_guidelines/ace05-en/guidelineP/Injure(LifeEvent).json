@@ -1,0 +1,49 @@
+{
+    "Injure(LifeEvent)": {
+        "description": [
+            "The 'Injure' event refers to any incident where one or more individuals suffer physical harm or damage. This can include wounds, bruises, or any other form of bodily injury.",
+            "Triggers for the 'Injure' event include words like 'injured', 'wounded', 'hurt', 'maimed', and similar terms that indicate physical harm.",
+            "The scope of the 'Injure' event encompasses any situation where physical harm is inflicted, regardless of the severity or the number of victims.",
+            "Key characteristics of the 'Injure' event include the presence of a victim who suffers harm, and often an agent or instrument that causes the injury.",
+            "The 'Injure' event can occur in various contexts, such as accidents, attacks, natural disasters, or any other scenario where physical harm is inflicted."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "victim": [
+            "The 'victim' argument refers to the individual or group of individuals who suffer physical harm in the event. This can include people of any age, gender, or background.",
+            "In the context of the 'Injure' event, the victim is the person or persons who are directly affected by the physical harm. For example, '20 people' in the phrase 'wounding 20 people'.",
+            "The victim can be explicitly mentioned or implied in the text. For instance, 'children', 'women', 'civilians', and 'soldiers' are all examples of victims.",
+            "The role of the victim is crucial as it identifies who has been harmed in the event. This helps in understanding the impact and scope of the injury.",
+            "Edge cases for the victim argument include situations where the victim is not a human, such as animals, or where the victim is a collective group, like 'the crowd'."
+        ],
+        "time": [
+            "The 'time' argument specifies when the injury event took place. This can be a specific date, time of day, or a more general time frame.",
+            "In the context of the 'Injure' event, time helps to situate the event within a temporal framework, providing context for when the injury occurred.",
+            "Examples of time include 'Monday', 'earlier today', 'last night', or 'in 2020'. These references help to pinpoint the occurrence of the event.",
+            "The time argument is important for understanding the sequence of events and for historical or legal documentation of the injury.",
+            "Edge cases for the time argument include vague references like 'recently' or 'a few days ago', which may require additional context to be fully understood."
+        ],
+        "instrument": [
+            "The 'instrument' argument refers to the object or method used to inflict the injury. This can include weapons, tools, or any other means of causing harm.",
+            "In the context of the 'Injure' event, the instrument is what directly causes the physical harm. For example, 'explosives' in the phrase 'detonated explosives'.",
+            "Examples of instruments include 'bomb', 'knife', 'gun', 'vehicle', or 'fire'. These objects or methods are directly involved in causing the injury.",
+            "The role of the instrument is to provide details on how the injury was inflicted, which can be important for legal, medical, or investigative purposes.",
+            "Edge cases for the instrument argument include situations where the instrument is not explicitly mentioned but can be inferred, such as 'a fall' implying the ground or surface."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the injury event occurred. This can be a specific address, a city, a country, or a more general area.",
+            "In the context of the 'Injure' event, place helps to situate the event within a spatial framework, providing context for where the injury occurred.",
+            "Examples of place include 'mall', 'Gaza Strip', 'city', 'hospital', or 'home'. These references help to pinpoint the location of the event.",
+            "The place argument is important for understanding the geographical context of the injury and for logistical or emergency response purposes.",
+            "Edge cases for the place argument include vague references like 'nearby' or 'in the vicinity', which may require additional context to be fully understood."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the individual or entity responsible for causing the injury. This can include people, groups, or even natural forces.",
+            "In the context of the 'Injure' event, the agent is the one who inflicts the harm. For example, 'bomber' in the phrase 'a suicide bomber detonated explosives'.",
+            "Examples of agents include 'attacker', 'driver', 'police', 'animal', or 'natural disaster'. These entities are directly involved in causing the injury.",
+            "The role of the agent is to identify who or what is responsible for the injury, which can be important for legal, medical, or investigative purposes.",
+            "Edge cases for the agent argument include situations where the agent is not explicitly mentioned but can be inferred, such as 'a fall' implying gravity or an accident."
+        ]
+    }
+}

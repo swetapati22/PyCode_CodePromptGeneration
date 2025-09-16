@@ -1,0 +1,42 @@
+{
+    "Elect(PersonnelEvent)": {
+        "description": [
+            "The 'Elect' event type, a subclass of 'PersonnelEvent', refers to the process of selecting a person for a position or office through a voting mechanism. Example triggers include 'elected', 'won', and 'winning'.",
+            "This event type is characterized by the formal selection of an individual to a role, typically within a governmental or organizational context. It involves a competitive process where multiple candidates may be considered.",
+            "Unlike the 'Nominate' event, which involves proposing a candidate for a position, the 'Elect' event signifies the final decision and selection of the candidate. For instance, 'name' is a trigger for 'Nominate', not 'Elect'.",
+            "The 'Elect' event often results in the individual assuming a new role or office, distinguishing it from 'EndPosition' or 'StartPosition' events, which mark the beginning or end of a tenure. For example, 'former' is a trigger for 'EndPosition', not 'Elect'.",
+            "Key characteristics of the 'Elect' event include the involvement of a voting process, the presence of a selected individual (Person), and often a specific location (Place) or entity (Entity) associated with the election. Negative examples include 'becoming', which is a trigger for 'StartPosition', not 'Elect'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the organization, body, or group that conducts the election or is associated with the elected position. For example, in 'Beatriz Marinello was elected USCF President', 'USCF' is the entity.",
+            "This argument is crucial as it provides context about the scope and authority of the election. It helps identify the organizational framework within which the election occurs.",
+            "In cases where the entity is a country or a large organization, it indicates the level of significance and impact of the election. For instance, 'Zambia' in 'Chiluba was Zambia's first democratically elected president' is the entity.",
+            "The entity can sometimes be implicit or inferred from the context, especially in well-known elections. For example, 'government' in 'Jordan's first female lawmaker' implies the Jordanian government.",
+            "Edge cases include elections within smaller or less formal groups, where the entity might not be explicitly mentioned but can be deduced from the context. For example, 'school board' in a local election context."
+        ],
+        "place": [
+            "The 'place' argument specifies the geographical location where the election takes place or where the elected position is relevant. For example, 'Los Angeles' in 'Beatriz Marinello was elected USCF President in Los Angeles'.",
+            "This argument is important for understanding the regional or local context of the election, which can influence the significance and implications of the event.",
+            "In some cases, multiple places may be involved, indicating a broader scope of the election. For instance, 'Ohio' and 'Florida' in 'Kerry won decisively not only in Ohio and Florida'.",
+            "The place can also refer to the jurisdiction or area of influence of the elected position, such as 'Zambia' in 'Chiluba was Zambia's first democratically elected president'.",
+            "Edge cases include virtual or online elections where the physical place might not be explicitly mentioned but can be inferred from the context, such as 'global' in an international organization's election."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual who is elected to the position. For example, 'Beatriz Marinello' in 'Beatriz Marinello was elected USCF President'.",
+            "This argument is central to the event as it specifies the subject of the election, providing clarity on who has been selected for the role.",
+            "In cases where multiple individuals are elected, each person should be identified separately. For instance, 'Americans' and 'Douglas Wilder' in 'African Americans aren't just winning elected office, as former Gov. Douglas Wilder did'.",
+            "The person can sometimes be referred to by their role or title, especially in formal contexts. For example, 'lawmaker' in 'Jordan's first female lawmaker'.",
+            "Edge cases include situations where the person is not explicitly named but can be inferred from the context, such as 'the president' in a well-known election scenario."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or individual responsible for conducting the election or facilitating the process. This argument is not always present but is crucial when it appears.",
+            "For example, in 'the pope will reportedly name a new head of the troubled boston archdiocese', 'pope' is the agent responsible for the nomination process.",
+            "This argument helps identify the authority or body overseeing the election, providing context about the legitimacy and procedural aspects of the event.",
+            "In some cases, the agent might be an organization or a group rather than an individual. For instance, 'the government' in a state-run election.",
+            "Edge cases include informal or less structured elections where the agent might not be explicitly mentioned but can be inferred from the context, such as 'the committee' in a club election."
+        ]
+    }
+}

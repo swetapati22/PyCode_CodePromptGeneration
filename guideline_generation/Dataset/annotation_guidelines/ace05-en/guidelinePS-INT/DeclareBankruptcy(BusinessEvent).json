@@ -1,0 +1,10 @@
+{
+    "DeclareBankruptcy(BusinessEvent)": {
+        "description": "The DeclareBankruptcy event involves an organization formally declaring its inability to meet financial obligations and seeking legal protection from creditors. This event is characterized by legal proceedings related to insolvency, involving creditors and often resulting in debt restructuring or asset liquidation. Example triggers include 'bankruptcy', 'bankrupt', and 'file for bankruptcy'. This event is distinct from other business events like mergers or the creation and dissolution of organizations without financial insolvency context.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "Org": "The 'Org' argument identifies the organization declaring bankruptcy, which is crucial for pinpointing the entity undergoing financial distress. This can include corporations, companies, or other business entities. For example, 'worldcom' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states' is the organization. Edge cases may involve inferred organizations from context.",
+            "Place": "The 'Place' argument refers to the geographical location associated with the bankruptcy event, such as the country, state, or city where it is declared. This provides context about the jurisdiction and legal environment of the bankruptcy. For example, 'united states' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states' is the place. Edge cases may involve inferred locations from context."
+        }
+    }
+}

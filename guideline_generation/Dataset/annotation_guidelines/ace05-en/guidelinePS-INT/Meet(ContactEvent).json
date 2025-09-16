@@ -1,0 +1,11 @@
+{
+    "Meet(ContactEvent)": {
+        "description": "A 'Meet' event, a subtype of 'ContactEvent', involves two or more entities coming together at a specific place and time for discussion, negotiation, or other forms of interaction. These events can be physical or virtual and are characterized by the presence of entities at a designated location and time. Common triggers include words like 'talks', 'meetings', 'conference', 'summit', and 'assembly'. The outcome of a 'Meet' event is typically a decision, agreement, or exchange of information, distinguishing it from 'PhoneWrite' events, which involve communication through writing or phone calls, and 'Visit' events, which focus on the act of going to a place rather than the interaction itself.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "entity": "The 'entity' argument refers to the individuals or groups participating in the 'Meet' event. These can be people, organizations, or other entities, explicitly named or referred to by their roles or titles. Examples include 'Shalom', 'Tony Blair', 'Vivendi', 'Viacom', 'envoys', 'leaders', 'crew', 'families', 'friends', 'activists', and 'lawmakers'. Entities are crucial as they are the participants engaging in the interaction.",
+            "place": "The 'place' argument specifies the location where the 'Meet' event occurs. This can be a city, building, or any other geographical location, such as 'London', 'Gaza', 'Damascus', 'white house', or 'port'. Places provide the context for where the interaction takes place and can be explicitly mentioned or implied through context.",
+            "time": "The 'time' argument specifies when the 'Meet' event takes place. This can be a specific date, time of day, or a more general time frame, such as 'in recent days', 'the present or near future', or 'ongoing'. Time provides the temporal context for the interaction and can be explicitly stated or implied through context, describing the duration or frequency of the event."
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Sue(JusticeEvent)": {
+        "description": [
+            "The 'Sue' event refers to the legal action initiated by one party (plaintiff) against another party (defendant) in a court of law. Example triggers include 'sue', 'lawsuit', 'filed', 'pursue', and 'sued'.",
+            "A 'Sue' event involves a formal legal complaint where the plaintiff seeks a legal remedy from the defendant. Triggers can be words like 'lawsuit', 'sued', 'filed a case', 'legal action', and 'litigation'.",
+            "In a 'Sue' event, the plaintiff brings a case against the defendant, often seeking compensation or other legal relief. Common triggers include 'lawsuit', 'sued', 'filed', 'pursue', and 'legal action'.",
+            "The 'Sue' event is characterized by a legal dispute where the plaintiff accuses the defendant of wrongdoing and seeks judicial intervention. Triggers include 'lawsuit', 'sued', 'filed', 'pursue', and 'litigation'.",
+            "A 'Sue' event denotes the initiation of legal proceedings by a plaintiff against a defendant, typically in a court setting. Example triggers are 'lawsuit', 'sued', 'filed', 'pursue', and 'legal action'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' is the authority or entity that presides over the legal case, such as a judge or a court. For example, in 'The judge ruled in favor of the plaintiff', 'judge' is the adjudicator.",
+            "In a 'Sue' event, the 'adjudicator' refers to the person or body responsible for making a legal decision. For instance, 'The court dismissed the case' identifies 'court' as the adjudicator.",
+            "The 'adjudicator' is the official who oversees the legal proceedings and delivers a verdict. An example is 'The tribunal found the defendant guilty', where 'tribunal' is the adjudicator.",
+            "An 'adjudicator' in a 'Sue' event is the legal authority that hears the case and renders a judgment. For example, 'The magistrate ordered a retrial' uses 'magistrate' as the adjudicator.",
+            "The 'adjudicator' is the entity that has the power to judge and resolve the legal dispute. In 'The arbitration panel decided in favor of the plaintiff', 'arbitration panel' is the adjudicator."
+        ],
+        "plaintiff": [
+            "The 'plaintiff' is the party who initiates the lawsuit, seeking legal remedy against the defendant. For example, in 'The company sued the supplier for breach of contract', 'company' is the plaintiff.",
+            "In a 'Sue' event, the 'plaintiff' is the individual or group that brings the case to court. For instance, 'The homeowners filed a lawsuit against the builder' identifies 'homeowners' as the plaintiff.",
+            "The 'plaintiff' is the person or entity that files the legal complaint. An example is 'The employees sued the corporation for unfair labor practices', where 'employees' are the plaintiffs.",
+            "A 'plaintiff' in a 'Sue' event is the party that alleges harm or seeks legal action against another. For example, 'The artist sued the gallery for breach of contract', 'artist' is the plaintiff.",
+            "The 'plaintiff' is the party that initiates the legal proceedings, often seeking compensation or other relief. In 'The tenants sued the landlord for unsafe living conditions', 'tenants' are the plaintiffs."
+        ],
+        "defendant": [
+            "The 'defendant' is the party against whom the lawsuit is filed, accused of causing harm or wrongdoing. For example, in 'The company sued the supplier for breach of contract', 'supplier' is the defendant.",
+            "In a 'Sue' event, the 'defendant' is the individual or group that the plaintiff is bringing the case against. For instance, 'The homeowners filed a lawsuit against the builder' identifies 'builder' as the defendant.",
+            "The 'defendant' is the person or entity that is being sued or accused in the legal complaint. An example is 'The employees sued the corporation for unfair labor practices', where 'corporation' is the defendant.",
+            "A 'defendant' in a 'Sue' event is the party that is alleged to have caused harm or committed a wrongdoing. For example, 'The artist sued the gallery for breach of contract', 'gallery' is the defendant.",
+            "The 'defendant' is the party that must respond to the plaintiff's allegations in court. In 'The tenants sued the landlord for unsafe living conditions', 'landlord' is the defendant."
+        ],
+        "place": [
+            "The 'place' refers to the location where the legal action is filed or takes place. For example, in 'The lawsuit was filed in New York', 'New York' is the place.",
+            "In a 'Sue' event, the 'place' is the geographical location of the court or legal jurisdiction. For instance, 'The case was heard in the federal court in Washington' identifies 'Washington' as the place.",
+            "The 'place' is the venue or jurisdiction where the lawsuit is initiated or adjudicated. An example is 'The trial took place in Los Angeles', where 'Los Angeles' is the place.",
+            "A 'place' in a 'Sue' event is the specific location where the legal proceedings occur. For example, 'The lawsuit was filed in the district court of Chicago', 'Chicago' is the place.",
+            "The 'place' is the physical or legal setting where the case is brought or heard. In 'The case was filed in the Supreme Court of California', 'California' is the place."
+        ]
+    }
+}

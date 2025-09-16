@@ -1,0 +1,13 @@
+{
+    "ArrestJail(JusticeEvent)": {
+        "description": "The ArrestJail event type involves the apprehension and detention of an individual by law enforcement or other authorities, typically due to suspected involvement in a crime. Key elements include the person being arrested, the agent performing the arrest, the location, and the time of the event. Example triggers include 'arrested', 'detained', and 'taken into custody'. This event is distinct from TrialHearing, ReleaseParole, and Extradite events, which focus on judicial proceedings, release from custody, and transferring a person between jurisdictions, respectively.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "crime": "The crime argument specifies the offense for which the person is being arrested, providing context and justification for the arrest. Examples include 'arrested for robbery' or 'arrested on suspicion of fraud'. In some cases, the crime may be implied from the context, such as 'arrested after a high-speed chase'.",
+            "time": "The time argument indicates when the arrest took place, providing temporal context. It can be specific, such as 'arrested at 3 PM', or relative, like 'arrested last night'. Dates or periods can also be used, for example, 'arrested on June 2'.",
+            "place": "The place argument specifies the location of the arrest, essential for understanding the geographical context. It can be specific, such as 'arrested in Abilene, Texas', or general, like 'arrested outside the mall'. Inferred locations from context, such as 'arrested during the raid', are also included.",
+            "person": "The person argument identifies the individual being arrested, crucial for understanding the subject of the arrest. It can be specific, such as 'arrested John Doe', or general, like 'arrested a man'. Inferred identities from context, such as 'arrested the suspect', are also included.",
+            "agent": "The agent argument identifies the entity performing the arrest, clarifying who is responsible. It can be specific, such as 'arrested by Detective Smith', or general, like 'arrested by authorities'. Inferred agents from context, such as 'arrested during the operation', are also included."
+        }
+    }
+}

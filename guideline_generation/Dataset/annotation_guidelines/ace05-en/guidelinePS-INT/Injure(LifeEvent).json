@@ -1,0 +1,13 @@
+{
+    "Injure(LifeEvent)": {
+        "description": "The 'Injure' event type, a subclass of 'LifeEvent', refers to incidents where individuals sustain non-fatal physical harm or damage due to an external action or event. Key characteristics include the presence of a victim and often an agent or instrument causing the injury. Triggers such as 'injured', 'wounded', and 'hurting' are indicative of this event type. The scope includes various forms of physical harm, whether accidental or intentional, and can involve multiple victims and agents. It does not cover events where the primary outcome is death or other life events like birth or marriage.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "victim": "The 'victim' argument identifies the individual(s) who sustained injuries. Victims can be singular or plural, such as 'a woman' or 'several children', and may be explicitly mentioned or implied within the context. Edge cases include collective entities like 'the crowd' or 'the team'.",
+            "time": "The 'time' argument specifies when the injury event occurred. Time can be expressed in various formats, including specific dates, days of the week, or relative time expressions like 'yesterday'. Edge cases include vague references like 'recently' or 'in the past few days'.",
+            "instrument": "The 'instrument' argument identifies the object or means used to cause the injury. Instruments can be tangible objects like 'knife', 'gun', or 'bomb', intangible means like 'poison' or 'fire', or natural elements like 'falling debris'. Edge cases include conditions or situations like 'smoke inhalation'.",
+            "place": "The 'place' argument specifies the location where the injury event occurred. Places can range from specific locations like 'Gaza Strip' to general areas like 'park'. Edge cases include vague locations like 'in the area' or 'nearby'.",
+            "agent": "The 'agent' argument identifies the individual or entity responsible for causing the injury. Agents can be specific individuals, groups, or organizations, such as 'attacker' or 'police'. Edge cases include indirect causes, such as 'accidentally' causing harm."
+        }
+    }
+}

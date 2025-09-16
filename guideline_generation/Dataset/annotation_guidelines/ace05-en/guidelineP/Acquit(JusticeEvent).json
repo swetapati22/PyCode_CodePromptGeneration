@@ -1,0 +1,35 @@
+{
+    "Acquit(JusticeEvent)": {
+        "description": [
+            "An 'Acquit' event occurs when a legal authority formally declares that a defendant is not guilty of the charges against them. Example triggers include 'acquitted', 'found not guilty', 'cleared of charges', 'exonerated', and 'walk free'.",
+            "The 'Acquit' event is a judicial decision where the defendant is released from the accusation of a crime. Key characteristics include the involvement of a legal authority and the formal declaration of innocence. Example triggers include 'acquitted', 'exonerated', 'cleared', 'freed', and 'absolved'.",
+            "In an 'Acquit' event, a defendant is officially declared innocent by a legal body. This event is marked by the conclusion of a trial or legal process. Example triggers include 'acquitted', 'declared innocent', 'found not guilty', 'exonerated', and 'cleared'.",
+            "An 'Acquit' event signifies the legal exoneration of a defendant, indicating that they are not guilty of the charges. This event typically follows a judicial process. Example triggers include 'acquitted', 'exonerated', 'cleared', 'freed', and 'absolved'.",
+            "The 'Acquit' event involves a legal decision where a defendant is found not guilty and is released from the charges. This event is characterized by the formal declaration of innocence by a legal authority. Example triggers include 'acquitted', 'found not guilty', 'cleared', 'exonerated', and 'walk free'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' is the legal authority or body that declares the defendant not guilty. This can be a judge, jury, or court. For example, in 'The court acquitted the defendant', 'court' is the adjudicator.",
+            "In an 'Acquit' event, the 'adjudicator' refers to the entity responsible for the legal decision of acquittal. This could be a judge, jury, or a panel of judges. For instance, 'The jury found him not guilty' has 'jury' as the adjudicator.",
+            "The 'adjudicator' is the person or group that makes the formal decision to acquit the defendant. This includes judges, juries, or courts. For example, 'Judge Smith acquitted the defendant' has 'Judge Smith' as the adjudicator.",
+            "The 'adjudicator' in an 'Acquit' event is the authority that issues the verdict of not guilty. This can be a single judge, a jury, or a court. For example, 'The supreme court acquitted the defendant' has 'supreme court' as the adjudicator.",
+            "In the context of an 'Acquit' event, the 'adjudicator' is the legal entity that declares the defendant innocent. This could be a judge, a jury, or a court. For example, 'The panel of judges acquitted the defendant' has 'panel of judges' as the adjudicator."
+        ],
+        "place": [
+            "The 'place' refers to the location where the acquittal takes place. This can be a specific court, city, or country. For example, in 'The court in New York acquitted the defendant', 'New York' is the place.",
+            "In an 'Acquit' event, the 'place' is the geographical location where the legal decision is made. This could be a courthouse, city, or country. For instance, 'The defendant was acquitted in Los Angeles' has 'Los Angeles' as the place.",
+            "The 'place' in an 'Acquit' event denotes the location of the judicial process leading to the acquittal. This can be a specific court, city, or country. For example, 'The court in London acquitted the defendant' has 'London' as the place.",
+            "The 'place' refers to the venue where the acquittal is declared. This can be a courthouse, city, or country. For example, 'The defendant was acquitted in the federal court in Washington' has 'Washington' as the place.",
+            "In the context of an 'Acquit' event, the 'place' is the location where the acquittal occurs. This could be a specific court, city, or country. For example, 'The supreme court in Islamabad acquitted the defendant' has 'Islamabad' as the place."
+        ],
+        "defendant": [
+            "The 'defendant' is the individual who is declared not guilty in an 'Acquit' event. For example, in 'The court acquitted John Doe', 'John Doe' is the defendant.",
+            "In an 'Acquit' event, the 'defendant' refers to the person who is being acquitted of the charges. For instance, 'The jury found Jane Smith not guilty' has 'Jane Smith' as the defendant.",
+            "The 'defendant' is the person who is exonerated in an 'Acquit' event. For example, 'The court acquitted the accused' has 'the accused' as the defendant.",
+            "The 'defendant' in an 'Acquit' event is the individual who is formally declared innocent. For example, 'The judge acquitted the suspect' has 'the suspect' as the defendant.",
+            "In the context of an 'Acquit' event, the 'defendant' is the person who is found not guilty. For example, 'The court acquitted the man of all charges' has 'the man' as the defendant."
+        ]
+    }
+}

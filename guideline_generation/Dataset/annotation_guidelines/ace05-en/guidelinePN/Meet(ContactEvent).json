@@ -1,0 +1,35 @@
+{
+    "Meet(ContactEvent)": {
+        "description": [
+            "A 'Meet' event, a subtype of 'ContactEvent', involves two or more entities coming together at a specific place and time for a discussion, negotiation, or other forms of interaction. Example triggers include 'talks', 'meetings', 'gathering', and 'reunited'.",
+            "The 'Meet' event is characterized by the physical or virtual presence of multiple entities at a designated location and time. Unlike 'PhoneWrite' events, which involve remote communication, 'Meet' events require the entities to be in the same place.",
+            "Triggers such as 'talks' and 'meetings' are indicative of 'Meet' events, where the focus is on the interaction between entities. In contrast, 'Demonstrate' events, triggered by words like 'gathered', involve public displays of protest or support rather than structured discussions.",
+            "A 'Meet' event typically results in an exchange of ideas, decisions, or agreements. Unlike 'Nominate' events, which involve the appointment of individuals to positions, 'Meet' events focus on the interaction and communication between entities.",
+            "The scope of a 'Meet' event includes formal and informal gatherings, such as diplomatic talks, business meetings, and social reunions. Unlike 'Divorce' or 'Die' events, which are life-altering and often involve legal or fatal outcomes, 'Meet' events are centered around communication and interaction."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the individuals or groups participating in the 'Meet' event. These can be people, organizations, or other identifiable groups. For example, in 'talks with British Prime Minister Tony Blair and Foreign Secretary Jack Straw', the entities are 'Tony Blair' and 'Jack Straw'.",
+            "Entities are crucial as they are the primary participants in the meeting. In the example 'Vivendi also is holding talks with Viacom, MGM and other buyers', the entities are 'Vivendi', 'Viacom', 'MGM', and 'buyers'.",
+            "Entities can be explicitly named or referred to by their roles or titles. For instance, 'Egyptian envoys have been holding meetings with leaders of the militant groups' identifies 'envoys' and 'leaders' as entities.",
+            "In some cases, entities may be groups or collectives, such as 'activists' and 'lawmakers' in 'a white house gathering of aids activists and lawmakers'.",
+            "Entities are distinct from the 'Agent' in 'Nominate' events, where the focus is on the person making the nomination. In 'Meet' events, the focus is on all participants involved in the interaction."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the 'Meet' event occurs. This can be a city, building, or any identifiable location. For example, 'London' in 'Shalom was to fly on to London for talks' is the place.",
+            "The place is important as it provides context and setting for the meeting. In 'meetings in Gaza and Damascus', the places are 'Gaza' and 'Damascus'.",
+            "Places can be specific buildings or venues, such as 'white house' in 'a white house gathering of aids activists and lawmakers'.",
+            "In some cases, the place may be a general location, like 'port' in 'reunited with their families and friends, at the aircraft carrier's home port'.",
+            "Unlike 'Place' in 'Die' events, which often indicates where a fatal incident occurred, the 'place' in 'Meet' events is where the interaction or discussion takes place."
+        ],
+        "time": [
+            "The 'time' argument indicates when the 'Meet' event takes place. This can be a specific date, time of day, or a more general time frame. For example, 'in recent days' in 'meetings in Gaza and Damascus in recent days'.",
+            "Time provides temporal context for the event, helping to situate it within a timeline. For instance, 'over the next decade' in 'the president said hir plan could prevent 7 million new hiv infections -- and treat at least 2 million people over the next decade'.",
+            "Time can be specific, such as 'Monday' in 'were killed Monday when their houses were hit by a missile', although this example is from a 'Die' event, it illustrates specificity.",
+            "In some cases, time may be implied rather than explicitly stated, such as 'afterwards' in 'Afterwards Shalom was to fly on to London for talks'.",
+            "Unlike 'time' in 'Nominate' events, which often indicates when a nomination will be made, the 'time' in 'Meet' events focuses on when the interaction or meeting occurs."
+        ]
+    }
+}

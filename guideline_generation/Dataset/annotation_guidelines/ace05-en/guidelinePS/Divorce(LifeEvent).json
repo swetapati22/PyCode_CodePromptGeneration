@@ -1,0 +1,35 @@
+{
+    "Divorce(LifeEvent)": {
+        "description": [
+            "A Divorce event, a subtype of LifeEvent, refers to the legal dissolution of a marriage between two individuals. Example triggers include 'divorce', 'filed for divorce', and 'sued for divorce'.",
+            "This event is characterized by the formal ending of a marital relationship, often involving legal proceedings. Key characteristics include the involvement of legal terms and the mention of marital dissolution.",
+            "Unlike the Marry event, which signifies the beginning of a marital relationship, the Divorce event marks its end. Triggers such as 'married' or 'wedding' are indicative of the Marry event, not the Divorce event.",
+            "The Divorce event often involves legal actions and can include references to court proceedings, legal filings, and terms like 'irreconcilable differences'.",
+            "Outcomes of a Divorce event typically include the separation of the individuals involved, legal settlements, and changes in marital status. This is distinct from events like Injure or Die, which involve physical harm or death."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument specifies the location where the divorce proceedings or related events occur. This can include cities, courts, or any relevant geographical location. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "The 'place' argument is crucial for understanding the jurisdiction and legal context of the divorce. It helps in identifying the legal environment and potential legal implications.",
+            "In some cases, the 'place' might be implied rather than explicitly stated. For instance, 'filed for divorce in the local court' implies a specific but unnamed location.",
+            "Unlike the 'place' argument in events like Injure, which might refer to the site of an incident, the 'place' in a Divorce event is typically a legal or administrative location.",
+            "Edge cases might include mentions of multiple locations, such as 'filed for divorce in both New York and Los Angeles'. In such cases, both locations should be annotated."
+        ],
+        "person": [
+            "The 'person' argument identifies the individuals involved in the divorce. This includes both parties seeking the divorce. For example, 'Hunter' and 'star' in 'Hunter filed for divorce from the star'.",
+            "The 'person' argument is essential for understanding who is directly affected by the divorce. It provides clarity on the relationship dynamics and the individuals' roles.",
+            "In some texts, the 'person' might be referred to indirectly, such as 'his wife' or 'her husband'. These references should still be annotated as they indicate the involved parties.",
+            "Unlike the 'person' argument in events like Die, which might refer to victims or agents, the 'person' in a Divorce event specifically refers to the spouses involved in the marital dissolution.",
+            "Edge cases might include mentions of additional individuals, such as lawyers or children, but the primary focus should remain on the divorcing parties."
+        ],
+        "time": [
+            "The 'time' argument specifies when the divorce proceedings or related events occur. This can include specific dates, months, or general time frames. For example, 'in September' in 'sued for divorce in September'.",
+            "The 'time' argument is important for establishing the timeline of the divorce process. It helps in understanding the sequence of events and the duration of the proceedings.",
+            "In some cases, the 'time' might be implied rather than explicitly stated. For instance, 'filed for divorce last year' implies a specific but unnamed time frame.",
+            "Unlike the 'time' argument in events like BeBorn, which might refer to birth dates, the 'time' in a Divorce event typically refers to the period of legal actions or marital dissolution.",
+            "Edge cases might include mentions of multiple time frames, such as 'filed for divorce in both January and March'. In such cases, both time frames should be annotated."
+        ]
+    }
+}

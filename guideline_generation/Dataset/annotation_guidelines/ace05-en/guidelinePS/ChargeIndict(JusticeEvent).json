@@ -1,0 +1,42 @@
+{
+    "ChargeIndict(JusticeEvent)": {
+        "description": [
+            "The ChargeIndict event type refers to the formal accusation or indictment of an individual or entity by a legal authority, typically involving criminal charges. Example triggers include 'charges', 'indictment', and 'filed'.",
+            "This event type is characterized by the involvement of legal authorities such as prosecutors or adjudicators, and the presence of a defendant who is being accused. The scope includes any formal legal action that initiates criminal proceedings.",
+            "Unlike the ArrestJail event, which involves the physical apprehension of a suspect, the ChargeIndict event focuses on the formal legal process of accusing someone of a crime. Triggers like 'arrested' are indicative of ArrestJail, not ChargeIndict.",
+            "The ChargeIndict event differs from the Convict event, which involves a legal determination of guilt. While ChargeIndict involves the initiation of charges, Convict involves the conclusion of a trial with a guilty verdict. Triggers like 'convicted' are indicative of Convict, not ChargeIndict.",
+            "In comparison to the Sentence event, which involves the imposition of a penalty following a conviction, the ChargeIndict event is concerned with the initial accusation. Triggers like 'sentenced' are indicative of Sentence, not ChargeIndict."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the legal authority or body responsible for overseeing the legal process of charging or indicting the defendant. This can include judges, magistrates, or juries. For example, in 'The jury indicted the defendant', 'jury' is the adjudicator.",
+            "Adjudicators play a crucial role in ensuring that the legal process is followed correctly and that the charges are formally presented. For instance, 'The magistrate issued the charges' identifies 'magistrate' as the adjudicator.",
+            "In some cases, the adjudicator may be a collective body, such as a grand jury. For example, 'The grand jury handed down the indictment' uses 'grand jury' as the adjudicator.",
+            "Unlike prosecutors, who actively pursue the charges, adjudicators are responsible for the legal oversight and formal declaration of charges. For example, 'The judge read the charges' identifies 'judge' as the adjudicator.",
+            "Adjudicators are distinct from defendants and prosecutors, as they are neutral parties in the legal process. For example, 'The court issued the indictment' uses 'court' as the adjudicator."
+        ],
+        "prosecutor": [
+            "The prosecutor is the legal representative who brings the charges against the defendant. This can include district attorneys, state attorneys, or federal prosecutors. For example, in 'The district attorney filed the charges', 'district attorney' is the prosecutor.",
+            "Prosecutors are responsible for presenting the case against the defendant and seeking a formal indictment. For instance, 'The state attorney pursued the charges' identifies 'state attorney' as the prosecutor.",
+            "In some cases, multiple prosecutors may be involved in bringing the charges. For example, 'The justice department and the SEC filed charges' uses 'justice department' and 'SEC' as prosecutors.",
+            "Unlike adjudicators, who oversee the legal process, prosecutors actively work to establish the case against the defendant. For example, 'The prosecutor presented the evidence' identifies 'prosecutor' as the prosecutor.",
+            "Prosecutors are distinct from defendants and adjudicators, as they are advocates for the state or government in the legal process. For example, 'The federal prosecutor indicted the suspect' uses 'federal prosecutor' as the prosecutor."
+        ],
+        "defendant": [
+            "The defendant is the individual or entity that is being formally accused or indicted in the legal process. For example, in 'The defendant was charged with theft', 'defendant' is the person being accused.",
+            "Defendants are the primary subjects of the ChargeIndict event, as they are the ones facing the legal accusations. For instance, 'The company was indicted for fraud' identifies 'company' as the defendant.",
+            "In some cases, there may be multiple defendants involved in the charges. For example, 'The officials were charged with corruption' uses 'officials' as the defendants.",
+            "Unlike prosecutors and adjudicators, defendants are the ones who must respond to the charges and defend themselves in court. For example, 'The accused pleaded not guilty' identifies 'accused' as the defendant.",
+            "Defendants are distinct from prosecutors and adjudicators, as they are the ones being accused rather than the ones bringing or overseeing the charges. For example, 'The suspect was indicted' uses 'suspect' as the defendant."
+        ],
+        "place": [
+            "The place refers to the location where the charges or indictment are filed or where the legal proceedings take place. For example, in 'The charges were filed in New York', 'New York' is the place.",
+            "Places are important in the ChargeIndict event as they provide context for the jurisdiction and venue of the legal proceedings. For instance, 'The indictment was issued in the federal court' identifies 'federal court' as the place.",
+            "In some cases, the place may refer to a specific court or legal institution. For example, 'The charges were brought in the district court' uses 'district court' as the place.",
+            "Unlike the defendant, prosecutor, and adjudicator, the place is a location rather than a person or entity involved in the legal process. For example, 'The trial will be held in Los Angeles' identifies 'Los Angeles' as the place.",
+            "Places are distinct from other arguments as they provide geographical and jurisdictional context for the ChargeIndict event. For example, 'The indictment was filed in the Supreme Court' uses 'Supreme Court' as the place."
+        ]
+    }
+}

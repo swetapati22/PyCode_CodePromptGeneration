@@ -1,0 +1,12 @@
+{
+    "Extradite(JusticeEvent)": {
+        "description": "An Extradite event involves the formal process of transferring a person from one jurisdiction to another for the purpose of facing legal proceedings or serving a sentence. Key characteristics include the involvement of a person being transferred, the origin and destination jurisdictions, and an agent facilitating the transfer, typically initiated by legal or governmental authorities. This event is distinct from ReleaseParole, ChargeIndict, and Execute events, focusing specifically on the physical relocation of the individual. Example triggers include 'extradite', 'extradition', and 'extradited'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "origin": "The 'origin' argument refers to the location from which the person is being extradited. This can be a country, state, or any legal jurisdiction, such as 'France' in 'extradited from France'. It indicates the jurisdiction relinquishing custody, and can sometimes be inferred from context.",
+            "destination": "The 'destination' argument refers to the location to which the person is being extradited. This can be a country, state, or any legal jurisdiction, such as 'U.S.' in 'extradited to the U.S.'. It indicates where the person will face legal proceedings or serve a sentence.",
+            "person": "The 'person' argument refers to the individual being extradited. This can be identified by name, role, or pronoun, such as 'him' in 'extradited him'. The person is central to the event as they are the one being transferred.",
+            "agent": "The 'agent' argument refers to the entity facilitating the extradition, typically a legal or governmental authority, such as 'government' in 'extradited by the government'. The agent can be a country, state, organization, or any legal authority responsible for carrying out the extradition."
+        }
+    }
+}

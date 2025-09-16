@@ -1,0 +1,11 @@
+{
+    "PhoneWrite(ContactEvent)": {
+        "description": "PhoneWrite(ContactEvent) is a subtype of ContactEvent that involves remote communication through phone calls, letters, or emails. Triggers for this event include terms like 'correspondence', 'letters', 'spoke', 'calling', and 'sent', indicating an exchange of information between entities. Key characteristics include an initiating entity, a receiving entity, and sometimes a specified location. Unlike Meet events, which involve physical presence, PhoneWrite events are characterized by non-physical, remote exchanges of information.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "entity": "The 'entity' argument refers to the individuals or groups involved in the communication, such as the sender and receiver. For example, in 'Welch specifically is seeking performance evaluations, correspondence between his estranged wife and partners', 'wife' and 'partners' are the entities involved. This argument is crucial for identifying the participants in the communication.",
+            "place": "The 'place' argument specifies the location where the communication occurs or is directed to. For instance, in 'I -- I'm calling you from New York City, Paul, it's a pleasure to meet you', 'New York City' is the place where the call is made from. This argument provides geographical context to the event.",
+            "time": "The 'time' argument specifies when the communication event takes place. For example, in 'He sent several letters to the police and the media during that time', 'during that time' indicates the period when the letters were sent. This argument provides temporal context to the event."
+        }
+    }
+}

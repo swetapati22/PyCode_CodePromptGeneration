@@ -1,0 +1,35 @@
+{
+    "Pardon(JusticeEvent)": {
+        "description": [
+            "A Pardon event involves an official decision by an adjudicator to forgive or excuse a defendant from a legal penalty or punishment. Example triggers include 'pardoned', 'forgave', and 'excused'.",
+            "The key characteristic of a Pardon event is the formal absolution of a defendant by an authority figure, often in a legal or governmental context. This event typically results in the defendant being released from punishment or having their sentence reduced.",
+            "Unlike an Acquit event, which involves a legal determination of innocence, a Pardon event does not necessarily imply that the defendant was found not guilty. Instead, it is an act of clemency that forgives the defendant's actions.",
+            "Triggers such as 'appealed' or 'acquitted' are indicative of Appeal or Acquit events, respectively, and not Pardon events. A Pardon event specifically involves the act of forgiving or excusing a defendant by an adjudicator.",
+            "The outcome of a Pardon event is the mitigation or elimination of the defendant's punishment, which distinguishes it from other JusticeEvents like Appeal, where the focus is on challenging a legal decision, or Acquit, where the defendant is declared not guilty."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator in a Pardon event is the authority figure or official who grants the pardon. This could be a head of state, a governor, or another high-ranking official. For example, in the sentence 'The President pardoned the prisoner,' the President is the adjudicator.",
+            "The role of the adjudicator is crucial as they possess the legal or official power to forgive the defendant. Without an adjudicator, a Pardon event cannot occur.",
+            "In some cases, the adjudicator may be a collective body, such as a parole board or a council. For instance, 'The parole board pardoned the inmate' identifies the parole board as the adjudicator.",
+            "Unlike a judge in an Acquit event, the adjudicator in a Pardon event does not determine guilt or innocence but rather exercises clemency. For example, 'The governor pardoned the convict' shows the governor acting as the adjudicator.",
+            "Edge cases may include situations where the adjudicator's identity is implied but not explicitly stated. For example, 'The prisoner was pardoned last week' implies an adjudicator without naming them directly."
+        ],
+        "place": [
+            "The place in a Pardon event refers to the location where the pardon is granted or where the defendant is located. For example, in 'The governor of California pardoned the inmate,' California is the place.",
+            "The place can provide context about the jurisdiction or the legal authority under which the pardon is granted. For instance, 'In France, the President pardoned the activist' identifies France as the place.",
+            "In some cases, the place may be a specific institution or facility, such as a prison or a court. For example, 'At the state penitentiary, the warden pardoned the prisoner' identifies the penitentiary as the place.",
+            "Unlike the place in an Appeal event, which often refers to the location of a court or legal proceeding, the place in a Pardon event is more about the jurisdiction or the setting of the clemency act. For example, 'In the United States, the President issued a pardon' shows the country as the place.",
+            "Edge cases may include situations where the place is not explicitly mentioned but can be inferred from context. For example, 'The prisoner was pardoned last week' might imply a specific country or state."
+        ],
+        "defendant": [
+            "The defendant in a Pardon event is the individual who receives the pardon. This person is typically someone who has been convicted of a crime or is serving a sentence. For example, in 'The governor pardoned the prisoner,' the prisoner is the defendant.",
+            "The role of the defendant is central to the Pardon event as they are the recipient of the clemency. Without a defendant, there is no one to pardon.",
+            "In some cases, the defendant may be a group of individuals. For instance, 'The President pardoned all the political prisoners' identifies multiple defendants.",
+            "Unlike the plaintiff in an Appeal event, who initiates the appeal, the defendant in a Pardon event is the passive recipient of the pardon. For example, 'The convict was pardoned by the governor' shows the convict as the defendant.",
+            "Edge cases may include situations where the defendant's identity is implied but not explicitly stated. For example, 'A pardon was granted last week' implies there is a defendant who received the pardon."
+        ]
+    }
+}

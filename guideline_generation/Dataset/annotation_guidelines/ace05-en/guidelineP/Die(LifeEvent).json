@@ -1,0 +1,56 @@
+{
+    "Die(LifeEvent)": {
+        "description": [
+            "The 'Die' event refers to the occurrence of death, typically involving one or more individuals ceasing to live. This event can be triggered by various causes such as violence, accidents, natural causes, or other fatal incidents. Example triggers include 'killed', 'died', 'fallen', 'dead', and 'perished'.",
+            "A 'Die' event is characterized by the end of life of a person or group of people. It can occur in various contexts such as warfare, accidents, or natural disasters. Triggers for this event include words like 'killed', 'died', 'slain', 'perished', and 'expired'.",
+            "The 'Die' event captures instances where individuals lose their lives due to different circumstances. This event is marked by terms such as 'killed', 'died', 'fallen', 'dead', and 'perished', indicating the cessation of life.",
+            "In the context of event extraction, a 'Die' event signifies the death of one or more individuals. This event can be identified by triggers like 'killed', 'died', 'fallen', 'dead', and 'perished', which denote the occurrence of death.",
+            "The 'Die' event involves the death of individuals, often highlighted by specific triggers such as 'killed', 'died', 'fallen', 'dead', and 'perished'. This event can occur due to various reasons including violence, accidents, or natural causes."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the death event occurred. It can include specific dates, times of day, or relative time expressions. For example, 'Monday', 'at 3 PM', or 'yesterday'.",
+            "In a 'Die' event, the 'time' argument indicates the temporal context of the death. This can be a precise timestamp or a more general time frame. Examples include 'last night', 'during the battle', or 'in the early hours'.",
+            "The 'time' argument provides the temporal information related to the death event. It can be a specific date, time, or a relative period. Examples are 'on January 1st', 'at dawn', or 'recently'.",
+            "For the 'Die' event, the 'time' argument denotes when the death occurred. This can be expressed in various forms such as 'this morning', 'last week', or 'at noon'.",
+            "The 'time' argument in a 'Die' event captures the timing of the death. It can be a specific point in time or a relative period. Examples include 'on Friday', 'at midnight', or 'a few hours ago'."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the death occurred. This can be a specific place or a general area. Examples include 'houses', 'hotel', or 'Persian Gulf'.",
+            "In a 'Die' event, the 'place' argument indicates the geographical location of the death. It can be a precise location or a broader area. Examples are 'center', 'battlefield', or 'city'.",
+            "The 'place' argument provides the spatial context of the death event. It can be a specific site or a general region. Examples include 'hospital', 'street', or 'village'.",
+            "For the 'Die' event, the 'place' argument denotes where the death took place. This can be a specific address or a general location. Examples are 'school', 'park', or 'river'.",
+            "The 'place' argument in a 'Die' event captures the location of the death. It can be a specific venue or a general area. Examples include 'office', 'forest', or 'mountain'."
+        ],
+        "instrument": [
+            "The 'instrument' argument specifies the means or tool used to cause the death. This can include weapons, vehicles, or other objects. Examples are 'missile', 'helicopters', or 'gun'.",
+            "In a 'Die' event, the 'instrument' argument indicates the object or method that caused the death. Examples include 'knife', 'bomb', or 'poison'.",
+            "The 'instrument' argument provides information about the means used to cause the death. This can be a weapon, vehicle, or other tool. Examples are 'car', 'explosive', or 'fire'.",
+            "For the 'Die' event, the 'instrument' argument denotes the tool or method used to cause the death. Examples include 'sword', 'tank', or 'chemical'.",
+            "The 'instrument' argument in a 'Die' event captures the means by which the death was caused. This can be a weapon, vehicle, or other object. Examples include 'rifle', 'airplane', or 'virus'."
+        ],
+        "victim": [
+            "The 'victim' argument specifies the individual(s) who died in the event. This can include specific names or general references. Examples are 'civilians', 'woman', or 'soldiers'.",
+            "In a 'Die' event, the 'victim' argument indicates the person or people who lost their lives. Examples include 'journalists', 'members', or 'comrades'.",
+            "The 'victim' argument provides information about the deceased individuals. This can be specific names or general terms. Examples are 'children', 'workers', or 'patients'.",
+            "For the 'Die' event, the 'victim' argument denotes the individuals who died. This can be specific people or groups. Examples include 'students', 'residents', or 'officers'.",
+            "The 'victim' argument in a 'Die' event captures the identity of the deceased. This can be specific names or general references. Examples include 'family', 'crew', or 'passengers'."
+        ],
+        "person": [
+            "The 'person' argument specifies an individual related to the death event, often someone who is mentioned in the context of the deceased. Examples include 'comrades', 'witnesses', or 'relatives'.",
+            "In a 'Die' event, the 'person' argument indicates someone associated with the death, such as a witness or a related individual. Examples are 'friends', 'colleagues', or 'neighbors'.",
+            "The 'person' argument provides information about individuals connected to the death event. This can include those who are affected or involved. Examples include 'family members', 'bystanders', or 'rescuers'.",
+            "For the 'Die' event, the 'person' argument denotes individuals related to the deceased or the event. Examples include 'partners', 'companions', or 'associates'.",
+            "The 'person' argument in a 'Die' event captures individuals who are mentioned in relation to the death. This can be those who are affected or involved. Examples include 'friends', 'coworkers', or 'acquaintances'."
+        ],
+        "agent": [
+            "The 'agent' argument specifies the entity responsible for causing the death. This can include individuals, groups, or organizations. Examples are 'coalition', 'forces', or 'attacker'.",
+            "In a 'Die' event, the 'agent' argument indicates who or what caused the death. This can be a person, group, or entity. Examples include 'soldier', 'terrorist', or 'government'.",
+            "The 'agent' argument provides information about the cause of the death. This can be an individual, group, or organization. Examples are 'police', 'militia', or 'gang'.",
+            "For the 'Die' event, the 'agent' argument denotes the entity responsible for the death. This can be a person, group, or organization. Examples include 'criminal', 'army', or 'rebel'.",
+            "The 'agent' argument in a 'Die' event captures the entity that caused the death. This can be an individual, group, or organization. Examples include 'assailant', 'troops', or 'cartel'."
+        ]
+    }
+}

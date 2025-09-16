@@ -1,0 +1,35 @@
+{
+    "Convict(JusticeEvent)": {
+        "description": [
+            "A Convict event involves a formal declaration by an adjudicator that a defendant is guilty of a criminal offense. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+            "This event type is characterized by the presence of a legal authority (adjudicator) who makes the judgment, a defendant who is being judged, and a place where the judgment occurs.",
+            "Unlike the Sentence event, which focuses on the punishment given to a defendant, the Convict event focuses on the determination of guilt. For example, 'sentenced to five years' is indicative of a Sentence event, not a Convict event.",
+            "Triggers such as 'extradition' or 'arrested' are indicative of Extradite and ArrestJail events, respectively, and not Convict events. The Convict event specifically involves the legal determination of guilt.",
+            "The outcome of a Convict event is the formal recognition of the defendant's guilt, which may lead to subsequent events like sentencing. For instance, 'convicted of fraud' indicates a Convict event, while 'sentenced to prison' indicates a Sentence event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the legal authority or body that declares the defendant guilty. This can be a judge, jury, or court. For example, in 'The jury convicted him of theft', the jury is the adjudicator.",
+            "The role of the adjudicator is crucial as they are responsible for the legal judgment. In 'Judge Smith found her guilty', Judge Smith is the adjudicator.",
+            "In some cases, the adjudicator may be a collective body, such as a panel of judges or a jury. For instance, 'The panel of judges convicted the defendant' involves a collective adjudicator.",
+            "The adjudicator must be a recognized legal authority. Unlike a witness or prosecutor, the adjudicator has the power to make a legal judgment. For example, 'The prosecutor accused him' does not indicate an adjudicator.",
+            "Edge cases may involve non-traditional adjudicators, such as a tribunal or a special commission. For example, 'The tribunal found the defendant guilty' involves a tribunal as the adjudicator."
+        ],
+        "place": [
+            "The place refers to the location where the conviction occurs. This can be a city, court, or country. For example, in 'He was convicted in New York', New York is the place.",
+            "The place is important as it provides context for the legal jurisdiction. In 'The court in Los Angeles convicted her', Los Angeles is the place.",
+            "In some cases, the place may be a specific building or institution, such as a courthouse. For instance, 'The conviction took place at the district court' involves a specific place.",
+            "Unlike the origin or destination in an Extradite event, the place in a Convict event is where the legal judgment is made. For example, 'He was extradited from France' does not indicate a Convict event place.",
+            "Edge cases may involve broader locations, such as a country or region. For example, 'He was convicted in the United States' involves a country as the place."
+        ],
+        "defendant": [
+            "The defendant is the individual or entity being judged and found guilty. For example, in 'The court convicted John Doe', John Doe is the defendant.",
+            "The role of the defendant is central to the Convict event as they are the subject of the legal judgment. In 'She was found guilty', 'she' is the defendant.",
+            "In some cases, the defendant may be a group of individuals or an organization. For instance, 'The company was convicted of fraud' involves a company as the defendant.",
+            "Unlike the person in an ArrestJail event, the defendant in a Convict event is specifically being judged for guilt. For example, 'The police arrested him' does not indicate a Convict event defendant.",
+            "Edge cases may involve defendants who are not physically present, such as in absentia convictions. For example, 'He was convicted in absentia' involves a defendant who is not present."
+        ]
+    }
+}

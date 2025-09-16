@@ -1,0 +1,11 @@
+{
+    "Sentence(JusticeEvent)": {
+        "description": "A 'Sentence' event in the context of JusticeEvent refers to the formal declaration by a judicial authority regarding the punishment assigned to a defendant after being found guilty of a crime. This event involves a judicial authority (adjudicator) issuing the punishment, the defendant receiving the punishment, and the location where the sentencing occurs. It is distinct from events like 'ChargeIndict', which involves formal accusations, and 'ReleaseParole', which involves release from punishment. The outcome of a 'Sentence' event can range from fines to imprisonment or even death.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The 'adjudicator' in a 'Sentence' event refers to the judicial authority responsible for issuing the sentence, such as a judge, court, or tribunal. This role is crucial as they determine the punishment based on legal proceedings. The adjudicator can be a single judge, a collective body like a jury, or a panel of judges. It is distinct from the prosecutor or defense attorney, who argue the case rather than issue the sentence. In some cases, the adjudicator may be implied rather than explicitly stated.",
+            "place": "The 'place' in a 'Sentence' event refers to the location where the sentencing occurs, typically a court or judicial venue. This can include broader geographical locations like cities, states, or countries, as well as specific buildings or institutions such as 'The Supreme Court' or 'the district court'. The place is distinct from the location of the crime or the residence of the defendant and specifically refers to where the sentencing is declared. Edge cases may include virtual or remote sentencing.",
+            "defendant": "The 'defendant' in a 'Sentence' event refers to the individual or entity being sentenced, who has been found guilty of a crime and is receiving the punishment. The defendant is the central figure in the sentencing process. There may be multiple defendants sentenced simultaneously, and the defendant is distinct from other participants like the victim or witnesses. Edge cases may include minors or entities such as corporations."
+        }
+    }
+}

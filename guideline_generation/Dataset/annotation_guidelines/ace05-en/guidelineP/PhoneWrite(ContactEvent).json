@@ -1,0 +1,35 @@
+{
+    "PhoneWrite(ContactEvent)": {
+        "description": [
+            "PhoneWrite is a type of ContactEvent where communication occurs through written or spoken means, such as letters, emails, phone calls, or other forms of correspondence.",
+            "The event typically involves an exchange of information between two or more entities, often specifying the place and time of the communication.",
+            "Triggers for this event type include words like 'correspondence', 'delivered', 'spoke', 'calling', and 'letters'.",
+            "The scope of this event includes any form of written or verbal communication, regardless of the medium used.",
+            "Key characteristics include the presence of entities involved in the communication, the location where the communication takes place, and the time when it occurs."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the individuals or groups involved in the communication. This can include the sender, receiver, or any other participants.",
+            "Entities are crucial for understanding who is involved in the communication. They can be people, organizations, or even abstract entities like 'media'.",
+            "Examples of entities include 'wife', 'partners', 'private', 'parents', 'I', 'you', 'He', 'police', and 'media'.",
+            "In cases where multiple entities are involved, each should be identified and annotated separately.",
+            "Edge cases include situations where the entity is implied but not explicitly mentioned; in such cases, context should be used to infer the entity."
+        ],
+        "place": [
+            "The 'place' argument refers to the location where the communication takes place or is directed to. This can be a physical location or a more abstract place.",
+            "Places are important for understanding the context and setting of the communication. They can range from specific addresses to broader regions.",
+            "Examples of places include 'office', 'africa', 'asia', 'middle east', 'hospital', and 'New York City'.",
+            "In cases where the place is not explicitly mentioned, it may be inferred from the context or other parts of the text.",
+            "Edge cases include virtual places like 'online' or 'via email', which should be annotated as places if they provide context to the communication."
+        ],
+        "time": [
+            "The 'time' argument refers to when the communication takes place. This can be a specific time, date, or a more general time frame.",
+            "Time is essential for understanding the sequence and timing of events. It helps in placing the communication within a temporal context.",
+            "Examples of time include specific dates like 'yesterday', 'during that time', or more general references like 'recently'.",
+            "In cases where the time is not explicitly mentioned, it may be inferred from the context or other parts of the text.",
+            "Edge cases include relative time references like 'last week' or 'next month', which should be annotated if they provide context to the communication."
+        ]
+    }
+}

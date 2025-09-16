@@ -1,0 +1,42 @@
+{
+    "Sue(JusticeEvent)": {
+        "description": [
+            "The 'Sue' event type, a subclass of 'JusticeEvent', involves a legal action where one party (the plaintiff) initiates a lawsuit against another party (the defendant) in a court of law. Example triggers include 'lawsuit', 'sued', and 'pursue'.",
+            "This event type is characterized by the formal process of bringing a legal claim to court, typically involving an adjudicator (e.g., judge) who oversees the case. Unlike 'ChargeIndict', which involves formal accusations by a prosecutor, 'Sue' focuses on civil disputes initiated by private parties.",
+            "Key characteristics of the 'Sue' event include the presence of a plaintiff and a defendant, and often a specific place where the lawsuit is filed. Unlike 'Extradite', which involves transferring a person across jurisdictions, 'Sue' is confined to the legal proceedings within a jurisdiction.",
+            "Triggers such as 'lawsuit' and 'sued' are indicative of the 'Sue' event type, whereas triggers like 'extradition' or 'release' are indicative of other JusticeEvent types such as 'Extradite' or 'ReleaseParole'.",
+            "The outcome of a 'Sue' event typically involves a legal judgment or settlement, distinguishing it from events like 'Execute', which result in the carrying out of a sentence, or 'Fine', which involves monetary penalties imposed by an adjudicator."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in a 'Sue' event refers to the individual or body responsible for overseeing the legal proceedings, such as a judge or a court. For example, in 'the settlement approved by the judge', the judge is the adjudicator.",
+            "The role of the adjudicator is crucial as they ensure the legal process is followed and make rulings on the case. Unlike the 'Prosecutor' in a 'ChargeIndict' event, the adjudicator remains neutral and does not represent either party.",
+            "In some cases, the adjudicator may be a panel or a specific court, as seen in 'the case was heard in the Supreme Court'. Here, 'Supreme Court' serves as the adjudicator.",
+            "The adjudicator's decisions can significantly impact the outcome of the lawsuit, such as approving settlements or dismissing cases. For instance, 'the judge dismissed the case due to lack of evidence'.",
+            "Edge cases include scenarios where the adjudicator is not explicitly mentioned but implied, such as 'the lawsuit was filed in federal court', where 'federal court' implies the presence of an adjudicator."
+        ],
+        "plaintiff": [
+            "The 'plaintiff' in a 'Sue' event is the party that initiates the lawsuit, seeking legal remedy for a grievance. For example, in 'the shareholders sued the company', 'shareholders' are the plaintiffs.",
+            "The plaintiff is essential as they bring the case to court, alleging harm or seeking enforcement of a right. Unlike the 'Defendant', who responds to the lawsuit, the plaintiff actively pursues the legal action.",
+            "Examples include individuals, groups, or organizations, such as 'the victims' families filed a lawsuit against the manufacturer'. Here, 'victims' families' are the plaintiffs.",
+            "In some cases, multiple plaintiffs may be involved, as seen in 'the employees and their union sued the corporation'. Both 'employees' and 'union' are plaintiffs.",
+            "Edge cases include scenarios where the plaintiff is not explicitly named but can be inferred, such as 'a class action lawsuit was filed', where the 'class' represents the plaintiffs."
+        ],
+        "defendant": [
+            "The 'defendant' in a 'Sue' event is the party against whom the lawsuit is filed. For example, in 'the company was sued by its employees', 'company' is the defendant.",
+            "The defendant's role is to respond to the allegations made by the plaintiff, often defending against the claims. Unlike the 'Plaintiff', the defendant is on the receiving end of the legal action.",
+            "Examples include individuals, companies, or entities, such as 'the government was sued by the citizens'. Here, 'government' is the defendant.",
+            "In some cases, multiple defendants may be involved, as seen in 'the lawsuit named several executives and the corporation as defendants'. Both 'executives' and 'corporation' are defendants.",
+            "Edge cases include scenarios where the defendant is not explicitly named but can be inferred, such as 'a lawsuit was filed against the organization', where 'organization' is the defendant."
+        ],
+        "place": [
+            "The 'place' in a 'Sue' event refers to the location where the lawsuit is filed or the court proceedings take place. For example, in 'the lawsuit was filed in Washington', 'Washington' is the place.",
+            "The place is significant as it determines the jurisdiction and legal framework under which the case is heard. Unlike 'Origin' or 'Destination' in an 'Extradite' event, 'place' in a 'Sue' event is where the legal action occurs.",
+            "Examples include cities, states, or specific courts, such as 'the case was heard in New York Supreme Court'. Here, 'New York Supreme Court' is the place.",
+            "In some cases, the place may be a broader region, as seen in 'the lawsuit was filed in federal court'. 'Federal court' indicates the place within the federal jurisdiction.",
+            "Edge cases include scenarios where the place is not explicitly mentioned but can be inferred, such as 'the lawsuit was filed', where the place is implied to be the relevant court or jurisdiction."
+        ]
+    }
+}

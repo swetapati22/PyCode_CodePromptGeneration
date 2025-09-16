@@ -1,0 +1,35 @@
+{
+    "Marry(LifeEvent)": {
+        "description": [
+            "The 'Marry' event refers to the formal union of two individuals in a marriage ceremony. This event can be triggered by words such as 'marry', 'wed', 'married', or 'marriage'.",
+            "A 'Marry' event involves two people entering into a legally or culturally recognized union. The event is often associated with a ceremony and can be identified by triggers like 'marry', 'wed', 'married', or 'marriage'.",
+            "The 'Marry' event signifies the act of two individuals becoming spouses. Common triggers include 'marry', 'wed', 'married', and 'marriage'. This event is a subset of LifeEvent.",
+            "In the context of event extraction, a 'Marry' event captures the occurrence of a marriage between two individuals. Triggers for this event include 'marry', 'wed', 'married', and 'marriage'.",
+            "The 'Marry' event is defined as the joining of two people in matrimony, typically marked by a ceremony. Triggers for this event include 'marry', 'wed', 'married', and 'marriage'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the marriage ceremony takes place. This can be a specific venue, city, or even a general area. For example, 'home', 'temple', or 'Gracie Mansion'.",
+            "In a 'Marry' event, the 'place' argument identifies the geographical location of the marriage. It can be a building, city, or any location where the event occurs. Examples include 'home', 'temple', and 'Los Angeles'.",
+            "The 'place' argument denotes the venue or location where the marriage is conducted. This can range from specific buildings to broader locations. Examples are 'home', 'temple', and 'Gracie Mansion'.",
+            "For the 'Marry' event, the 'place' argument specifies where the marriage ceremony is held. This could be a specific place like 'home' or a general location like 'temple'.",
+            "The 'place' argument in a 'Marry' event captures the location of the marriage ceremony. It can be a specific venue or a general area. Examples include 'home', 'temple', and 'Gracie Mansion'."
+        ],
+        "person": [
+            "The 'person' argument refers to the individuals who are getting married. This includes both parties involved in the marriage. Examples include 'daughter', 'Raja Ahmad Sharir Iskandar', 'Rudolph Giuliani', and 'companion'.",
+            "In a 'Marry' event, the 'person' argument identifies the individuals entering into the marriage. This includes both spouses. Examples are 'she', 'fiance', 'Stewart', and 'Alana Hamilton'.",
+            "The 'person' argument denotes the people who are being married in the event. This includes both participants in the marriage. Examples include 'daughter', 'Raja Ahmad Sharir Iskandar', 'Rudolph Giuliani', and 'companion'.",
+            "For the 'Marry' event, the 'person' argument specifies the individuals who are getting married. This includes both parties involved. Examples are 'she', 'fiance', 'Stewart', and 'Alana Hamilton'.",
+            "The 'person' argument in a 'Marry' event captures the individuals who are entering into the marriage. This includes both spouses. Examples include 'daughter', 'Raja Ahmad Sharir Iskandar', 'Rudolph Giuliani', and 'companion'."
+        ],
+        "time": [
+            "The 'time' argument refers to the date or time period when the marriage takes place. This can be a specific date, a year, or a general time frame. Examples include 'May 24', '1979', and 'nearly 13 years'.",
+            "In a 'Marry' event, the 'time' argument identifies when the marriage occurs. This can be a specific date, year, or duration. Examples are 'May 24', '1979', and 'nearly 13 years'.",
+            "The 'time' argument denotes the temporal aspect of the marriage event. This can include specific dates, years, or general time periods. Examples include 'May 24', '1979', and 'nearly 13 years'.",
+            "For the 'Marry' event, the 'time' argument specifies when the marriage ceremony takes place. This can be a specific date, year, or a general time frame. Examples are 'May 24', '1979', and 'nearly 13 years'.",
+            "The 'time' argument in a 'Marry' event captures the date or time period of the marriage. This can be a specific date, a year, or a general duration. Examples include 'May 24', '1979', and 'nearly 13 years'."
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Meet(ContactEvent)": {
+        "description": [
+            "A 'Meet' event, a subtype of 'ContactEvent', involves two or more entities coming together at a specific place and time for a discussion, negotiation, or other forms of interaction. Example triggers include 'talks', 'meetings', 'gathering', and 'reunited'.",
+            "The 'Meet' event is characterized by the physical or virtual presence of entities at a designated location and time. Unlike 'PhoneWrite' events, which involve communication through writing or phone calls, 'Meet' events require the entities to be in the same place or connected through a meeting platform.",
+            "Triggers for 'Meet' events often include words like 'conference', 'summit', 'session', and 'assembly'. These events are typically formal and involve discussions or negotiations. For instance, 'conference' indicates a formal meeting for discussion, while 'summit' refers to a high-level meeting between leaders.",
+            "In 'Meet' events, the outcome is usually a decision, agreement, or exchange of information. This is different from 'PhoneWrite' events, where the outcome is typically the transmission of information through written or spoken communication.",
+            "Unlike 'Visit' events, which focus on the act of going to a place, 'Meet' events emphasize the interaction between entities at a specific place and time. For example, 'meeting' implies a planned interaction, whereas 'visit' implies going to see a place or person without necessarily involving a formal interaction."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the individuals or groups participating in the 'Meet' event. These can be people, organizations, or other entities. For example, in 'Shalom was to fly on to London for talks with British Prime Minister Tony Blair and Foreign Secretary Jack Straw', the entities are 'Shalom', 'Tony Blair', and 'Jack Straw'.",
+            "Entities are crucial in 'Meet' events as they are the participants engaging in the interaction. In the sentence 'Vivendi also is holding talks with Viacom, MGM and other buyers', the entities are 'Vivendi', 'Viacom', 'MGM', and 'buyers'.",
+            "Entities can be explicitly named individuals or groups, or they can be referred to by their roles or titles. For instance, 'Egyptian envoys have been holding meetings in Gaza and Damascus with leaders of the militant groups' includes 'envoys' and 'leaders' as entities.",
+            "In some cases, entities may be implied or referred to collectively. For example, 'they're the crew of the 'uss harry s. truman.' they have reunited with their families and friends' includes 'crew', 'families', and 'friends' as entities.",
+            "Entities are not limited to human participants; they can also include organizations or other collective groups. For example, 'at a white house gathering of aids activists and lawmakers from around the world' includes 'activists' and 'lawmakers' as entities."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the 'Meet' event occurs. This can be a city, building, or any other geographical location. For example, in 'Shalom was to fly on to London for talks', the place is 'London'.",
+            "Places are important in 'Meet' events as they provide the context for where the interaction takes place. In 'Vivendi also is holding talks with Viacom, MGM and other buyers', the place is not explicitly mentioned, but it is implied to be a location where these entities can meet.",
+            "The place can be a specific venue or a broader geographical area. For instance, 'Egyptian envoys have been holding meetings in Gaza and Damascus' includes 'Gaza' and 'Damascus' as places.",
+            "In some cases, the place may be a well-known location associated with the event. For example, 'at a white house gathering of aids activists and lawmakers' includes 'white house' as the place.",
+            "Places can also be implied through context. For example, 'they have reunited with their families and friends, at the aircraft carrier's home port in norfolk, virginia' includes 'port' as the place, with 'norfolk, virginia' providing additional context."
+        ],
+        "time": [
+            "The 'time' argument specifies when the 'Meet' event takes place. This can be a specific date, time of day, or a more general time frame. For example, 'in recent days' in 'Egyptian envoys have been holding meetings in Gaza and Damascus in recent days' indicates the time.",
+            "Time is crucial in 'Meet' events as it provides the temporal context for the interaction. In 'at a white house gathering of aids activists and lawmakers from around the world, the president said hir plan could prevent 7 million new hiv infections -- and treat at least 2 million people over the next decade', the time is implied to be the present or near future.",
+            "The time can be explicitly stated or implied through context. For instance, 'they have reunited with their families and friends, at the aircraft carrier's home port in norfolk, virginia' implies the time is recent or current.",
+            "In some cases, the time may be a specific event or period. For example, 'Shalom was to fly on to London for talks' implies the time is in the near future when Shalom arrives in London.",
+            "Time can also be indicated by phrases that describe the duration or frequency of the event. For example, 'Vivendi also is holding talks with Viacom, MGM and other buyers' implies an ongoing or repeated event."
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "Convict(JusticeEvent)": {
+        "description": "A Convict event, a subtype of JusticeEvent, occurs when a legal authority formally declares an individual guilty of a crime. This event involves a legal adjudicator, such as a judge or jury, who delivers the verdict, resulting in a formal declaration of guilt and often leading to sentencing. It is distinct from other events like Sue, Fine, and Extradite, which involve initiating legal action, imposing monetary penalties, and transferring individuals between jurisdictions, respectively. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator in a Convict event is the legal authority responsible for delivering the guilty verdict, such as a judge, jury, or court. For example, 'Judge Shahid Rafiq' in 'Judge Shahid Rafiq found Ranjha Masih guilty' is the adjudicator. The adjudicator evaluates evidence and makes a legal determination of guilt, distinct from other legal roles like prosecutors or defense attorneys. In some cases, the adjudicator may be implied rather than explicitly stated.",
+            "place": "The place in a Convict event refers to the location where the guilty verdict is delivered, such as a city, court, or country. For example, 'Faisalabad' in 'in the industrial city of Faisalabad' is the place. The place provides context for the legal proceedings and indicates the jurisdiction of the adjudicator. It is distinct from the location of the crime or other related events and may sometimes be implied through context.",
+            "defendant": "The defendant in a Convict event is the individual or entity declared guilty of a crime. For example, 'Alfred Taubman' in 'a Manhattan jury convicted Alfred Taubman' is the defendant. The defendant is the primary subject of the Convict event, whose guilt is determined by the adjudicator. The defendant may be a group of individuals or referred to by a role or title rather than a personal name, and is distinct from other roles like witnesses or victims."
+        }
+    }
+}

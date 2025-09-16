@@ -1,0 +1,84 @@
+{
+    "TransferOwnership(TransactionEvent)": {
+        "description": [
+            "TransferOwnership is an event where the ownership of an item, property, or asset is transferred from one entity to another. This event is a subtype of TransactionEvent.",
+            "The TransferOwnership event involves a transaction where a giver or seller transfers an artifact or thing to a recipient or buyer, often involving a price or value exchange.",
+            "In a TransferOwnership event, the key elements include the entities involved in the transaction (giver, recipient, seller, buyer), the item being transferred (artifact, thing), and contextual details such as time and place.",
+            "TransferOwnership events can occur in various contexts, including sales, gifts, trades, and legal transfers, and can involve tangible or intangible items.",
+            "Triggers for TransferOwnership events include verbs like 'sell', 'buy', 'give', 'acquire', 'transfer', 'provide', and 'export', indicating the change of ownership."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that provides or transfers the ownership of the item to another entity. Example: In 'John gave Mary a book', John is the giver.",
+            "The giver is the person or organization that initiates the transfer of the item. Example: In 'The company donated computers to the school', the company is the giver.",
+            "The giver is the source of the item being transferred. Example: In 'She gifted her necklace to her sister', she is the giver.",
+            "The giver is the original owner of the item before the transfer. Example: In 'He handed over the keys to the new owner', he is the giver.",
+            "The giver is the party responsible for the transfer of ownership. Example: In 'The artist sold his painting to a collector', the artist is the giver."
+        ],
+        "thing": [
+            "The thing is the item or property being transferred from one entity to another. Example: In 'John gave Mary a book', the book is the thing.",
+            "The thing is the object or asset involved in the transfer. Example: In 'The company donated computers to the school', the computers are the thing.",
+            "The thing is the subject of the ownership change. Example: In 'She gifted her necklace to her sister', the necklace is the thing.",
+            "The thing is the item that is being handed over in the transaction. Example: In 'He handed over the keys to the new owner', the keys are the thing.",
+            "The thing is the entity that is being sold, bought, or transferred. Example: In 'The artist sold his painting to a collector', the painting is the thing."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives the item or property from the giver. Example: In 'John gave Mary a book', Mary is the recipient.",
+            "The recipient is the person or organization that gains ownership of the item. Example: In 'The company donated computers to the school', the school is the recipient.",
+            "The recipient is the new owner of the item after the transfer. Example: In 'She gifted her necklace to her sister', her sister is the recipient.",
+            "The recipient is the party that accepts the item being transferred. Example: In 'He handed over the keys to the new owner', the new owner is the recipient.",
+            "The recipient is the entity that benefits from the transfer of ownership. Example: In 'The artist sold his painting to a collector', the collector is the recipient."
+        ],
+        "time": [
+            "The time is the point or period when the transfer of ownership occurs. Example: In 'John gave Mary a book yesterday', yesterday is the time.",
+            "The time indicates when the transaction took place. Example: In 'The company donated computers to the school last month', last month is the time.",
+            "The time specifies the date or duration of the transfer event. Example: In 'She gifted her necklace to her sister on her birthday', on her birthday is the time.",
+            "The time provides the temporal context for the ownership change. Example: In 'He handed over the keys to the new owner at noon', at noon is the time.",
+            "The time marks the occurrence of the transfer event. Example: In 'The artist sold his painting to a collector in 2020', in 2020 is the time."
+        ],
+        "price": [
+            "The price is the amount of money or value exchanged for the item being transferred. Example: In 'John sold his car for $5000', $5000 is the price.",
+            "The price indicates the cost or value of the item in the transaction. Example: In 'The company sold its shares for $10 each', $10 each is the price.",
+            "The price represents the monetary value involved in the transfer. Example: In 'She auctioned her painting for a high price', a high price is the price.",
+            "The price is the financial consideration for the ownership change. Example: In 'He bought the house for a million dollars', a million dollars is the price.",
+            "The price is the agreed-upon amount for the transfer of the item. Example: In 'The artist sold his sculpture for $2000', $2000 is the price."
+        ],
+        "artifact": [
+            "The artifact is the specific item or property being transferred in the event. Example: In 'John gave Mary a book', the book is the artifact.",
+            "The artifact is the object or asset that changes ownership. Example: In 'The company donated computers to the school', the computers are the artifact.",
+            "The artifact is the tangible or intangible item involved in the transfer. Example: In 'She gifted her necklace to her sister', the necklace is the artifact.",
+            "The artifact is the subject of the transaction. Example: In 'He handed over the keys to the new owner', the keys are the artifact.",
+            "The artifact is the entity being sold, bought, or transferred. Example: In 'The artist sold his painting to a collector', the painting is the artifact."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that benefits from the transfer of ownership. Example: In 'John gave Mary a book', Mary is the beneficiary.",
+            "The beneficiary is the person or organization that gains from the transaction. Example: In 'The company donated computers to the school', the school is the beneficiary.",
+            "The beneficiary is the party that receives the advantage of the transfer. Example: In 'She gifted her necklace to her sister', her sister is the beneficiary.",
+            "The beneficiary is the entity that profits from the ownership change. Example: In 'He handed over the keys to the new owner', the new owner is the beneficiary.",
+            "The beneficiary is the recipient of the benefits from the transfer. Example: In 'The artist sold his painting to a collector', the collector is the beneficiary."
+        ],
+        "buyer": [
+            "The buyer is the entity that purchases or acquires the item in the transaction. Example: In 'John sold his car to Mary', Mary is the buyer.",
+            "The buyer is the person or organization that pays for the item being transferred. Example: In 'The company sold its shares to investors', the investors are the buyers.",
+            "The buyer is the new owner of the item after the purchase. Example: In 'She auctioned her painting to a collector', the collector is the buyer.",
+            "The buyer is the party that acquires the item in exchange for money or value. Example: In 'He bought the house from the previous owner', he is the buyer.",
+            "The buyer is the entity that completes the purchase in the transaction. Example: In 'The artist sold his sculpture to a museum', the museum is the buyer."
+        ],
+        "place": [
+            "The place is the location where the transfer of ownership occurs. Example: In 'John gave Mary a book at the park', the park is the place.",
+            "The place indicates the venue or site of the transaction. Example: In 'The company donated computers to the school in New York', New York is the place.",
+            "The place specifies the geographical context of the transfer event. Example: In 'She gifted her necklace to her sister at home', at home is the place.",
+            "The place provides the spatial context for the ownership change. Example: In 'He handed over the keys to the new owner at the office', at the office is the place.",
+            "The place marks the location of the transfer event. Example: In 'The artist sold his painting to a collector in Paris', in Paris is the place."
+        ],
+        "seller": [
+            "The seller is the entity that transfers or sells the item in the transaction. Example: In 'John sold his car to Mary', John is the seller.",
+            "The seller is the person or organization that provides the item being transferred. Example: In 'The company sold its shares to investors', the company is the seller.",
+            "The seller is the original owner of the item before the sale. Example: In 'She auctioned her painting to a collector', she is the seller.",
+            "The seller is the party that initiates the sale in the transaction. Example: In 'He sold the house to the new owner', he is the seller.",
+            "The seller is the entity responsible for the transfer of ownership. Example: In 'The artist sold his sculpture to a museum', the artist is the seller."
+        ]
+    }
+}

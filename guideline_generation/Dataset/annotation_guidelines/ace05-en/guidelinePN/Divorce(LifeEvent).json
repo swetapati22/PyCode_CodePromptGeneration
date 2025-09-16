@@ -1,0 +1,35 @@
+{
+    "Divorce(LifeEvent)": {
+        "description": [
+            "A Divorce event, a subtype of LifeEvent, refers to the legal dissolution of a marriage between two individuals. Example triggers include 'divorce', 'filed for divorce', 'sued for divorce', and 'ex-wife'.",
+            "This event is characterized by the formal ending of a marital relationship, often involving legal proceedings. Key characteristics include the involvement of legal actions and the presence of two individuals who were previously married.",
+            "Unlike other LifeEvents such as 'Marriage' or 'Birth', a Divorce event specifically denotes the termination of a marital relationship. Triggers like 'married' or 'gave birth' are indicative of other LifeEvents, not Divorce.",
+            "The scope of a Divorce event includes the legal and personal ramifications of ending a marriage, such as custody battles, division of assets, and emotional impact on the individuals involved.",
+            "Triggers and outcomes for Divorce events differ from related events like 'Separation' or 'Annulment'. While 'Separation' indicates a temporary or informal split, and 'Annulment' declares a marriage null and void, 'Divorce' signifies a formal and legal end to the marriage."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the geographical location where the divorce proceedings are taking place or have taken place. This could be a city, state, or country. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "The 'place' is important as it often determines the legal jurisdiction and applicable laws for the divorce proceedings. For instance, 'New York' in 'divorce case in New York'.",
+            "In some cases, the 'place' might be implied rather than explicitly stated. For example, 'filed for divorce in the local court' implies a specific location even if not named.",
+            "Edge cases include situations where the place is not directly related to the legal proceedings but mentioned in the context. For example, 'divorced while on vacation in Paris' where 'Paris' is not the legal jurisdiction.",
+            "Unlike events like 'TrialHearing' where the place is the courtroom or city of the trial, in Divorce events, the place is where the legal dissolution of marriage is processed."
+        ],
+        "person": [
+            "The 'person' argument refers to the individuals involved in the divorce. This includes both parties in the marriage. For example, 'Hunter' and 'star' in 'Hunter filed for divorce from the star'.",
+            "The 'person' argument is crucial as it identifies the individuals whose marital relationship is being legally dissolved. For instance, 'Anne-Marie' and 'Crichton' in 'Anne-Marie sued Crichton for divorce'.",
+            "In some cases, the 'person' might be referred to indirectly, such as 'his wife' or 'her husband'. For example, 'Rachel Hunter' and 'her estranged rocker husband Rod Stewart'.",
+            "Edge cases include situations where one of the individuals is not explicitly named but referred to by their relationship to the other person. For example, 'his ex-wife' in 'took out his ex-wife over a child support dispute'.",
+            "Unlike events like 'TrialHearing' where the 'person' might be a defendant or prosecutor, in Divorce events, the 'person' specifically refers to the individuals whose marriage is ending."
+        ],
+        "time": [
+            "The 'time' argument refers to the temporal aspect of the divorce event, indicating when the divorce proceedings are taking place or have taken place. For example, 'in September' in 'sued for divorce in September'.",
+            "The 'time' is important as it provides context and timeline for the divorce proceedings. For instance, 'four years after the couple separated' in 'filed for divorce four years after the couple separated'.",
+            "In some cases, the 'time' might be implied rather than explicitly stated. For example, 'on Tuesday' in 'filed for divorce on Tuesday'.",
+            "Edge cases include situations where the time is mentioned in a relative sense rather than a specific date. For example, 'after their marriage broke down' where the exact time is not specified.",
+            "Unlike events like 'Execute' where the 'time' might refer to the date of execution, in Divorce events, the 'time' refers to when the legal proceedings for ending the marriage are occurring."
+        ]
+    }
+}

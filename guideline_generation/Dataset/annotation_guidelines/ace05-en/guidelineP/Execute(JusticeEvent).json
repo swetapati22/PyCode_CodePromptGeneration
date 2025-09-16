@@ -1,0 +1,35 @@
+{
+    "Execute(JusticeEvent)": {
+        "description": [
+            "The Execute event refers to the act of carrying out a death sentence on an individual, typically as a result of a legal or judicial process. Example triggers include 'executed', 'put to death', and 'execution'.",
+            "This event type captures instances where a person is formally put to death by an authority, often following a legal trial. Key characteristics include the involvement of a judicial or governmental agent and the location where the execution takes place.",
+            "Execute events are characterized by the finality of the death sentence being carried out, often involving legal or state authorities. Triggers for this event include terms like 'execute', 'put to death', and 'execution'.",
+            "In the context of justice, the Execute event signifies the culmination of a legal process where a person is sentenced to death and the sentence is carried out. Common triggers are 'executed', 'put to death', and 'execution'.",
+            "The Execute event involves the act of legally ending a person's life as a form of punishment. This event is typically associated with legal and judicial contexts, with triggers such as 'executed', 'put to death', and 'execution'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the execution is carried out. This can be a specific state, country, or facility. For example, in 'executed in Texas', 'Texas' is the place.",
+            "This argument identifies the geographical location where the execution takes place. It is crucial for understanding the jurisdiction and legal context of the event. For instance, 'Indonesia' in 'execution in Indonesia' is the place.",
+            "The 'place' argument denotes the physical or administrative location of the execution. It helps in contextualizing the event within a specific legal framework. Example: 'state' in 'executed in the state'.",
+            "In the Execute event, the 'place' argument specifies where the death sentence is carried out. This can range from a country to a specific prison. For example, 'prison' in 'executed in the prison'.",
+            "The 'place' argument is used to pinpoint the exact location of the execution, providing context about the legal and administrative setting. For example, 'facility' in 'executed at the facility'."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is being executed. This can be identified by names, pronouns, or descriptors. For example, 'he' in 'he was executed'.",
+            "This argument captures the identity of the person subjected to the execution. It is essential for understanding who the victim of the execution is. Example: 'convicts' in 'execution of six convicts'.",
+            "The 'person' argument denotes the individual who is put to death. This can include specific names, roles, or general descriptors. For instance, 'killer' in 'the killer was put to death'.",
+            "In the Execute event, the 'person' argument identifies the individual receiving the death penalty. This can be a specific person or a group. Example: 'men' in 'execution of two men'.",
+            "The 'person' argument is used to specify the individual who is executed, providing clarity on the subject of the event. For example, 'them' in 'we execute them'."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity responsible for carrying out the execution. This can be a government, state, or specific officials. For example, 'Indonesia' in 'Indonesia will delay the execution'.",
+            "This argument identifies the authority or body that enforces the death sentence. It is crucial for understanding who is responsible for the execution. Example: 'we' in 'we execute them'.",
+            "The 'agent' argument denotes the organization or individuals who perform the execution. This can include state authorities, legal bodies, or specific officials. For instance, 'prosecutors' in 'prosecutors said'.",
+            "In the Execute event, the 'agent' argument specifies the entity that carries out the execution. This can be a country, state, or legal authority. Example: 'Texas' in 'executed in Texas'.",
+            "The 'agent' argument is used to identify the party responsible for the execution, providing context about the enforcing authority. For example, 'attorney general's office' in 'said Antasari Azhar, spokesman for the attorney general's office'."
+        ]
+    }
+}

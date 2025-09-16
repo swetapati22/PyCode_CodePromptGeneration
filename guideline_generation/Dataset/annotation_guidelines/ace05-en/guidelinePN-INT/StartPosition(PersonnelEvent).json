@@ -1,0 +1,13 @@
+{
+    "StartPosition(PersonnelEvent)": {
+        "description": "The StartPosition event type, a subclass of PersonnelEvent, refers to the commencement of a new role or position by an individual or group. This event captures the initiation of a professional or official role, often marked by a change in title, responsibilities, or location. Key triggers include terms like 'becoming', 'return', 'replace', 'head', 'was', 'appointed', 'elected', and 'promoted'. Unlike the EndPosition event, which signifies the conclusion of a role, the StartPosition event focuses on the beginning of a new role, establishing a new professional or official status for the person or entity involved, often accompanied by a change in duties or location.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "time": "The 'time' argument specifies when the person or entity started the new position, providing the temporal context of the event. It can include specific dates, historical periods, or relative time expressions like 'recently' or 'last month'. Example: 'since early 2001', 'from 1989 to 1998', 'in 1999'. Ambiguous time references should be clarified through context.",
+            "entity": "The 'entity' argument refers to the organization, company, or group associated with the new position, providing context on the affiliation of the person or entity. It can include specific units or departments within larger organizations. Example: 'U.N.', 'United Nations', 'US unit'. Inferred entities from the surrounding text should be specified if possible.",
+            "position": "The 'position' argument specifies the title or role that the person or entity is starting, clarifying the nature and responsibilities of the new position. It can include hierarchical or rank-related information. Example: 'chief executive', 'diplomat', 'chairman'. Vague or informal descriptions should be clarified through context.",
+            "place": "The 'place' argument indicates the location where the new position is being started, providing geographical context for the event. It can include broader regions or specific sites within a city. Example: 'Geneva', 'Paris', 'headquarters'. Ambiguous or multiple locations should be specified if possible.",
+            "person": "The 'person' argument refers to the individual or group starting the new position, identifying the main actor in the event. It can include previous roles or affiliations. Example: 'Al-Douri', 'Jean-Rene Fourtou', 'Retired Lt. Gen. Jay Garner'. Unnamed or generic references should be specified if possible."
+        }
+    }
+}

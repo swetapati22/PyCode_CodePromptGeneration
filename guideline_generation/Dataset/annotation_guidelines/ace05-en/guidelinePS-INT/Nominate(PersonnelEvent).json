@@ -1,0 +1,11 @@
+{
+    "Nominate(PersonnelEvent)": {
+        "description": "The 'Nominate' event type involves the act of officially suggesting or appointing a person for a position, role, or task. This event is characterized by an agent (the nominator) proposing a person (the nominee) for a specific role, often implying a future responsibility. Unlike the 'Elect' event, which involves a selection process, 'Nominate' focuses on the proposal phase. Example triggers include 'name', 'nominating', and 'designated', while triggers like 'elected' or 'appointed' indicate different events such as 'Elect' or 'StartPosition'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "place": "The 'place' argument refers to the location where the nomination is made or where the nominee is expected to serve. It provides context to the nomination, indicating where the nominee will perform their duties or where the nomination was announced. This argument is not always present and can be omitted if the location is not explicitly mentioned.",
+            "person": "The 'person' argument identifies the individual being nominated for a position or role. This is a crucial element of the 'Nominate' event, as it specifies the nominee. The 'person' argument can be a name, pronoun, or placeholder in questions or hypothetical scenarios.",
+            "agent": "The 'agent' argument identifies the entity or individual making the nomination, which could be a person, group, or organization. This argument provides context on who is responsible for the nomination. The 'agent' might be implied or not explicitly mentioned, but it is usually clear from the context."
+        }
+    }
+}

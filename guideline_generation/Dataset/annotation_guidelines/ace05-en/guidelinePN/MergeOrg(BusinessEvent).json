@@ -1,0 +1,21 @@
+{
+    "MergeOrg(BusinessEvent)": {
+        "description": [
+            "A MergeOrg event, a subtype of BusinessEvent, involves the combination of two or more organizations into a single entity. This event is typically triggered by terms such as 'merge', 'merger', 'create', or 'combine'.",
+            "The key characteristic of a MergeOrg event is the unification of separate organizations, which can include companies, departments, or other business entities. The outcome is a single, larger organization.",
+            "Unlike Acquisition events, which involve one organization purchasing another, MergeOrg events imply a mutual agreement to combine resources and operations. For example, 'merger' indicates a MergeOrg event, whereas 'acquisition' would not.",
+            "Triggers for MergeOrg events include words like 'merged', 'merger', 'create', and 'combine'. These triggers indicate the formation of a new entity from existing organizations, as opposed to simply purchasing or taking over another entity.",
+            "The scope of a MergeOrg event is limited to the business domain, focusing on the structural changes within organizations. It does not cover events like Demonstrate or Extradite, which pertain to conflict and justice, respectively."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "Org": [
+            "The 'Org' argument refers to the organizations involved in the merger. This can include companies, departments, or other business entities. For example, in 'the merger of Company A and Company B', both 'Company A' and 'Company B' are 'Org' arguments.",
+            "The role of the 'Org' argument is to identify the entities that are being combined. This is crucial for understanding the scope and impact of the merger. For instance, 'Department of Minority Business Enterprise' and 'Department of Business Assistance' in a merger context.",
+            "In cases where multiple organizations are mentioned, each entity involved in the merger should be annotated as an 'Org'. For example, 'startups' and 'competitors' in 'startups are buying out their bankrupt competitors'.",
+            "The 'Org' argument is important for distinguishing between different types of business events. Unlike Acquisition events, where one organization is the buyer and the other is the target, MergeOrg events involve entities that are merging on equal terms.",
+            "Edge cases for the 'Org' argument include situations where the organizations are not explicitly named but implied. For example, 'the two organizations' in 'a merger of the two organizations' should still be annotated as 'Org'."
+        ]
+    }
+}

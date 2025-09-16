@@ -1,0 +1,16 @@
+{
+    "Transport(MovementEvent)": {
+        "description": "The Transport event type, a subclass of MovementEvent, involves the movement of entities (people, objects, etc.) from one location to another, facilitated by an agent or vehicle. It includes specific origin and destination locations, with example triggers such as 'transport', 'deploying', 'cross', 'tours', and 'back'. The event focuses on the conveyance of entities with a clear start and end point, distinguishing it from events like 'Evacuation' or 'Migration'. The outcome is the successful relocation of the entities involved.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "origin": "The origin argument specifies the starting point of the transport event. It can be a specific location, a broader region, or a conceptual starting point. For example, 'southern Sudan' in 'trains running to and from southern Sudan' is the origin. Context clues can help infer the origin if not explicitly mentioned.",
+            "victim": "The victim argument refers to the entity being transported, often a person or group of people. For example, 'abducted women and children' in 'trains running to and from southern Sudan' are the victims. The victim can be an individual or a group and is distinct from the agent or vehicle.",
+            "vehicle": "The vehicle argument specifies the means of transport used in the event. It can be a physical object, a group, or an abstract means of transport. For example, 'trains' in 'trains running to and from southern Sudan' are the vehicles. The vehicle is the means by which the transport occurs, not the entity facilitating it.",
+            "time": "The time argument specifies when the transport event occurs, including specific dates, durations, or relative time expressions. For example, 'In last year's trial' provides a temporal context. Time can be explicitly stated or inferred from context.",
+            "artifact": "The artifact argument refers to the objects or entities being transported. For example, 'women and children' in 'trains running to and from southern Sudan' are the artifacts. Artifacts can be tangible objects or abstract entities and may be implied rather than explicitly stated.",
+            "destination": "The destination argument specifies the endpoint of the transport event. It can be a specific location, a broader region, or a conceptual endpoint. For example, 'Sudan' in 'trains running to and from southern Sudan' is the destination. The destination is where the movement ends.",
+            "place": "The place argument specifies the general location where the transport event occurs. It can be a specific location, a broader region, or a conceptual area. For example, 'Iraq' in 'getting back into Iraq' is the place. The place provides a general context rather than a specific start or end point.",
+            "agent": "The agent argument refers to the entity facilitating the transport event. It can be individuals, groups, organizations, or abstract entities. For example, 'U.S. forces' in 'assisted by U.S. forces in getting back into Iraq' are the agents. The agent is the entity facilitating the movement, not the means by which it occurs."
+        }
+    }
+}

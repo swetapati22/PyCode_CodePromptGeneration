@@ -1,0 +1,13 @@
+{
+    "EndPosition(PersonnelEvent)": {
+        "description": "The EndPosition event type, a subclass of PersonnelEvent, refers to the conclusion of an individual's role or position within an organization or entity. This event is triggered by terms such as 'former', 'previously', 'dismissed', and 'retired', indicating that a person no longer holds a specific position. Key characteristics include identifying the person, the position they held, and the associated entity. Unlike the StartPosition event, which marks the beginning of a role, the EndPosition event signifies its end, resulting in the vacancy of the position. Contextual indicators often include past-tense verbs or adjectives, such as 'former CEO' or 'previously a manager'.",
+        "attributes": {
+            "mention": "The text span that triggers the event, such as 'dismissed', 'retired', or 'former'.",
+            "time": "The 'time' argument specifies when the position ended, providing temporal context. Examples include specific dates ('in 1988'), relative terms ('last year'), or vague references ('recently'). This helps place the event within a historical or chronological framework.",
+            "entity": "The 'entity' argument identifies the organization, company, or institution associated with the position. Examples include 'Barclays Bank' or 'Department of Trade and Industry'. This provides context about the professional environment and can involve multiple entities or generic references requiring additional context.",
+            "position": "The 'position' argument specifies the role or title the person held, such as 'president', 'CEO', or 'manager'. This is crucial for understanding the responsibilities and status associated with the role. Sometimes, the position may be implied and require contextual interpretation.",
+            "place": "The 'place' argument identifies the geographical location associated with the position, such as 'Shanghai' or 'Tucson'. This helps contextualize the event within a specific physical location, which can range from cities and countries to specific institutions or buildings. Vague references may need additional context.",
+            "person": "The 'person' argument identifies the individual whose position has ended, such as 'McCarthy' or 'she'. This links the event to a specific individual, providing a personal dimension to the professional context. Sometimes, the person may be referred to by their role or relationship, requiring contextual interpretation."
+        }
+    }
+}

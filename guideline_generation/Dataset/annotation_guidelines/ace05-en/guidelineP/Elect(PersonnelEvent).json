@@ -1,0 +1,42 @@
+{
+    "Elect(PersonnelEvent)": {
+        "description": [
+            "The 'Elect' event refers to the process of selecting a person for a position or office through a voting mechanism. Example triggers include 'elected', 'won', 'elections', and 'winning'.",
+            "An 'Elect' event involves the formal selection of an individual to a role or office, typically through a democratic process. Key characteristics include the presence of a candidate, a voting process, and a result. Example triggers are 'elected', 'won', 'elections', and 'winning'.",
+            "The 'Elect' event captures the act of choosing someone for a specific role or office via a voting process. This event is characterized by the involvement of voters, candidates, and the announcement of results. Example triggers include 'elected', 'won', 'elections', and 'winning'.",
+            "In an 'Elect' event, a person is chosen for a position or office through a vote. This event type is marked by the selection process, the candidates involved, and the final outcome. Example triggers are 'elected', 'won', 'elections', and 'winning'.",
+            "The 'Elect' event denotes the selection of an individual for a position or office through a voting process. It involves candidates, voters, and the declaration of results. Example triggers include 'elected', 'won', 'elections', and 'winning'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the organization or body for which the election is held. It is the entity that the elected person will represent or lead. For example, in 'Beatriz Marinello was elected USCF President', 'USCF' is the entity.",
+            "In the context of an 'Elect' event, the 'entity' is the organization or institution that the elected individual will serve. For instance, 'Zambia' in 'Chiluba was Zambia's first democratically elected president' is the entity.",
+            "The 'entity' argument identifies the organization or group that the election pertains to. It is the body that the elected person will be associated with. For example, 'USCF' in 'Beatriz Marinello was elected USCF President'.",
+            "The 'entity' in an 'Elect' event is the organization or institution that the elected person will be part of. For example, 'Zambia' in 'Chiluba was Zambia's first democratically elected president'.",
+            "The 'entity' argument denotes the organization or body for which the election is conducted. It is the entity that the elected individual will represent. For example, 'USCF' in 'Beatriz Marinello was elected USCF President'."
+        ],
+        "place": [
+            "The 'place' argument refers to the location where the election or the announcement of the election result takes place. For example, 'Los Angeles' in 'Beatriz Marinello was elected USCF President on August 11, 2003 in Los Angeles'.",
+            "In an 'Elect' event, the 'place' argument indicates the geographical location associated with the election. For instance, 'Ohio' and 'Florida' in 'Kerry won decisively not only in Ohio and Florida'.",
+            "The 'place' argument identifies the location where the election occurs or where the elected individual will serve. For example, 'Los Angeles' in 'Beatriz Marinello was elected USCF President on August 11, 2003 in Los Angeles'.",
+            "The 'place' in an 'Elect' event refers to the specific location related to the election process or result announcement. For example, 'Ohio' and 'Florida' in 'Kerry won decisively not only in Ohio and Florida'.",
+            "The 'place' argument denotes the location where the election is held or where the elected person will serve. For example, 'Los Angeles' in 'Beatriz Marinello was elected USCF President on August 11, 2003 in Los Angeles'."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is elected to the position or office. For example, 'Beatriz Marinello' in 'Beatriz Marinello was elected USCF President'.",
+            "In an 'Elect' event, the 'person' argument identifies the candidate who has been elected. For instance, 'Kerry' in 'Kerry won decisively not only in Ohio and Florida'.",
+            "The 'person' argument denotes the individual who has been chosen through the election process. For example, 'Chiluba' in 'Chiluba was Zambia's first democratically elected president'.",
+            "The 'person' in an 'Elect' event is the individual who has been elected to a position or office. For example, 'Beatriz Marinello' in 'Beatriz Marinello was elected USCF President'.",
+            "The 'person' argument identifies the elected individual in the context of the election. For example, 'Kerry' in 'Kerry won decisively not only in Ohio and Florida'."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or individual responsible for conducting the election or making the announcement. For example, 'Jordanian authorities' in 'Jordanian authorities on Monday said Jordan's first female lawmaker was ineligible to run'.",
+            "In an 'Elect' event, the 'agent' argument identifies the body or person overseeing the election process. For instance, 'Jordanian authorities' in 'Jordanian authorities on Monday said Jordan's first female lawmaker was ineligible to run'.",
+            "The 'agent' argument denotes the entity or individual that organizes or announces the election. For example, 'Jordanian authorities' in 'Jordanian authorities on Monday said Jordan's first female lawmaker was ineligible to run'.",
+            "The 'agent' in an 'Elect' event is the entity or person responsible for the election process or its announcement. For example, 'Jordanian authorities' in 'Jordanian authorities on Monday said Jordan's first female lawmaker was ineligible to run'.",
+            "The 'agent' argument refers to the organization or individual that conducts or declares the election. For example, 'Jordanian authorities' in 'Jordanian authorities on Monday said Jordan's first female lawmaker was ineligible to run'."
+        ]
+    }
+}

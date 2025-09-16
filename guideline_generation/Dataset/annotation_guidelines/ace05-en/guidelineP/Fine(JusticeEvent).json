@@ -1,0 +1,35 @@
+{
+    "Fine(JusticeEvent)": {
+        "description": [
+            "A Fine event involves the imposition of a monetary penalty on an entity by an adjudicator, typically as a result of a legal or regulatory violation. Example triggers include 'fine', 'fines', 'pay', and 'imposed'.",
+            "The Fine event is characterized by the requirement for an entity to pay a specified amount of money as a penalty, often determined by a legal authority or regulatory body. Example triggers include 'ordered to pay', 'slapped with a fine', and 'fined'.",
+            "In a Fine event, an adjudicator such as a judge or regulatory body imposes a financial penalty on an entity. This event often occurs in a legal or regulatory context. Example triggers include 'penalized', 'charged a fine', and 'levied a fine'.",
+            "A Fine event occurs when an entity is required to pay a monetary penalty, typically as a result of a legal decision or regulatory enforcement. Example triggers include 'required to pay', 'assessed a fine', and 'issued a fine'.",
+            "The Fine event involves the imposition of a financial penalty on an entity by an adjudicator, often in response to a violation of laws or regulations. Example triggers include 'imposed a fine', 'ordered to pay a fine', and 'fined'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the authority or individual who imposes the fine. This can be a judge, a regulatory body, or any official entity with the power to levy fines. For example, in 'The judge fined the company', the adjudicator is 'judge'.",
+            "An adjudicator is the person or organization that decides the fine. This could be a court, a regulatory agency, or an official body. For instance, in 'The SEC imposed a fine', the adjudicator is 'SEC'.",
+            "The adjudicator refers to the entity responsible for determining and imposing the fine. This can include judges, regulatory commissions, or other authoritative bodies. For example, in 'The commission fined the corporation', the adjudicator is 'commission'.",
+            "In the context of a Fine event, the adjudicator is the entity that has the authority to impose the fine. This could be a legal or regulatory authority. For example, in 'The court ordered the fine', the adjudicator is 'court'.",
+            "The adjudicator is the official or body that imposes the fine on the entity. This can be a judge, a regulatory agency, or another authoritative figure. For example, in 'The regulatory body fined the company', the adjudicator is 'regulatory body'."
+        ],
+        "entity": [
+            "The entity is the individual or organization that is required to pay the fine. This can be a person, a company, or any other type of organization. For example, in 'The company was fined', the entity is 'company'.",
+            "An entity in a Fine event is the party that receives the fine. This could be a business, an individual, or another organization. For instance, in 'The individual was fined', the entity is 'individual'.",
+            "The entity refers to the subject that is penalized with the fine. This can include corporations, individuals, or other entities. For example, in 'The corporation was fined', the entity is 'corporation'.",
+            "In the context of a Fine event, the entity is the party that is fined. This can be a person, a business, or another type of organization. For example, in 'The organization was fined', the entity is 'organization'.",
+            "The entity is the recipient of the fine, which can be an individual, a company, or another type of organization. For example, in 'The business was fined', the entity is 'business'."
+        ],
+        "place": [
+            "The place refers to the location where the fine is imposed or where the entity is required to pay the fine. This can be a city, a country, or a specific venue. For example, in 'The fine was imposed in New York', the place is 'New York'.",
+            "A place in a Fine event is the geographical location associated with the imposition of the fine. This could be a city, a country, or a specific location. For instance, in 'The fine was paid in Los Angeles', the place is 'Los Angeles'.",
+            "The place refers to the location relevant to the fine event, such as where the fine was issued or where the entity is based. For example, in 'The fine was issued in California', the place is 'California'.",
+            "In the context of a Fine event, the place is the location where the fine is imposed or where the entity is required to pay it. This can be a city, a country, or a specific venue. For example, in 'The fine was levied in Miami', the place is 'Miami'.",
+            "The place is the geographical location associated with the fine event, such as where the fine was imposed or where the entity is located. For example, in 'The fine was imposed in Texas', the place is 'Texas'."
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Demonstrate(ConflictEvent)": {
+        "description": [
+            "A Demonstrate event involves a group of people gathering publicly to express their opinions, often in opposition to something. Example triggers include 'protest', 'rally', 'gather', 'march', and 'demonstrate'.",
+            "This event type typically involves a collective action where participants aim to make their voices heard on a particular issue. Key characteristics include the presence of a crowd, a specific location, and often a cause or message.",
+            "Demonstrate events can vary in scale from small local gatherings to large-scale national or international protests. They often occur in public spaces and can sometimes lead to confrontations with authorities.",
+            "The scope of a Demonstrate event includes any organized public display of dissent or support, regardless of the size or the specific cause. It is a subset of ConflictEvent, indicating a potential for tension or confrontation.",
+            "Triggers for Demonstrate events can be nouns (e.g., 'protest', 'rally') or verbs (e.g., 'gather', 'march'). The event is characterized by the collective action of individuals or groups in a public setting."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The time argument specifies when the demonstration took place. It can be a specific date, time of day, or a more general time frame. Example: 'yesterday', 'Saturday', 'in the past two days'.",
+            "This argument helps to contextualize the event within a specific temporal frame, which can be crucial for understanding the sequence of events. Example: 'last week', 'during the summer'.",
+            "Time can be expressed in various formats, including relative terms (e.g., 'last night') or exact dates (e.g., 'March 15'). Example: 'on Monday', 'at noon'.",
+            "In some cases, the time may be implied rather than explicitly stated, requiring inference from the surrounding text. Example: 'over the weekend', 'earlier today'.",
+            "The time argument is important for establishing the chronology of events, especially in news reports or historical accounts. Example: 'in 2020', 'during the protest'."
+        ],
+        "entity": [
+            "The entity argument identifies the individuals or groups participating in the demonstration. This can include specific names, general descriptors, or collective terms. Example: 'protesters', 'students', 'Liana Owen'.",
+            "Entities are the main actors in the Demonstrate event, and their identification is crucial for understanding who is involved. Example: 'demonstrators', 'activists', 'parents'.",
+            "Entities can be singular or plural, and may include additional descriptors to provide more context. Example: 'college students', 'anti-war protesters'.",
+            "In some cases, entities may be described in terms of their roles or affiliations rather than specific names. Example: 'union members', 'environmentalists'.",
+            "The entity argument helps to clarify the participants' identities and their potential motivations or affiliations. Example: 'local residents', 'political activists'."
+        ],
+        "place": [
+            "The place argument specifies the location where the demonstration occurs. This can be a city, specific venue, or general area. Example: 'Halifax', 'Manhattan', 'streets'.",
+            "Place is crucial for situating the event geographically, providing context for the demonstration's setting. Example: 'San Francisco', 'campuses', 'plazas'.",
+            "Locations can be described in varying levels of specificity, from broad regions to specific addresses. Example: 'coast-to-coast', 'downtown', 'city hall'.",
+            "In some cases, the place may be implied or require inference from the text. Example: 'here', 'across the United States and Canada'.",
+            "The place argument helps to understand the geographical scope and potential impact of the demonstration. Example: 'in front of the parliament', 'at the park'."
+        ],
+        "police": [
+            "The police argument identifies the involvement of law enforcement in the demonstration. This can include actions taken by the police or their presence at the event. Example: 'clashed with police', 'arrested'.",
+            "Police involvement is often a key aspect of Demonstrate events, especially in cases of civil disobedience or unrest. Example: 'police presence', 'detained by officers'.",
+            "This argument helps to highlight the interaction between demonstrators and authorities, which can be a significant aspect of the event. Example: 'monitored by police', 'escorted by law enforcement'.",
+            "In some cases, the police argument may include specific actions taken by law enforcement, such as arrests or crowd control measures. Example: 'used tear gas', 'set up barricades'.",
+            "The police argument provides insight into the response of authorities to the demonstration, which can influence the event's dynamics and outcomes. Example: 'police intervention', 'riot police deployed'."
+        ]
+    }
+}

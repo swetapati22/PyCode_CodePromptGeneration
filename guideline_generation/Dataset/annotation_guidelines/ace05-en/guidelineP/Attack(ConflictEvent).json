@@ -1,0 +1,63 @@
+{
+    "Attack(ConflictEvent)": {
+        "description": [
+            "An 'Attack' event refers to an aggressive action or series of actions aimed at causing harm or damage to a person, group, or place. Example triggers include 'ambush', 'bombardment', 'take out', 'clashing', and 'raping and drugging'.",
+            "The 'Attack' event type encompasses any hostile act where one party inflicts harm or attempts to inflict harm on another. This can include physical violence, use of weapons, or other forms of aggression. Example triggers include 'assault', 'strike', 'raid', 'attack', and 'shoot'.",
+            "An 'Attack' event is characterized by an intentional act of violence or aggression directed towards a target. This can involve individuals, groups, or locations. Example triggers include 'bomb', 'fire at', 'stab', 'shoot', and 'hit'.",
+            "The 'Attack' event type involves any deliberate action taken to cause injury, damage, or destruction. This can be carried out by individuals, groups, or military forces. Example triggers include 'launch an attack', 'open fire', 'assault', 'raid', and 'ambush'.",
+            "An 'Attack' event is defined as any act of aggression where an attacker aims to harm a target using various means such as weapons, physical force, or other methods. Example triggers include 'strike', 'bombard', 'invade', 'assault', and 'clash'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "target": [
+            "The 'target' argument refers to the entity or entities that are the focus of the attack. This can include people, groups, or locations. For example, in the sentence 'The terrorists attacked the embassy', 'embassy' is the target.",
+            "In an 'Attack' event, the 'target' is the person, group, or place that the attacker aims to harm or damage. For instance, in 'The soldiers fired at the enemy camp', 'enemy camp' is the target.",
+            "The 'target' argument identifies who or what is being attacked. This can be a specific individual, a group of people, or a physical location. For example, 'The rebels bombed the government building' has 'government building' as the target.",
+            "The 'target' in an 'Attack' event is the recipient of the aggressive action. This can be a person, organization, or place. For example, 'The gang members assaulted the rival gang' has 'rival gang' as the target.",
+            "In the context of an 'Attack' event, the 'target' is the entity that suffers the consequences of the attack. This can be a person, group, or location. For example, 'The hackers targeted the company's database' has 'company's database' as the target."
+        ],
+        "victim": [
+            "The 'victim' argument refers to the individual or group that suffers harm or injury as a result of the attack. For example, in 'The assailant injured three pedestrians', 'three pedestrians' are the victims.",
+            "In an 'Attack' event, the 'victim' is the person or group that is harmed or affected by the attack. For instance, in 'The bomb blast injured several bystanders', 'several bystanders' are the victims.",
+            "The 'victim' argument identifies those who are directly impacted by the attack. This can include individuals or groups. For example, 'The gunman shot two police officers' has 'two police officers' as the victims.",
+            "The 'victim' in an 'Attack' event is the entity that experiences the negative effects of the attack. This can be a person or group. For example, 'The protesters were beaten by the police' has 'protesters' as the victims.",
+            "In the context of an 'Attack' event, the 'victim' is the person or group that suffers harm or injury. For example, 'The civilians were caught in the crossfire' has 'civilians' as the victims."
+        ],
+        "attacker": [
+            "The 'attacker' argument refers to the individual or group that initiates the attack. For example, in 'The militants launched an assault on the village', 'militants' are the attackers.",
+            "In an 'Attack' event, the 'attacker' is the person or group responsible for carrying out the attack. For instance, in 'The gang members attacked the rival gang', 'gang members' are the attackers.",
+            "The 'attacker' argument identifies who is performing the aggressive action. This can be an individual, group, or organization. For example, 'The soldiers fired at the enemy' has 'soldiers' as the attackers.",
+            "The 'attacker' in an 'Attack' event is the entity that executes the attack. This can be a person, group, or military force. For example, 'The terrorists bombed the market' has 'terrorists' as the attackers.",
+            "In the context of an 'Attack' event, the 'attacker' is the person or group that initiates the harmful action. For example, 'The hackers targeted the company's database' has 'hackers' as the attackers."
+        ],
+        "time": [
+            "The 'time' argument refers to when the attack took place. This can be a specific date, time of day, or a more general time frame. For example, in 'The attack occurred at dawn', 'at dawn' is the time.",
+            "In an 'Attack' event, the 'time' indicates the temporal context of the attack. For instance, in 'The bombing happened on Monday', 'on Monday' is the time.",
+            "The 'time' argument identifies when the attack happened. This can be a precise time or a broader period. For example, 'The raid took place during the night' has 'during the night' as the time.",
+            "The 'time' in an 'Attack' event is the point or period when the attack occurred. This can be a specific moment or a general time frame. For example, 'The assault happened last week' has 'last week' as the time.",
+            "In the context of an 'Attack' event, the 'time' is when the attack took place. For example, 'The ambush occurred at midnight' has 'at midnight' as the time."
+        ],
+        "instrument": [
+            "The 'instrument' argument refers to the means or tools used to carry out the attack. This can include weapons, vehicles, or other objects. For example, in 'The assailant used a knife to stab the victim', 'knife' is the instrument.",
+            "In an 'Attack' event, the 'instrument' is the object or method used by the attacker to inflict harm. For instance, in 'The terrorists planted a bomb in the car', 'bomb' is the instrument.",
+            "The 'instrument' argument identifies what was used to perform the attack. This can be a weapon, tool, or other means. For example, 'The soldiers fired their rifles at the enemy' has 'rifles' as the instrument.",
+            "The 'instrument' in an 'Attack' event is the means by which the attack is carried out. This can include physical objects or methods. For example, 'The arsonist set fire to the building using gasoline' has 'gasoline' as the instrument.",
+            "In the context of an 'Attack' event, the 'instrument' is the tool or method used to execute the attack. For example, 'The hacker used malware to breach the system' has 'malware' as the instrument."
+        ],
+        "place": [
+            "The 'place' argument refers to the location where the attack occurred. This can be a specific address, city, or general area. For example, in 'The bombing happened in downtown Manhattan', 'downtown Manhattan' is the place.",
+            "In an 'Attack' event, the 'place' indicates where the attack took place. For instance, in 'The raid occurred at the military base', 'military base' is the place.",
+            "The 'place' argument identifies the geographical location of the attack. This can be a specific site or a broader region. For example, 'The ambush took place in the forest' has 'forest' as the place.",
+            "The 'place' in an 'Attack' event is the physical location where the attack happened. This can be a building, city, or other location. For example, 'The assault occurred in the alley' has 'alley' as the place.",
+            "In the context of an 'Attack' event, the 'place' is where the attack was carried out. For example, 'The explosion happened at the airport' has 'airport' as the place."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the person or group responsible for orchestrating or carrying out the attack. This can include individuals, organizations, or governments. For example, in 'The attack was planned by the terrorist group', 'terrorist group' is the agent.",
+            "In an 'Attack' event, the 'agent' is the entity that initiates or directs the attack. For instance, in 'The bombing was carried out by the rebel forces', 'rebel forces' are the agents.",
+            "The 'agent' argument identifies who is behind the attack. This can be a person, group, or organization. For example, 'The cyber attack was launched by a hacking group' has 'hacking group' as the agent.",
+            "The 'agent' in an 'Attack' event is the entity responsible for the attack. This can include individuals, groups, or larger entities. For example, 'The assault was ordered by the gang leader' has 'gang leader' as the agent.",
+            "In the context of an 'Attack' event, the 'agent' is the person or group that orchestrates or carries out the attack. For example, 'The raid was conducted by the special forces' has 'special forces' as the agent."
+        ]
+    }
+}

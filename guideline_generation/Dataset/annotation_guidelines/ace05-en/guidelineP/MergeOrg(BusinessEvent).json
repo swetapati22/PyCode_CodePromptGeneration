@@ -1,0 +1,21 @@
+{
+    "MergeOrg(BusinessEvent)": {
+        "description": [
+            "A MergeOrg event refers to the combination of two or more organizations into a single entity. This event is a subset of BusinessEvent and typically involves the integration of resources, operations, and management structures.",
+            "The MergeOrg event is triggered by actions or announcements indicating the unification of separate organizations. Common triggers include words like 'merge', 'merger', 'combine', 'unite', and 'integrate'.",
+            "In a MergeOrg event, the focus is on the entities involved in the merger. These entities can be companies, departments, startups, or any other organizational units.",
+            "The scope of a MergeOrg event includes both voluntary mergers, where organizations agree to combine, and involuntary mergers, such as acquisitions or takeovers.",
+            "Key characteristics of a MergeOrg event include the creation of a new, larger entity, the pooling of resources, and the potential for significant changes in organizational structure and strategy."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "Org": [
+            "The 'Org' argument refers to the organizations involved in the merger. These can be companies, departments, startups, or any other organizational units that are combining to form a new entity.",
+            "In the context of a MergeOrg event, the 'Org' argument identifies the specific entities that are merging. This is crucial for understanding the scope and impact of the merger.",
+            "The 'Org' argument can include multiple entities, as mergers often involve more than two organizations. Each entity should be clearly identified to provide a complete picture of the merger.",
+            "Examples of 'Org' arguments include names of companies (e.g., 'Warner Communications'), departments (e.g., 'Department of Minority Business Enterprise'), or more general terms (e.g., 'startups', 'competitors').",
+            "Edge cases for the 'Org' argument include situations where the entities are not explicitly named but are implied through context. Annotators should use their judgment to identify and extract these entities accurately."
+        ]
+    }
+}

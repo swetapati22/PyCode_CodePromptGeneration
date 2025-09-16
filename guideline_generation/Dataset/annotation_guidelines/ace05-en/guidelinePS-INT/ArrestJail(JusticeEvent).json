@@ -1,0 +1,13 @@
+{
+    "ArrestJail(JusticeEvent)": {
+        "description": "The ArrestJail event type involves the act of detaining an individual by law enforcement or other authorities in response to a suspected crime. This event includes the physical apprehension and restriction of an individual's freedom, often leading to their placement in a jail or similar facility. Key elements include the involvement of an authority figure (agent) and a specific location (place). Unlike the Extradite event, which involves transferring a person between jurisdictions, ArrestJail focuses on the initial detention. The outcome is the individual's loss of freedom and potential legal proceedings, distinguishing it from events like Acquit, where the individual is declared not guilty and released. ArrestJail is often a precursor to events such as Convict or Sentence, where legal judgments are made.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "crime": "The 'crime' argument specifies the offense or illegal activity that led to the arrest, providing context for the event. It may be explicitly stated, such as 'arrested for theft,' or inferred from context, like 'arrested after a robbery.' This argument is essential for understanding the reason behind the arrest, even if described vaguely, such as 'arrested for suspicious activity.'",
+            "time": "The 'time' argument indicates when the arrest took place, situating the event in a temporal context. It can include specific dates, times of day, or relative expressions, such as 'arrested at 3 PM' or 'arrested last night.' Even vague references like 'arrested recently' provide some temporal context.",
+            "place": "The 'place' argument specifies the location of the arrest, offering geographical context. It can range from specific addresses or landmarks, like 'arrested at the courthouse,' to broader terms like 'arrested in the city.' Even vague references such as 'arrested nearby' provide some geographical context.",
+            "person": "The 'person' argument identifies the individual being arrested, essential for understanding the subject of the event. It can include names, descriptions, or roles, such as 'arrested John' or 'arrested the suspect.' Even broader terms like 'arrested several people' provide identification.",
+            "agent": "The 'agent' argument identifies the authority figure or entity responsible for the arrest, crucial for understanding who is carrying out the event. It can include specific organizations or roles, like 'arrested by the police,' or broader terms like 'arrested by authorities.' Even vague references such as 'arrested by officials' provide some identification."
+        }
+    }
+}

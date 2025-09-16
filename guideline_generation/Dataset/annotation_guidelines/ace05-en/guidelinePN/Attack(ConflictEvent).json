@@ -1,0 +1,63 @@
+{
+    "Attack(ConflictEvent)": {
+        "description": [
+            "An 'Attack' event, a subtype of 'ConflictEvent', involves an aggressive action aimed at causing harm or damage to a target. Example triggers include 'ambush', 'bombardment', 'take out', 'clashing', and 'raping and drugging'.",
+            "The 'Attack' event is characterized by the presence of an attacker, a target, and often an instrument used to carry out the attack. The scope includes physical, verbal, and cyber attacks.",
+            "Unlike 'Demonstrate' events, which involve public displays of protest or support, 'Attack' events are marked by direct aggression and intent to harm. For instance, 'clashing' in the context of protesters and police is an 'Attack' event, not a 'Demonstrate' event.",
+            "Triggers such as 'convicted' or 'appealed' are indicative of 'JusticeEvent' types, not 'Attack' events. 'Attack' events focus on the act of aggression itself rather than legal outcomes.",
+            "The outcome of an 'Attack' event typically involves harm or damage to the target, distinguishing it from events like 'TransferOwnership' or 'DeclareBankruptcy', which involve changes in ownership or financial status without direct aggression."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "target": [
+            "The 'target' is the entity or entities that the attack is directed against. It is crucial as it identifies who or what is being harmed. Example: In 'take out the President', 'President' is the target.",
+            "The 'target' can be individuals, groups, or objects. For instance, in 'bombardment of Baghdad', 'Baghdad' is the target.",
+            "In cases where multiple entities are targeted, each should be annotated. Example: 'take out the President, the Vice President, 80 Senators' has multiple targets.",
+            "The 'target' is distinct from the 'attacker' and 'instrument'. Example: In 'ambush the tanks', 'tanks' is the target, not the 'attacker' or 'instrument'.",
+            "Edge cases include indirect targets, such as 'the outskirts of Baghdad' in a broader attack on 'Baghdad'. Both should be annotated as targets."
+        ],
+        "victim": [
+            "The 'victim' is the entity that suffers harm as a result of the attack. It is important to identify the victim to understand the impact of the event. Example: In 'raping and drugging three women', 'women' are the victims.",
+            "The 'victim' can be individuals or groups. Example: 'protesters' in 'clashing with police' are victims.",
+            "In some cases, the 'victim' and 'target' may overlap. Example: 'take out the President' where 'President' is both the target and victim.",
+            "The 'victim' is distinct from the 'attacker'. Example: In 'ambush the avs', 'avs' are the victims, not the attackers.",
+            "Edge cases include situations where the victim is not explicitly mentioned but can be inferred. Example: 'bombardment of Baghdad' implies the residents of Baghdad as victims."
+        ],
+        "attacker": [
+            "The 'attacker' is the entity that initiates the attack. Identifying the attacker is crucial for understanding the source of aggression. Example: In 'ambush by groups', 'groups' are the attackers.",
+            "The 'attacker' can be individuals, groups, or organizations. Example: 'forces' and 'u.s. army' in 'bombardment of Baghdad' are attackers.",
+            "In some cases, the 'attacker' and 'agent' may overlap. Example: 'luster' in 'raping and drugging' is both the attacker and agent.",
+            "The 'attacker' is distinct from the 'target' and 'victim'. Example: In 'clashing with police', 'protesters' and 'police' are attackers, not targets or victims.",
+            "Edge cases include indirect attackers, such as 'backers of the clerical regime' in 'clashing with police'. Both should be annotated as attackers."
+        ],
+        "time": [
+            "The 'time' argument specifies when the attack occurred. It is important for contextualizing the event. Example: 'tonight' in 'bombardment of Baghdad continues tonight'.",
+            "The 'time' can be specific dates, times, or relative expressions. Example: 'for a week now' in 'protesters have been clashing'.",
+            "In some cases, the 'time' may be implied rather than explicitly stated. Example: 'during his trial in January' implies the time of the attack.",
+            "The 'time' is distinct from the 'place' and 'instrument'. Example: 'over the past 20 minutes' in 'explosions rocking Baghdad' specifies time, not place or instrument.",
+            "Edge cases include events with multiple time references. Example: 'tonight and over the past 20 minutes' in 'bombardment of Baghdad' should both be annotated."
+        ],
+        "instrument": [
+            "The 'instrument' is the tool or method used to carry out the attack. It is important for understanding how the attack was executed. Example: 'ak-47s and rpgs' in 'ambush with ak-47s and rpgs'.",
+            "The 'instrument' can be weapons, tools, or methods. Example: 'weapons' in 'take out with weapons'.",
+            "In some cases, the 'instrument' may be implied rather than explicitly stated. Example: 'bombardment' implies the use of bombs or artillery.",
+            "The 'instrument' is distinct from the 'attacker' and 'target'. Example: 'rpgs' in 'ambush with rpgs' is the instrument, not the attacker or target.",
+            "Edge cases include events with multiple instruments. Example: 'ak-47s, rpgs, and what not' in 'ambush with ak-47s, rpgs, and what not' should all be annotated."
+        ],
+        "place": [
+            "The 'place' specifies the location where the attack occurred. It is important for contextualizing the event. Example: 'area' in 'ambush in the area'.",
+            "The 'place' can be specific locations, cities, or regions. Example: 'Baghdad' in 'bombardment of Baghdad'.",
+            "In some cases, the 'place' may be implied rather than explicitly stated. Example: 'Washington DC' in 'take out in Washington DC'.",
+            "The 'place' is distinct from the 'time' and 'instrument'. Example: 'tehran' in 'clashing in tehran' specifies place, not time or instrument.",
+            "Edge cases include events with multiple locations. Example: 'central Baghdad, southern Baghdad, the outskirts of Baghdad' in 'bombardment of Baghdad' should all be annotated."
+        ],
+        "agent": [
+            "The 'agent' is the entity responsible for carrying out the attack. It is important for understanding who is behind the attack. Example: 'luster' in 'raping and drugging by luster'.",
+            "The 'agent' can be individuals, groups, or organizations. Example: 'forces' and 'u.s. army' in 'bombardment by forces'.",
+            "In some cases, the 'agent' and 'attacker' may overlap. Example: 'protesters' in 'clashing with police' are both agents and attackers.",
+            "The 'agent' is distinct from the 'target' and 'victim'. Example: 'backers of the clerical regime' in 'clashing with police' are agents, not targets or victims.",
+            "Edge cases include indirect agents, such as 'backers of the clerical regime' in 'clashing with police'. Both should be annotated as agents."
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "Extradite(JusticeEvent)": {
+        "description": [
+            "An Extradite event involves the formal process of transferring a person from one jurisdiction to another for legal proceedings or punishment. Example triggers include 'extradite', 'extradition', and 'extradited'.",
+            "This event type is characterized by the involvement of legal authorities and the movement of a person across jurisdictions. It typically involves an origin (where the person is currently located), a destination (where the person is being sent), a person (the individual being extradited), and an agent (the authority facilitating the extradition).",
+            "Unlike other JusticeEvents such as 'Convict' or 'Pardon', the Extradite event specifically deals with the physical transfer of a person for legal reasons. For instance, 'convicted' indicates a legal judgment, while 'extradited' indicates the act of transferring the person.",
+            "Triggers such as 'extradition' and 'extradited' are indicative of the Extradite event type, not events like 'Injure' or 'Attack', which involve physical harm or conflict. The outcome of an Extradite event is the relocation of a person to a different jurisdiction for legal purposes.",
+            "The scope of the Extradite event includes international and domestic transfers for legal proceedings. It does not cover voluntary travel or non-legal transfers. For example, 'extradition' in 'pending extradition back to the state' is an Extradite event, while 'travel' in 'he traveled back to the state' is not."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "origin": [
+            "The origin is the location from which the person is being extradited. It is crucial as it indicates the starting point of the legal transfer. For example, in 'extradition from the state of Texas', 'state of Texas' is the origin.",
+            "The origin can be a country, state, city, or any jurisdictional area. It is important to distinguish it from the destination. For instance, 'extradition from New York to California' has 'New York' as the origin.",
+            "In cases where the origin is not explicitly mentioned, it can often be inferred from context. For example, 'extradited back to the U.S.' implies the origin is a foreign country.",
+            "The origin is not to be confused with the place of arrest or detention unless explicitly stated. For example, 'arrested in New York and extradited to California' has 'New York' as the origin.",
+            "In some texts, the origin might be implied rather than directly stated. For example, 'extradited to the U.S.' implies the origin is outside the U.S."
+        ],
+        "destination": [
+            "The destination is the location to which the person is being extradited. It signifies the endpoint of the legal transfer. For example, in 'extradition to the state of California', 'state of California' is the destination.",
+            "The destination can be a country, state, city, or any jurisdictional area. It is important to distinguish it from the origin. For instance, 'extradition from New York to California' has 'California' as the destination.",
+            "In cases where the destination is not explicitly mentioned, it can often be inferred from context. For example, 'extradited from Canada' implies the destination is a different country.",
+            "The destination is not to be confused with the place of trial or imprisonment unless explicitly stated. For example, 'extradited to New York for trial' has 'New York' as the destination.",
+            "In some texts, the destination might be implied rather than directly stated. For example, 'extradited back to the U.S.' implies the destination is within the U.S."
+        ],
+        "person": [
+            "The person is the individual being extradited. This argument is central to the event as it identifies who is being transferred. For example, in 'extradition of John Doe', 'John Doe' is the person.",
+            "The person can be referred to by name, pronoun, or description. It is important to identify the correct individual. For instance, 'extradited him to the U.S.' has 'him' as the person.",
+            "In cases where multiple individuals are mentioned, context is key to identifying the correct person. For example, 'extradited the suspect to Canada' has 'the suspect' as the person.",
+            "The person is not to be confused with the agent or any other entity involved in the process. For example, 'the court extradited John Doe' has 'John Doe' as the person and 'court' as the agent.",
+            "In some texts, the person might be implied rather than directly stated. For example, 'extradition proceedings are underway' implies there is a person involved in the process."
+        ],
+        "agent": [
+            "The agent is the authority or entity facilitating the extradition. This argument is important as it indicates who is responsible for the transfer. For example, in 'extradition by the FBI', 'FBI' is the agent.",
+            "The agent can be a government body, legal authority, or any organization involved in the process. It is important to distinguish it from the person being extradited. For instance, 'extradited by the police' has 'police' as the agent.",
+            "In cases where the agent is not explicitly mentioned, it can often be inferred from context. For example, 'extradited to the U.S.' implies a U.S. authority is the agent.",
+            "The agent is not to be confused with the origin or destination unless explicitly stated. For example, 'extradited by the court to New York' has 'court' as the agent and 'New York' as the destination.",
+            "In some texts, the agent might be implied rather than directly stated. For example, 'extradition proceedings are underway' implies there is an authority involved in the process."
+        ]
+    }
+}

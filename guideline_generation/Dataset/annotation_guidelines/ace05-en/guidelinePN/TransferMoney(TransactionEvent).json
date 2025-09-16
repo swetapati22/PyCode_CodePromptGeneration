@@ -1,0 +1,56 @@
+{
+    "TransferMoney(TransactionEvent)": {
+        "description": [
+            "The TransferMoney event involves the movement of money from one entity (the giver) to another (the recipient). This event is characterized by a financial transaction where funds are transferred, often with a specified purpose or beneficiary.",
+            "Triggers for the TransferMoney event include verbs such as 'give', 'pay', 'send', 'transfer', and 'donate'. These triggers indicate the action of moving money from one party to another.",
+            "Unlike other TransactionEvents, the TransferMoney event specifically involves the transfer of monetary value. For example, 'paying a bill' or 'donating to a charity' are instances of TransferMoney, whereas 'buying a product' might be more aligned with a Purchase event.",
+            "The key characteristics of the TransferMoney event include the presence of a giver, a recipient, and the money being transferred. Additional details such as the time, place, and beneficiary can provide further context but are not always necessary.",
+            "Negative examples help clarify the scope: 'charging someone with a crime' (ChargeIndict) or 'writing a letter' (PhoneWrite) are not TransferMoney events, as they do not involve the transfer of money."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that provides the money in the TransferMoney event. This can be an individual, organization, or group. For example, in 'John gave $100 to the charity', John is the giver.",
+            "The giver is crucial as it identifies the source of the funds. In 'The company donated $5000 to the relief fund', the company is the giver.",
+            "In cases where multiple entities are involved, all can be considered givers. For instance, 'Doctors and nurses contributed to the fund' identifies both doctors and nurses as givers.",
+            "The giver can also be an abstract entity, such as 'the government' or 'the organization'. For example, 'The government allocated funds to the project' identifies the government as the giver.",
+            "Edge cases include scenarios where the giver is implied but not explicitly mentioned. For example, 'Funds were transferred to the account' implies an unspecified giver."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives the money in the TransferMoney event. This can be an individual, organization, or group. For example, in 'John gave $100 to the charity', the charity is the recipient.",
+            "The recipient is essential as it identifies the destination of the funds. In 'The company donated $5000 to the relief fund', the relief fund is the recipient.",
+            "In cases where multiple entities are involved, all can be considered recipients. For instance, 'Funds were distributed to various departments' identifies multiple departments as recipients.",
+            "The recipient can also be an abstract entity, such as 'the project' or 'the initiative'. For example, 'Money was allocated to the project' identifies the project as the recipient.",
+            "Edge cases include scenarios where the recipient is implied but not explicitly mentioned. For example, 'Funds were transferred' implies an unspecified recipient."
+        ],
+        "money": [
+            "The money argument specifies the amount of money being transferred in the TransferMoney event. For example, in 'John gave $100 to the charity', $100 is the money.",
+            "The money is crucial as it quantifies the transaction. In 'The company donated $5000 to the relief fund', $5000 is the money.",
+            "In cases where the exact amount is not specified, terms like 'a large sum' or 'funds' can be used. For instance, 'The organization allocated funds to the project' uses 'funds' as the money.",
+            "The money can also be represented in different currencies or forms, such as 'euros', 'dollars', or 'cryptocurrency'. For example, 'He transferred 2 bitcoins to the account' identifies 2 bitcoins as the money.",
+            "Edge cases include scenarios where the money is implied but not explicitly mentioned. For example, 'He made a donation' implies an unspecified amount of money."
+        ],
+        "time": [
+            "The time argument specifies when the TransferMoney event occurs. For example, in 'John gave $100 to the charity yesterday', 'yesterday' is the time.",
+            "The time provides context and can help understand the sequence of events. In 'The company donated $5000 to the relief fund last month', 'last month' is the time.",
+            "In cases where the exact time is not specified, terms like 'recently' or 'soon' can be used. For instance, 'Funds will be transferred soon' uses 'soon' as the time.",
+            "The time can also be represented in different formats, such as dates, days of the week, or specific times of day. For example, 'He transferred the money on January 1st' identifies 'January 1st' as the time.",
+            "Edge cases include scenarios where the time is implied but not explicitly mentioned. For example, 'He made a donation' implies an unspecified time."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that ultimately benefits from the TransferMoney event, which may or may not be the direct recipient. For example, in 'John gave $100 to the charity for the children's education', the children are the beneficiaries.",
+            "The beneficiary is important as it provides additional context about the purpose of the transfer. In 'The company donated $5000 to the relief fund for disaster victims', the disaster victims are the beneficiaries.",
+            "In cases where multiple entities benefit, all can be considered beneficiaries. For instance, 'Funds were allocated to various projects to help communities' identifies communities as beneficiaries.",
+            "The beneficiary can also be an abstract entity, such as 'the environment' or 'the public'. For example, 'Money was allocated to the project for public benefit' identifies the public as the beneficiary.",
+            "Edge cases include scenarios where the beneficiary is implied but not explicitly mentioned. For example, 'He made a donation to the charity' implies that the charity's cause is the beneficiary."
+        ],
+        "place": [
+            "The place argument specifies the location where the TransferMoney event occurs. For example, in 'John gave $100 to the charity in New York', 'New York' is the place.",
+            "The place provides context and can help understand the geographical aspect of the event. In 'The company donated $5000 to the relief fund in California', 'California' is the place.",
+            "In cases where the exact place is not specified, terms like 'locally' or 'internationally' can be used. For instance, 'Funds were transferred internationally' uses 'internationally' as the place.",
+            "The place can also be represented in different formats, such as cities, countries, or specific locations. For example, 'He transferred the money from his office' identifies 'his office' as the place.",
+            "Edge cases include scenarios where the place is implied but not explicitly mentioned. For example, 'He made a donation' implies an unspecified place."
+        ]
+    }
+}

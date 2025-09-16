@@ -1,0 +1,70 @@
+{
+    "Transport(MovementEvent)": {
+        "description": [
+            "The Transport event type, a subclass of MovementEvent, involves the movement of entities (people, objects, etc.) from one location to another. Example triggers include 'transport', 'deploying', 'cross', 'tours', and 'back'.",
+            "This event type is characterized by the involvement of an agent or vehicle facilitating the movement, and it often includes specific origin and destination locations. For instance, 'trains running to and from southern Sudan were used to transport abducted women and children'.",
+            "Unlike other MovementEvent types, Transport specifically focuses on the conveyance of entities, often with a clear start and end point. For example, 'The United States is deploying some of Iraq's exiles and internal dissidents around the country'.",
+            "Triggers such as 'travel', 'move', and 'shift' may indicate related events but are not specific to the Transport event type unless they clearly involve the conveyance of entities. For instance, 'Each day about 90,000 people cross the border between Malaysia and Singapore'.",
+            "The outcome of a Transport event is the successful relocation of the entities involved, distinguishing it from events like 'Evacuation' or 'Migration', which may imply urgency or mass movement without specific conveyance means."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "origin": [
+            "The origin argument specifies the starting point of the transport event. For example, in 'trains running to and from southern Sudan', 'southern Sudan' is the origin.",
+            "It is crucial to identify the origin to understand the full scope of the movement. For instance, 'deploying some of Iraq's exiles around the country' implies the origin is within Iraq.",
+            "In cases where the origin is not explicitly mentioned, context clues can help infer it. For example, 'cross the border between Malaysia and Singapore' implies both countries as potential origins.",
+            "The origin can be a specific location, a broader region, or even a conceptual starting point. For example, 'tours to Egypt and Turkey' implies the origin is where the tours start, likely China.",
+            "Unlike the destination, the origin is where the movement begins, not where it ends. For instance, 'back into Iraq' implies the origin is outside Iraq."
+        ],
+        "victim": [
+            "The victim argument refers to the entity being transported, often used when the entity is a person or group of people. For example, 'who was assisted by U.S. forces in getting back into Iraq' identifies 'who' as the victim.",
+            "This argument is essential to understand who or what is being moved. For instance, 'abducted women and children' in 'trains running to and from southern Sudan' are the victims.",
+            "In some contexts, the victim may not be explicitly labeled as such but can be inferred. For example, 'people cross the border' implies 'people' as the victims.",
+            "The victim can be an individual or a group, and it is important to distinguish them from the agent or vehicle. For instance, 'tourists' in 'tours to Egypt and Turkey' are the victims.",
+            "Unlike the agent, the victim is the entity being moved, not the one facilitating the movement. For example, 'dissidents' in 'deploying some of Iraq's exiles' are the victims."
+        ],
+        "vehicle": [
+            "The vehicle argument specifies the means of transport used in the event. For example, 'trains' in 'trains running to and from southern Sudan' are the vehicles.",
+            "Identifying the vehicle helps understand the mode of transport. For instance, 'U.S. forces' in 'assisted by U.S. forces in getting back into Iraq' can be considered a vehicle.",
+            "In some cases, the vehicle may be implied rather than explicitly stated. For example, 'cross the border' might imply walking or driving as the vehicle.",
+            "The vehicle can be a physical object, a group, or an abstract means of transport. For instance, 'agencies' in 'tours to Egypt and Turkey' can be seen as vehicles.",
+            "Unlike the agent, the vehicle is the means by which the transport occurs, not the entity facilitating it. For example, 'trains' in 'trains running to and from southern Sudan' are the vehicles."
+        ],
+        "time": [
+            "The time argument specifies when the transport event occurs. For example, 'In last year's trial' provides a temporal context for the event.",
+            "Understanding the time helps place the event in a chronological context. For instance, 'temporarily suspended tours' implies a specific time frame.",
+            "Time can be explicitly stated or inferred from context. For example, 'each day' in 'each day about 90,000 people cross the border' provides a recurring time frame.",
+            "The time argument can include specific dates, durations, or relative time expressions. For instance, 'deploying some of Iraq's exiles' might imply an ongoing or future time frame.",
+            "Unlike other arguments, time provides the temporal context rather than the spatial or participant details. For example, 'last year's trial' sets the time for the transport event."
+        ],
+        "artifact": [
+            "The artifact argument refers to the objects or entities being transported. For example, 'women and children' in 'trains running to and from southern Sudan' are the artifacts.",
+            "Identifying the artifact helps understand what is being moved. For instance, 'tourists' in 'tours to Egypt and Turkey' are the artifacts.",
+            "Artifacts can be tangible objects or abstract entities. For example, 'dissidents' in 'deploying some of Iraq's exiles' are the artifacts.",
+            "In some contexts, the artifact may be implied rather than explicitly stated. For example, 'people' in 'each day about 90,000 people cross the border' are the artifacts.",
+            "Unlike the victim, the artifact can include non-human entities. For example, 'elements' in 'deploying some of Iraq's exiles and internal dissidents' are artifacts."
+        ],
+        "destination": [
+            "The destination argument specifies the endpoint of the transport event. For example, 'Sudan' in 'trains running to and from southern Sudan' is the destination.",
+            "Identifying the destination helps understand where the movement ends. For instance, 'Iraq' in 'getting back into Iraq' is the destination.",
+            "The destination can be a specific location, a broader region, or even a conceptual endpoint. For example, 'Egypt and Turkey' in 'tours to Egypt and Turkey' are the destinations.",
+            "In some contexts, the destination may be implied rather than explicitly stated. For example, 'cross the border' implies the destination is the other side of the border.",
+            "Unlike the origin, the destination is where the movement ends, not where it begins. For instance, 'Singapore' in 'cross the border between Malaysia and Singapore' is the destination."
+        ],
+        "place": [
+            "The place argument specifies the general location where the transport event occurs. For example, 'Iraq' in 'getting back into Iraq' is the place.",
+            "Identifying the place helps understand the broader context of the movement. For instance, 'country' in 'deploying some of Iraq's exiles around the country' is the place.",
+            "The place can be a specific location, a broader region, or even a conceptual area. For example, 'border' in 'cross the border between Malaysia and Singapore' is the place.",
+            "In some contexts, the place may be implied rather than explicitly stated. For example, 'tours to Egypt and Turkey' implies the place is where the tours start, likely China.",
+            "Unlike the origin or destination, the place provides a general context rather than a specific start or end point. For instance, 'Iraq' in 'getting back into Iraq' is the place."
+        ],
+        "agent": [
+            "The agent argument refers to the entity facilitating the transport event. For example, 'U.S. forces' in 'assisted by U.S. forces in getting back into Iraq' are the agents.",
+            "Identifying the agent helps understand who or what is facilitating the movement. For instance, 'agencies' in 'tours to Egypt and Turkey' are the agents.",
+            "Agents can be individuals, groups, organizations, or abstract entities. For example, 'United States' in 'deploying some of Iraq's exiles' is the agent.",
+            "In some contexts, the agent may be implied rather than explicitly stated. For example, 'cross the border' might imply border control as the agent.",
+            "Unlike the vehicle, the agent is the entity facilitating the movement, not the means by which it occurs. For instance, 'agencies' in 'tours to Egypt and Turkey' are the agents."
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "ArrestJail(JusticeEvent)": {
+        "description": [
+            "An ArrestJail event involves the apprehension or detention of an individual by law enforcement or other authorities. The event is typically triggered by verbs such as 'arrested', 'detained', 'apprehended', or 'jailed'.",
+            "The ArrestJail event signifies the act of taking someone into custody, usually because they are suspected of committing a crime. This event can occur in various locations and involve different agents such as police, military forces, or other security personnel.",
+            "An ArrestJail event is characterized by the physical act of restraining an individual and placing them under legal custody. The event can be triggered by actions like 'arrested', 'taken into custody', or 'jailed'.",
+            "The scope of an ArrestJail event includes the identification of the person being arrested, the agent performing the arrest, the location where the arrest takes place, and the time of the arrest. The event is often associated with a specific crime.",
+            "An ArrestJail event is a legal action where an individual is deprived of their freedom by authorities. This event is marked by triggers such as 'arrested', 'detained', or 'jailed' and involves key elements like the person arrested, the arresting agent, the place, and the time of the arrest."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "crime": [
+            "The crime argument specifies the illegal activity or offense that led to the arrest. It is crucial for understanding the context of the arrest. For example, 'theft', 'murder', or 'fraud'.",
+            "The crime argument identifies the specific wrongdoing that prompted the arrest. This can include various offenses such as 'drug trafficking', 'assault', or 'burglary'.",
+            "In an ArrestJail event, the crime argument provides details about the unlawful act committed by the person arrested. Examples include 'vandalism', 'embezzlement', or 'arson'.",
+            "The crime argument is essential for contextualizing the arrest, indicating the nature of the offense. Examples are 'robbery', 'kidnapping', or 'domestic violence'.",
+            "The crime argument describes the specific illegal act that resulted in the arrest. This can range from 'cybercrime' to 'tax evasion' or 'public intoxication'."
+        ],
+        "time": [
+            "The time argument specifies when the arrest took place. This can be a specific date, time of day, or a more general time frame such as 'Saturday', 'June 2', or 'last night'.",
+            "The time argument provides the temporal context of the arrest, indicating when the event occurred. Examples include 'yesterday', 'at 3 PM', or 'during the protest'.",
+            "In an ArrestJail event, the time argument helps to establish the timeline of the arrest. This can be detailed as 'early morning', 'late evening', or 'on the weekend'.",
+            "The time argument is important for situating the arrest within a specific period. Examples are 'last week', 'on New Year's Eve', or 'in the afternoon'.",
+            "The time argument indicates the exact or approximate time of the arrest, providing temporal context. Examples include 'midnight', 'on Monday', or 'during the raid'."
+        ],
+        "place": [
+            "The place argument specifies the location where the arrest occurred. This can be a city, building, or specific area such as 'Abilene', 'courthouse', or 'at home'.",
+            "The place argument identifies the geographical location of the arrest, providing context for the event. Examples include 'Baghdad', 'the park', or 'at the border'.",
+            "In an ArrestJail event, the place argument details where the arrest took place. This can be a specific address, landmark, or general area such as 'downtown', 'the airport', or 'in the office'.",
+            "The place argument is crucial for understanding the setting of the arrest. Examples are 'in the mall', 'at the crime scene', or 'near the school'.",
+            "The place argument provides the physical location of the arrest, which can range from 'in the city center' to 'at the protest site' or 'in the suspect's home'."
+        ],
+        "person": [
+            "The person argument identifies the individual who is being arrested. This can be a specific name or a general description such as 'her', 'terrorist', or 'man'.",
+            "The person argument specifies the individual taken into custody during the arrest. Examples include 'John Doe', 'the suspect', or 'the accused'.",
+            "In an ArrestJail event, the person argument details who is being apprehended. This can be a named individual or a general term like 'the criminal', 'the defendant', or 'the perpetrator'.",
+            "The person argument is essential for identifying the subject of the arrest. Examples are 'the thief', 'the protester', or 'the driver'.",
+            "The person argument provides information about the individual arrested, which can be a specific person or a general category such as 'the leader', 'the gang member', or 'the suspect'."
+        ],
+        "agent": [
+            "The agent argument specifies the entity or individual responsible for carrying out the arrest. This can be law enforcement or other authorities such as 'Police', 'forces', or 'you'.",
+            "The agent argument identifies who performed the arrest, providing context for the authority involved. Examples include 'the FBI', 'security personnel', or 'the sheriff'.",
+            "In an ArrestJail event, the agent argument details the arresting party. This can be a specific organization or individual like 'the military', 'the detective', or 'the officer'.",
+            "The agent argument is crucial for understanding who executed the arrest. Examples are 'the task force', 'the border patrol', or 'the undercover agent'.",
+            "The agent argument provides information about the entity responsible for the arrest, which can range from 'the police department' to 'the special unit' or 'the marshal'."
+        ]
+    }
+}

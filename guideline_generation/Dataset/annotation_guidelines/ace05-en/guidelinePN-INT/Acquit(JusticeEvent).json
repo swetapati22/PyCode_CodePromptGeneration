@@ -1,0 +1,11 @@
+{
+    "Acquit(JusticeEvent)": {
+        "description": "An 'Acquit' event in the context of a JusticeEvent refers to a formal legal decision where a defendant is declared not guilty of the charges against them. This event involves a judicial authority (adjudicator) delivering the verdict and results in the defendant being cleared of charges without any punishment. Common triggers include terms like 'acquitted' and 'found not guilty'. The 'Acquit' event is distinct from other JusticeEvents such as 'Pardon', 'Fine', 'Appeal', 'Injure', and 'Divorce'.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The 'adjudicator' in an 'Acquit' event is the legal authority or body, such as a judge, jury, or court, that delivers the verdict of not guilty. Examples include 'court', 'jury', 'Judge Smith', and 'supreme court'. The adjudicator evaluates the evidence and makes the final decision.",
+            "place": "The 'place' in an 'Acquit' event refers to the location where the legal decision is made, such as a specific court, city, or country. Examples include 'New York', 'Los Angeles', 'Supreme Court', and 'Pakistan'. The place provides geographical context to the legal proceedings.",
+            "defendant": "The 'defendant' in an 'Acquit' event is the individual or entity being cleared of charges. Examples include 'John Doe', 'the businessman', 'the accused', and 'the company'. The defendant is the central figure affected by the legal decision."
+        }
+    }
+}

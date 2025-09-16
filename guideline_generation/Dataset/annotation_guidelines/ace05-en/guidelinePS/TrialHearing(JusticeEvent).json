@@ -1,0 +1,42 @@
+{
+    "TrialHearing(JusticeEvent)": {
+        "description": [
+            "A TrialHearing event involves a formal examination of evidence and arguments by a judicial authority to determine the guilt or innocence of a defendant. Example triggers include 'hearing', 'trial', and 'tried'.",
+            "This event type is characterized by the presence of an adjudicator (e.g., judge or court), a prosecutor, a defendant, and a specific place where the trial or hearing occurs.",
+            "Unlike the ChargeIndict event, which focuses on the formal accusation of a crime, the TrialHearing event centers on the judicial process of examining evidence and arguments to reach a verdict.",
+            "Triggers such as 'charges' and 'lawsuit' are indicative of ChargeIndict and Sue events, respectively, not TrialHearing events. The outcome of a TrialHearing is a judicial decision, whereas the outcome of a ChargeIndict is an indictment, and the outcome of a Sue event is a legal claim.",
+            "The scope of a TrialHearing event includes the entire judicial process from the presentation of evidence to the final verdict. It does not include the arrest or release of individuals, which are covered by ArrestJail and ReleaseParole events, respectively."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "Adjudicator": [
+            "The adjudicator is the judicial authority presiding over the trial or hearing. This can be a judge, a court, or a panel of judges. For example, in 'an oklahoma city judge has ruled', the adjudicator is 'judge'.",
+            "The role of the adjudicator is to ensure the trial is conducted fairly and to make a final decision based on the evidence presented. In 'The Belgrade district court said', the adjudicator is 'court'.",
+            "Unlike the prosecutor or defendant, the adjudicator is neutral and does not advocate for either side. For instance, 'a court said Thursday' identifies 'court' as the adjudicator.",
+            "In some cases, the adjudicator may be referred to by their title or the institution they represent, such as 'judge' or 'court'. For example, 'an oklahoma judge has ruled' identifies 'judge' as the adjudicator.",
+            "The adjudicator's decision is final and binding, distinguishing their role from that of other participants in the trial. For example, 'a judge's worst nightmare' refers to the adjudicator as 'judge'."
+        ],
+        "Prosecutor": [
+            "The prosecutor is the legal representative who presents the case against the defendant. For example, in 'prosecutors presented enough evidence', the prosecutor is 'prosecutors'.",
+            "The role of the prosecutor is to prove the defendant's guilt beyond a reasonable doubt. In 'All the FL prosecutors have to do is ask', the prosecutor is 'prosecutors'.",
+            "Unlike the adjudicator, the prosecutor is an advocate for the state or the public and seeks to secure a conviction. For instance, 'prosecutors presented enough evidence' identifies 'prosecutors' as the prosecutor.",
+            "The prosecutor may be referred to by their title or the office they represent, such as 'district attorney' or 'state prosecutor'. For example, 'FL prosecutors' identifies 'prosecutors' as the prosecutor.",
+            "The prosecutor's arguments and evidence are critical to the trial's outcome, distinguishing their role from that of the defense. For example, 'prosecutors presented enough evidence' refers to the prosecutor as 'prosecutors'."
+        ],
+        "Defendant": [
+            "The defendant is the individual or entity accused of a crime and standing trial. For example, in 'to try nichols on murder charges', the defendant is 'nichols'.",
+            "The role of the defendant is to respond to the charges and present a defense against the prosecution's case. In 'Markovic will be tried', the defendant is 'Markovic'.",
+            "Unlike the prosecutor, the defendant is the subject of the trial and seeks to avoid conviction. For instance, 'terry nichols will indeed stand trial' identifies 'terry nichols' as the defendant.",
+            "The defendant may be referred to by name, title, or a pronoun, such as 'he', 'she', or 'they'. For example, 'her serving time' identifies 'her' as the defendant.",
+            "The defendant's presence and participation in the trial are essential, distinguishing their role from other participants. For example, 'Slobodan Milosevic's wife will go on trial' refers to the defendant as 'wife'."
+        ],
+        "Place": [
+            "The place is the location where the trial or hearing takes place. For example, in 'an oklahoma city judge has ruled', the place is 'oklahoma city'.",
+            "The role of the place is to provide the physical setting for the judicial process. In 'The Belgrade district court said', the place is 'Belgrade'.",
+            "Unlike other arguments, the place is a specific geographic location and is essential for jurisdictional purposes. For instance, 'in that state court' identifies 'state' as the place.",
+            "The place may be referred to by the name of the city, state, or country where the trial occurs. For example, 'FL for trial' identifies 'FL' as the place.",
+            "The place's identification is crucial for understanding the legal context and jurisdiction of the trial. For example, 'a court said Thursday' refers to the place as 'court'."
+        ]
+    }
+}

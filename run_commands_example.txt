@@ -1,0 +1,83 @@
+source env/bin/activate
+
+STEP 1:
+cd code_schema_generation
+
+python prepare_dataset.py \
+  --input_dir ../data \
+  --dataset_name ace05-en \
+  --output_dir ./processed_code_prompts/
+
+OR
+
+python generate_schema.py --dataset_folder ../data/ace05-en
+
+STEP 2:
+cd guideline_generation
+export OPENAI_API_KEY=key
+
+## Run to create datasets in the way needed for guideline generation: 
+python pre_processing/create_guideline_gen_dataset.py -d ace05-en -i ../data/
+
+## Run any one to create the prompts:
+python generate_prompts/create_prompts.py -d ace05-en -m P  --top_n 5
+python generate_prompts/create_prompts.py -d ace05-en -m PN --top_n 5 --neg_top_n 5
+python generate_prompts/create_prompts.py -d ace05-en -m PS --top_n 5 --neg_top_n 5
+
+## Run any one to prompt the LLMs:
+# P (positives only)
+python prompting/prompt_llms.py -d ace05-en --mode P --provider openai --llm gpt-4o
+# PN (positives + random negatives)
+python prompting/prompt_llms.py -d ace05-en --mode PN --provider openai --llm gpt-4o --max_tokens 4096
+# PS (positives + sibling negatives)
+python prompting/prompt_llms.py -d ace05-en --mode PS --provider openai --llm gpt-4o --max_tokens 4096
+
+## Run to create the prompts for PN-INT:
+python generate_prompts/create_prompts_INT.py \
+    -d ace05-en \
+    -m PNINT
+
+## Run to prompt the LLMs:
+python prompting/prompt_llms_INT.py \
+    -d ace05-en \
+    --mode PN-INT \
+    --provider openai
+
+## Run to consolidate the output annotation guidelines:
+python post_processing/consolidate_guidelines.py -d ace05-en 
+
+OR
+python post_processing/consolidate_guidelines.py \          
+  -v Dataset/annotation_guidelines/ace05-en/guidelinePS-INT
+
+STEP 3:
+cd .. 
+cd code_prompts
+
+WITHOUT ANNOTATION GUIDELINES:
+
+Without Negative Samples:
+python prepare_dataset.py --input_dir ../data --dataset_name ace05-en --output_dir ./processed_code_prompts/
+
+With Negative Samples:
+python prepare_dataset.py --input_dir ../data --dataset_name ace05-en --add_negative_samples True --output_dir ./processed_code_prompts/
+
+
+WITH ANNOTATION GUIDELINES:
+
+python prepare_dataset.py \
+  --input_dir ../data \
+  --dataset_name ace05-en \
+  --annotate_schema True \
+  --guideline_file ../guideline_generation/Dataset/annotation_guidelines/ace05-en/guidelineP/all_event_annotations_guidelineP.json \
+  --output_dir ./processed_code_prompts/
+
+WITH ANNOTATION GUIDELINES and NEGATIVE EXAMPLES:
+
+python prepare_dataset.py \
+  --input_dir ../data \
+  --dataset_name ace05-en \
+  --annotate_schema True \
+  --guideline_file ../guideline_generation/Dataset/annotation_guidelines/ace05-en/guidelineP/all_event_annotations_guidelineP.json \
+  --add_negative_samples True
+  --output_dir ./processed_code_prompts/

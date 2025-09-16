@@ -1,0 +1,49 @@
+{
+    "ArrestJail(JusticeEvent)": {
+        "description": [
+            "The ArrestJail event type refers to the act of detaining an individual by law enforcement or other authorities, typically in response to a suspected crime. Example triggers include 'arrested', 'detained', and 'taken into custody'.",
+            "This event involves the physical apprehension and restriction of an individual's freedom, often leading to their placement in a jail or similar facility. Key characteristics include the involvement of an authority figure (agent) and a specific location (place).",
+            "Unlike the Extradite event, which involves transferring a person from one jurisdiction to another, the ArrestJail event focuses on the initial act of detaining an individual. Triggers such as 'extradition' are indicative of the Extradite event, not the ArrestJail event.",
+            "The outcome of an ArrestJail event is the individual's loss of freedom and potential legal proceedings. This differs from the Acquit event, where the outcome is the individual being declared not guilty and released.",
+            "In the context of justice events, the ArrestJail event is a precursor to other events such as Convict or Sentence, where legal judgments are made. The trigger 'convicted' indicates a Convict event, not an ArrestJail event."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "crime": [
+            "The 'crime' argument specifies the offense or illegal activity that led to the arrest. It is crucial for understanding the context of the arrest. For example, 'arrested for theft' indicates the crime is theft.",
+            "This argument helps to clarify the reason behind the arrest, distinguishing it from other justice events. For instance, 'arrested for vandalism' provides a clear reason for the detainment.",
+            "In some cases, the crime may not be explicitly stated but can be inferred from the context. For example, 'arrested after a robbery' implies the crime is robbery.",
+            "The 'crime' argument is not always present in the text but is essential when available to provide a complete picture of the event. For example, 'arrested for drug possession' clearly states the crime.",
+            "Edge cases include situations where the crime is described in vague terms, such as 'arrested for suspicious activity'. Here, the exact nature of the crime may not be clear but still provides context."
+        ],
+        "time": [
+            "The 'time' argument indicates when the arrest took place. It helps to situate the event in a temporal context. For example, 'arrested on Saturday' specifies the day of the week.",
+            "This argument can include specific dates, times of day, or relative time expressions. For instance, 'arrested at 3 PM' or 'arrested last night' provide clear temporal markers.",
+            "In some cases, the time may be inferred from the context rather than explicitly stated. For example, 'arrested during the protest' implies a specific time frame.",
+            "The 'time' argument is important for understanding the sequence of events, especially in narratives involving multiple justice events. For example, 'arrested after the meeting' provides a relative time frame.",
+            "Edge cases include vague time references such as 'arrested recently'. While not specific, these still provide some temporal context."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the arrest occurred. It is crucial for understanding the geographical context of the event. For example, 'arrested in New York' indicates the city.",
+            "This argument can include specific addresses, landmarks, or general areas. For instance, 'arrested at the courthouse' or 'arrested downtown' provide clear location markers.",
+            "In some cases, the place may be described in broader terms, such as 'arrested in the city'. While less specific, it still provides geographical context.",
+            "The 'place' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple locations. For example, 'arrested at the border' provides a specific context.",
+            "Edge cases include vague location references such as 'arrested nearby'. While not specific, these still provide some geographical context."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual who is being arrested. It is essential for understanding who is the subject of the ArrestJail event. For example, 'arrested John' specifies the person.",
+            "This argument can include names, descriptions, or roles. For instance, 'arrested the suspect' or 'arrested the man' provide clear identification.",
+            "In some cases, the person may be described in broader terms, such as 'arrested several people'. While less specific, it still identifies the subjects of the event.",
+            "The 'person' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple individuals. For example, 'arrested the protesters' provides a specific group.",
+            "Edge cases include vague person references such as 'arrested someone'. While not specific, these still provide some identification."
+        ],
+        "agent": [
+            "The 'agent' argument identifies the authority figure or entity responsible for making the arrest. It is crucial for understanding who is carrying out the ArrestJail event. For example, 'arrested by the police' specifies the agent.",
+            "This argument can include specific organizations, roles, or descriptions. For instance, 'arrested by the FBI' or 'arrested by security' provide clear identification.",
+            "In some cases, the agent may be described in broader terms, such as 'arrested by authorities'. While less specific, it still identifies the responsible entity.",
+            "The 'agent' argument helps to distinguish between different instances of the ArrestJail event, especially in narratives involving multiple agents. For example, 'arrested by the military' provides a specific context.",
+            "Edge cases include vague agent references such as 'arrested by officials'. While not specific, these still provide some identification."
+        ]
+    }
+}

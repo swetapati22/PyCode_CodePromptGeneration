@@ -1,0 +1,56 @@
+{
+    "TransferMoney(TransactionEvent)": {
+        "description": [
+            "The TransferMoney event involves the movement of money from one entity (the giver) to another (the recipient). This event can occur in various contexts, such as donations, payments, or financial transactions.",
+            "A TransferMoney event is characterized by the transfer of funds, which can be triggered by verbs like 'give', 'pay', 'send', or 'transfer'. The event typically involves at least two parties: the giver and the recipient.",
+            "In a TransferMoney event, the giver is the entity that provides the money, while the recipient is the entity that receives it. The event may also include additional details such as the amount of money, the time of the transaction, the place where it occurred, and any beneficiaries.",
+            "The scope of a TransferMoney event includes any scenario where money is exchanged between parties. This can include personal transactions, business deals, charitable donations, and legal settlements.",
+            "Key characteristics of a TransferMoney event include the presence of a financial transaction, identifiable parties involved in the transaction, and often a specific trigger word indicating the transfer of money."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that provides the money in the TransferMoney event. This can be an individual, organization, or any other entity capable of transferring funds. For example, in the sentence 'John gave $100 to Mary', John is the giver.",
+            "In a TransferMoney event, the giver is responsible for initiating the transfer of money. This role is crucial as it identifies the source of the funds. For instance, in 'The company donated $5000 to the charity', the company is the giver.",
+            "The giver can be explicitly mentioned or implied in the context. For example, 'She paid the bill' implies that 'she' is the giver. The giver is often the subject of the verb triggering the event.",
+            "In some cases, the giver may be a collective entity, such as a group or organization. For example, 'The committee allocated funds to the project' identifies the committee as the giver.",
+            "The giver's role is essential for understanding the direction of the financial transaction. For example, 'The government issued a grant to the university' indicates that the government is the giver."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives the money in the TransferMoney event. This can be an individual, organization, or any other entity capable of receiving funds. For example, in the sentence 'John gave $100 to Mary', Mary is the recipient.",
+            "In a TransferMoney event, the recipient is the target of the financial transaction. This role is crucial as it identifies the destination of the funds. For instance, in 'The company donated $5000 to the charity', the charity is the recipient.",
+            "The recipient can be explicitly mentioned or implied in the context. For example, 'She paid the bill' implies that the bill's payee is the recipient. The recipient is often the object of the verb triggering the event.",
+            "In some cases, the recipient may be a collective entity, such as a group or organization. For example, 'The committee allocated funds to the project' identifies the project as the recipient.",
+            "The recipient's role is essential for understanding the direction of the financial transaction. For example, 'The government issued a grant to the university' indicates that the university is the recipient."
+        ],
+        "money": [
+            "The money argument specifies the amount of funds being transferred in the TransferMoney event. This can be a specific monetary value, such as '$100' or '5000 dollars'. For example, in 'John gave $100 to Mary', $100 is the money.",
+            "In a TransferMoney event, the money argument quantifies the financial transaction. This detail is crucial for understanding the scale of the transfer. For instance, 'The company donated $5000 to the charity' specifies $5000 as the money.",
+            "The money can be explicitly mentioned or implied in the context. For example, 'She paid the bill' implies an unspecified amount of money. The money argument is often a numerical value associated with the verb triggering the event.",
+            "In some cases, the money may be described in non-numerical terms, such as 'a large sum' or 'a small amount'. For example, 'He transferred a large sum to his account' identifies 'a large sum' as the money.",
+            "The money argument is essential for understanding the magnitude of the financial transaction. For example, 'The government issued a grant of $1 million to the university' indicates that $1 million is the money."
+        ],
+        "time": [
+            "The time argument specifies when the TransferMoney event occurs. This can be a specific date, time, or a more general time frame. For example, in 'John gave $100 to Mary yesterday', 'yesterday' is the time.",
+            "In a TransferMoney event, the time argument provides temporal context for the transaction. This detail is crucial for understanding the timing of the transfer. For instance, 'The company donated $5000 to the charity last month' specifies 'last month' as the time.",
+            "The time can be explicitly mentioned or implied in the context. For example, 'She paid the bill on Monday' specifies 'on Monday' as the time. The time argument is often a temporal expression associated with the verb triggering the event.",
+            "In some cases, the time may be described in relative terms, such as 'recently' or 'soon'. For example, 'He transferred the funds recently' identifies 'recently' as the time.",
+            "The time argument is essential for understanding the chronological order of events. For example, 'The government issued a grant to the university in 2020' indicates that 'in 2020' is the time."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that ultimately benefits from the TransferMoney event, even if they are not the direct recipient. This can be an individual, organization, or any other entity. For example, in 'John gave $100 to Mary for her children', 'her children' are the beneficiaries.",
+            "In a TransferMoney event, the beneficiary is the entity that gains from the financial transaction. This role is crucial for understanding the purpose or impact of the transfer. For instance, 'The company donated $5000 to the charity for disaster relief' specifies 'disaster relief' as the beneficiary.",
+            "The beneficiary can be explicitly mentioned or implied in the context. For example, 'She paid the bill for her friend' implies that 'her friend' is the beneficiary. The beneficiary is often an indirect object associated with the verb triggering the event.",
+            "In some cases, the beneficiary may be a collective entity, such as a group or organization. For example, 'The committee allocated funds to the project for community development' identifies 'community development' as the beneficiary.",
+            "The beneficiary's role is essential for understanding the broader impact of the financial transaction. For example, 'The government issued a grant to the university for research' indicates that 'research' is the beneficiary."
+        ],
+        "place": [
+            "The place argument specifies the location where the TransferMoney event occurs. This can be a specific place, such as a city, country, or institution. For example, in 'John gave $100 to Mary in New York', 'New York' is the place.",
+            "In a TransferMoney event, the place argument provides spatial context for the transaction. This detail is crucial for understanding where the transfer takes place. For instance, 'The company donated $5000 to the charity in California' specifies 'California' as the place.",
+            "The place can be explicitly mentioned or implied in the context. For example, 'She paid the bill at the restaurant' specifies 'at the restaurant' as the place. The place argument is often a locational expression associated with the verb triggering the event.",
+            "In some cases, the place may be described in broader terms, such as 'online' or 'abroad'. For example, 'He transferred the funds online' identifies 'online' as the place.",
+            "The place argument is essential for understanding the geographical context of the financial transaction. For example, 'The government issued a grant to the university in Washington' indicates that 'in Washington' is the place."
+        ]
+    }
+}

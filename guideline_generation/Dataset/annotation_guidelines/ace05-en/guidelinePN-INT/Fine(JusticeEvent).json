@@ -1,0 +1,11 @@
+{
+    "Fine(JusticeEvent)": {
+        "description": "A Fine event involves the imposition of a monetary penalty on an entity by an adjudicator due to a legal or regulatory violation. Key triggers include terms like 'fine', 'fines', 'pay a fine', 'imposed a fine', 'fined', 'penalized', and 'ordered to pay'. This event is distinct from other JusticeEvent types such as 'Arrest' or 'Trial', as it specifically pertains to financial penalties rather than physical detention or legal proceedings. The outcome is the payment of a specified amount of money by the entity to the adjudicator or a designated authority.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the authority or individual who imposes the fine, such as a judge, regulatory body, or official entity. Examples include 'judge' in 'The judge ordered a fine' and 'SEC' in 'The SEC imposed a fine'. The adjudicator must have the legal authority to impose the fine, and in some cases, may be implied rather than explicitly stated.",
+            "entity": "The entity is the individual, organization, or group required to pay the fine. This could be a person, company, or any legal entity responsible for the violation. Examples include 'company' in 'The company was fined' and 'John' in 'John was fined $500'. The entity must be the one who committed the violation or is held responsible for it.",
+            "place": "The place is the location where the fine is imposed or where the entity is located, such as a city, building, or specific location. Examples include 'New York' in 'The fine was imposed in New York' and 'courthouse' in 'The fine was issued at the courthouse'. The place provides context for jurisdiction and enforcement and can range from specific buildings to broader geographic areas, including virtual locations like 'online'."
+        }
+    }
+}

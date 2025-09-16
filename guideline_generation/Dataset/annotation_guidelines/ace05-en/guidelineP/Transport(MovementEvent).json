@@ -1,0 +1,70 @@
+{
+    "Transport(MovementEvent)": {
+        "description": [
+            "The Transport event involves the movement of entities (people, objects, etc.) from one location to another. This event is characterized by the presence of a source (origin) and a target (destination).",
+            "Transport events can be triggered by verbs such as 'transport', 'move', 'deploy', 'cross', and 'return'. These events often involve an agent facilitating the movement and a vehicle used for transportation.",
+            "Key characteristics of Transport events include the identification of the entities being moved (artifacts or victims), the locations involved (origin and destination), and the means of transport (vehicle).",
+            "The scope of Transport events can vary from small-scale movements (e.g., a person traveling) to large-scale operations (e.g., mass evacuations or troop deployments).",
+            "Transport events are a subset of MovementEvents, specifically focusing on the logistics and mechanisms of moving entities from one place to another."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "origin": [
+            "The origin is the starting point of the transport event, indicating where the movement begins. For example, in 'trains running to and from southern Sudan', 'southern Sudan' is the origin.",
+            "The origin can be a specific location, such as a city, country, or any identifiable place. For instance, 'Malaysia' in 'cross the border between Malaysia and Singapore'.",
+            "In some cases, the origin might be implied or contextually understood rather than explicitly stated. For example, 'deploying some of Iraq's exiles' implies the origin is Iraq.",
+            "The origin is crucial for understanding the full context of the transport event, as it provides the starting point of the movement.",
+            "Edge cases include situations where the origin is a general area or region rather than a specific point, such as 'the country' in 'deploying around the country'."
+        ],
+        "victim": [
+            "The victim refers to individuals who are being moved involuntarily or under duress. For example, 'abducted women and children' in 'used to transport abducted women and children'.",
+            "Victims are typically people who are affected negatively by the transport event, such as refugees or kidnapped individuals.",
+            "In some contexts, the term 'victim' might be used metaphorically or broadly to include anyone adversely affected by the transport event.",
+            "The identification of victims is important for understanding the humanitarian or ethical implications of the transport event.",
+            "Edge cases include situations where the victim is not explicitly mentioned but can be inferred from the context, such as 'who' in 'Mr. Chalabi, who was assisted by U.S. forces'."
+        ],
+        "vehicle": [
+            "The vehicle is the means of transport used in the event, such as 'trains' in 'trains running to and from southern Sudan'.",
+            "Vehicles can include any mode of transportation, such as cars, planes, ships, or even animals in some contexts.",
+            "The vehicle provides insight into the logistics and scale of the transport event, indicating how the movement is facilitated.",
+            "In some cases, the vehicle might be implied or contextually understood rather than explicitly stated.",
+            "Edge cases include situations where the vehicle is a non-traditional mode of transport, such as 'deploying' which implies the use of military vehicles or equipment."
+        ],
+        "time": [
+            "The time refers to when the transport event occurs, providing temporal context. For example, 'In last year's trial' indicates the time frame of the event.",
+            "Time can be specific (e.g., 'on January 1st') or relative (e.g., 'yesterday', 'last year').",
+            "The time helps in understanding the sequence and duration of the transport event.",
+            "In some cases, the time might be implied or contextually understood rather than explicitly stated.",
+            "Edge cases include situations where the time is a recurring or ongoing period, such as 'each day' in 'Each day about 90,000 people cross the border'."
+        ],
+        "artifact": [
+            "The artifact refers to the entities being moved, such as 'women and children' in 'used to transport abducted women and children'.",
+            "Artifacts can include people, objects, or any items being transported.",
+            "The identification of artifacts is crucial for understanding what is being moved and the purpose of the transport event.",
+            "In some cases, the artifact might be implied or contextually understood rather than explicitly stated.",
+            "Edge cases include situations where the artifact is a collective group or a non-specific entity, such as 'people' in 'about 90,000 people cross the border'."
+        ],
+        "destination": [
+            "The destination is the endpoint of the transport event, indicating where the movement ends. For example, 'Sudan' in 'trains running to and from southern Sudan'.",
+            "The destination can be a specific location, such as a city, country, or any identifiable place. For instance, 'Singapore' in 'cross the border between Malaysia and Singapore'.",
+            "In some cases, the destination might be implied or contextually understood rather than explicitly stated.",
+            "The destination is crucial for understanding the full context of the transport event, as it provides the endpoint of the movement.",
+            "Edge cases include situations where the destination is a general area or region rather than a specific point, such as 'around the country' in 'deploying around the country'."
+        ],
+        "place": [
+            "The place refers to the general location where the transport event occurs, such as 'Iraq' in 'getting back into Iraq'.",
+            "Place can be a broader area or region involved in the transport event, providing additional context.",
+            "The identification of place helps in understanding the geographical scope and relevance of the transport event.",
+            "In some cases, the place might be implied or contextually understood rather than explicitly stated.",
+            "Edge cases include situations where the place is a non-specific or large area, such as 'the country' in 'deploying around the country'."
+        ],
+        "agent": [
+            "The agent is the entity facilitating or causing the transport event, such as 'U.S. forces' in 'assisted by U.S. forces'.",
+            "Agents can include individuals, organizations, or groups responsible for the movement.",
+            "The identification of agents is important for understanding who is responsible for the transport event and their role in it.",
+            "In some cases, the agent might be implied or contextually understood rather than explicitly stated.",
+            "Edge cases include situations where the agent is a collective group or a non-specific entity, such as 'agencies' in 'major travel agencies'."
+        ]
+    }
+}

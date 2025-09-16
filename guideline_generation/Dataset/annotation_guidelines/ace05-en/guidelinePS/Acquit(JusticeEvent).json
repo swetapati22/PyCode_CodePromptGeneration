@@ -1,0 +1,35 @@
+{
+    "Acquit(JusticeEvent)": {
+        "description": [
+            "The 'Acquit' event type, a subclass of 'JusticeEvent', refers to the formal legal process where a defendant is declared not guilty of the charges against them. Example triggers include 'acquitted', 'found not guilty', and 'walk free'.",
+            "An 'Acquit' event involves a judicial decision where the defendant is cleared of criminal charges, often following a trial or legal proceeding. Key characteristics include the involvement of a legal adjudicator and the defendant being the subject of the acquittal.",
+            "Unlike the 'Convict' event type, which results in a guilty verdict, the 'Acquit' event results in the defendant being declared innocent. Triggers such as 'convicted' or 'found guilty' are indicative of the 'Convict' event type, not 'Acquit'.",
+            "The 'Acquit' event is distinct from the 'Fine' event type, which involves a monetary penalty. Triggers like 'fined' or 'penalized' are associated with the 'Fine' event type, whereas 'acquitted' or 'cleared of charges' are specific to 'Acquit'.",
+            "In the context of 'Acquit', the outcome is the defendant's release from legal charges, contrasting with 'ChargeIndict', where the defendant is formally accused of a crime. Triggers such as 'charged' or 'indicted' are not relevant to 'Acquit'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' argument refers to the legal authority or body responsible for delivering the acquittal verdict. This can include judges, juries, or courts. For example, in 'The court acquitted the defendant', 'court' is the adjudicator.",
+            "In the 'Acquit' event, the adjudicator plays a crucial role in determining the outcome of the case. For instance, 'The jury found the defendant not guilty' identifies 'jury' as the adjudicator.",
+            "The adjudicator is essential for the legitimacy of the acquittal. In 'The judge declared the defendant innocent', 'judge' serves as the adjudicator.",
+            "Edge cases may involve multiple adjudicators, such as 'The panel of judges acquitted the defendant', where 'panel of judges' is the adjudicator.",
+            "Unlike the 'Prosecutor' in 'ChargeIndict' events, who brings charges against the defendant, the 'adjudicator' in 'Acquit' events delivers the verdict. For example, 'The magistrate acquitted the accused' identifies 'magistrate' as the adjudicator."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the acquittal occurs. This can be a courtroom, city, or country. For example, 'The defendant was acquitted in New York' identifies 'New York' as the place.",
+            "In 'Acquit' events, the place provides context for the legal proceedings. For instance, 'The court in Los Angeles acquitted the defendant' uses 'Los Angeles' as the place.",
+            "The place is important for understanding the jurisdiction of the acquittal. For example, 'The defendant was found not guilty in the federal court' identifies 'federal court' as the place.",
+            "Edge cases may involve broader locations, such as 'The international tribunal acquitted the defendant', where 'international tribunal' is the place.",
+            "Unlike 'Origin' or 'Destination' in 'Extradite' events, which refer to the movement of individuals, the 'place' in 'Acquit' events is where the legal decision is made. For example, 'The defendant was acquitted in the Supreme Court' identifies 'Supreme Court' as the place."
+        ],
+        "defendant": [
+            "The 'defendant' argument refers to the individual or entity being acquitted of charges. For example, in 'The court acquitted John Doe', 'John Doe' is the defendant.",
+            "In 'Acquit' events, the defendant is the central figure who benefits from the acquittal. For instance, 'The jury found the businessman not guilty' identifies 'businessman' as the defendant.",
+            "The defendant is crucial for identifying who is being cleared of charges. For example, 'The judge acquitted the accused' uses 'accused' as the defendant.",
+            "Edge cases may involve multiple defendants, such as 'The court acquitted the group of activists', where 'group of activists' is the defendant.",
+            "Unlike the 'Person' in 'Execute' events, who is subject to capital punishment, the 'defendant' in 'Acquit' events is cleared of charges. For example, 'The defendant was acquitted by the jury' identifies 'defendant' as the individual being acquitted."
+        ]
+    }
+}

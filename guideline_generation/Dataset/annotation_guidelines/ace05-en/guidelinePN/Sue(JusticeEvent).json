@@ -1,0 +1,42 @@
+{
+    "Sue(JusticeEvent)": {
+        "description": [
+            "The 'Sue' event type, a subclass of 'JusticeEvent', involves a legal action where one party (the plaintiff) initiates a lawsuit against another party (the defendant) in a court of law. Example triggers include 'lawsuit', 'sued', and 'pursue'.",
+            "A 'Sue' event is characterized by the formal process of bringing a legal claim against another party, typically involving a judicial authority (adjudicator) and occurring at a specific location (place).",
+            "Unlike other JusticeEvent types such as 'ArrestJail' or 'Execute', the 'Sue' event does not involve physical detention or capital punishment but rather a legal dispute resolution process.",
+            "Triggers such as 'arrested' or 'executed' are indicative of 'ArrestJail' or 'Execute' events, respectively, and not 'Sue' events. The outcome of a 'Sue' event is typically a court ruling or settlement, not physical custody or execution.",
+            "The scope of a 'Sue' event includes civil lawsuits, class actions, and other legal claims where the plaintiff seeks redress or compensation from the defendant through judicial means."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in a 'Sue' event refers to the judicial authority or court that presides over the lawsuit. This can be a judge, a panel of judges, or a specific court. Example: 'The judge approved the settlement.'",
+            "The role of the 'adjudicator' is to ensure that the legal proceedings are conducted fairly and to render a decision based on the evidence and arguments presented. Example: 'The Supreme Court ruled in favor of the plaintiff.'",
+            "In some cases, the 'adjudicator' may be an arbitration panel or a tribunal, especially in non-traditional legal settings. Example: 'The arbitration panel found the defendant liable.'",
+            "Unlike the 'plaintiff' or 'defendant', the 'adjudicator' is a neutral party responsible for adjudicating the dispute. Example: 'The court dismissed the case due to lack of evidence.'",
+            "Edge cases include situations where the 'adjudicator' is not explicitly mentioned but can be inferred from the context, such as 'The lawsuit was filed in federal court.'"
+        ],
+        "plaintiff": [
+            "The 'plaintiff' in a 'Sue' event is the party that initiates the lawsuit, seeking legal remedy or compensation from the defendant. Example: 'The shareholders sued the company for fraud.'",
+            "The 'plaintiff' can be an individual, a group of individuals, or an organization. Example: 'The victims' families filed a lawsuit against the manufacturer.'",
+            "In class action lawsuits, the 'plaintiff' represents a larger group of people with similar claims. Example: 'The class action was brought by former employees.'",
+            "Unlike the 'defendant', the 'plaintiff' is the party alleging harm or seeking redress. Example: 'The consumers sued the retailer for false advertising.'",
+            "Edge cases include situations where the 'plaintiff' is not explicitly named but can be inferred from the context, such as 'A lawsuit was filed against the company.'"
+        ],
+        "defendant": [
+            "The 'defendant' in a 'Sue' event is the party against whom the lawsuit is filed, accused of causing harm or wrongdoing. Example: 'The company was sued by its employees.'",
+            "The 'defendant' can be an individual, a group of individuals, or an organization. Example: 'The government was named as the defendant in the lawsuit.'",
+            "In some cases, there may be multiple defendants in a single lawsuit. Example: 'The lawsuit named several pharmaceutical companies as defendants.'",
+            "Unlike the 'plaintiff', the 'defendant' is the party responding to the allegations and defending against the claims. Example: 'The defendant denied all allegations of misconduct.'",
+            "Edge cases include situations where the 'defendant' is not explicitly named but can be inferred from the context, such as 'The lawsuit targeted several high-profile executives.'"
+        ],
+        "place": [
+            "The 'place' in a 'Sue' event refers to the location where the lawsuit is filed or where the legal proceedings take place. Example: 'The lawsuit was filed in Washington.'",
+            "The 'place' can be a specific court, city, state, or country. Example: 'The case was heard in the New York Supreme Court.'",
+            "In some cases, the 'place' may refer to the jurisdiction or venue of the lawsuit. Example: 'The lawsuit was transferred to federal court.'",
+            "Unlike other event types where 'place' might refer to a physical location of an incident, in 'Sue' events, it specifically refers to the legal venue. Example: 'The trial took place in Los Angeles.'",
+            "Edge cases include situations where the 'place' is not explicitly mentioned but can be inferred from the context, such as 'The lawsuit was filed in a local court.'"
+        ]
+    }
+}

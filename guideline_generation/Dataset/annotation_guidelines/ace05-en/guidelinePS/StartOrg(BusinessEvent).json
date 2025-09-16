@@ -1,0 +1,35 @@
+{
+    "StartOrg(BusinessEvent)": {
+        "description": [
+            "The StartOrg event type refers to the initiation or establishment of a new organization or entity. This can include the creation of a new business, government body, or any other formal group.",
+            "Triggers for the StartOrg event type include verbs such as 'create', 'build', 'open', 'launch', and 'establish'. These verbs indicate the beginning of a new organizational entity.",
+            "Key characteristics of the StartOrg event include the presence of an agent (the entity or entities responsible for the creation), the organization being created, and the place where the organization is being established.",
+            "Unlike the MergeOrg event type, which involves the combination of existing organizations, the StartOrg event focuses on the creation of a new, standalone entity.",
+            "Triggers such as 'merge' or 'acquire' are indicative of the MergeOrg event type, not the StartOrg event type. Similarly, 'bankruptcy' or 'dissolve' are indicative of the EndOrg or DeclareBankruptcy event types, respectively, and not the StartOrg event type."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument refers to the organization or entity that is being created or established. This is the primary focus of the StartOrg event.",
+            "Examples of 'org' include 'government', 'Disneyland', 'monster', and 'insurer'. These terms represent the new entities being formed.",
+            "The 'org' argument is crucial as it identifies the new entity that is the result of the StartOrg event. Without this argument, the event cannot be properly classified as StartOrg.",
+            "In cases where the organization is not explicitly named, descriptive terms or roles (e.g., 'a new department', 'a new branch') can serve as the 'org' argument.",
+            "Unlike the 'org' argument in the MergeOrg event, which involves existing entities, the 'org' argument in the StartOrg event refers to a newly created entity."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the new organization is being established. This provides context for the geographical or physical setting of the event.",
+            "Examples of 'place' include 'Iraq', 'here', 'Sydney', and 'Japan'. These locations indicate where the new organization is being set up.",
+            "The 'place' argument is important as it situates the event in a specific location, which can be critical for understanding the scope and impact of the new organization.",
+            "In some cases, the 'place' may be implied or broadly defined (e.g., 'in the city', 'locally'), but it should still provide a clear indication of the event's setting.",
+            "Unlike the 'place' argument in the EndOrg event, which may indicate where an organization is ceasing operations, the 'place' argument in the StartOrg event indicates where an organization is beginning operations."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or entities responsible for creating or establishing the new organization. This can include individuals, groups, or other organizations.",
+            "Examples of 'agent' include 'U.S', 'leaders', 'Daily Planet Ltd', 'we', and 'AIG'. These agents are the driving force behind the creation of the new organization.",
+            "The 'agent' argument is essential as it identifies who is initiating the StartOrg event. This can provide insight into the motivations and resources behind the new organization.",
+            "In some cases, the 'agent' may be a collective or anonymous group (e.g., 'the community', 'a consortium'), but it should still clearly indicate the initiators of the event.",
+            "Unlike the 'agent' argument in the MergeOrg event, which involves entities combining forces, the 'agent' in the StartOrg event is focused on the creation of a new, independent entity."
+        ]
+    }
+}

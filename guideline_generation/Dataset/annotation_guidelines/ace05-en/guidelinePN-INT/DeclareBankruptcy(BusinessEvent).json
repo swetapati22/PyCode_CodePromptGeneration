@@ -1,0 +1,10 @@
+{
+    "DeclareBankruptcy(BusinessEvent)": {
+        "description": "The DeclareBankruptcy event involves a formal declaration by an organization that it cannot meet its financial obligations and seeks legal relief from its debts. This event is characterized by the involvement of an organization and often a specific place where the bankruptcy is declared or recognized. Triggers include terms like 'bankruptcy', 'bankrupt', and 'file for bankruptcy'. The event typically results in legal proceedings such as debt restructuring, asset liquidation, or other court-supervised actions. Unlike other events, DeclareBankruptcy focuses on the financial insolvency and legal standing of organizations.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "org": "The 'org' argument identifies the organization declaring bankruptcy, which can be any business entity such as a corporation, company, or firm. It is crucial to distinguish this from individuals or non-business entities. Examples include 'worldcom' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states' and 'Enron Corp' in 'Bankrupt energy giant Enron Corp is considering bringing legal action'. In cases of complex organizational structures, the primary entity declaring bankruptcy should be identified.",
+            "place": "The 'place' argument refers to the location where the bankruptcy is declared or recognized, such as a country, city, or specific jurisdiction. This location often determines the legal framework and jurisdiction for the bankruptcy proceedings. Examples include 'united states' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states'. In cases involving multinational organizations or multiple jurisdictions, the primary location of the bankruptcy declaration should be identified."
+        }
+    }
+}

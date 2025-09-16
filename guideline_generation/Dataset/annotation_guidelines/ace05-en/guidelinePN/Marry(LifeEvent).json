@@ -1,0 +1,35 @@
+{
+    "Marry(LifeEvent)": {
+        "description": [
+            "The 'Marry' event type, a subclass of 'LifeEvent', refers to the formal union of two individuals in a marital relationship. Example triggers include 'marry', 'wed', 'married', and 'marriage'.",
+            "This event type captures the act of entering into a marriage, typically involving a ceremony or legal process. Key characteristics include the involvement of two individuals and a specific location where the event takes place.",
+            "Unlike the 'Divorce' event type, which signifies the dissolution of a marriage, the 'Marry' event type focuses on the initiation of a marital relationship. Triggers such as 'divorce' or 'separate' are indicative of the 'Divorce' event type, not 'Marry'.",
+            "The 'Marry' event type is distinct from other 'LifeEvent' types like 'Birth' or 'Death', as it specifically involves the union of two people in marriage. Triggers like 'born' or 'died' are not relevant to this event type.",
+            "In the context of event extraction, the 'Marry' event type is identified by triggers that denote the act of marriage and involves arguments such as the individuals getting married (Person), the location of the marriage (Place), and the time of the event (Time)."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "Person": [
+            "The 'Person' argument refers to the individuals who are entering into the marriage. This argument is crucial as it identifies the main participants of the event. For example, in 'Rudolph Giuliani will wed his companion, Judith Nathan', 'Rudolph Giuliani' and 'Judith Nathan' are the 'Person' arguments.",
+            "In the 'Marry' event type, the 'Person' argument can include references to the individuals by name, title, or relationship. For instance, 'daughter' and 'Raja Ahmad Sharir Iskandar' in 'Anwar to marry his eldest daughter, Nurul Izzah, to engineer Raja Ahmad Sharir Iskandar'.",
+            "The 'Person' argument may also include pronouns or other indirect references to the individuals involved. For example, 'she' and 'fiance' in 'she really needed to be married in the temple, even though her fiance was not LDS'.",
+            "Unlike other event types, the 'Person' argument in the 'Marry' event type specifically refers to the individuals getting married, not other participants or entities. For example, 'head' in 'the pope will reportedly name a new head' is not relevant to the 'Marry' event type.",
+            "Edge cases for the 'Person' argument include situations where the individuals are referred to by their roles or relationships rather than names. For example, 'whom' and 'she' in 'the 58-year-old rock star to whom she has been married for nearly 13 years'."
+        ],
+        "Place": [
+            "The 'Place' argument refers to the location where the marriage takes place. This argument is important as it provides context to the event. For example, 'home' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon to marry'.",
+            "In the 'Marry' event type, the 'Place' argument can include specific locations such as buildings, cities, or other venues. For instance, 'Gracie Mansion' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24 in the ex-mayor's old home, Gracie Mansion'.",
+            "The 'Place' argument may also include more general references to locations, such as 'temple' in 'she really needed to be married in the temple, even though her fiance was not LDS'.",
+            "Unlike other event types, the 'Place' argument in the 'Marry' event type specifically refers to the location of the marriage ceremony or event, not other locations mentioned in the text. For example, 'houses' in 'Five Iraqi civilians, including a woman, were killed Monday when their houses were hit by a missile' is not relevant to the 'Marry' event type.",
+            "Edge cases for the 'Place' argument include situations where the location is implied or indirectly referenced. For example, 'home' in 'Hunter, 34, filed for divorce in Los Angeles Superior Court, citing irreconcilable differences with the 58-year-old rock star to whom she has been married for nearly 13 years'."
+        ],
+        "Time": [
+            "The 'Time' argument refers to the specific time or date when the marriage takes place. This argument is essential for situating the event in a temporal context. For example, 'May 24' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24'.",
+            "In the 'Marry' event type, the 'Time' argument can include specific dates, times of day, or more general time references. For instance, 'later in the afternoon' in 'Prison authorities have given the nod for Anwar to be taken home later in the afternoon to marry'.",
+            "The 'Time' argument may also include relative time references, such as 'nearly 13 years' in 'the 58-year-old rock star to whom she has been married for nearly 13 years'.",
+            "Unlike other event types, the 'Time' argument in the 'Marry' event type specifically refers to the time of the marriage event, not other temporal references in the text. For example, 'Monday' in 'Five Iraqi civilians, including a woman, were killed Monday' is not relevant to the 'Marry' event type.",
+            "Edge cases for the 'Time' argument include situations where the time is implied or indirectly referenced. For example, '1979' in 'Stewart's 1979 marriage to Alana Hamilton lasted five years and produced two children'."
+        ]
+    }
+}

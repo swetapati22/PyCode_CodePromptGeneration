@@ -1,0 +1,35 @@
+{
+    "Divorce(LifeEvent)": {
+        "description": [
+            "A Divorce event refers to the legal dissolution of a marriage by a court or other competent body. Example triggers include 'divorce', 'filed for divorce', 'sued for divorce', and 'seeking divorce'.",
+            "Divorce events are characterized by the involvement of two individuals who were previously married and are now seeking to end their marital relationship. Key characteristics include legal proceedings and the involvement of a court or legal authority.",
+            "The scope of a Divorce event includes the legal and personal processes involved in ending a marriage. This can include filing for divorce, court hearings, and legal documentation. Example triggers include 'divorce', 'filed for divorce', and 'sued for divorce'.",
+            "In a Divorce event, the focus is on the termination of a marital relationship. This event type often involves legal actions and can be triggered by phrases such as 'divorce', 'filed for divorce', and 'sued for divorce'.",
+            "A Divorce event is a specific type of LifeEvent that involves the legal ending of a marriage. It typically includes legal proceedings and can be identified by triggers like 'divorce', 'filed for divorce', and 'sued for divorce'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the divorce proceedings are taking place or where the divorce was filed. This could be a city, county, or specific court. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "The 'place' argument is important as it provides context about the jurisdiction and legal environment of the divorce. It can be a city, state, or specific court. For instance, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "In the context of a Divorce event, the 'place' argument indicates the geographical location of the legal proceedings. This could be a city, state, or specific court. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "The 'place' argument specifies where the divorce is being processed or has been filed. This is typically a city, state, or court. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'.",
+            "The 'place' argument in a Divorce event denotes the location of the legal proceedings. This can be a city, state, or specific court. For example, 'Los Angeles' in 'filed for divorce in Los Angeles Superior Court'."
+        ],
+        "person": [
+            "The 'person' argument refers to the individuals involved in the divorce. This includes both parties seeking the divorce. For example, 'Hunter' and 'star' in 'Hunter filed for divorce from the rock star'.",
+            "The 'person' argument is crucial as it identifies the individuals whose marriage is being dissolved. This includes both spouses. For instance, 'Anne-Marie' and 'Crichton' in 'Anne-Marie sued Crichton for divorce'.",
+            "In a Divorce event, the 'person' argument includes the names of the individuals getting divorced. This can be one or both parties. For example, 'Rachel Hunter' and 'husband' in 'Rachel Hunter filed for divorce from her husband'.",
+            "The 'person' argument specifies the individuals involved in the divorce proceedings. This includes both spouses. For example, 'his' and 'wife' in 'his ex-wife'.",
+            "The 'person' argument in a Divorce event identifies the parties seeking to end their marriage. This includes both individuals. For example, 'wife' and 'his' in 'his estranged wife'."
+        ],
+        "time": [
+            "The 'time' argument refers to the temporal context of the divorce event. This can include specific dates, months, or years when the divorce was filed or proceedings took place. For example, 'Tuesday' in 'filed for divorce on Tuesday'.",
+            "The 'time' argument is important as it provides the temporal context of the divorce event. This can be a specific date, month, or year. For instance, 'September' in 'sued for divorce in September'.",
+            "In the context of a Divorce event, the 'time' argument indicates when the divorce proceedings occurred. This can be a specific date, month, or year. For example, 'four years after' in 'four years after the couple separated'.",
+            "The 'time' argument specifies the temporal aspect of the divorce event. This can include specific dates, months, or years. For example, 'Tuesday' in 'filed for divorce on Tuesday'.",
+            "The 'time' argument in a Divorce event denotes when the divorce proceedings took place. This can be a specific date, month, or year. For example, 'September' in 'sued for divorce in September'."
+        ]
+    }
+}

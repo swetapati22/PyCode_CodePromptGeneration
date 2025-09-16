@@ -1,0 +1,35 @@
+{
+    "PhoneWrite(ContactEvent)": {
+        "description": [
+            "PhoneWrite is a subtype of ContactEvent that involves written or spoken communication through phone or written correspondence such as letters or emails.",
+            "Triggers for PhoneWrite include words like 'correspondence', 'letters', 'spoke', 'calling', and 'sent'. These indicate an exchange of information between entities.",
+            "Key characteristics of PhoneWrite include the presence of an entity initiating the communication, an entity receiving the communication, and often a place where the communication occurs.",
+            "Unlike Meet events, which involve physical presence and face-to-face interaction, PhoneWrite events are characterized by remote communication, either through phone or written mediums.",
+            "Triggers such as 'meeting' or 'talks' are indicative of Meet events, not PhoneWrite. PhoneWrite focuses on non-physical, remote exchanges of information."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the individuals or groups involved in the communication. This can include the sender and the receiver of the message.",
+            "In the example 'Welch specifically is seeking performance evaluations, correspondence between his estranged wife and partners', 'wife' and 'partners' are the entities involved in the correspondence.",
+            "The 'entity' argument is crucial as it identifies the participants in the communication, providing context to the event.",
+            "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'private' and 'parents' are the entities involved in the phone conversation.",
+            "Unlike the 'place' argument, which specifies the location, the 'entity' argument focuses on the participants in the communication."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the communication takes place or is directed to.",
+            "In the example 'I -- I'm calling you from New York City, Paul, it's a pleasure to meet you', 'New York City' is the place where the call is made from.",
+            "The 'place' argument helps to provide geographical context to the communication event.",
+            "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'hospital' is the place where the phone conversation occurs.",
+            "Unlike the 'entity' argument, which identifies the participants, the 'place' argument focuses on the geographical location of the communication."
+        ],
+        "time": [
+            "The 'time' argument specifies when the communication event takes place.",
+            "In the example 'He sent several letters to the police and the media during that time', 'during that time' indicates the period when the letters were sent.",
+            "The 'time' argument is important as it provides temporal context to the communication event.",
+            "In the sentence 'the 19-year-old army private spoke to her parents yesterday pie phone from a hospital in Germany', 'yesterday' specifies the time of the phone conversation.",
+            "Unlike the 'entity' and 'place' arguments, which identify participants and location, the 'time' argument focuses on the temporal aspect of the communication event."
+        ]
+    }
+}

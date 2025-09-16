@@ -1,0 +1,11 @@
+{
+    "Marry(LifeEvent)": {
+        "description": "The 'Marry' event type, a subclass of 'LifeEvent', refers to the formal union of two individuals in a marital relationship, typically involving a ceremony or legal process. It is identified by triggers such as 'marry', 'wed', 'married', and 'marriage'. This event type focuses on the initiation of a marital relationship, distinguishing it from events like 'Divorce', 'Birth', or 'Death'. Key elements include the individuals getting married (Person), the location of the marriage (Place), and the time of the event (Time).",
+        "attributes": {
+            "mention": "The text span that triggers the event, such as 'marry', 'wed', 'married', or 'marriage'.",
+            "Person": "The 'Person' argument identifies the individuals entering into the marriage. This can include names, titles, relationships, pronouns, or indirect references. For example, 'Rudolph Giuliani' and 'Judith Nathan' in 'Rudolph Giuliani will wed his companion, Judith Nathan'. It specifically refers to the individuals getting married, not other participants or entities.",
+            "Place": "The 'Place' argument specifies the location where the marriage takes place, providing context to the event. This can include specific locations like buildings or cities, as well as more general references. For example, 'Gracie Mansion' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24 in the ex-mayor's old home, Gracie Mansion'. It refers specifically to the location of the marriage ceremony or event.",
+            "Time": "The 'Time' argument indicates when the marriage occurs, situating the event in a temporal context. This can include specific dates, times of day, or general time references. For example, 'May 24' in 'Rudolph Giuliani will wed his companion, Judith Nathan, on May 24'. It specifically refers to the time of the marriage event."
+        }
+    }
+}

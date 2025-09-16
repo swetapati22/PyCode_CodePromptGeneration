@@ -1,0 +1,28 @@
+{
+    "DeclareBankruptcy(BusinessEvent)": {
+        "description": [
+            "The DeclareBankruptcy event refers to a situation where an organization officially declares its inability to meet its financial obligations and seeks legal relief from its debts. Example triggers include 'bankruptcy', 'bankrupt', and 'file for bankruptcy'.",
+            "DeclareBankruptcy is an event where a business entity announces its financial insolvency and initiates legal proceedings to manage its debts. Triggers can be words like 'bankruptcy', 'bankrupt', and 'insolvency'.",
+            "This event type captures instances where a company or organization declares bankruptcy, indicating it cannot pay its debts. Common triggers include 'bankruptcy', 'bankrupt', and 'filed for bankruptcy'.",
+            "DeclareBankruptcy involves an organization formally declaring its financial failure and seeking protection under bankruptcy laws. Triggers for this event include 'bankruptcy', 'bankrupt', and 'insolvency'.",
+            "The DeclareBankruptcy event is characterized by an organization announcing its financial collapse and entering bankruptcy proceedings. Typical triggers are 'bankruptcy', 'bankrupt', and 'file for bankruptcy'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument identifies the organization that is declaring bankruptcy. This is crucial as it specifies the entity undergoing financial distress. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'worldcom' is the organization.",
+            "The 'org' argument refers to the company or business entity that has declared bankruptcy. It is important to pinpoint the exact organization to understand the context of the financial event. For instance, in 'Bankrupt energy giant Enron Corp is considering bringing legal action against its own bankers...', 'Enron Corp' is the organization.",
+            "In the context of DeclareBankruptcy, the 'org' argument denotes the business entity that is filing for bankruptcy. Identifying this entity helps in understanding the impact of the bankruptcy. For example, in 'despite operating under bankruptcy laws, united posted the best on time performance.', 'united' is the organization.",
+            "The 'org' argument specifies the company that has declared bankruptcy. This is essential for identifying the affected entity. For example, in 'the flight attendants came in with a close vote rejecting these concessions so the ceo has extended the deadline today, if they don't ratify these agreements, amr will have to file for bankruptcy.', 'amr' is the organization.",
+            "The 'org' argument in DeclareBankruptcy events identifies the organization that is undergoing bankruptcy proceedings. This helps in understanding the scope and impact of the event. For example, in 'usairways is flying its way out of bankruptcy.', 'usairways' is the organization."
+        ],
+        "place": [
+            "The 'place' argument indicates the geographical location where the bankruptcy event is taking place. This can provide context about the jurisdiction and legal environment of the bankruptcy. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'united states' is the place.",
+            "The 'place' argument refers to the location associated with the bankruptcy event. This is important for understanding the regional impact and legal proceedings. For instance, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'united states' is the place.",
+            "In DeclareBankruptcy events, the 'place' argument specifies the location where the bankruptcy is declared. This helps in understanding the legal and economic context. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'united states' is the place.",
+            "The 'place' argument denotes the geographical area where the bankruptcy event occurs. This can provide insights into the legal framework and economic conditions. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'united states' is the place.",
+            "The 'place' argument in DeclareBankruptcy events identifies the location where the bankruptcy is declared. This is crucial for understanding the jurisdiction and potential regional impact. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states.', 'united states' is the place."
+        ]
+    }
+}

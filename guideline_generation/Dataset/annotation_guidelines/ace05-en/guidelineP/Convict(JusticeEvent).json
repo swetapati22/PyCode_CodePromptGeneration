@@ -1,0 +1,35 @@
+{
+    "Convict(JusticeEvent)": {
+        "description": [
+            "A Convict event occurs when a legal authority formally declares someone guilty of a crime. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+            "The Convict event involves a legal process where a defendant is judged and found guilty by an adjudicator in a specific place. Example triggers include 'convicted', 'guilty', and 'conviction'.",
+            "In a Convict event, a defendant is officially declared guilty of a crime by an adjudicator, often in a court setting. Example triggers include 'convicted', 'found guilty', and 'conviction'.",
+            "A Convict event is characterized by the formal declaration of guilt by a legal authority, involving a defendant and an adjudicator, typically occurring in a legal venue. Example triggers include 'convicted', 'guilty', and 'conviction'.",
+            "The Convict event signifies the conclusion of a legal process where a defendant is found guilty by an adjudicator in a specific location. Example triggers include 'convicted', 'found guilty', and 'conviction'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the legal authority or person who declares the defendant guilty. This can be a judge, jury, or court. For example, in 'Judge Shahid Rafiq found Ranjha Masih guilty', 'Judge Shahid Rafiq' is the adjudicator.",
+            "An adjudicator is the entity responsible for making the final judgment in a Convict event. This could be a judge, a jury, or a court. For instance, in 'a Manhattan jury convicted Alfred Taubman', 'Manhattan jury' is the adjudicator.",
+            "In a Convict event, the adjudicator is the person or body that delivers the guilty verdict. This includes judges, juries, and courts. For example, 'the court convicted Anwar Ibrahim' identifies 'court' as the adjudicator.",
+            "The adjudicator in a Convict event is the authority that issues the guilty verdict. This can be a judge, a jury, or a court. For example, 'the judge convicted Ayub Masih' indicates 'judge' as the adjudicator.",
+            "An adjudicator is the official or body that pronounces the defendant guilty in a Convict event. This includes judges, juries, and courts. For instance, 'the jury found the defendant guilty' uses 'jury' as the adjudicator."
+        ],
+        "place": [
+            "The place is the location where the conviction occurs. This can be a city, court, or country. For example, in 'convicted in Manhattan', 'Manhattan' is the place.",
+            "In a Convict event, the place refers to the geographical location where the guilty verdict is delivered. This could be a city, a court, or a country. For instance, 'convicted in the industrial city of Faisalabad' uses 'industrial city of Faisalabad' as the place.",
+            "The place in a Convict event is the specific location where the adjudicator delivers the guilty verdict. This can be a court, city, or country. For example, 'convicted in Sahiwal district' identifies 'Sahiwal district' as the place.",
+            "A place in a Convict event is the venue where the conviction is declared. This includes cities, courts, and countries. For instance, 'convicted in Malaysia' uses 'Malaysia' as the place.",
+            "The place is the physical or geographical location where the conviction takes place. This can be a court, city, or country. For example, 'convicted in Indonesia' identifies 'Indonesia' as the place."
+        ],
+        "defendant": [
+            "The defendant is the person who is declared guilty in a Convict event. For example, in 'convicted Alfred Taubman', 'Alfred Taubman' is the defendant.",
+            "In a Convict event, the defendant is the individual who is found guilty by the adjudicator. For instance, 'found Ranjha Masih guilty' uses 'Ranjha Masih' as the defendant.",
+            "The defendant in a Convict event is the person who receives the guilty verdict. For example, 'convicted Ayub Masih' identifies 'Ayub Masih' as the defendant.",
+            "A defendant is the person who is judged and declared guilty in a Convict event. For instance, 'convicted Anwar Ibrahim' uses 'Anwar Ibrahim' as the defendant.",
+            "The defendant is the individual who is formally declared guilty in a Convict event. For example, 'convicted drug offenders' identifies 'drug offenders' as the defendant."
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "EndPosition(PersonnelEvent)": {
+        "description": [
+            "The EndPosition event type, a subclass of PersonnelEvent, refers to the conclusion of an individual's role or position within an organization or entity. This event is typically triggered by terms indicating the end of a tenure, such as 'former', 'previously', 'dismissed', or 'retired'.",
+            "This event type captures scenarios where a person no longer holds a specific position, often due to resignation, termination, retirement, or other reasons. Example triggers include 'resigned', 'stepped down', and 'left'.",
+            "Unlike the StartPosition event, which marks the beginning of a role, the EndPosition event specifically denotes the cessation of a role. For instance, 'former president' indicates an EndPosition event, whereas 'newly appointed president' would indicate a StartPosition event.",
+            "The EndPosition event is characterized by the presence of a person who has ended their role, the position they held, the entity or organization they were part of, and optionally, the time and place of this event. Example: 'John Doe, who was previously the CEO of XYZ Corp, retired last month.'",
+            "Triggers such as 'retired', 'quit', and 'no longer' are indicative of the EndPosition event type. Unlike events like DeclareBankruptcy or Marry, which involve financial or personal life changes, EndPosition is strictly about professional role changes."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the EndPosition event occurred. It provides temporal context to the event. Example: 'John Doe retired last month.' Here, 'last month' is the time argument.",
+            "This argument is crucial for understanding the timeline of the personnel change. Example: 'She stepped down as CEO in 2020.' The year '2020' is the time argument.",
+            "In some cases, the time may be implicit or relative. Example: 'He was dismissed recently.' The word 'recently' serves as the time argument.",
+            "The 'time' argument can also be a specific date or period. Example: 'He left his position on January 1st.' Here, 'January 1st' is the time argument.",
+            "Edge cases include vague time references like 'a few years ago' or 'in the past'. These still qualify as valid time arguments. Example: 'She resigned a few years ago.'"
+        ],
+        "entity": [
+            "The 'entity' argument refers to the organization, company, or institution where the person held their position. Example: 'He was a manager at Google.' Here, 'Google' is the entity.",
+            "This argument helps identify the context of the position. Example: 'She left her role at the United Nations.' The 'United Nations' is the entity.",
+            "The entity can be a specific department or division within a larger organization. Example: 'He was dismissed from the marketing department of ABC Corp.' Here, 'marketing department of ABC Corp' is the entity.",
+            "In some cases, multiple entities may be involved. Example: 'He previously held positions at Microsoft and Apple.' Both 'Microsoft' and 'Apple' are entities.",
+            "Edge cases include informal or colloquial references to entities. Example: 'She quit her job at the local grocery store.' Here, 'local grocery store' is the entity."
+        ],
+        "position": [
+            "The 'position' argument specifies the role or title that the person held. Example: 'He resigned as CEO.' Here, 'CEO' is the position.",
+            "This argument is essential for understanding the nature of the role that ended. Example: 'She stepped down from her position as Director of Marketing.' The 'Director of Marketing' is the position.",
+            "The position can be specific or general. Example: 'He was a senior engineer.' Here, 'senior engineer' is the position.",
+            "In some cases, the position may be implied or described in broader terms. Example: 'She left her executive role.' The term 'executive role' serves as the position.",
+            "Edge cases include roles that are not formally titled but understood in context. Example: 'He quit his job as a team leader.' Here, 'team leader' is the position."
+        ],
+        "place": [
+            "The 'place' argument indicates the geographical location associated with the EndPosition event. Example: 'He was dismissed in New York.' Here, 'New York' is the place.",
+            "This argument provides spatial context to the event. Example: 'She resigned from her job in London.' The city 'London' is the place.",
+            "The place can be a specific city, country, or even a building. Example: 'He left his position at the headquarters in San Francisco.' Here, 'San Francisco' is the place.",
+            "In some cases, the place may be described in broader terms. Example: 'She stepped down from her role in the Asia-Pacific region.' The 'Asia-Pacific region' is the place.",
+            "Edge cases include virtual or remote work locations. Example: 'He quit his remote job based out of Chicago.' Here, 'Chicago' is the place."
+        ],
+        "person": [
+            "The 'person' argument identifies the individual whose position has ended. Example: 'John Doe resigned from his role.' Here, 'John Doe' is the person.",
+            "This argument is crucial for pinpointing the subject of the EndPosition event. Example: 'She was dismissed from her job.' The pronoun 'She' refers to the person.",
+            "The person can be referred to by name, title, or pronoun. Example: 'The former president, Mr. Smith, retired last year.' Here, 'Mr. Smith' is the person.",
+            "In some cases, the person may be described in relation to their role. Example: 'The CEO stepped down.' The term 'CEO' refers to the person.",
+            "Edge cases include collective references. Example: 'Several employees were laid off.' Here, 'employees' is the person argument."
+        ]
+    }
+}

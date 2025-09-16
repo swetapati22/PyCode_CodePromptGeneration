@@ -1,0 +1,35 @@
+{
+    "StartOrg(BusinessEvent)": {
+        "description": [
+            "The StartOrg event refers to the initiation or establishment of an organization, entity, or business. This can include the creation of new companies, the launch of new branches, or the formation of new groups or entities.",
+            "Triggers for the StartOrg event often include verbs such as 'create', 'establish', 'launch', 'form', 'build', and 'open'. These verbs indicate the beginning of an organizational entity.",
+            "Key characteristics of the StartOrg event include the presence of an agent (the entity or entities responsible for the creation), the organization being created, and the place where the organization is being established.",
+            "The scope of the StartOrg event encompasses various domains such as business, government, non-profits, and other organizational forms. It is not limited to commercial enterprises.",
+            "Examples of StartOrg events include the launch of a new company, the opening of a new branch of an existing business, the formation of a new government body, or the establishment of a new non-profit organization."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument refers to the organization or entity that is being created or established. This can be a company, a government body, a non-profit organization, or any other type of organizational entity.",
+            "In the context of the StartOrg event, the 'org' argument is crucial as it identifies the primary subject of the event. For example, in the sentence 'The company launched a new division', the new division is the 'org'.",
+            "The 'org' argument can be explicitly named or implied in the text. For instance, 'We are starting a new project' implies the creation of a new organizational entity, even if 'project' is not explicitly named.",
+            "Edge cases for the 'org' argument include situations where the organization is not clearly defined or is referred to in a generic manner. For example, 'They are forming a new group' where 'group' is the 'org'.",
+            "Examples of 'org' in sentences: 'The startup', 'A new department', 'The committee', 'A new branch', 'The organization'."
+        ],
+        "place": [
+            "The 'place' argument refers to the location where the organization is being established. This can be a city, country, building, or any other specific location.",
+            "In the context of the StartOrg event, the 'place' argument provides geographical context to the event. For example, 'The company opened a new office in New York' specifies New York as the 'place'.",
+            "The 'place' argument can be explicitly mentioned or inferred from the context. For instance, 'We are opening a new branch downtown' implies a specific location even if 'downtown' is not a precise address.",
+            "Edge cases for the 'place' argument include situations where the location is not clearly defined or is referred to in a broad manner. For example, 'They are expanding in the region' where 'region' is the 'place'.",
+            "Examples of 'place' in sentences: 'In Tokyo', 'At the headquarters', 'In the new building', 'Across the country', 'In the city center'."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or entities responsible for creating or establishing the organization. This can be an individual, a group of people, a company, or any other entity.",
+            "In the context of the StartOrg event, the 'agent' argument identifies who is initiating the event. For example, 'The founders launched a new startup' specifies the founders as the 'agent'.",
+            "The 'agent' argument can be explicitly named or implied in the text. For instance, 'We are starting a new project' implies that 'we' is the 'agent'.",
+            "Edge cases for the 'agent' argument include situations where the responsible entity is not clearly defined or is referred to in a generic manner. For example, 'A new initiative was launched' where the 'agent' might be implied.",
+            "Examples of 'agent' in sentences: 'The team', 'The government', 'A group of investors', 'The company', 'The founders'."
+        ]
+    }
+}

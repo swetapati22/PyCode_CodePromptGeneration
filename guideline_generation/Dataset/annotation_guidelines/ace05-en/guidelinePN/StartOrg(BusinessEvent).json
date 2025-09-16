@@ -1,0 +1,35 @@
+{
+    "StartOrg(BusinessEvent)": {
+        "description": [
+            "The StartOrg event type refers to the initiation or establishment of an organization, business, or entity. This event is characterized by actions such as 'create', 'build', 'open', or 'launch'.",
+            "Triggers for the StartOrg event include verbs like 'shape', 'opening', 'build', and 'create', which indicate the beginning or formation of an organization.",
+            "Unlike the DeclareBankruptcy event, which signifies the end or failure of an organization, the StartOrg event focuses on the inception and establishment phase.",
+            "The StartOrg event is a subset of BusinessEvent, emphasizing the creation of new business entities or organizations, often involving agents who are responsible for the initiation.",
+            "Key characteristics of the StartOrg event include the presence of an agent (individual or group initiating the event), the organization being established, and the location where the event takes place."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument represents the organization or entity being established. It is the primary focus of the StartOrg event.",
+            "Examples of 'org' include 'government', 'Disneyland', 'monster', and 'insurer', indicating the new entity being created.",
+            "The 'org' argument is crucial as it identifies the specific organization that is being started, distinguishing it from other types of events.",
+            "In the context of the StartOrg event, 'org' can refer to various types of entities, including businesses, governmental bodies, or unique projects.",
+            "Unlike the 'org' argument in DeclareBankruptcy, which refers to an existing entity facing financial failure, the 'org' in StartOrg is about a new or restructured entity coming into existence."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the organization is being established. It provides geographical context to the StartOrg event.",
+            "Examples of 'place' include 'Iraq', 'here', 'Sydney', and 'Japan', indicating where the new organization is being set up.",
+            "The 'place' argument is important as it situates the event in a specific location, which can be critical for understanding the context and impact of the event.",
+            "In some cases, 'place' can be a broader region or a specific venue, depending on the scope and nature of the organization being established.",
+            "Unlike the 'place' argument in events like ArrestJail, which indicates where an arrest occurs, the 'place' in StartOrg is about where the new entity is being created."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the individual, group, or entity responsible for initiating the StartOrg event. They are the driving force behind the establishment of the new organization.",
+            "Examples of 'agent' include 'U.S', 'leaders', 'Daily Planet Ltd', 'we', and 'AIG', representing those who are starting the new entity.",
+            "The 'agent' argument is essential as it identifies the initiators of the event, providing insight into who is behind the creation of the new organization.",
+            "In the context of StartOrg, 'agent' can be a person, a group of people, or an existing organization that is launching a new entity.",
+            "Unlike the 'agent' in events like Nominate, where the agent is appointing someone to a position, the 'agent' in StartOrg is actively involved in the creation of a new organization."
+        ]
+    }
+}

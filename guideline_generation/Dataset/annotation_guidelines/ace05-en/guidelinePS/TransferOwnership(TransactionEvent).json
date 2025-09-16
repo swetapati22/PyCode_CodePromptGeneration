@@ -1,0 +1,84 @@
+{
+    "TransferOwnership(TransactionEvent)": {
+        "description": [
+            "TransferOwnership events involve the transfer of ownership of an item or asset from one entity to another. Example triggers include 'sell', 'buy', 'acquire', 'provide', and 'export'.",
+            "This event type is characterized by the presence of a giver (or seller), a recipient (or buyer), and the item or asset being transferred. The transaction may also include details such as time, place, and price.",
+            "Unlike TransferMoney events, which focus on the transfer of monetary funds, TransferOwnership events specifically involve the transfer of tangible or intangible assets. For example, 'selling a car' is a TransferOwnership event, whereas 'transferring $100' is a TransferMoney event.",
+            "Triggers such as 'donate' or 'gift' may indicate a TransferOwnership event if they involve the transfer of an asset. However, if the focus is on the monetary value being transferred, it would be a TransferMoney event.",
+            "The outcome of a TransferOwnership event is the change in ownership of the specified asset. This differs from other transaction events where the primary focus might be on the exchange of services or monetary funds without a change in ownership of a specific item."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "giver": [
+            "The giver is the entity that transfers ownership of the asset. For example, in 'John sold his car to Mary', John is the giver.",
+            "The giver can be an individual, organization, or country. For instance, 'North Korea exported missiles' identifies North Korea as the giver.",
+            "In cases where the giver is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the company is the giver.",
+            "The giver is crucial in establishing the source of the asset being transferred. For example, 'Vivendi wants to sell Universal Studios' identifies Vivendi as the giver.",
+            "Edge cases include scenarios where the giver is implied rather than stated. For example, 'The apartment was given to the nanny' implies the giver is the owner of the apartment."
+        ],
+        "thing": [
+            "The thing is the asset or item being transferred. For example, in 'John sold his car to Mary', the car is the thing.",
+            "The thing can be tangible (e.g., car, house) or intangible (e.g., rights, shares). For instance, 'Vivendi sold its entertainment companies' identifies the companies as the thing.",
+            "In some cases, the thing may be a collection of items. For example, 'Vivendi wants to sell Universal Studios, its theme parks, and television production company' lists multiple things.",
+            "The thing is essential in defining what is being transferred in the event. For example, 'North Korea exported missiles' identifies missiles as the thing.",
+            "Edge cases include scenarios where the thing is implied. For example, 'The assets were transferred to the new owner' implies the thing is the assets."
+        ],
+        "recipient": [
+            "The recipient is the entity that receives ownership of the asset. For example, in 'John sold his car to Mary', Mary is the recipient.",
+            "The recipient can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the recipient.",
+            "In cases where the recipient is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the recipients.",
+            "The recipient is crucial in establishing the new owner of the asset being transferred. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the recipient.",
+            "Edge cases include scenarios where the recipient is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the recipient."
+        ],
+        "time": [
+            "The time indicates when the transfer of ownership occurred. For example, in 'John sold his car to Mary last week', 'last week' is the time.",
+            "Time can be specific (e.g., 'on January 1st') or relative (e.g., 'last year'). For instance, 'North Korea exported missiles in 2001' identifies 2001 as the time.",
+            "In some cases, the time may be implied by the context. For example, 'The company provided laptops to employees during the pandemic' implies the time is during the pandemic.",
+            "The time helps establish the temporal context of the event. For example, 'Vivendi sold its entertainment companies last month' identifies last month as the time.",
+            "Edge cases include scenarios where the time is not explicitly mentioned but can be inferred. For example, 'The assets were transferred recently' implies a recent time frame."
+        ],
+        "price": [
+            "The price indicates the monetary value associated with the transfer of ownership. For example, in 'John sold his car to Mary for $5000', '$5000' is the price.",
+            "Price can be specific (e.g., '$1000') or relative (e.g., 'a large sum'). For instance, 'North Korea exported missiles worth $580 million' identifies $580 million as the price.",
+            "In some cases, the price may be implied by the context. For example, 'The company sold its shares at a high price' implies a high price.",
+            "The price helps establish the financial aspect of the event. For example, 'Vivendi sold its entertainment companies for billions' identifies billions as the price.",
+            "Edge cases include scenarios where the price is not explicitly mentioned but can be inferred. For example, 'The assets were sold at a premium' implies a high price."
+        ],
+        "artifact": [
+            "The artifact is the specific item or asset being transferred. For example, in 'John sold his car to Mary', the car is the artifact.",
+            "Artifacts can be tangible (e.g., car, house) or intangible (e.g., rights, shares). For instance, 'Vivendi sold its entertainment companies' identifies the companies as the artifact.",
+            "In some cases, the artifact may be a collection of items. For example, 'Vivendi wants to sell Universal Studios, its theme parks, and television production company' lists multiple artifacts.",
+            "The artifact is essential in defining what is being transferred in the event. For example, 'North Korea exported missiles' identifies missiles as the artifact.",
+            "Edge cases include scenarios where the artifact is implied. For example, 'The assets were transferred to the new owner' implies the artifact is the assets."
+        ],
+        "beneficiary": [
+            "The beneficiary is the entity that benefits from the transfer of ownership. For example, in 'John sold his car to Mary', Mary is the beneficiary.",
+            "The beneficiary can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the beneficiary.",
+            "In cases where the beneficiary is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the beneficiaries.",
+            "The beneficiary is crucial in establishing who gains from the transfer of the asset. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the beneficiary.",
+            "Edge cases include scenarios where the beneficiary is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the beneficiary."
+        ],
+        "buyer": [
+            "The buyer is the entity that purchases the asset. For example, in 'John sold his car to Mary', Mary is the buyer.",
+            "The buyer can be an individual, organization, or country. For instance, 'North Korea exported missiles to Iran' identifies Iran as the buyer.",
+            "In cases where the buyer is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the employees are the buyers.",
+            "The buyer is crucial in establishing the new owner of the asset being transferred. For example, 'Vivendi sold its entertainment companies to Viacom' identifies Viacom as the buyer.",
+            "Edge cases include scenarios where the buyer is implied rather than stated. For example, 'The apartment was given to the nanny' implies the nanny is the buyer."
+        ],
+        "place": [
+            "The place indicates where the transfer of ownership occurred. For example, in 'John sold his car to Mary in New York', 'New York' is the place.",
+            "Place can be specific (e.g., 'New York') or general (e.g., 'in the city'). For instance, 'North Korea exported missiles to Iran' identifies Iran as the place.",
+            "In some cases, the place may be implied by the context. For example, 'The company provided laptops to employees at the office' implies the office as the place.",
+            "The place helps establish the spatial context of the event. For example, 'Vivendi sold its entertainment companies in Los Angeles' identifies Los Angeles as the place.",
+            "Edge cases include scenarios where the place is not explicitly mentioned but can be inferred. For example, 'The assets were transferred locally' implies a local place."
+        ],
+        "seller": [
+            "The seller is the entity that sells the asset. For example, in 'John sold his car to Mary', John is the seller.",
+            "The seller can be an individual, organization, or country. For instance, 'North Korea exported missiles' identifies North Korea as the seller.",
+            "In cases where the seller is not explicitly mentioned, context clues can help identify them. For example, 'The company provided laptops to employees' implies the company is the seller.",
+            "The seller is crucial in establishing the source of the asset being transferred. For example, 'Vivendi wants to sell Universal Studios' identifies Vivendi as the seller.",
+            "Edge cases include scenarios where the seller is implied rather than stated. For example, 'The apartment was given to the nanny' implies the seller is the owner of the apartment."
+        ]
+    }
+}

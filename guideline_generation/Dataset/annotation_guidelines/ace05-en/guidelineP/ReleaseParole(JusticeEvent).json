@@ -1,0 +1,42 @@
+{
+    "ReleaseParole(JusticeEvent)": {
+        "description": [
+            "The ReleaseParole event refers to the act of releasing an individual from detention, prison, or any form of custody, typically under certain conditions or supervision. Example triggers include 'release', 'paroled', 'freed', 'let go', and 'discharged'.",
+            "This event involves the formal or informal decision to allow a person to leave a place of confinement, often made by a legal or authoritative body. Key characteristics include the involvement of a person being released and an entity or agent responsible for the decision.",
+            "ReleaseParole events are characterized by the transition of an individual from a state of confinement to freedom, often under specific conditions. Triggers can include terms like 'released', 'paroled', 'freed', and 'discharged'.",
+            "In the context of justice, a ReleaseParole event signifies the act of granting parole to a detainee, allowing them to leave custody before the completion of their sentence. This event is typically marked by legal or administrative actions.",
+            "The event of ReleaseParole encompasses the process where an individual is allowed to leave a detention facility, usually under supervision or specific conditions. Common triggers include 'release', 'paroled', 'freed', and 'discharged'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "entity": [
+            "The 'entity' argument refers to the organization, institution, or body responsible for the decision to release the individual. This could include parole boards, detention centers, or judicial bodies. For example, in 'the parole board decided to release him', 'parole board' is the entity.",
+            "Entities are the authoritative bodies or institutions that have the power to grant parole or release. They play a crucial role in the decision-making process. For instance, 'the facility released the inmate' identifies 'facility' as the entity.",
+            "In the context of ReleaseParole, the 'entity' is the organization or group that oversees the release process. This could be a prison, a parole board, or a judicial system. For example, 'the judge ordered the release' identifies 'judge' as the entity.",
+            "The 'entity' argument represents the institutional or organizational authority involved in the release decision. This can include legal bodies, correctional facilities, or parole boards. For example, 'the institution made the final decision to release' identifies 'institution' as the entity.",
+            "Entities in ReleaseParole events are the bodies or organizations that authorize the release of individuals from custody. They are essential in the legal and administrative process. For example, 'the detention center released the prisoners' identifies 'detention center' as the entity."
+        ],
+        "place": [
+            "The 'place' argument refers to the specific location where the individual was held before being released. This could be a prison, detention center, or any other place of confinement. For example, 'he was released from the county jail' identifies 'county jail' as the place.",
+            "Places in ReleaseParole events denote the physical location of confinement from which the individual is released. This can include prisons, jails, or detention centers. For instance, 'released from the state penitentiary' identifies 'state penitentiary' as the place.",
+            "The 'place' argument specifies the location of the individual's confinement prior to release. This could be a correctional facility, a detention center, or any other place of custody. For example, 'released from the federal prison' identifies 'federal prison' as the place.",
+            "In the context of ReleaseParole, the 'place' is the geographical or physical location where the individual was detained. This can include various types of correctional facilities. For example, 'released from the detention center' identifies 'detention center' as the place.",
+            "Places in ReleaseParole events are the specific locations where individuals are held before their release. These locations can range from local jails to high-security prisons. For example, 'released from the maximum-security prison' identifies 'maximum-security prison' as the place."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is being released from custody. This is the primary subject of the ReleaseParole event. For example, 'the parole board decided to release John Doe' identifies 'John Doe' as the person.",
+            "Persons in ReleaseParole events are the individuals who transition from a state of confinement to freedom. They are the main focus of the event. For instance, 'the judge ordered the release of the inmate' identifies 'inmate' as the person.",
+            "The 'person' argument specifies the individual who is granted parole or release from detention. This could be a prisoner, detainee, or any person in custody. For example, 'the prisoner was released on parole' identifies 'prisoner' as the person.",
+            "In the context of ReleaseParole, the 'person' is the individual who is being freed from a place of confinement. This person is central to the event. For example, 'the detainee was released' identifies 'detainee' as the person.",
+            "Persons in ReleaseParole events are those who are allowed to leave custody, often under specific conditions. They are the key participants in the event. For example, 'the inmate was paroled' identifies 'inmate' as the person."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the individual or group responsible for initiating or facilitating the release of the person. This could include judges, parole officers, or negotiators. For example, 'the judge ordered the release' identifies 'judge' as the agent.",
+            "Agents in ReleaseParole events are the people or groups who play a role in the decision to release the individual. They are often in positions of authority. For instance, 'the parole officer recommended the release' identifies 'parole officer' as the agent.",
+            "The 'agent' argument specifies the person or entity that actively participates in the release process. This could be a legal authority, a parole board member, or a negotiator. For example, 'the negotiators secured the release' identifies 'negotiators' as the agent.",
+            "In the context of ReleaseParole, the 'agent' is the person or group that has the authority or influence to facilitate the release. This can include judges, parole boards, or other officials. For example, 'the parole board granted the release' identifies 'parole board' as the agent.",
+            "Agents in ReleaseParole events are those who have the power or responsibility to authorize or recommend the release of an individual. They are crucial to the event's occurrence. For example, 'the judge approved the release' identifies 'judge' as the agent."
+        ]
+    }
+}

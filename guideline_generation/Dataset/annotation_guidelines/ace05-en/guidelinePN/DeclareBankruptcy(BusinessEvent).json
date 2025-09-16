@@ -1,0 +1,28 @@
+{
+    "DeclareBankruptcy(BusinessEvent)": {
+        "description": [
+            "The DeclareBankruptcy event refers to a formal declaration by an organization that it is unable to meet its financial obligations and is seeking legal relief from some or all of its debts. Example triggers include 'bankruptcy', 'bankrupt', and 'file for bankruptcy'.",
+            "This event type is characterized by the involvement of an organization (the entity declaring bankruptcy) and often a specific place where the bankruptcy is declared or recognized. Unlike other BusinessEvents, DeclareBankruptcy specifically deals with financial insolvency and legal proceedings related to it.",
+            "Triggers such as 'bankruptcy' and 'bankrupt' are indicative of the DeclareBankruptcy event type. In contrast, terms like 'convicted' or 'acquitted' are related to JusticeEvents and do not pertain to financial insolvency.",
+            "The DeclareBankruptcy event typically results in legal proceedings that may include restructuring of the organization’s debts, liquidation of assets, or other court-supervised actions. This is different from events like 'Injure' or 'Attack', which involve physical harm or conflict.",
+            "Key characteristics of the DeclareBankruptcy event include the formal legal process, the involvement of an organization, and the financial context. Unlike events such as 'ReleaseParole' or 'Convict', which involve judicial decisions about individuals, DeclareBankruptcy focuses on the financial status and legal standing of organizations."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument refers to the organization that is declaring bankruptcy. This is a crucial element as it identifies the entity undergoing financial distress. For example, in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states', 'worldcom' is the organization.",
+            "The organization can be any business entity, such as a corporation, company, or firm. It is important to distinguish this from individuals or non-business entities. For instance, 'Enron Corp' in 'Bankrupt energy giant Enron Corp is considering bringing legal action' is the organization.",
+            "In some cases, the organization may be referred to by a common name or abbreviation. For example, 'united' in 'despite operating under bankruptcy laws, united posted the best on time performance' refers to United Airlines.",
+            "The 'org' argument is not applicable to events involving individuals or non-business entities. For example, 'Alfred Taubman' in 'a Manhattan jury convicted Sotheby's main shareholder' is not an organization and thus not relevant to DeclareBankruptcy.",
+            "Edge cases may include organizations with complex structures or multiple subsidiaries. In such cases, the primary entity declaring bankruptcy should be identified. For example, 'amr' in 'if they don't ratify these agreements, amr will have to file for bankruptcy' refers to the parent company of American Airlines."
+        ],
+        "place": [
+            "The 'place' argument refers to the location where the bankruptcy is declared or recognized. This can be a country, city, or specific jurisdiction. For example, 'united states' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states' is the place.",
+            "The place is important as it often determines the legal framework and jurisdiction under which the bankruptcy proceedings occur. For instance, 'Manhattan' in 'a Manhattan jury convicted Sotheby's main shareholder' is a place, but it is related to a JusticeEvent, not a DeclareBankruptcy event.",
+            "In some cases, the place may be implied or not explicitly mentioned. For example, 'Enron Corp' in 'Bankrupt energy giant Enron Corp is considering bringing legal action' does not specify a place, but it is understood to be within the United States.",
+            "The 'place' argument is not applicable to events that do not involve a specific location or jurisdiction. For example, 'mall' in 'A suicide bomber detonated explosives at the entrance to a crowded mall' is a place, but it is related to an Injure event, not a DeclareBankruptcy event.",
+            "Edge cases may include multinational organizations or events occurring in multiple jurisdictions. In such cases, the primary location where the bankruptcy is declared should be identified. For example, 'united states' in 'worldcom once employed 80,000 people and went broke on the largest corporate bankruptcy in the united states' is the primary place."
+        ]
+    }
+}

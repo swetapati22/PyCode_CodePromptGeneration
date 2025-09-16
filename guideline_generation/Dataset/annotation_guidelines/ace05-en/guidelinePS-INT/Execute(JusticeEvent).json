@@ -1,0 +1,11 @@
+{
+    "Execute(JusticeEvent)": {
+        "description": "The Execute event type refers to the act of carrying out a death sentence on an individual as a form of legal punishment. This event involves the final act of enforcing a death penalty, typically following a legal process. Key elements include the person being executed, the agent responsible for the execution, and the location where the execution occurs. Example triggers include 'executed', 'put to death', and 'execution'. This event is distinct from other JusticeEvent types like 'Sentence' or 'Convict', which involve judicial decisions but do not imply the carrying out of a death sentence. The outcome of the Execute event is the death of the sentenced individual, differentiating it from events like 'Acquit' or 'ChargeIndict', which involve legal judgments without resulting in immediate death.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "place": "The 'place' argument specifies the location where the execution is carried out, providing context about the jurisdiction and legal practices. For example, 'Texas' in 'executed in Texas' or 'Indonesia' in 'execution in Indonesia'. This argument helps identify the geographical context, which can be a specific facility, region, or state within a country.",
+            "person": "The 'person' argument identifies the individual being executed, which is central to the event. This can include specific individuals or groups, such as 'he' in 'he'd be the 11th killer put to death' or 'convicts' in 'execution of six convicts'. The person might be referred to by their role or status, providing context about their background or the reason for their execution.",
+            "agent": "The 'agent' argument identifies the entity responsible for carrying out the execution, such as a government, state, or specific authority. For example, 'Indonesia' in 'Indonesia will delay the execution' or 'Texas' in 'executed in the state since 1982'. This argument is crucial for understanding who is enforcing the death penalty, which can be explicitly stated or implied through context."
+        }
+    }
+}

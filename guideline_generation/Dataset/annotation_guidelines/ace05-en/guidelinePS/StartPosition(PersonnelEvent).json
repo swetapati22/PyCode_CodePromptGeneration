@@ -1,0 +1,49 @@
+{
+    "StartPosition(PersonnelEvent)": {
+        "description": [
+            "The StartPosition event type refers to the commencement of a role or position by an individual or group. This event is characterized by a person or entity beginning a new job, role, or position within an organization or location.",
+            "Triggers for the StartPosition event include verbs such as 'becoming', 'return', 'replace', 'head', and 'was'. These triggers indicate the start of a new role or position.",
+            "Key characteristics of the StartPosition event include the presence of a person or entity, the new position or role they are starting, and often the location or organization where this role is being undertaken.",
+            "Unlike the Elect event, which involves a formal selection process, the StartPosition event focuses on the actual commencement of the role. For example, 'elected' is a trigger for Elect, not StartPosition.",
+            "The StartPosition event is distinct from the EndPosition event, which marks the conclusion of a role. Triggers like 'former' indicate EndPosition, not StartPosition. The focus of StartPosition is on the beginning of a new role, not the end of an old one."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "time": [
+            "The 'time' argument specifies when the person or entity starts their new position. This can include specific dates, months, years, or relative time expressions.",
+            "For example, in the sentence 'He started his new role in January 2021', 'January 2021' is the time argument.",
+            "The 'time' argument is crucial for understanding the temporal context of the event. It helps to place the event within a specific timeframe.",
+            "In cases where the time is not explicitly mentioned, it can sometimes be inferred from the context. For instance, 'He began his role last month' implies a recent start date.",
+            "Edge cases include vague time references like 'soon' or 'immediately', which may require additional context to determine the exact timeframe."
+        ],
+        "entity": [
+            "The 'entity' argument refers to the organization, company, or group where the person is starting their new position.",
+            "For example, in 'He became the CEO of TechCorp', 'TechCorp' is the entity argument.",
+            "This argument is important as it provides context about the organization or group associated with the new role.",
+            "In some cases, the entity may be a broader category, such as 'government' or 'university', rather than a specific organization.",
+            "Edge cases include situations where the entity is implied but not explicitly stated, such as 'He started as a professor' (implying a university or academic institution)."
+        ],
+        "position": [
+            "The 'position' argument specifies the role or job title that the person or entity is starting.",
+            "For example, in 'She was appointed as the new marketing director', 'marketing director' is the position argument.",
+            "This argument is essential for understanding the specific role or responsibilities associated with the event.",
+            "In some cases, the position may be described in more general terms, such as 'leader' or 'manager', rather than a specific title.",
+            "Edge cases include roles that are not formally titled but are understood from context, such as 'He took over the project' (implying a leadership role)."
+        ],
+        "place": [
+            "The 'place' argument indicates the location where the person or entity is starting their new position.",
+            "For example, in 'He started his new job in New York', 'New York' is the place argument.",
+            "This argument helps to provide geographical context for the event, indicating where the new role is being undertaken.",
+            "In some cases, the place may be a specific building or office, such as 'headquarters' or 'branch office'.",
+            "Edge cases include virtual or remote positions where the physical location is less relevant, such as 'He started his new role remotely'."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual or group of individuals starting the new position.",
+            "For example, in 'John became the new CEO', 'John' is the person argument.",
+            "This argument is crucial for identifying who is involved in the event and starting the new role.",
+            "In some cases, the person may be a group or collective, such as 'the board members' or 'the team'.",
+            "Edge cases include situations where the person is implied but not explicitly mentioned, such as 'The new CEO started today' (implying a specific individual)."
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "BeBorn(LifeEvent)": {
+        "description": "The 'BeBorn' event type, a subclass of 'LifeEvent', refers to the occurrence of a person's birth. It captures the moment when a new individual comes into existence, highlighting the person being born, the location, and the time of birth. Triggers include terms like 'birth' and 'born', distinguishing it from other life events such as 'Die', 'Marry', or 'Divorce'. This event specifically deals with the beginning of life, unlike events that mark the end of life or changes in marital status.",
+        "attributes": {
+            "mention": "The text span that triggers the event, such as 'birth' or 'born'.",
+            "place": "The 'place' argument specifies the location where the birth occurred, which can be a country, city, specific building, or general area. Examples include 'home' in 'gave birth at her parents' home' and 'New Zealand' in 'New Zealand-born Hunter'. This argument helps contextualize the event's environment and circumstances.",
+            "person": "The 'person' argument identifies the individual(s) being born, which is the central focus of the 'BeBorn' event. It can refer to a single person or multiple individuals, such as 'babies' in 'gave birth to both babies' or 'girls' and 'boys' in 'only about 100 girls are born for every 119 boys'. Indirect references like 'child' in 'gave birth to the couple's third child' should also be annotated.",
+            "time": "The 'time' argument specifies when the birth occurred, providing temporal context. It can refer to specific dates, times, or broader time frames, such as 'January 14' in 'a fullterm girl, January 14' or 'April 2001' in 'one of unknown sex in April 2001'. Vague or relative time references that still provide temporal context should also be annotated."
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Nominate(PersonnelEvent)": {
+        "description": [
+            "The 'Nominate' event type refers to the act of officially suggesting or appointing a person for a position, role, or task. Example triggers include 'name', 'nominating', and 'designated'.",
+            "This event type involves an agent (the nominator) who proposes a person (the nominee) for a specific role or task. The nomination can be formal or informal.",
+            "Key characteristics of the 'Nominate' event include the presence of an agent making the nomination and a person being nominated. The event often implies a future role or responsibility for the nominee.",
+            "Unlike the 'Elect' event type, which involves a selection process typically through voting, the 'Nominate' event focuses on the proposal or suggestion phase without necessarily involving a selection process.",
+            "Triggers such as 'elected' or 'appointed' are indicative of 'Elect' or 'StartPosition' events, not 'Nominate'. The 'Nominate' event is specifically about the act of proposing or suggesting a candidate."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the nomination is made or where the nominee is expected to serve. It is not always present in every 'Nominate' event.",
+            "For example, in the sentence 'He was nominated as the head of the department in New York,' 'New York' is the place argument.",
+            "The 'place' argument helps provide context to the nomination, indicating where the nominee will perform their duties or where the nomination was announced.",
+            "In cases where the location is not explicitly mentioned, the 'place' argument can be omitted.",
+            "Unlike the 'Elect' event, where the place might indicate where the election took place, in the 'Nominate' event, the place is more about the context of the nomination or the future role location."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is being nominated for a position or role. This is a crucial element of the 'Nominate' event.",
+            "For example, in the sentence 'The committee nominated John as the new chairperson,' 'John' is the person argument.",
+            "The 'person' argument identifies the nominee and is essential for understanding who is being proposed for the role.",
+            "In some cases, the 'person' argument might be a pronoun or a placeholder like 'who' in questions or hypothetical scenarios.",
+            "Unlike the 'Agent' argument, which refers to the nominator, the 'person' argument specifically identifies the nominee."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or individual making the nomination. This could be a person, group, or organization.",
+            "For example, in the sentence 'The president nominated her for the position,' 'The president' is the agent argument.",
+            "The 'agent' argument is important as it provides context on who is responsible for the nomination.",
+            "In some cases, the 'agent' might be implied or not explicitly mentioned, but it is usually clear from the context who the nominator is.",
+            "Unlike the 'person' argument, which identifies the nominee, the 'agent' argument identifies the nominator, highlighting the source of the nomination."
+        ]
+    }
+}

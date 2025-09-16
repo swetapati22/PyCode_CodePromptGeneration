@@ -1,0 +1,63 @@
+{
+    "Attack(ConflictEvent)": {
+        "description": [
+            "An 'Attack' event, a subtype of 'ConflictEvent', involves an aggressive action aimed at causing harm or damage to a target. Example triggers include 'ambush', 'bombardment', 'take out', 'clashing', and 'raping and drugging'.",
+            "The 'Attack' event is characterized by the presence of an attacker, a target, and often an instrument used to carry out the attack. The scope includes physical, verbal, and cyber attacks.",
+            "Unlike 'Demonstrate' events, which involve peaceful or non-violent gatherings, 'Attack' events are marked by violence or the intent to cause harm. For instance, 'gathered' is a trigger for 'Demonstrate', not 'Attack'.",
+            "Triggers for 'Attack' events often imply direct confrontation or harm, such as 'ambush' or 'bombardment', whereas 'Demonstrate' events use triggers like 'gathered' that do not imply violence.",
+            "Outcomes of 'Attack' events typically include injury, damage, or death, distinguishing them from other conflict events where the primary outcome may be protest or demonstration without direct harm."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "target": [
+            "The 'target' is the entity or entities that the attack is directed against. In Example 1, 'avs' and 'tanks' are the targets of the ambush.",
+            "The 'target' can be individuals, groups, or objects. For instance, in Example 4, 'President', 'Senators', and 'congressmen' are targets.",
+            "In some cases, the 'target' may be a location, such as 'baghdad' in Example 3, where the bombardment is directed.",
+            "The 'target' is crucial for understanding the focus of the attack and the intended harm. It helps in identifying the scope and impact of the event.",
+            "Edge cases include situations where the 'target' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+        ],
+        "victim": [
+            "The 'victim' is the entity that suffers harm or damage as a result of the attack. In Example 2, 'women' are the victims of 'raping and drugging'.",
+            "The 'victim' can be individuals or groups who experience the negative consequences of the attack.",
+            "In some cases, the 'victim' may overlap with the 'target', especially when the attack is directed at people. For example, 'President' and 'Senators' in Example 4.",
+            "The 'victim' is essential for understanding the human impact of the attack, highlighting the severity and consequences of the event.",
+            "Edge cases include situations where the 'victim' is not explicitly mentioned but can be inferred from the context, such as 'protesters' and 'police' in Example 5."
+        ],
+        "attacker": [
+            "The 'attacker' is the entity that initiates and carries out the attack. In Example 1, 'groups' are the attackers in the ambush.",
+            "The 'attacker' can be individuals, groups, or organizations responsible for the aggressive action.",
+            "In some cases, the 'attacker' may be a collective entity, such as 'forces' and 'u.s. army' in Example 3.",
+            "The 'attacker' is crucial for identifying the source of the aggression and understanding the dynamics of the conflict.",
+            "Edge cases include situations where the 'attacker' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+        ],
+        "time": [
+            "The 'time' argument specifies when the attack took place. It provides temporal context for the event.",
+            "The 'time' can be a specific date, time of day, or a broader time frame, such as 'tonight' in Example 3.",
+            "In some cases, the 'time' may be implied rather than explicitly stated, requiring inference from the surrounding text.",
+            "The 'time' is important for situating the event within a timeline and understanding its sequence relative to other events.",
+            "Edge cases include situations where the 'time' is not explicitly mentioned but can be inferred from context, such as 'for a week now' in Example 5."
+        ],
+        "instrument": [
+            "The 'instrument' is the tool or means used to carry out the attack. In Example 1, 'ak-47s' and 'rpgs' are instruments used in the ambush.",
+            "The 'instrument' can be weapons, tools, or other means that facilitate the attack. For example, 'weapons' in Example 4.",
+            "In some cases, the 'instrument' may be implied rather than explicitly stated, requiring inference from the context.",
+            "The 'instrument' is crucial for understanding the method and severity of the attack, highlighting the means by which harm is inflicted.",
+            "Edge cases include situations where the 'instrument' is not explicitly mentioned but can be inferred from context, such as 'explosions' in Example 3."
+        ],
+        "place": [
+            "The 'place' is the location where the attack occurs. In Example 1, 'area' is the place of the ambush.",
+            "The 'place' can be a specific location, city, or broader region. For instance, 'baghdad' in Example 3.",
+            "In some cases, the 'place' may be implied rather than explicitly stated, requiring inference from the surrounding text.",
+            "The 'place' is important for situating the event geographically and understanding its spatial context.",
+            "Edge cases include situations where the 'place' is not explicitly mentioned but can be inferred from context, such as 'tehran' in Example 5."
+        ],
+        "agent": [
+            "The 'agent' is the entity responsible for initiating the attack. In Example 2, 'luster' is the agent of 'raping and drugging'.",
+            "The 'agent' can be individuals, groups, or organizations that plan and execute the attack.",
+            "In some cases, the 'agent' may overlap with the 'attacker', especially when the attack is carried out by a single entity. For example, 'forces' in Example 3.",
+            "The 'agent' is crucial for identifying the source of the aggression and understanding the dynamics of the conflict.",
+            "Edge cases include situations where the 'agent' is not explicitly mentioned but can be inferred from context, such as 'protesters' and 'police' in Example 5."
+        ]
+    }
+}

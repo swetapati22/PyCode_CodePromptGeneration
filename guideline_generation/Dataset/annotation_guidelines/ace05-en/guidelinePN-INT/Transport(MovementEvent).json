@@ -1,0 +1,16 @@
+{
+    "Transport(MovementEvent)": {
+        "description": "The Transport event, a subtype of MovementEvent, involves the physical relocation of entities (people, objects, etc.) from an origin to a destination, often facilitated by an agent or vehicle. Key triggers include terms like 'transport', 'deploying', 'cross', 'tours', and 'back'. This event type specifically requires an agent or vehicle to facilitate the movement, distinguishing it from other MovementEvent subtypes. The outcome is the successful relocation of the entity, unlike events such as TransferMoney, which involve financial transactions rather than physical movement.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "origin": "The origin is the starting point of the transport event, indicating where the entity was located before the movement. It can be a specific place, country, or region, and may sometimes be implied rather than explicitly stated. For example, 'southern Sudan' in 'trains running to and from southern Sudan'.",
+            "victim": "The victim refers to the entity being moved, often under duress or without consent. It can be individuals or groups, and is crucial for identifying the affected parties in the event. For example, 'abducted women and children' in 'used to transport abducted women and children'.",
+            "vehicle": "The vehicle is the means of transportation used in the event, such as trains, cars, planes, or services facilitating the transport. It is essential for understanding how the transport is facilitated. For example, 'trains' in 'trains running to and from southern Sudan'.",
+            "time": "The time indicates when the transport event occurs, providing temporal context. It can refer to a specific period, duration, or be implied. For example, 'last year' in 'In last year's trial'.",
+            "artifact": "The artifact refers to the entity being transported, which can be people, objects, or any movable entity. It is crucial for identifying what is being moved in the event. For example, 'tourists' in 'suspended tours to Egypt and Turkey for Chinese tourists'.",
+            "destination": "The destination is the endpoint of the transport event, indicating where the entity is being moved to. It can be a specific place, country, or region, and may sometimes be implied. For example, 'Sudan' in 'trains running to and from southern Sudan'.",
+            "place": "The place refers to the general location where the transport event occurs, providing spatial context. It can be a specific geographical area or a broader region. For example, 'Iraq' in 'Mr. Chalabi, who was assisted by U.S. forces in getting back into Iraq'.",
+            "agent": "The agent is the entity facilitating the transport event, which can be an individual, organization, or group. It is crucial for identifying who is responsible for the movement. For example, 'forces' in 'Mr. Chalabi, who was assisted by U.S. forces'."
+        }
+    }
+}

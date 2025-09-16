@@ -1,0 +1,49 @@
+{
+    "Appeal(JusticeEvent)": {
+        "description": [
+            "An Appeal event in the context of justice refers to a formal request made to a higher court to review and change the decision of a lower court. Example triggers include 'appeal', 'appealed', 'appealing'.",
+            "The Appeal event involves a plaintiff who is dissatisfied with a lower court's decision and seeks a review from a higher adjudicator. Example triggers include 'appeal', 'filed an appeal', 'lodged an appeal'.",
+            "An Appeal event is characterized by the involvement of a higher judicial authority (adjudicator) reviewing a case upon request from a plaintiff. Example triggers include 'appeal', 'appealed', 'petitioned'.",
+            "In an Appeal event, the plaintiff requests a higher court to reconsider the verdict of a lower court. This event is typically triggered by terms like 'appeal', 'appealed', 'appealing'.",
+            "The Appeal event occurs when a party (plaintiff) formally requests a higher court (adjudicator) to review and potentially overturn a lower court's decision. Example triggers include 'appeal', 'appealed', 'appealing'."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator in an Appeal event is the higher court or judicial authority that reviews the case. For example, in 'The appeal was made to the Supreme Court', 'Supreme Court' is the adjudicator.",
+            "An adjudicator is the entity responsible for reviewing the appeal. It is typically a higher court or judicial body. For instance, 'The Federal Court will hear the appeal' identifies 'Federal Court' as the adjudicator.",
+            "In the context of an Appeal event, the adjudicator is the higher authority that the appeal is directed to. For example, 'The appeal was submitted to the Court of Appeals' where 'Court of Appeals' is the adjudicator.",
+            "The adjudicator is the judicial body that considers the appeal. For example, 'The appeal was lodged with the High Court' where 'High Court' is the adjudicator.",
+            "An adjudicator in an Appeal event is the court or judicial authority that has the power to review and change the decision of a lower court. For example, 'The appeal was taken to the appellate court' where 'appellate court' is the adjudicator."
+        ],
+        "plaintiff": [
+            "The plaintiff in an Appeal event is the individual or party who initiates the appeal. For example, in 'John Doe appealed the decision', 'John Doe' is the plaintiff.",
+            "A plaintiff is the party dissatisfied with the lower court's decision and seeks a review from a higher court. For instance, 'The company filed an appeal' identifies 'The company' as the plaintiff.",
+            "In an Appeal event, the plaintiff is the one who requests the higher court to review the case. For example, 'The defendant appealed the ruling' where 'The defendant' is the plaintiff.",
+            "The plaintiff is the party that initiates the appeal process. For example, 'The appeal was filed by the accused' where 'the accused' is the plaintiff.",
+            "A plaintiff in an Appeal event is the person or entity that appeals the lower court's decision. For example, 'The appeal was made by the petitioner' where 'the petitioner' is the plaintiff."
+        ],
+        "prosecutor": [
+            "The prosecutor in an Appeal event is the legal representative who argues against the appeal, typically representing the state or government. For example, in 'The prosecutor opposed the appeal', 'prosecutor' is the prosecutor.",
+            "A prosecutor is the legal party responsible for presenting the case against the appeal. For instance, 'The state's attorney argued against the appeal' identifies 'state's attorney' as the prosecutor.",
+            "In the context of an Appeal event, the prosecutor is the one who defends the original decision of the lower court. For example, 'The district attorney opposed the appeal' where 'district attorney' is the prosecutor.",
+            "The prosecutor is the legal representative who argues to uphold the lower court's decision. For example, 'The appeal was contested by the prosecutor' where 'prosecutor' is the prosecutor.",
+            "A prosecutor in an Appeal event is the legal authority that argues against the appeal, aiming to maintain the original verdict. For example, 'The appeal was challenged by the state's lawyer' where 'state's lawyer' is the prosecutor."
+        ],
+        "defendant": [
+            "The defendant in an Appeal event is the party against whom the appeal is made. For example, in 'The appeal was filed against the corporation', 'the corporation' is the defendant.",
+            "A defendant is the individual or entity that the appeal is directed against. For instance, 'The appeal was lodged against the government' identifies 'the government' as the defendant.",
+            "In an Appeal event, the defendant is the party that the plaintiff is appealing against. For example, 'The appeal was made against the accused' where 'the accused' is the defendant.",
+            "The defendant is the party that the appeal seeks to challenge. For example, 'The appeal was directed against the company' where 'the company' is the defendant.",
+            "A defendant in an Appeal event is the person or entity that the appeal is filed against. For example, 'The appeal was contested against the organization' where 'the organization' is the defendant."
+        ],
+        "place": [
+            "The place in an Appeal event is the location where the appeal is filed or heard. For example, in 'The appeal was filed in New York', 'New York' is the place.",
+            "A place is the geographical location where the appeal process takes place. For instance, 'The appeal was heard in the Supreme Court of California' identifies 'California' as the place.",
+            "In the context of an Appeal event, the place is where the higher court or adjudicator is located. For example, 'The appeal was lodged in Washington D.C.' where 'Washington D.C.' is the place.",
+            "The place is the specific location where the appeal is considered. For example, 'The appeal was submitted in the federal court in Chicago' where 'Chicago' is the place.",
+            "A place in an Appeal event is the venue or jurisdiction where the appeal is filed or adjudicated. For example, 'The appeal was made in the court of Los Angeles' where 'Los Angeles' is the place."
+        ]
+    }
+}

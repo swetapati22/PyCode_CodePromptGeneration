@@ -1,0 +1,49 @@
+{
+    "Injure(LifeEvent)": {
+        "description": [
+            "The 'Injure' event type, a subclass of 'LifeEvent', refers to incidents where individuals sustain physical harm or damage. Example triggers include 'wounding', 'injured', and 'hurting'.",
+            "This event type captures scenarios where the physical well-being of one or more individuals is compromised due to an external action or event. Key characteristics include the presence of a victim and often an agent or instrument causing the injury.",
+            "Unlike the 'Die' event type, which results in the death of individuals, the 'Injure' event type focuses on non-fatal harm. For instance, 'killed' is a trigger for 'Die', not 'Injure'.",
+            "Triggers such as 'injured' and 'wounded' are indicative of the 'Injure' event type, highlighting the occurrence of physical harm without necessarily leading to death.",
+            "The scope of the 'Injure' event type includes various forms of physical harm, whether accidental or intentional, and can involve multiple victims and agents. It does not cover events where the primary outcome is death or other life events like birth or marriage."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "victim": [
+            "The 'victim' argument identifies the individual(s) who sustained injuries. For example, in '20 people were wounded', '20 people' is the victim.",
+            "Victims are the recipients of the physical harm in the event. They can be singular or plural, such as 'a woman' or 'several children'.",
+            "In cases where multiple groups are injured, each group is considered a separate victim, e.g., 'women, children, and civilians'.",
+            "The victim can be explicitly mentioned or implied within the context, such as 'the injured' referring to those harmed.",
+            "Edge cases include scenarios where the victim is a collective entity, like 'the crowd' or 'the team', indicating a group of individuals."
+        ],
+        "time": [
+            "The 'time' argument specifies when the injury event occurred. For example, 'on Monday' in 'injured on Monday'.",
+            "Time can be expressed in various formats, including specific dates, days of the week, or relative time expressions like 'yesterday'.",
+            "In some contexts, time may be implied rather than explicitly stated, such as 'earlier today' or 'last night'.",
+            "Edge cases include vague time references like 'recently' or 'in the past few days', which still provide a temporal context.",
+            "The time argument helps situate the event within a chronological framework, aiding in understanding the sequence of events."
+        ],
+        "instrument": [
+            "The 'instrument' argument identifies the object or means used to cause the injury. For example, 'explosives' in 'injured by explosives'.",
+            "Instruments can be tangible objects like 'knife', 'gun', or 'bomb', or intangible means like 'poison' or 'fire'.",
+            "In some cases, the instrument may be a natural element, such as 'falling debris' or 'wild animal'.",
+            "Edge cases include scenarios where the instrument is a condition or situation, like 'smoke inhalation' or 'chemical exposure'.",
+            "The instrument provides insight into the method of injury, distinguishing between different causes and mechanisms of harm."
+        ],
+        "place": [
+            "The 'place' argument specifies the location where the injury event occurred. For example, 'in the mall' in 'injured in the mall'.",
+            "Places can range from specific locations like 'Gaza Strip' or 'city of Hebron' to more general areas like 'park' or 'building'.",
+            "In some contexts, the place may be described in terms of its function or significance, such as 'hospital' or 'school'.",
+            "Edge cases include vague or broad locations like 'in the area' or 'nearby', which still provide a spatial context.",
+            "The place argument helps contextualize the event geographically, aiding in understanding the environment and potential witnesses or additional victims."
+        ],
+        "agent": [
+            "The 'agent' argument identifies the individual or entity responsible for causing the injury. For example, 'bomber' in 'injured by bomber'.",
+            "Agents can be specific individuals, groups, or organizations, such as 'attacker', 'police', or 'military'.",
+            "In some cases, the agent may be an abstract or collective entity, like 'terrorists' or 'security forces'.",
+            "Edge cases include scenarios where the agent is an indirect cause, such as 'accidentally' or 'unintentionally' causing harm.",
+            "The agent provides insight into the perpetrator or cause of the injury, distinguishing between intentional and accidental events."
+        ]
+    }
+}

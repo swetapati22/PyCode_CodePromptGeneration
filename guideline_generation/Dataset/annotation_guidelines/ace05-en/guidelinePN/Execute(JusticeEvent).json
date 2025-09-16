@@ -1,0 +1,35 @@
+{
+    "Execute(JusticeEvent)": {
+        "description": [
+            "The Execute event type, a subclass of JusticeEvent, refers to the act of carrying out a death sentence on a person as a form of legal punishment. Example triggers include 'executed', 'put to death', and 'execution'.",
+            "This event type specifically involves the legal and formal process of ending a person's life as a consequence of a judicial decision. Key characteristics include the involvement of a judicial or governmental authority (agent), the person being executed (person), and the location where the execution takes place (place).",
+            "Unlike other JusticeEvent types such as 'Sentence' or 'ChargeIndict', the Execute event results in the death of the person involved. For instance, 'sentences' and 'charges' do not imply the immediate or eventual death of the defendant.",
+            "Triggers such as 'sentences' or 'charges' are indicative of related JusticeEvent types like 'Sentence' or 'ChargeIndict', not the Execute event type. The outcome of the Execute event is the death of the person, which is a definitive and irreversible action.",
+            "The scope of the Execute event includes any formal execution carried out by a state or legal authority. It does not cover extrajudicial killings or murders, which are not sanctioned by legal processes. For example, 'murdered' or 'killed' would not be appropriate triggers for this event type."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the execution takes place. This is important for understanding the jurisdiction and context of the event. For example, in 'executed in Texas', 'Texas' is the place.",
+            "The place can be a specific facility, city, state, or country. For instance, 'the execution was carried out in the state prison' identifies the place as 'state prison'.",
+            "In some cases, the place might be implied rather than explicitly stated. For example, 'executed by the state' implies a location within the state's jurisdiction.",
+            "The place argument helps to distinguish between different legal systems and practices. For example, 'executed in Indonesia' indicates a different legal context compared to 'executed in Texas'.",
+            "Edge cases include situations where the place is not explicitly mentioned but can be inferred from the context. For example, 'the last execution was carried out in May 2001' might imply a known location if the context is clear."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is being executed. This is a central element of the event as it identifies the subject of the execution. For example, in 'the 300th person executed', 'person' is the individual being executed.",
+            "The person can be identified by name, role, or a pronoun. For instance, 'he'd be the 11th killer put to death' identifies the person as 'he' or 'killer'.",
+            "In some cases, multiple individuals might be involved. For example, 'the execution of six convicts' identifies 'six convicts' as the persons being executed.",
+            "The person argument is crucial for understanding the human impact of the event. For example, 'an Indian on death row' provides specific information about the individual's identity and situation.",
+            "Edge cases include situations where the person is not explicitly named but referred to by a role or group. For example, 'the men convicted of a murder' identifies the persons as 'men'."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity responsible for carrying out the execution. This is typically a state, government, or legal authority. For example, in 'executed by the state', 'state' is the agent.",
+            "The agent can be a specific country, state, or legal body. For instance, 'Indonesia will delay the execution' identifies 'Indonesia' as the agent.",
+            "In some cases, the agent might be a collective entity or an implied authority. For example, 'we execute them' implies a collective or governmental authority as the agent.",
+            "The agent argument helps to understand the legal and administrative context of the execution. For example, 'the attorney general's office' indicates a specific legal authority involved in the execution process.",
+            "Edge cases include situations where the agent is not explicitly mentioned but can be inferred from the context. For example, 'the last execution was carried out' might imply a known legal authority if the context is clear."
+        ]
+    }
+}

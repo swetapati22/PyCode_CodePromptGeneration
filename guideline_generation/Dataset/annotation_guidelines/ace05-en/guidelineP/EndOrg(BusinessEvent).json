@@ -1,0 +1,28 @@
+{
+    "EndOrg(BusinessEvent)": {
+        "description": [
+            "The EndOrg event type refers to the termination, closure, or dissolution of an organization. This can include companies, governmental bodies, or any other formal groups ceasing operations or existence.",
+            "Triggers for the EndOrg event type include phrases like 'is no more', 'closing', 'shutting down', 'dissolving', and 'ceasing operations'. These phrases indicate the end of an organization's activities.",
+            "Key characteristics of the EndOrg event include the identification of the organization that is ending and, in some cases, the location where this event is taking place.",
+            "The scope of the EndOrg event encompasses any formal entity that is ceasing to exist or operate, regardless of the reason behind the termination.",
+            "Examples of EndOrg events include a company shutting down its plant, a political party dissolving, or a hospital closing its emergency room."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "org": [
+            "The 'org' argument identifies the organization that is ending. This can be a company, governmental body, non-profit organization, or any other formal group.",
+            "In the context of the EndOrg event, the 'org' argument is crucial as it specifies which entity is ceasing operations or existence.",
+            "Examples of 'org' include 'rej geemg', 'rooms', 'centers', 'plant', and 'party'. These terms refer to the specific organizations or parts of organizations that are ending.",
+            "The 'org' argument can sometimes be implicit, requiring contextual understanding to identify the organization being referred to.",
+            "Edge cases for the 'org' argument include situations where the organization is not explicitly named but can be inferred from the context, such as 'the company' or 'the hospital'."
+        ],
+        "place": [
+            "The 'place' argument identifies the location where the organization is ending. This can be a city, country, or specific facility.",
+            "In the context of the EndOrg event, the 'place' argument helps to provide geographical context to the termination of the organization.",
+            "Examples of 'place' include 'iraq', 'embassy', 'Saudi Arabia', and 'Eugene'. These terms specify where the organization is ceasing operations.",
+            "The 'place' argument can sometimes be implicit, requiring contextual understanding to identify the location being referred to.",
+            "Edge cases for the 'place' argument include situations where the location is not explicitly named but can be inferred from the context, such as 'the country' or 'the city'."
+        ]
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Pardon(JusticeEvent)": {
+        "description": [
+            "A Pardon event involves an official decision to forgive or excuse a person from the legal consequences of a crime or offense. Example triggers include 'pardoned', 'forgave', and 'excused'.",
+            "This event type is characterized by the involvement of an adjudicator who grants the pardon, a defendant who receives the pardon, and often a specific place where the pardon is issued. Unlike a Convict event, a Pardon event results in the removal or reduction of legal penalties rather than the imposition of them.",
+            "Key characteristics of a Pardon event include the formal nature of the decision, typically involving high-ranking officials or legal authorities. The outcome is the alleviation of legal consequences for the defendant. Triggers such as 'pardoned' and 'forgave' are indicative of this event type.",
+            "In contrast to an Appeal event, which involves a request for a review of a legal decision, a Pardon event involves a final decision to forgive or excuse the defendant. The adjudicator in a Pardon event has the authority to nullify the legal consequences of the defendant's actions.",
+            "A Pardon event is distinct from an Extradite event, where the focus is on transferring a person from one jurisdiction to another for legal proceedings. In a Pardon event, the focus is on the cessation of legal penalties within the current jurisdiction."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator is the person or authority who grants the pardon. This role is crucial as it signifies the official capacity in which the pardon is given. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'King Abdullah II' is the adjudicator.",
+            "The adjudicator is often a high-ranking official or legal authority, such as a president, governor, or monarch. Their decision is final and authoritative. For instance, 'The governor pardoned the prisoner' identifies 'governor' as the adjudicator.",
+            "In some cases, the adjudicator may be a judicial body or a committee with the power to grant pardons. For example, 'The parole board pardoned the inmate' identifies 'parole board' as the adjudicator.",
+            "The adjudicator's role is to exercise their legal authority to forgive the defendant's offense, often as an act of clemency or mercy. For instance, 'The president issued a pardon to the activist' identifies 'president' as the adjudicator.",
+            "Unlike the adjudicator in a Convict event, who imposes a sentence, the adjudicator in a Pardon event removes or reduces the legal penalties. For example, 'The king forgave the rebel' identifies 'king' as the adjudicator."
+        ],
+        "place": [
+            "The place refers to the location where the pardon is issued or takes effect. This is important for understanding the jurisdiction and context of the pardon. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'Jordan' is the place.",
+            "The place can be a country, state, city, or any specific location relevant to the legal authority of the adjudicator. For instance, 'The governor of California pardoned the inmate' identifies 'California' as the place.",
+            "In some cases, the place may refer to the institution or facility where the pardon is granted. For example, 'The pardon was issued at the state capitol' identifies 'state capitol' as the place.",
+            "The place helps to contextualize the legal and political environment in which the pardon occurs. For instance, 'The president pardoned the soldier in Washington, D.C.' identifies 'Washington, D.C.' as the place.",
+            "Unlike the place in an Extradite event, which involves the origin and destination of a transfer, the place in a Pardon event is where the legal authority to pardon is exercised. For example, 'The mayor pardoned the offender in New York City' identifies 'New York City' as the place."
+        ],
+        "defendant": [
+            "The defendant is the person who receives the pardon. This role is central to the event as it identifies the individual whose legal penalties are being forgiven. For example, in 'Jordan's King Abdullah II pardoned the legislator', 'legislator' is the defendant.",
+            "The defendant is typically someone who has been convicted of a crime or offense and is now being excused from the legal consequences. For instance, 'The governor pardoned the prisoner' identifies 'prisoner' as the defendant.",
+            "In some cases, the defendant may be a group of individuals or an organization. For example, 'The president pardoned the activists' identifies 'activists' as the defendant.",
+            "The defendant's role is to be the recipient of the adjudicator's clemency, resulting in the removal or reduction of their legal penalties. For instance, 'The king forgave the rebel' identifies 'rebel' as the defendant.",
+            "Unlike the defendant in a Convict event, who is being sentenced, the defendant in a Pardon event is being relieved of their sentence. For example, 'The parole board pardoned the inmate' identifies 'inmate' as the defendant."
+        ]
+    }
+}

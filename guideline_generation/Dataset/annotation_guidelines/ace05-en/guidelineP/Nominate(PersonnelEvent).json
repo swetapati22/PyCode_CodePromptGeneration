@@ -1,0 +1,35 @@
+{
+    "Nominate(PersonnelEvent)": {
+        "description": [
+            "The 'Nominate' event refers to the act of officially suggesting or appointing someone for a position, role, or task. This event is a subtype of the broader 'PersonnelEvent' category.",
+            "Triggers for the 'Nominate' event include verbs like 'name', 'nominate', 'appoint', and 'designate'. These words indicate the action of proposing someone for a specific role or responsibility.",
+            "The scope of the 'Nominate' event includes any context where an individual or entity is being put forward for a role, whether in a formal or informal setting. This can include political appointments, corporate board nominations, or any other scenario where a person is suggested for a position.",
+            "Key characteristics of the 'Nominate' event include the presence of an agent (the entity making the nomination) and a person (the individual being nominated). The event may also include a place where the nomination is relevant or takes place.",
+            "The 'Nominate' event is crucial in contexts where roles and responsibilities are being assigned, and it often involves a formal process or announcement. Understanding this event helps in identifying shifts in roles and the introduction of new personnel in various domains."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "place": [
+            "The 'place' argument refers to the location where the nomination is relevant or where the event takes place. This could be a city, organization, or any specific venue.",
+            "In the context of a 'Nominate' event, the 'place' argument helps to provide geographical or organizational context to the nomination. For example, 'Boston' in 'the new head of the troubled Boston archdiocese'.",
+            "The 'place' argument is important for understanding the setting of the nomination, which can influence the significance and impact of the event.",
+            "Examples of 'place' include 'New York', 'the company', 'the boardroom', or 'the government office'. These locations help to situate the nomination within a specific context.",
+            "Edge cases for the 'place' argument might include virtual or non-physical locations, such as 'online' or 'the virtual meeting'. These should still be annotated as they provide context to the nomination."
+        ],
+        "person": [
+            "The 'person' argument refers to the individual who is being nominated for a position or role. This is the primary subject of the 'Nominate' event.",
+            "In the context of a 'Nominate' event, the 'person' argument identifies the nominee. For example, 'head' in 'name a new head of the troubled Boston archdiocese'.",
+            "The 'person' argument is crucial for understanding who is being put forward for a role, which can have significant implications for the organization or context in which the nomination occurs.",
+            "Examples of 'person' include 'board', 'Chui Sai On', 'who', or 'the new director'. These terms identify the individual or group being nominated.",
+            "Edge cases for the 'person' argument might include ambiguous or unspecified nominees, such as 'someone' or 'a candidate'. These should still be annotated as they indicate the presence of a nomination."
+        ],
+        "agent": [
+            "The 'agent' argument refers to the entity or individual making the nomination. This is the person or organization responsible for proposing the nominee.",
+            "In the context of a 'Nominate' event, the 'agent' argument identifies who is initiating the nomination. For example, 'pope' in 'the pope will reportedly name a new head'.",
+            "The 'agent' argument is important for understanding the source of the nomination, which can provide insights into the motivations and authority behind the nomination.",
+            "Examples of 'agent' include 'he', 'government', 'you', or 'I'. These terms identify the nominator.",
+            "Edge cases for the 'agent' argument might include collective or organizational nominators, such as 'the board' or 'the committee'. These should still be annotated as they indicate the source of the nomination."
+        ]
+    }
+}

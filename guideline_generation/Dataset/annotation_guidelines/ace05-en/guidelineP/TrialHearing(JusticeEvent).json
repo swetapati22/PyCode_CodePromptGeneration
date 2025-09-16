@@ -1,0 +1,42 @@
+{
+    "TrialHearing(JusticeEvent)": {
+        "description": [
+            "A TrialHearing event refers to a formal judicial proceeding where evidence and arguments are presented to determine the guilt or innocence of a defendant. Example triggers include 'hearing', 'trial', and 'tried'.",
+            "The TrialHearing event is a type of JusticeEvent where a legal case is examined in a court of law. Key characteristics include the presence of an adjudicator, prosecutor, defendant, and a specific place where the event occurs.",
+            "In a TrialHearing event, the adjudicator (e.g., judge or court) oversees the proceedings, the prosecutor presents the case against the defendant, and the defendant is the individual or entity being tried. The event typically takes place in a courtroom or legal setting.",
+            "TrialHearing events are critical components of the justice system, ensuring that legal disputes are resolved through a structured process. Triggers for this event can include terms like 'hearing', 'trial', 'court', and 'proceedings'.",
+            "The scope of a TrialHearing event includes the presentation of evidence, witness testimonies, and legal arguments. It is a formal process aimed at reaching a verdict or decision regarding the charges against the defendant."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The adjudicator in a TrialHearing event is the authority figure responsible for overseeing the legal proceedings. This can be a judge, a panel of judges, or a court. For example, in the sentence 'The judge ruled in favor of the prosecution', 'judge' is the adjudicator.",
+            "An adjudicator ensures that the trial is conducted fairly and according to the law. They make rulings on the admissibility of evidence, provide instructions to the jury, and may ultimately deliver the verdict. For instance, 'The court decided to adjourn the hearing' uses 'court' as the adjudicator.",
+            "In some cases, the adjudicator may be referred to by their title or role within the judicial system. For example, 'The magistrate presided over the case' identifies 'magistrate' as the adjudicator.",
+            "The role of the adjudicator is crucial in maintaining order and legality during the trial. They are responsible for ensuring that both the prosecution and defense adhere to legal standards. An example is 'The tribunal found the defendant guilty', where 'tribunal' is the adjudicator.",
+            "Adjudicators can vary depending on the legal system and the type of case being heard. In some jurisdictions, a jury may also play a role in the adjudication process, but the primary adjudicator is typically a judge or court. For example, 'The district court will hear the case next month' uses 'district court' as the adjudicator."
+        ],
+        "prosecutor": [
+            "The prosecutor in a TrialHearing event is the legal representative who presents the case against the defendant. They are responsible for proving the defendant's guilt beyond a reasonable doubt. For example, 'The prosecutor argued that the evidence was conclusive' uses 'prosecutor' as the argument.",
+            "Prosecutors play a key role in the justice system by bringing charges against individuals or entities accused of crimes. They gather evidence, interview witnesses, and present their findings in court. An example is 'The district attorney will lead the prosecution' where 'district attorney' is the prosecutor.",
+            "In some cases, the term 'prosecutor' may be replaced with specific titles such as 'state attorney', 'district attorney', or 'crown prosecutor', depending on the jurisdiction. For instance, 'The state attorney presented the opening statement' uses 'state attorney' as the prosecutor.",
+            "The prosecutor's objective is to ensure that justice is served by holding the defendant accountable for their actions. They work closely with law enforcement and other legal professionals to build a strong case. An example is 'The crown prosecutor called the first witness to the stand' where 'crown prosecutor' is the argument.",
+            "Prosecutors must adhere to ethical standards and legal procedures while presenting their case. They are tasked with presenting evidence in a clear and convincing manner to persuade the adjudicator or jury. For example, 'The assistant district attorney cross-examined the witness' uses 'assistant district attorney' as the prosecutor."
+        ],
+        "defendant": [
+            "The defendant in a TrialHearing event is the individual or entity accused of committing a crime or legal violation. They are the subject of the trial and must respond to the charges brought against them. For example, 'The defendant pleaded not guilty to all charges' uses 'defendant' as the argument.",
+            "Defendants have the right to legal representation and a fair trial. They can present evidence, call witnesses, and cross-examine the prosecution's witnesses. An example is 'The accused will testify in their own defense' where 'accused' is the defendant.",
+            "In some cases, there may be multiple defendants involved in a single trial. Each defendant is entitled to a separate defense and may have different legal strategies. For instance, 'The co-defendants were tried together' uses 'co-defendants' as the argument.",
+            "The defendant's role is to challenge the prosecution's case and provide evidence or arguments that support their innocence or mitigate their culpability. An example is 'The suspect was acquitted of all charges' where 'suspect' is the defendant.",
+            "Defendants can be individuals, organizations, or entities accused of legal violations. They are presumed innocent until proven guilty and have the right to appeal the court's decision. For example, 'The corporation was found liable for the damages' uses 'corporation' as the defendant."
+        ],
+        "place": [
+            "The place in a TrialHearing event refers to the location where the trial or hearing takes place. This is typically a courtroom, courthouse, or specific jurisdiction. For example, 'The trial was held in the New York Supreme Court' uses 'New York Supreme Court' as the place.",
+            "The place is important as it determines the legal jurisdiction and the applicable laws for the trial. It can also influence the logistics and accessibility for the parties involved. An example is 'The hearing took place in the federal courthouse' where 'federal courthouse' is the place.",
+            "In some cases, the place may be referred to by the city, state, or country where the trial is conducted. For instance, 'The proceedings were moved to Los Angeles' uses 'Los Angeles' as the place.",
+            "The place can also include specific rooms or divisions within a larger judicial complex. For example, 'The case was heard in courtroom 5B' uses 'courtroom 5B' as the place.",
+            "The location of the trial can have implications for the legal process, including the selection of the jury, the application of local laws, and the convenience for witnesses and legal teams. An example is 'The trial was transferred to the district court in Chicago' where 'district court in Chicago' is the place."
+        ]
+    }
+}

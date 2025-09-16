@@ -1,0 +1,11 @@
+{
+    "Pardon(JusticeEvent)": {
+        "description": "A Pardon event involves an official decision to forgive or excuse a person from the legal consequences of a crime or offense. This event is characterized by the involvement of an adjudicator who grants the pardon, a defendant who receives it, and often a specific place where the pardon is issued. Unlike a Convict event, which imposes legal penalties, a Pardon event results in the removal or reduction of such penalties. The decision is formal and typically involves high-ranking officials or legal authorities. Example triggers include 'pardoned', 'forgave', and 'excused'. The adjudicator has the authority to nullify the legal consequences of the defendant's actions, distinguishing this event from an Appeal or Extradite event, which involve different legal processes and outcomes.",
+        "attributes": {
+            "mention": "The text span that triggers the event.",
+            "adjudicator": "The adjudicator is the person or authority who grants the pardon, often a high-ranking official or legal authority such as a president, governor, or monarch. Their decision is final and authoritative, signifying the official capacity in which the pardon is given. For example, 'King Abdullah II' in 'Jordan's King Abdullah II pardoned the legislator' is the adjudicator.",
+            "place": "The place refers to the location where the pardon is issued or takes effect, which is important for understanding the jurisdiction and context of the pardon. It can be a country, state, city, or specific institution. For example, 'Jordan' in 'Jordan's King Abdullah II pardoned the legislator' is the place.",
+            "defendant": "The defendant is the person who receives the pardon, typically someone convicted of a crime or offense and now being excused from the legal consequences. This role is central to the event, identifying the individual whose legal penalties are being forgiven. For example, 'legislator' in 'Jordan's King Abdullah II pardoned the legislator' is the defendant."
+        }
+    }
+}

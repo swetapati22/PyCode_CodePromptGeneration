@@ -1,0 +1,49 @@
+{
+    "Appeal(JusticeEvent)": {
+        "description": [
+            "An 'Appeal' event in the context of justice refers to a formal request made to a higher court to review and change the decision of a lower court. Example triggers include 'appeal', 'appealed', 'appealing'.",
+            "The 'Appeal' event involves a plaintiff who is dissatisfied with a court's decision and seeks a review from a higher authority. Key characteristics include the involvement of a higher court (adjudicator) and the original court's decision being contested.",
+            "Unlike the 'Sue' event, which involves initiating a legal action, the 'Appeal' event is a continuation of an existing legal process where the plaintiff seeks a different outcome from a higher court.",
+            "Triggers such as 'filed a lawsuit' or 'sued' are indicative of the 'Sue' event type, not the 'Appeal' event type. The 'Appeal' event specifically involves seeking a review of a prior decision.",
+            "The outcome of an 'Appeal' event can result in the original decision being upheld, reversed, or modified. This is distinct from events like 'Pardon' or 'ReleaseParole', which involve clemency or conditional release rather than a judicial review."
+        ]
+    },
+    "attributes": {
+        "mention": "The text span that triggers the event.",
+        "adjudicator": [
+            "The 'adjudicator' in an 'Appeal' event refers to the higher court or judicial body that reviews the appeal. For example, in 'appealed to the Supreme Court', 'Supreme Court' is the adjudicator.",
+            "The role of the adjudicator is crucial as it is the authority that has the power to uphold, reverse, or modify the original decision. For instance, 'Federal Court' in 'appeal again with the Federal Court' is the adjudicator.",
+            "In some cases, the adjudicator can be a specific judge or panel of judges within a higher court. For example, 'the panel of judges' in 'the appeal was heard by the panel of judges' is the adjudicator.",
+            "The adjudicator must be a higher authority than the original court that made the decision. For example, 'Court of Appeals' in 'appealed to the Court of Appeals' is the adjudicator.",
+            "Unlike the 'Defendant' or 'Plaintiff', the adjudicator is not a party to the case but rather the authority reviewing the case. For example, 'High Court' in 'appealed to the High Court' is the adjudicator."
+        ],
+        "plaintiff": [
+            "The 'plaintiff' in an 'Appeal' event is the individual or entity that initiates the appeal, seeking a review of the original court's decision. For example, 'Anwar Ibrahim' in 'Anwar Ibrahim appealed' is the plaintiff.",
+            "The plaintiff is typically the party that is dissatisfied with the original decision and believes that a higher court will provide a more favorable outcome. For instance, 'five' in 'five of them appealed' is the plaintiff.",
+            "In some cases, the plaintiff can be a group or organization. For example, 'school districts' in 'school districts appealed' is the plaintiff.",
+            "The plaintiff must have standing in the original case to file an appeal. For example, 'Chiluba' in 'Chiluba's lawyer said he would appeal' is the plaintiff.",
+            "Unlike the 'Defendant', who is the party against whom the appeal is filed, the plaintiff is the one seeking the review. For example, 'districts' in 'districts involved in the initial cases appealed' is the plaintiff."
+        ],
+        "prosecutor": [
+            "The 'prosecutor' in an 'Appeal' event is the legal representative who argues against the appeal, typically representing the state or the original decision. For example, 'prosecutors' in 'prosecutors said Thursday' is the prosecutor.",
+            "The role of the prosecutor is to defend the original decision and argue why it should be upheld. For instance, 'the prosecution' in 'following an agreement with the prosecution' is the prosecutor.",
+            "In some cases, the prosecutor may also file an appeal if they are dissatisfied with the original decision. For example, 'the state' in 'the state appealed the decision' is the prosecutor.",
+            "The prosecutor is typically a government attorney or a representative of the state. For example, 'district attorney' in 'the district attorney appealed' is the prosecutor.",
+            "Unlike the 'Plaintiff', who seeks to overturn the decision, the prosecutor aims to maintain the original ruling. For example, 'the government' in 'the government appealed the acquittal' is the prosecutor."
+        ],
+        "defendant": [
+            "The 'defendant' in an 'Appeal' event is the party against whom the appeal is filed. For example, 'the school districts' in 'the school districts appealed' are the defendants.",
+            "The defendant is typically the party that won the original case and now must defend that decision in a higher court. For instance, 'the state' in 'the state is the defendant in the appeal' is the defendant.",
+            "In some cases, the defendant can be an individual or an organization. For example, 'the company' in 'the company is the defendant in the appeal' is the defendant.",
+            "The defendant must respond to the appeal and provide arguments to support the original decision. For example, 'the corporation' in 'the corporation is defending the appeal' is the defendant.",
+            "Unlike the 'Plaintiff', who initiates the appeal, the defendant is the party that must respond to it. For example, 'the government' in 'the government is the defendant in the appeal' is the defendant."
+        ],
+        "place": [
+            "The 'place' in an 'Appeal' event refers to the location where the appeal is filed or heard. For example, 'Indonesia' in 'appealed to the Supreme Court in Indonesia' is the place.",
+            "The place can be a specific court or a broader geographical location. For instance, 'court' in 'appealed to the court' is the place.",
+            "In some cases, the place can be a city or country where the higher court is located. For example, 'Malaysia' in 'appealed in Malaysia' is the place.",
+            "The place is important as it determines the jurisdiction of the higher court. For example, 'Washington' in 'appealed to the U.S. Supreme Court in Washington' is the place.",
+            "Unlike the 'Adjudicator', which is the authority reviewing the case, the place is the physical or geographical location of the appeal. For example, 'Federal Court' in 'appealed to the Federal Court in Malaysia' is the place."
+        ]
+    }
+}

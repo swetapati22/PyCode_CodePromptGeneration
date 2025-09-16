@@ -1,0 +1,12 @@
+{
+    "Extradite(JusticeEvent)": {
+        "description": "An Extradite event involves the formal process of transferring a person from one jurisdiction to another for legal proceedings or punishment. This event is characterized by the involvement of legal authorities and the movement of a person across jurisdictions, typically involving an origin (current location), a destination (target location), a person (individual being extradited), and an agent (authority facilitating the extradition). Unlike other JusticeEvents such as 'Convict' or 'Pardon', Extradite specifically deals with the physical transfer of a person for legal reasons. Triggers include terms like 'extradite', 'extradition', and 'extradited'. The scope includes both international and domestic transfers for legal purposes, excluding voluntary travel or non-legal transfers.",
+        "attributes": {
+            "mention": "The text span that triggers the event, such as 'extradite', 'extradition', or 'extradited'.",
+            "origin": "The location from which the person is being extradited, which can be a country, state, city, or any jurisdictional area. For example, 'extradition from the state of Texas' has 'state of Texas' as the origin. The origin may be explicitly stated or inferred from context.",
+            "destination": "The location to which the person is being extradited, which can be a country, state, city, or any jurisdictional area. For example, 'extradition to the state of California' has 'state of California' as the destination. The destination may be explicitly stated or inferred from context.",
+            "person": "The individual being extradited, identified by name, pronoun, or description. For example, 'extradition of John Doe' has 'John Doe' as the person. The person is central to the event and must be distinguished from the agent or other entities.",
+            "agent": "The authority or entity facilitating the extradition, such as a government body or legal authority. For example, 'extradition by the FBI' has 'FBI' as the agent. The agent may be explicitly stated or inferred from context."
+        }
+    }
+}
