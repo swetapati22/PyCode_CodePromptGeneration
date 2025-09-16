@@ -2,7 +2,7 @@
 > Efficient and extensible Event Extraction with Code Prompts and Annotation Guidelines, built on top of [TextEE](https://github.com/ej0cl6/TextEE). 
 
 This repository is a submodule of our paper source code [PyCode_EventExtraction](https://github.com/swetapati22/PyCode_EventExtraction) that includes code for:
-- `PyCode-Code Prompt Generation`: The scipt to obtain code prompts for 15 event extraction datasets supported by TextEE. This sub-module from the source code of our paper is used to reproduce [our work in generating train, dev and test data (instruction, prompt, response pairs) in python code format from natural language instruction format](https://arxiv.org/abs/2502.16377).
+- `PyCode-Code Prompt Generation`: The script to obtain code prompts for 15 event extraction datasets supported by TextEE. This sub-module from the source code of our paper is used to reproduce [our work in generating train, dev and test data (instruction, prompt, response pairs) in python code format from natural language instruction format](https://arxiv.org/abs/2502.16377).
 
 <div align="center">
 
@@ -31,7 +31,7 @@ While **TextEE** standardizes 10+ event extraction datasets into a unified JSON 
 > ✨ We transform TextEE-formatted data into **code-style prompts**—a format that is both readable and executable by LLMs and ideal for structured evaluation. In addition, we annotate the code-prompts with annotation guidelines. Below, we provide an example of code prompt and how we integrate annotation guidelines within them:
 
 ### What are Code Prompts and Annotation Guidelines?
-- `Code prompting` is a technique that enhances reasoning abilities in text+code LLMs by transforming natural language (NL) tasks into code representations. Instead of executing the code, the model uses it as a structured input format to reason and generate answers. *The labels such event classes and arguments are represented as Python classes, and the guidelines or instructions are introduced as docstrings.* The model start generating after the `result =`  line.
+- `Code prompting` is a technique that enhances reasoning abilities in text+code LLMs by transforming natural language (NL) tasks into code representations. Instead of executing the code, the model uses it as a structured input format to reason and generate answers. *The labels such event classes and arguments are represented as Python classes, and the guidelines or instructions are introduced as docstrings.* The model starts generating after the `result =`  line.
 
 - `Annotation Guidelines` involve defining how to identify and classify events and their arguments within a text or other data. These guidelines help ensure consistency and quality in the annotation process, which is crucial for training machine learning models for event extraction. The performance of current SoTA models heavily depends
 on the quantity of human-annotated data, as the model learns the guidelines from these examples. 
@@ -182,7 +182,7 @@ The table below also shows whether annotation **guidelines** are included for ea
   <td>⚪️</td>
 </tr>
 <tr>
-  <td><code>SPPED</code></td>
+  <td><code>SPEED</code></td>
   <td>ED</td>
   <td>ED from Social Media for Epidemic Prediction</td>
   <td><a href="https://aclanthology.org/2024.naacl-main.172/">NAACL 2024</a></td>
