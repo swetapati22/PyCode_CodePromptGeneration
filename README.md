@@ -1,8 +1,13 @@
 # Instruction Tuning with Annotation Guidelines for Event Extraction (Findings of ACL 2025)
+
+> You can refer to the python script inside the code prompt generation folder: [code_prompts](/code_prompts) for review. 
+
 > Efficient and extensible Event Extraction with Code Prompts and Annotation Guidelines, built on top of [TextEE](https://github.com/ej0cl6/TextEE). 
 
-This repository is a submodule of our paper source code [PyCode_EventExtraction](https://github.com/swetapati22/PyCode_EventExtraction) that includes code for:
+This repository is a submodule of our entire paper source code [PyCode_EventExtraction](https://github.com/swetapati22/PyCode_EventExtraction) that includes code for:
 - `PyCode-Code Prompt Generation`: The script to obtain code prompts for 15 event extraction datasets supported by TextEE. This sub-module from the source code of our paper is used to reproduce [our work in generating train, dev and test data (instruction, prompt, response pairs) in python code format from natural language instruction format](https://arxiv.org/abs/2502.16377).
+
+
 
 <div align="center">
 
